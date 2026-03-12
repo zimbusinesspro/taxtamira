@@ -37,8 +37,9 @@ fix_import.ps1
 update_sidebars*.ps1
 assess_approach.ps1
 
-# Keep readability_enhancer.py (it's a useful ongoing tool)
+# Keep ongoing utility scripts
 !readability_enhancer.py
+!apply_lesson_header.py
 
 # Internal / backup files
 *_backup.html

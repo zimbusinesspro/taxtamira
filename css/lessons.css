@@ -48,6 +48,15 @@ html { scroll-behavior: smooth; }
 /* ==========================================================================
    1 · LESSON CONTAINER
    ========================================================================== */
+
+/* Debt / newer lesson pages wrap content in div.section (no built-in padding).
+   Match the 90px top / 70px bottom spacing of .sidebar-page-container used
+   by ITC lessons so all lesson page types have identical vertical breathing room. */
+.section > .container {
+    padding-top: 90px;
+    padding-bottom: 70px;
+}
+
 .lesson-container {
     font-family: 'Work Sans', sans-serif;
     line-height: 1.8;
@@ -592,7 +601,61 @@ html { scroll-behavior: smooth; }
 }
 
 /* ==========================================================================
-   9 · READABILITY HIGHLIGHTS  (applied by readability_enhancer.py)
+   9 · LESSON PAGE HEADER
+   Replaces the old .service-title-box (pink) and plain feature-steps-title h2.
+   Displayed above the feature-steps grid, showing:
+   lesson number tag · lesson title · short excerpt.
+   ========================================================================== */
+
+.lesson-page-header {
+    display: block;
+    background: none;
+    padding: 0 0 28px;
+    margin-bottom: 8px;
+    max-width: 80%;
+}
+
+.lesson-page-header .lesson-number {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    margin-bottom: 6px;
+}
+
+.lesson-page-header .lesson-name {
+    display: block;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #1a1a1a;
+    line-height: 1.15;
+    margin: 0 0 10px;
+}
+
+.lesson-page-header .lesson-excerpt {
+    display: block;
+    font-size: 0.92rem;
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* Responsive: full-width on smaller screens */
+@media (max-width: 768px) {
+    .lesson-page-header {
+        max-width: 100%;
+    }
+    .lesson-page-header .lesson-name {
+        font-size: 1.5rem;
+    }
+}
+
+/* ==========================================================================
+   10 · READABILITY HIGHLIGHTS  (applied by readability_enhancer.py)
    Two inline highlight types to improve scan-ability of lesson content.
 
    .leg-ref  — legislative references (section numbers, act names, schedules,
@@ -630,27 +693,25 @@ html { scroll-behavior: smooth; }
 
 /* ── Key defined tax term / concept ───────────────────────────────────────── */
 .key-term {
-    background: rgba(247, 183, 49, 0.15);
-    color: #6b4000;
+    background: none;
+    color: inherit;
     border-bottom: 2px dotted var(--secondary-color);
-    padding: 1px 4px;
-    border-radius: 3px;
+    padding: 0 2px;
+    border-radius: 0;
     font-weight: 700;
     font-style: italic;
     display: inline;
     cursor: default;
-    transition: background 0.2s ease;
 }
 
 .key-term:hover {
-    background: rgba(247, 183, 49, 0.30);
+    background: none;
 }
 
 /* Invert colours inside dark takeaway panels */
 .takeaway-list .key-term,
 .takeaway-box .key-term {
-    background: rgba(255, 255, 255, 0.15);
-    color: #ffe8a0;
+    color: inherit;
     border-bottom-color: var(--secondary-color);
 }
 
@@ -662,8 +723,28 @@ html { scroll-behavior: smooth; }
     background: transparent;
 }
 
+/* ── Quoted text ("direct quotes / scare-quoted terms") ──────────────────── */
+.quoted-text {
+    font-weight: 700;
+    font-style: italic;
+    color: #1a3a4f;
+    border-left: 3px solid var(--primary-color);
+    padding: 0 5px 0 6px;
+    background: rgba(44, 114, 79, 0.06);
+    border-radius: 0 3px 3px 0;
+    display: inline;
+}
+
+/* Inside dark takeaway panels */
+.takeaway-list .quoted-text,
+.takeaway-box .quoted-text {
+    color: #cbe8d8;
+    background: rgba(255, 255, 255, 0.10);
+    border-left-color: var(--secondary-color);
+}
+
 /* ==========================================================================
-   10 · RESPONSIVE ADJUSTMENTS
+   11 · RESPONSIVE ADJUSTMENTS
    ========================================================================== */
 @media (max-width: 992px) {
     .lesson-section > h2,

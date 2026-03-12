@@ -10,17 +10,17 @@
 <link href="replace_with_your_PAGE_URL" rel="canonical"/>
 <!-- Stylesheets -->
 <link href="css/bootstrap.min.css" rel="stylesheet"/>
-<link href="css/main.css" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet"/>
 <link href="css/responsive.css" rel="stylesheet"/>
 <link href="css/lessons.css" rel="stylesheet"/>
-<link href="css/globe-hero.css" rel="stylesheet"/>
+<link href="css/globe-hero.css" rel="stylesheet"><link href="css/feature-steps.css" rel="stylesheet"/>
 <!-- OG tags -->
-<meta content="en_US" property="og:locale">
+<meta content="en_US" property="og:locale"/>
 <meta content="website" property="og:type"/>
-<meta content="TaxTami" property="og:title">
-<meta content="PAGE_URL" property="og:url"/>
+<meta content="TaxTami" property="og:title"/>
+<meta content="PAGE_URL" property="og:url">
 <meta content="TaxTami" property="og:site_name"/>
-<meta content="#" property="og:image"/>
+<meta content="#" property="og:image">
 <meta content="Zimbabwe-focused tax education, consulting and digital tools for taxpayers, SMEs and professionals." property="og:description"/>
 <!-- Fonts -->
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
@@ -33,7 +33,23 @@
 <script type="application/ld+json">
 {"@context":"http://schema.org","@type":"WebSite","name":"TaxTami - Tax Training Zimbabwe","url":"www.taxtami.com"}
 	</script>
-</meta></meta></link></head>
+</meta></meta></link>
+<style class="mermaid-style">
+    .mermaid {
+        background: #f4f8f6;
+        border: 1px solid #c5ddd0;
+        border-radius: 10px;
+        padding: 28px 20px;
+        margin: 24px 0;
+        overflow-x: auto;
+        text-align: center;
+    }
+    .mermaid svg { max-width: 100%; height: auto; }
+    </style>
+<!-- Mermaid.js flowchart renderer -->
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.3/dist/mermaid.min.js"></script>
+<script>document.addEventListener("DOMContentLoaded", function () {  mermaid.initialize({    startOnLoad: true,    theme: "base",    themeVariables: {      primaryColor: "#d6ede2",      primaryBorderColor: "#2c724f",      primaryTextColor: "#1a3a2a",      lineColor: "#2c724f",      secondaryColor: "#e9f5ee",      tertiaryColor: "#f4faf7",      edgeLabelBackground: "#ffffff",      fontFamily: "Work Sans, Heebo, sans-serif",      fontSize: "14px"    }  });});</script>
+</head>
 <div class="page-wrapper">
 <!-- Main Header-->
 <header class="main-header style-three">
@@ -119,74 +135,117 @@
 </nav>
 </div>
 </header>
-<div class="section section--page-title">
-<div class="container">
-<div class="row">
-<div class="col-12 text-center">
-<h1 class="page-title">Practical Debt Management Case Studies</h1>
-</div>
-</div>
-</div>
-</div>
+
 <div class="section">
 <div class="container">
 <div class="row">
 <div class="col-lg-9">
-<div class="lesson-container">
-<section class="lesson-section" id="executive-summary">
-<h2>Executive summary</h2>
-<div class="section-content">
-<p>This lesson equips instructors to teach <strong>how <span class="key-term">Zimbabwe Revenue Authority</span> (<span class="key-term">ZIMRA</span>) tax debts arise, escalate, and are practically enforced</strong> under Zimbabwe’s statutory framework and <span class="key-term">ZIMRA</span> operational guidance, with emphasis on <em>what an enforcement officer or tax practitioner would actually do next</em> and <em>what a taxpayer can realistically do to manage exposure</em>. <span class="key-term">ZIMRA</span> collections are increasingly system-driven through <strong>TaRMS (Tax and Revenue Management System)</strong>, where failures to submit returns and match payments to returns can generate penalties, lock taxpayers out of services, and accelerate enforcement. <span class="key-term">ZIMRA</span> has publicly stated that arrear collection, negotiation of payment arrangements, and follow-up on demand notices are priority functions of debt management units (especially within large taxpayer administration). </p>
-<p>The lesson is anchored on a practical “enforcement ladder” that combines <strong>administrative collection powers</strong> (for example, “appointment of agent”/garnishment-type mechanisms to extract funds from bank accounts, wages, and other receivables) and <strong>court-assisted recovery</strong> (notably the <strong>expedited procedure</strong> allowing <span class="key-term">ZIMRA</span> to pursue <strong>Magistrates’ Court orders</strong> for payment and <strong>immediate attachment of movable property</strong> when statutory <span class="key-term">objection</span>/<span class="key-term">appeal</span> windows have lapsed).  In parallel, the lesson covers <strong>customs enforcement</strong> mechanisms (seizure/forfeiture, embargo, statutory liens and “preferences,” and instalment arrangements) which are highly visible in practice through <span class="key-term">ZIMRA</span> rummage/auction processes. </p>
-<p>Key “high-stakes” topics for practitioners are also addressed: (a) <strong><span class="key-term">tax clearance</span> leverage</strong> (issuance can be conditioned on payment of arrears),  (b) <strong>penalties and <span class="key-term">interest</span></strong> (including post‑2025 “bank policy rate + 5%” style formulas for local-currency tax <span class="key-term">interest</span> referenced in Gazette-based sources),  (c) <strong>insolvency interaction and priority</strong>, including Customs Act preferences and the need to act early before value dissipates,  and (d) <strong>cross-border information and asset tracing</strong> via <span class="key-term">ZIMRA</span>’s Exchange of Information (EOI) function and Zimbabwe’s move toward wider international administrative cooperation. </p>
-<p><strong>Assumptions and boundaries (explicit):</strong> This lesson plan is educational and not legal advice. “Prescribed” <span class="key-term">penalty</span> amounts, thresholds, and procedural requirements can be amended by Finance Acts, Statutory Instruments, and <span class="key-term">ZIMRA</span> notices; instructors should verify the latest position before delivery. Where <span class="key-term">interest</span> is described as “bank policy rate + 5%” for local currency and “10%” for foreign currency, the <strong>numerical bank policy rate is not assumed</strong>; learners must consult the Reserve Bank of Zimbabwe (RBZ) for current rates and confirm tax-specific applicability. </p>
+<div class="lesson-container"><div class="lesson-page-header">
+<span class="lesson-name">Practical Debt Management Case Studies</span>
+<span class="lesson-excerpt">This lesson equips instructors to teach how Zimbabwe Revenue Authority ( ZIMRA ) tax debts arise, escalate, and are practically enforced under Zimbabwe’s statutory framework and ZIMRA operational guidance, with emphasis …</span>
+</div><section class="feature-steps-container" id="lesson-overview-steps">
+<div class="feature-steps-wrapper">
+<div class="feature-steps-grid">
+<div class="steps-list">
+<!-- Step 1 -->
+<div class="step-item" data-index="0">
+<div class="step-number-wrap">1</div>
+<div class="step-content">
+<h3>Context</h3>
+<p>Practical case studies illustrate how debt management principles are applied across diverse real-world taxpayer situations, bridging the gap between statutory knowledge and professional practice in Zimbabwe.</p>
+<div class="step-progress-container">
+<div class="step-progress-bar"></div>
+</div>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="step-item" data-index="1">
+<div class="step-number-wrap">2</div>
+<div class="step-content">
+<h3>Legislation</h3>
+<p>Each case study draws on the Income Tax Act [Chapter 23:06], VAT Act [Chapter 23:12], and Finance Act 2025 as applied in illustrated scenarios involving individuals, SMEs, corporates, and special-category taxpayers.</p>
+<div class="step-progress-container">
+<div class="step-progress-bar"></div>
+</div>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="step-item" data-index="2">
+<div class="step-number-wrap">3</div>
+<div class="step-content">
+<h3>Concepts</h3>
+<p>This lesson applies collection strategy selection, enforcement escalation decisions, payment plan negotiations, and the management of the dispute-debt interface through worked examples drawn from common Zimbabwean practice.</p>
+<div class="step-progress-container">
+<div class="step-progress-bar"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="feature-image-side">
+<div class="feature-image-item active">
+<img alt="Context" src="https://images.unsplash.com/photo-1723958929247-ef054b525153?q=80&amp;w=2070&amp;auto=format&amp;fit=crop"/>
+<div class="image-overlay"></div>
+</div>
+<div class="feature-image-item">
+<img alt="Legislation" src="https://images.unsplash.com/photo-1723931464622-b7df7c71e380?q=80&amp;w=2070&amp;auto=format&amp;fit=crop"/>
+<div class="image-overlay"></div>
+</div>
+<div class="feature-image-item">
+<img alt="Concepts" src="https://images.unsplash.com/photo-1725961476494-efa87ae3106a?q=80&amp;w=2070&amp;auto=format&amp;fit=crop"/>
+<div class="image-overlay"></div>
+</div>
+</div>
+</div>
 </div>
 </section>
-<section class="lesson-section" id="learning-objectives-and-class-map">
-<h2>Learning objectives and class map</h2>
-<div class="section-content">
+<nav class="lesson-nav" style="flex-wrap: wrap; gap: 10px;">
+<a href="#executive-summary">Executive summary</a>
+<a href="#learning-objectives-and-class-map">Learning objectives and class map</a>
+<a href="#zimbabwe-legal-framework-and-key-concepts">Zimbabwe legal framework and key concepts</a>
+<a href="#typical-zimra-debt-collection-cases-and-enforcement-toolkit">Typical ZIMRA debt collection cases and enforcement toolkit</a>
+<a href="#worked-calculations-case-studies-role-plays-and-classroom-activities">Worked calculations, case studies, role-plays, and classroom activities</a>
+<a href="#assessments-with-answer-keys">Assessments with answer keys</a>
+<a href="#templates-forms-and-quick-reference-tools">Templates, forms, and quick-reference tools</a>
+</nav><div class="lesson-content-wrapper"><details class="lesson-details" id="executive-summary" open=""><summary class="lesson-summary"><h2 style="display: inline;">Executive summary</h2></summary><div class="section-content">
+<p>This lesson equips instructors to teach <strong>how <span class="key-term">Zimbabwe Revenue Authority</span> (<span class="key-term">ZIMRA</span>) tax debts arise, escalate, and are practically enforced</strong> under Zimbabwe’s statutory framework and <span class="key-term"><strong>ZIMRA</strong></span> operational guidance, with emphasis on <em>what an enforcement officer or tax practitioner would actually do next</em> and <em>what a taxpayer can realistically do to manage exposure</em>. <span class="key-term"><strong>ZIMRA</strong></span> collections are increasingly system-driven through <strong>TaRMS (Tax and Revenue Management System)</strong>, where failures to submit returns and match payments to returns can generate penalties, lock taxpayers out of services, and accelerate enforcement. <span class="key-term"><strong>ZIMRA</strong></span> has publicly stated that arrear collection, negotiation of payment arrangements, and follow-up on demand notices are priority functions of debt management units (especially within large taxpayer administration). </p>
+<p>The lesson is anchored on a practical “enforcement ladder” that combines <strong>administrative collection powers</strong> (for example, “appointment of agent”/garnishment-type mechanisms to extract funds from bank accounts, wages, and other receivables) and <strong>court-assisted recovery</strong> (notably the <strong>expedited procedure</strong> allowing <span class="key-term"><strong>ZIMRA</strong></span> to pursue <strong>Magistrates’ Court orders</strong> for payment and <strong>immediate attachment of movable property</strong> when statutory <span class="key-term">objection</span>/<span class="key-term">appeal</span> windows have lapsed).  In parallel, the lesson covers <strong>customs enforcement</strong> mechanisms (seizure/forfeiture, embargo, statutory liens and “preferences,” and instalment arrangements) which are highly visible in practice through <span class="key-term"><strong>ZIMRA</strong></span> rummage/auction processes. </p>
+<p>Key “high-stakes” topics for practitioners are also addressed: (a) <strong><span class="key-term">tax clearance</span> leverage</strong> (issuance can be conditioned on payment of arrears),  (b) <strong>penalties and <span class="key-term">interest</span></strong> (including post‑2025 “bank policy rate + 5%” style formulas for local-currency tax <span class="key-term">interest</span> referenced in Gazette-based sources),  (c) <strong>insolvency interaction and priority</strong>, including Customs Act preferences and the need to act early before value dissipates,  and (d) <strong>cross-border information and asset tracing</strong> via <span class="key-term"><strong>ZIMRA</strong></span>’s Exchange of Information (EOI) function and Zimbabwe’s move toward wider international administrative cooperation. </p>
+<p><strong>Assumptions and boundaries (explicit):</strong> This lesson plan is educational and not legal advice. “Prescribed” <span class="key-term">penalty</span> amounts, thresholds, and procedural requirements can be amended by Finance Acts, Statutory Instruments, and <span class="key-term">ZIMRA</span> notices; instructors should verify the latest position before delivery. Where <span class="key-term">interest</span> is described as “bank policy rate + 5%” for local currency and “10%” for foreign currency, the <strong>numerical bank policy rate is not assumed</strong>; learners must consult the Reserve Bank of Zimbabwe (RBZ) for current rates and confirm tax-specific applicability. </p>
+</div></details><details class="lesson-details" id="learning-objectives-and-class-map"><summary class="lesson-summary"><h2 style="display: inline;">Learning objectives and class map</h2></summary><div class="section-content">
 <p>By the end of a 2–3 hour session, learners should be able to:</p>
 <p>1) Map the <strong><span class="key-term">ZIMRA</span> debt lifecycle</strong> from assessment/return → arrears → administrative collection → expedited court recovery → execution/sale. 
 2) Apply the <strong>core statutory tools</strong> used in Zimbabwe for tax debt recovery: appointment of agent, <span class="key-term">tax clearance</span> leverage, expedited Magistrates’ Court procedure, customs seizure/lien/instalments, VAT security for tax, and VAT civil <span class="key-term">penalty</span> orders. 
 3) Diagnose at least <strong>six common default scenarios</strong> and select proportionate enforcement and resolution strategies. 
 4) Perform <strong>basic debt computations</strong> (principal, <span class="key-term">penalty</span>, <span class="key-term">interest</span>) and explain how partial payments may be allocated under the expedited recovery scheme. 
-5) Conduct a structured <strong>payment plan negotiation</strong> with risk-based conditions and documentation suited to TaRMS debt management workflows. 
+5) Conduct a structured <strong>payment plan negotiation</strong> with risk-based conditions and documentation suited to <strong>TaRMS</strong> debt management workflows. 
 6) Spot <strong>complex-case risk flags</strong> (related-party asset shifting, cross-border exposure, insolvency, informal sector constraints, NGO/government complications) and propose mitigation controls. </p>
 <p>Recommended class pacing (adjust within 120–180 minutes):</p>
-</div>
-</section>
-<section class="lesson-section" id="zimbabwe-legal-framework-and-key-concepts">
-<h2>Zimbabwe legal framework and key concepts</h2>
-<div class="section-content">
+</div></details><details class="lesson-details" id="zimbabwe-legal-framework-and-key-concepts"><summary class="lesson-summary"><h2 style="display: inline;">Zimbabwe legal framework and key concepts</h2></summary><div class="section-content">
 <p><strong>What “tax debt” is and why recovery is unusually powerful</strong></p>
-<p>Zimbabwe’s tax statutes and administration framework treat assessed tax as a <strong>statutory liability recoverable as a debt</strong> and enable recovery actions that <strong>limit collateral challenges to the correctness of assessments</strong> during debt proceedings. For example, the <span class="leg-ref">Income Tax Act</span> provides that court recovery proceedings for tax are deemed to be proceedings for recovery of a debt validly acknowledged in writing, and a defendant cannot question the correctness of an assessment in recovery proceedings even if an <span class="key-term">objection</span>/<span class="key-term">appeal</span> is pending.  (This is conceptually similar to “pay now, argue later,” reinforced elsewhere in the <span class="leg-ref">Income Tax Act</span> and the <span class="leg-ref">VAT Act</span> framework for payment pending <span class="key-term">objection</span>/<span class="key-term">appeal</span>.)</p>
+<p>Zimbabwe’s tax statutes and administration framework treat assessed tax as a <strong>statutory liability recoverable as a debt</strong> and enable recovery actions that <strong>limit collateral challenges to the correctness of assessments</strong> during debt proceedings. For example, the <span class="leg-ref"><strong>Income Tax Act</strong></span> provides that court recovery proceedings for tax are deemed to be proceedings for recovery of a debt validly acknowledged in writing, and a defendant cannot question the correctness of an assessment in recovery proceedings even if an <span class="key-term">objection</span>/<span class="key-term">appeal</span> is pending.  (This is conceptually similar to “pay now, argue later,” reinforced elsewhere in the <span class="leg-ref"><strong>Income Tax Act</strong></span> and the <span class="leg-ref"><strong>VAT Act</strong></span> framework for payment pending <span class="key-term">objection</span>/<span class="key-term">appeal</span>.)</p>
 <p><strong>The “pay now, dispute later” pressure point</strong></p>
-<p>In practice, Zimbabwe’s system is structured so that <strong>delay strategies are expensive</strong>: <span class="key-term">interest</span> accrues when tax remains unpaid, and penalties can apply to late payment and late filing. Under the <span class="leg-ref">Income Tax Act</span>, tax becomes due on prescribed/appointed dates and <span class="key-term">interest</span> accrues when unpaid, with the possibility that the Commissioner determines instalments; <span class="key-term">interest</span> rate is set by Statutory Instrument.  Under the <span class="leg-ref">VAT Act</span>, failure to pay VAT due may trigger a <span class="key-term">penalty</span> (up to an amount equal to the VAT) and monthly <span class="key-term">interest</span> beginning from the first day of the month following the month when the payment period ended. </p>
+<p>In practice, Zimbabwe’s system is structured so that <strong>delay strategies are expensive</strong>: <span class="key-term">interest</span> accrues when tax remains unpaid, and penalties can apply to late payment and late filing. Under the <span class="leg-ref"><strong>Income Tax Act</strong></span>, tax becomes due on prescribed/appointed dates and <span class="key-term">interest</span> accrues when unpaid, with the possibility that the Commissioner determines instalments; <span class="key-term">interest</span> rate is set by Statutory Instrument.  Under the <span class="leg-ref"><strong>VAT Act</strong></span>, failure to pay VAT due may trigger a <span class="key-term">penalty</span> (up to an amount equal to the VAT) and monthly <span class="key-term">interest</span> beginning from the first day of the month following the month when the payment period ended. </p>
 <p><strong>Mermaid timeline: typical domestic-tax dispute vs collection pressure</strong></p>
 <p>timeline
   title Zimbabwe tax debt timeline (teaching simplification)
   section Assessment &amp; Filing
-    Return filed / assessment raised : TaRMS posts obligation; taxpayer ledger updated
+    Return filed / assessment raised : <strong>TaRMS</strong> posts obligation; taxpayer ledger updated
     Due date arrives : Tax becomes due; <span class="key-term">interest</span>/<span class="key-term">penalty</span> exposure starts if unpaid
   section Dispute path (<span class="key-term">objection</span>/<span class="key-term">appeal</span>)
     <span class="key-term">Objection</span> period (often 30 days) : Taxpayer may object; dispute does not necessarily halt payment
     <span class="key-term">Appeal</span> steps if disallowed : Escalation to Fiscal <span class="key-term">Appeal</span> Court/High Court route
   section Collection escalation
-    Demand &amp; engagement : Calls/visits/blitz; payment plan option in TaRMS
+    Demand &amp; engagement : Calls/visits/blitz; <strong>payment plan</strong> option in <strong>TaRMS</strong>
     Administrative collection : Appointment of agent; <span class="key-term">tax clearance</span> leverage; withholding mechanisms
-    Court-assisted fast track : Revenue Authority Act s33A application; attachment of movables
+    Court-assisted fast track : <strong>Revenue Authority Act</strong> s33A application; attachment of movables
     Execution/sale : Messenger/Sheriff processes; proceeds applied per statutory ordering</p>
 <p><em>Instructor note:</em> The timeline deliberately abstracts deadlines because they can be modified by Statutory Instruments (for example, separation of return due dates from payment due dates under SI 81 of 2025 as communicated by <span class="key-term">ZIMRA</span>). </p>
-</div>
-</section>
-<section class="lesson-section" id="typical-zimra-debt-collection-cases-and-enforcement-toolkit">
-<h2>Typical ZIMRA debt collection cases and enforcement toolkit</h2>
-<div class="section-content">
+</div></details><details class="lesson-details" id="typical-zimra-debt-collection-cases-and-enforcement-toolkit"><summary class="lesson-summary"><h2 style="display: inline;">Typical ZIMRA debt collection cases and enforcement toolkit</h2></summary><div class="section-content">
 <p><strong>Typical case types and default scenarios</strong></p>
 <p>Use these as the “six distinct case types” minimum; this lesson provides eight for richer classroom work:</p>
-<p>Soft collections and TaRMS “compliance-first” enforcement</p>
-<p><span class="key-term">ZIMRA</span> uses visits, phone calls, and audit/compliance blitzes to compel filing and payment and encourages voluntary disclosure before contact; penalties and <span class="key-term">interest</span> are clearly signaled as consequences.  Importantly, TaRMS design means <strong>payments into the single account may not clear the liability unless a corresponding return is submitted</strong>—a common “accidental arrears” scenario that is ideal for classroom diagnosis. </p>
-<p><strong>Payment plans</strong> are explicitly positioned as a remedy for taxpayers in arrears, applied for through the TaRMS Self Service Portal under the <strong>Debt Management module</strong>. </p>
+<p>Soft collections and <strong>TaRMS</strong> “compliance-first” enforcement</p>
+<p><span class="key-term">ZIMRA</span> uses visits, phone calls, and audit/compliance blitzes to compel filing and payment and encourages voluntary disclosure before contact; penalties and <span class="key-term">interest</span> are clearly signaled as consequences.  Importantly, <strong>TaRMS</strong> design means <strong>payments into the single account may not clear the liability unless a corresponding return is submitted</strong>—a common “accidental arrears” scenario that is ideal for classroom diagnosis. </p>
+<p><strong>Payment plans</strong> are explicitly positioned as a remedy for taxpayers in arrears, applied for through the <strong>TaRMS</strong> Self Service Portal under the <strong>Debt Management module</strong>. </p>
 <p>Zimbabwe’s tax system provides broad “appointment of agent” powers across tax heads:</p>
 <p><strong><span class="leg-ref">Income Tax Act</span> s 58:</strong> the Commissioner may declare a person to be an agent of a taxpayer and require the agent to pay tax from money held for or due to the taxpayer (including current/deposit/fixed deposit/savings accounts and remuneration). </p>
 <p><strong><span class="leg-ref">VAT Act</span> s 48:</strong> similarly empowers the Commissioner to appoint agents, explicitly including banks/building societies/savings banks and even officers in the civil service; the agent can be required to pay tax, <span class="key-term">additional tax</span>, <span class="key-term">penalty</span>, or <span class="key-term">interest</span> from money held for or due to the taxpayer. </p>
@@ -211,47 +270,32 @@
 <p>Practical “real-world artefact”: <span class="key-term">ZIMRA</span> routinely publishes <strong>customs rummage sale schedules</strong>—an applied illustration of seizure/forfeiture and <span class="key-term">disposal</span> processes in practice. </p>
 <p>VAT: penalties, <span class="key-term">interest</span>, security for tax, and civil <span class="key-term">penalty</span> orders</p>
 <p>VAT debt escalates quickly because statutory penalties and <span class="key-term">interest</span> can be heavy; failure to pay VAT by due dates can trigger a <span class="key-term">penalty</span> up to the VAT amount and monthly <span class="key-term">interest</span>. </p>
-<p>For repeat noncompliance or convictions, the Commissioner may require a <span class="key-term">registered operator</span> to furnish <strong>security</strong> for payment of tax/<span class="key-term">additional tax</span>/<span class="key-term">penalty</span>/<span class="key-term">interest</span>. </p>
+<p>For repeat noncompliance or convictions, the Commissioner may require a <span class="key-term"><strong>registered operator</strong></span> to furnish <strong>security</strong> for payment of tax/<span class="key-term">additional tax</span>/<span class="key-term">penalty</span>/<span class="key-term">interest</span>. </p>
 <p>VAT enforcement can also include <strong>civil <span class="key-term">penalty</span> orders</strong> with specified service methods, show-cause requirements in certain cases, limitation periods for issuance, and <span class="key-term">appeal</span> routes (with the notable point that lodging an <span class="key-term">appeal</span> does not automatically suspend compliance). </p>
 <p><strong>Mermaid enforcement flow: practical escalation ladder</strong></p>
 <div class="mermaid">
 flowchart TD
-  A[Debt arises in TaRMS
-Return filed or assessment raised] --&gt; B[Due date passes
-<span class="key-term">Interest</span>/penalties start]
+  A[Debt arises in TaRMS<br/>Return filed or assessment raised] --&gt; B[Due date passes<br/>Interest/penalties start]
   B --&gt; C{Taxpayer engagement?}
-  C --&gt;|Pays &amp; files correctly| Z[Close case
-Monitor compliance]
-  C --&gt;|Can’t pay| D[Payment plan request
-via TaRMS Debt Mgmt]
-  D --&gt;|Approved| E[Monitor plan
-default triggers escalation]
+  C --&gt;|Pays &amp; files correctly| Z[Close case<br/>Monitor compliance]
+  C --&gt;|Can’t pay| D[Payment plan request<br/>via TaRMS Debt Mgmt]
+  D --&gt;|Approved| E[Monitor plan<br/>default triggers escalation]
   E --&gt;|Default| F[Administrative tools]
   C --&gt;|No response / evasion| F[Administrative tools]
-  F --&gt; F1[Appointment of agent
-banks/payers/wages]
-  F --&gt; F2[<span class="key-term">Tax clearance</span> leverage
-deny/condition issuance]
+  F --&gt; F1[Appointment of agent<br/>banks/payers/wages]
+  F --&gt; F2[Tax clearance leverage<br/>deny/condition issuance]
   F --&gt; F3[Security for tax (VAT)]
   F --&gt; G{Still unpaid?}
-  G --&gt;|Yes| H[Expedited recovery
-Revenue Authority Act s33A]
-  H --&gt; I[Magistrates’ Court order
-payment + attachment]
-  I --&gt; J[Execution &amp; sale
-Messenger/Sheriff]
+  G --&gt;|Yes| H[Expedited recovery<br/>Revenue Authority Act s33A]
+  H --&gt; I[Magistrates’ Court order<br/>payment + attachment]
+  I --&gt; J[Execution &amp; sale<br/>Messenger/Sheriff]
   J --&gt; Z
   B --&gt; K[Customs branch]
   K --&gt; K1[Embargo / seizure / forfeiture]
-  K --&gt; K2[Customs lien detention
-on goods under control]
+  K --&gt; K2[Customs lien detention<br/>on goods under control]
   K2 --&gt; Z
 </div>
-</div>
-</section>
-<section class="lesson-section" id="worked-calculations-case-studies-role-plays-and-classroom-activities">
-<h2>Worked calculations, case studies, role-plays, and classroom activities</h2>
-<div class="section-content">
+</div></details><details class="lesson-details" id="worked-calculations-case-studies-role-plays-and-classroom-activities"><summary class="lesson-summary"><h2 style="display: inline;">Worked calculations, case studies, role-plays, and classroom activities</h2></summary><div class="section-content">
 <p><strong>Worked calculation examples</strong></p>
 <p><strong>Worked example A: Income tax arrears <span class="key-term">interest</span> (local currency vs foreign currency)</strong>
 Scenario: A company has assessed income tax arrears of <strong>ZiG 500,000</strong> unpaid for <strong>2 months</strong>. Applicable <span class="key-term">interest</span> framework (per Gazette-based sources): <strong>bank policy rate + 5%</strong> for local currency; <strong>10%</strong> for foreign currency income tax. 
@@ -261,7 +305,7 @@ Monthly rate approximation = 40% / 12 = 3.333% per month.
 <p>Teaching note: collect the class’s attention on two risk points: (1) <span class="key-term">interest</span> is defined “for any month or part thereof” in many Zimbabwe tax <span class="key-term">interest</span> instruments, so rounding conventions matter; (2) statutes often reference <span class="key-term">interest</span> set by statutory instrument rather than embedding fixed numeric rates. </p>
 <p><strong>Worked example B: VAT late payment <span class="key-term">penalty</span> + monthly <span class="key-term">interest</span></strong>
 Scenario: VAT due for a period is <strong>US$20,000</strong>, payable within the statutory payment period, but paid <strong>45 days late</strong> (i.e., on/after the first day of the month following the end of the payment period).
-<span class="leg-ref">VAT Act</span> mechanism: <span class="key-term">penalty</span> of a prescribed amount not exceeding the VAT amount; plus <span class="key-term">interest</span> calculated at the prescribed rate per month or part month (subject to VAT <span class="key-term">interest</span> calculation rules). 
+<span class="leg-ref"><strong>VAT Act</strong></span> mechanism: <span class="key-term">penalty</span> of a prescribed amount not exceeding the VAT amount; plus <span class="key-term">interest</span> calculated at the prescribed rate per month or part month (subject to VAT <span class="key-term">interest</span> calculation rules). 
 Assume (for classroom) that the “prescribed <span class="key-term">penalty</span>” applied is <strong>25%</strong> of VAT (noting the Act sets an upper bound, not a single rate). <span class="key-term">Penalty</span> = 20,000 × 25% = <strong>US$5,000</strong>.
 Assume prescribed <span class="key-term">interest</span> for foreign currency is <strong>10% p.a.</strong> (teaching simplification aligned with Gazette-based snippets that use 10% for foreign-currency tax <span class="key-term">interest</span>). 
 Approx. monthly rate = 10% / 12 = 0.833% per month.
@@ -269,7 +313,7 @@ If 45 days counts as 2 months or “month or part thereof” depending on the in
 Total ≈ <strong>US$25,333</strong>.</p>
 <p>Instructor prompt: “What changes if <span class="key-term">ZIMRA</span> applies a 100% <span class="key-term">penalty</span> (maximum)?” (Answer: <span class="key-term">penalty</span> becomes US$20,000 and dominates the liability; this drives negotiation urgency.) </p>
 <p><strong>Worked example C: Partial payments under expedited recovery allocation rule</strong>
-Scenario: Under Revenue Authority Act s 33A, a taxpayer owes: Tax <strong>ZiG 300,000</strong>, <span class="key-term">penalty</span> <strong>ZiG 60,000</strong>, <span class="key-term">interest</span> <strong>ZiG 40,000</strong> (total ZiG 400,000). Taxpayer pays <strong>ZiG 100,000</strong>.
+Scenario: Under <strong>Revenue Authority Act</strong> s 33A, a taxpayer owes: Tax <strong>ZiG 300,000</strong>, <span class="key-term">penalty</span> <strong>ZiG 60,000</strong>, <span class="key-term">interest</span> <strong>ZiG 40,000</strong> (total ZiG 400,000). Taxpayer pays <strong>ZiG 100,000</strong>.
 Under s 33A’s ordering rule, payments are deemed to settle <strong>tax first</strong>, then <span class="key-term">penalty</span>/fine, then <span class="key-term">interest</span>. 
 So the ZiG 100,000 reduces tax to ZiG 200,000; <span class="key-term">penalty</span> and <span class="key-term">interest</span> remain unchanged.</p>
 <p><strong>Worked example D: Customs lien + instalment plan (conceptual)</strong>
@@ -278,16 +322,16 @@ If permitted, the Commissioner may allow instalments subject to conditions inclu
 Class exercise: design a 5‑month instalment plan with (a) 30% upfront to release goods, (b) monthly payments, (c) <span class="key-term">interest</span> clause, and (d) default triggers.</p>
 <p><strong>Case studies</strong></p>
 <p><strong>Case study 1: “The single account trap” (SME VAT + <span class="key-term">PAYE</span>)</strong>
-Facts: An SME pays ZiG funds into the <span class="key-term">ZIMRA</span> single account on time, but fails to file the <span class="key-term">PAYE</span> return and VAT return for the relevant periods. TaRMS shows increasing penalties and “arrears” despite payment. <span class="key-term">ZIMRA</span> initiates a compliance blitz visit. 
-Tasks: (a) Identify immediate remedial actions; (b) Draft a short communication to <span class="key-term">ZIMRA</span> acknowledging the mismatch and committing to submit returns; (c) Estimate <span class="key-term">penalty</span>/<span class="key-term">interest</span> exposure and propose a payment plan if there is also a shortfall.
+Facts: An SME pays ZiG funds into the <span class="key-term">ZIMRA</span> single account on time, but fails to file the <span class="key-term"><strong>PAYE</strong></span> return and VAT return for the relevant periods. TaRMS shows increasing penalties and “arrears” despite payment. <span class="key-term">ZIMRA</span> initiates a compliance blitz visit. 
+Tasks: (a) Identify immediate remedial actions; (b) Draft a short communication to <span class="key-term">ZIMRA</span> acknowledging the mismatch and committing to submit returns; (c) Estimate <span class="key-term">penalty</span>/<span class="key-term">interest</span> exposure and propose a <strong>payment plan</strong> if there is also a shortfall.
 Teaching emphasis: operational compliance, not legal complexity; show learners how “administrative debt” arises.</p>
 <p><strong>Case study 2: “Bank agent notice” (large corporate income tax arrears)</strong>
 Facts: A listed company has disputed an assessment, but receives intelligence that <span class="key-term">ZIMRA</span> is preparing to appoint its bank as an agent. Management fears payroll failure and reputational damage.
 Legal anchor: appointment of agent powers allow recovery from bank accounts and other receivables. 
-Tasks: (a) As taxpayer counsel, prepare a 1‑page “rapid response plan” (cash <span class="key-term">ring-fencing</span>, engagement, installment request, dispute strategy); (b) As <span class="key-term">ZIMRA</span> debt officer, write conditions for a payment plan and internal escalation logic.</p>
+Tasks: (a) As taxpayer counsel, prepare a 1‑page “rapid response plan” (cash <span class="key-term">ring-fencing</span>, engagement, installment request, dispute strategy); (b) As <span class="key-term">ZIMRA</span> debt officer, write conditions for a <strong>payment plan</strong> and internal escalation logic.</p>
 <p><strong>Case study 3: “Phoenix and <span class="key-term">beneficial ownership</span>” (related-party asset shifting)</strong>
-Facts: A trading company with VAT/<span class="key-term">PAYE</span> arrears “winds up” and directors incorporate a new entity with similar operations. Key assets are “sold” to a <span class="key-term">related party</span>; <span class="key-term">beneficial ownership</span> is obscured.
-Legal anchor: <span class="leg-ref">Income Tax Act</span> recovery-related <span class="key-term">anti-avoidance</span> concepts include “relations,” group control, suspicious liquidations to avoid tax, and <span class="key-term">beneficial ownership</span> disclosure conditions in the recovery context. 
+Facts: A trading company with VAT/<span class="key-term"><strong>PAYE</strong></span> arrears “winds up” and directors incorporate a new entity with similar operations. Key assets are “sold” to a <span class="key-term">related party</span>; <span class="key-term">beneficial ownership</span> is obscured.
+Legal anchor: <span class="leg-ref"><strong>Income Tax Act</strong></span> recovery-related <span class="key-term">anti-avoidance</span> concepts include “relations,” group control, suspicious liquidations to avoid tax, and <span class="key-term">beneficial ownership</span> disclosure conditions in the recovery context. 
 Tasks: Identify evidence needed to support recovery action; propose enforcement tools (agent appointment, expedited recovery, cross-linking to <span class="key-term">beneficial ownership</span> issues, and prosecution referral when appropriate).</p>
 <p><strong>Role-play scenarios</strong></p>
 <p><strong>Role-play A: Payment plan negotiation (TaRMS Debt Management module)</strong>
@@ -304,24 +348,20 @@ Trigger: unpaid duty detected; goods still under customs control; lien asserted;
 Debrief: compliance controls, documentation integrity, and practical risks shown by recurring auction/removal outcomes. </p>
 <p>Use as guided discussion or short written reflections:</p>
 <p>1) Which tool is most “reversible” if the taxpayer later proves the assessment wrong: agent appointment, <span class="key-term">tax clearance</span> denial, expedited attachment, or customs seizure? Explain tradeoffs. 
-2) When does a payment plan become “bad revenue management” rather than “good compliance support”? Use risk indicators and statutory context. 
+2) When does a <strong>payment plan</strong> become “bad revenue management” rather than “good compliance support”? Use risk indicators and statutory context. 
 3) Should penalties be negotiated downward (where discretionary) to maximize recovery, or enforced strictly to deter noncompliance? Connect to TaRMS automation and civil <span class="key-term">penalty</span> order design. 
 4) How do cross-border cooperation and secrecy rules create both opportunities and risks for taxpayers and authorities? </p>
-</div>
-</section>
-<section class="lesson-section" id="assessments-with-answer-keys">
-<h2>Assessments with answer keys</h2>
-<div class="section-content">
+</div></details><details class="lesson-details" id="assessments-with-answer-keys"><summary class="lesson-summary"><h2 style="display: inline;">Assessments with answer keys</h2></summary><div class="section-content">
 <p><strong>Multiple-choice questions</strong></p>
 <p><strong>MCQ 1</strong>
 Which statute establishes an expedited Magistrates’ Court procedure allowing <span class="key-term">ZIMRA</span> to seek payment orders and immediate attachment of movable property for outstanding taxes?
-A. <span class="leg-ref">Income Tax Act [Chapter 23:06]</span>
-B. Revenue Authority Act <span class="leg-ref">[Chapter 23:11]</span>
-C. <span class="leg-ref">VAT Act [Chapter 23:12]</span>
+A. <span class="leg-ref"><strong>Income Tax Act</strong> [Chapter 23:06]</span>
+B. <strong>Revenue Authority Act</strong> <span class="leg-ref">[Chapter 23:11]</span>
+C. <span class="leg-ref"><strong>VAT Act</strong> [Chapter 23:12]</span>
 D. <span class="leg-ref">Customs and Excise Act [Chapter 23:02]</span>
 <strong>Answer: B.</strong> </p>
 <p><strong>MCQ 2</strong>
-Under the Revenue Authority Act <span class="key-term">tax clearance</span> framework, the Commissioner-General may:
+Under the <strong>Revenue Authority Act</strong> <span class="key-term">tax clearance</span> framework, the Commissioner-General may:
 A. Issue a certificate only if all arrears are paid with no exceptions
 B. Issue a certificate and ignore tax arrears if returns are filed
 C. Make issuance conditional on payment of tax arrears
@@ -342,7 +382,7 @@ C. Cancellation of all company registration
 D. A mandatory waiver of <span class="key-term">interest</span>
 <strong>Answer: A.</strong> </p>
 <p><strong>MCQ 5</strong>
-For VAT late payment, the <span class="leg-ref">VAT Act</span> provides that a taxpayer may be liable to:
+For VAT late payment, the <span class="leg-ref"><strong>VAT Act</strong></span> provides that a taxpayer may be liable to:
 A. <span class="key-term">Penalty</span> up to the amount of VAT and <span class="key-term">interest</span> calculated monthly
 B. <span class="key-term">Interest</span> only; no penalties are allowed
 C. <span class="key-term">Penalty</span> only; no <span class="key-term">interest</span> is allowed
@@ -356,7 +396,7 @@ C. Payment plans are not available in TaRMS
 D. <span class="key-term">Tax clearance</span> certificates must be applied for only on paper
 <strong>Answer: B.</strong> </p>
 <p><strong>MCQ 7</strong>
-Revenue Authority Act s 33A generally applies where:
+<strong>Revenue Authority Act</strong> s 33A generally applies where:
 A. The taxpayer has filed an <span class="key-term">objection</span> and is within time to <span class="key-term">appeal</span>
 B. The tax is assessed and <span class="key-term">objection</span>/<span class="key-term">appeal</span> timeframes are not pursued or are exhausted
 C. Taxpayer is not <span class="key-term">resident</span> in Zimbabwe
@@ -377,16 +417,12 @@ Explain, in 4–6 sentences, how the <strong>expedited recovery procedure</stron
 Give three examples of <strong>third parties</strong> who might be appointed as agents for collection and describe why this is high-risk commercially for the taxpayer.
 <strong>Key points:</strong> banks/building societies; <span class="key-term">employer</span> (salary/wages); payers/contract counterparties; can freeze/redirect liquidity flows and disrupt operations; often precedes court steps. </p>
 <p><strong>SA 3</strong>
-List five clauses you would include in a Zimbabwe-oriented tax payment plan proposal (one sentence each).
+List five clauses you would include in a Zimbabwe-oriented tax <strong>payment plan</strong> proposal (one sentence each).
 <strong>Key points:</strong> scope of covered taxes; instalment schedule; <span class="key-term">interest</span> treatment; reporting/filing compliance condition; default and acceleration; <span class="key-term">tax clearance</span> implication; security/collateral where appropriate; TaRMS ledger reconciliation. </p>
 <p><strong>SA 4</strong>
 Why is “money sitting in the single account” not the same as “tax is paid,” and what is the immediate fix?
 <strong>Key points:</strong> <span class="key-term">ZIMRA</span> notice that funds require a return submission for the obligation to be recognized and posted; fix is submit the relevant return promptly and reconcile. </p>
-</div>
-</section>
-<section class="lesson-section" id="templates-forms-and-quick-reference-tools">
-<h2>Templates, forms, and quick-reference tools</h2>
-<div class="section-content">
+</div></details><details class="lesson-details" id="templates-forms-and-quick-reference-tools"><summary class="lesson-summary"><h2 style="display: inline;">Templates, forms, and quick-reference tools</h2></summary><div class="section-content">
 <p><strong>Template: demand letter for outstanding tax (<span class="key-term">ZIMRA</span>-style, educator draft)</strong></p>
 <p><strong>Subject:</strong> Demand for payment / filing of outstanding returns — [Taxpayer Name, TIN]
 <strong>To:</strong> [Taxpayer / Public Officer / Accounting Officer]
@@ -396,13 +432,13 @@ Our records in TaRMS indicate outstanding tax obligations and/or outstanding ret
 <p><strong>2. Required action (by deadline)</strong>
 By <strong>[deadline]</strong>, you are required to:
 (a) submit all outstanding returns via the Self‑Service Portal, and
-(b) settle the outstanding balance or submit an application for a payment plan through the TaRMS Debt Management module. </p>
+(b) settle the outstanding balance or submit an application for a <strong>payment plan</strong> through the TaRMS Debt Management module. </p>
 <p><strong>3. Consequences of non-compliance (non-exhaustive)</strong>
 Continued default may result in administrative recovery actions (including appointment of agent) and/or recovery proceedings, including expedited recovery measures where applicable. </p>
 <p><strong>4. Contact</strong>
 [Include nearest office/contact centre as in <span class="key-term">ZIMRA</span> notices.]</p>
 <p><strong>Template: payment plan proposal (taxpayer → <span class="key-term">ZIMRA</span> debt management)</strong></p>
-<p><strong>Subject:</strong> Request for payment arrangement — [Taxpayer Name, TIN]</p>
+<p><strong>Subject:</strong> Request for <strong>payment arrangement</strong> — [Taxpayer Name, TIN]</p>
 <p>1) <strong>Debt statement</strong>: As at [date], liabilities in TaRMS total [ZiG / USD], arising from [tax heads, periods].
 2) <strong>Cause</strong>: [Liquidity shock / delayed receivables / FX constraint / system filing issue].
 3) <strong>Proposed plan</strong>: [Upfront %] by [date], then [monthly instalments] for [n months].
@@ -411,7 +447,7 @@ Continued default may result in administrative recovery actions (including appoi
 6) <strong><span class="key-term">Tax clearance</span></strong>: Request conditional issuance where permissible, noting law allows the Commissioner-General to condition issuance on arrears payment. 
 7) <strong>Attachments</strong>: cashflow forecast; aged receivables; management accounts; TaRMS ledger extract.</p>
 <p><strong>Template: “Notice of intention to proceed under expedited recovery” (educator draft)</strong></p>
-<p><strong>Subject:</strong> Notice — intended recovery action under Revenue Authority Act s 33A
+<p><strong>Subject:</strong> Notice — intended recovery action under <strong>Revenue Authority Act</strong> s 33A
 On [date], unless full payment or an acceptable arrangement is reached, the Authority intends to proceed under <strong>Revenue Authority Act s 33A</strong> in respect of duly assessed outstanding amounts. 
 If such proceedings are instituted, the Authority may seek orders for payment and immediate attachment of itemised movable property.</p>
 <p><strong>Template: customs seizure / detention notice (educator draft)</strong></p>
@@ -419,7 +455,7 @@ If such proceedings are instituted, the Authority may seek orders for payment an
 Pursuant to the <span class="leg-ref">Customs and Excise Act</span>, goods/vehicle described as [details] have been seized / placed under embargo / detained on reasonable grounds that they are liable to seizure or that correct duty has not been paid. 
 Conditions for release may include payment of duty, fines, or other conditions set by the Commissioner.</p>
 <p><strong>Template: request for waiver of provisional tax <span class="key-term">interest</span> (limited statutory basis)</strong></p>
-<p><strong>Subject:</strong> Request for waiver of <span class="key-term">interest</span> on provisional tax — <span class="leg-ref">Income Tax Act</span>
+<p><strong>Subject:</strong> Request for waiver of <span class="key-term">interest</span> on <strong>provisional tax</strong> — <span class="leg-ref"><strong>Income Tax Act</strong></span>
 The taxpayer requests waiver (in whole/part) of <span class="key-term">interest</span> under <span class="leg-ref">Income Tax Act</span> s 72(11), on grounds that:
 (a) special circumstances prevented payment, and/or
 (b) underestimation did not exceed 10% or there is sufficient cause. 
@@ -427,17 +463,22 @@ Attach evidence: cashflow, bank statements, event documentation, and corrected e
 <p><strong>Template: intergovernmental information request (EOI) — educator draft</strong></p>
 <p><strong>Purpose:</strong> Trace assets/income streams and support collection strategy (information stage), recognizing secrecy rules allow disclosure to give effect to international conventions/treaties where applicable. </p>
 <p><strong>To:</strong> Competent Authority, [Jurisdiction]
-<strong>From:</strong> Competent Authority Office (EOI), <span class="key-term">Zimbabwe Revenue Authority</span> (contacts published by <span class="key-term">ZIMRA</span>). 
+<strong>From:</strong> Competent Authority Office (EOI), <span class="key-term"><strong>Zimbabwe Revenue Authority</strong></span> (contacts published by <span class="key-term">ZIMRA</span>). 
 <strong>Legal basis:</strong> [Applicable DTA EOI article / MAAC (if in force for both parties) / other instrument]. Zimbabwe publicly announced signature of the MAAC in July 2025. 
 <strong>Taxpayer identifiers:</strong> names, TINs, dates of birth/incorporation, addresses, known bank accounts, related entities.
-<strong>Information requested:</strong> bank account balances and signatories; <span class="key-term">beneficial ownership</span> details; property registry details; <span class="key-term">dividend</span>/<span class="key-term">interest</span>/royalty flows; <span class="key-term">employment income</span>; corporate filings.
+<strong>Information requested:</strong> bank account balances and signatories; <span class="key-term">beneficial ownership</span> details; property registry details; <span class="key-term">dividend</span>/<span class="key-term">interest</span>/royalty flows; <span class="key-term"><strong>employment income</strong></span>; corporate filings.
 <strong>Relevance statement:</strong> Explain foreseeable relevance to Zimbabwe tax collection/compliance case.
 <strong>Confidentiality:</strong> State restrictions and handling protocols.
 <strong>Urgency:</strong> Requested response by [date].</p>
 <p><em>Instructor note:</em> Assistance in <strong>recovery</strong> (not just information) depends on treaty/convention provisions and entry into force; learners must verify Zimbabwe’s current status and bilateral relationships at time of use. </p>
 <p><strong>Enforcement remedies and “escalation steps” (simplified teaching table)</strong></p>
-</div>
-</section>
+</div></details></div>
+
+
+
+
+
+
 </div>
 </div>
 <aside class="col-lg-3">
@@ -755,7 +796,33 @@ document.addEventListener('DOMContentLoaded', () => {
 	});
 });
 </script>
-<script src="https://cdn.jsdelivr.net/npm/mermaid@10.0.0/dist/mermaid.min.js"></script>
-<script>mermaid.initialize({startOnLoad:true});</script>
-<script src="js/globe-hero.js" type="module"></script>
+<script src="js/globe-hero.js" type="module"></script><script>
+
+document.addEventListener('DOMContentLoaded', () => {
+	const sections = document.querySelectorAll('.lesson-details');
+	const navLinks = document.querySelectorAll('.lesson-nav a');
+	window.addEventListener('scroll', () => {
+		let current = '';
+		sections.forEach(section => {
+			const sectionTop = section.offsetTop;
+			if (pageYOffset >= sectionTop - 150) { current = section.getAttribute('id'); }
+		});
+		navLinks.forEach(link => {
+			link.classList.remove('active');
+			if (link.getAttribute('href').includes(current)) { link.classList.add('active'); }
+		});
+	});
+});
+</script><script src="js/feature-steps.js"></script><script>
+		document.addEventListener('DOMContentLoaded', () => {
+			new FeatureSteps('lesson-overview-steps', {
+				features: [
+					{ title: 'Context' },
+					{ title: 'Legislation' },
+					{ title: 'Concepts' }
+				],
+				autoPlayInterval: 4000
+			});
+		});
+	</script>
 </html>
