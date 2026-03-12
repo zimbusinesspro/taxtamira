@@ -12,15 +12,15 @@
 <link href="css/bootstrap.min.css" rel="stylesheet"/>
 <link href="css/main.css" rel="stylesheet"/>
 <link href="css/responsive.css" rel="stylesheet"/>
-<link href="css/lessons.css" rel="stylesheet">
-<link href="css/globe-hero.css" rel="stylesheet"/><link href="css/feature-steps.css" rel="stylesheet"/>
+<link href="css/lessons.css" rel="stylesheet"/>
+<link href="css/globe-hero.css" rel="stylesheet"><link href="css/feature-steps.css" rel="stylesheet"/>
 <!-- OG tags -->
 <meta content="en_US" property="og:locale"/>
 <meta content="website" property="og:type"/>
-<meta content="TaxTami" property="og:title">
-<meta content="PAGE_URL" property="og:url"/>
-<meta content="TaxTami" property="og:site_name">
-<meta content="#" property="og:image"/>
+<meta content="TaxTami" property="og:title"/>
+<meta content="PAGE_URL" property="og:url">
+<meta content="TaxTami" property="og:site_name"/>
+<meta content="#" property="og:image">
 <meta content="Zimbabwe-focused tax education, consulting and digital tools for taxpayers, SMEs and professionals." property="og:description"/>
 <!-- Fonts -->
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
@@ -135,15 +135,7 @@
 </nav>
 </div>
 </header>
-<div class="section section--page-title">
-<div class="container">
-<div class="row">
-<div class="col-12 text-center">
-<h1 class="page-title">Taxpayer Account Management</h1>
-</div>
-</div>
-</div>
-</div>
+
 <!-- Main Content -->
 <div class="section">
 <div class="container">
@@ -209,17 +201,23 @@
 </div>
 </div>
 </section>
-<section class="lesson-section" id="executive-summary">
-<h2>Executive summary</h2>
-<div class="section-content">
+<nav class="lesson-nav" style="flex-wrap: wrap; gap: 10px;">
+<a href="#executive-summary">Executive summary</a>
+<a href="#lesson-context-and-objectives">Lesson context and objectives</a>
+<a href="#legislative-and-policy-framework">Legislative and policy framework</a>
+<a href="#detailed-conceptual-explanation-of-taxpayer-account-management">Detailed conceptual explanation of taxpayer account management</a>
+<a href="#tarms-and-real-world-zimra-account-operations">TaRMS and real-world ZIMRA account operations</a>
+<a href="#allocation-rules-comparison-table">Allocation rules comparison table</a>
+<a href="#workflow-visual-and-mermaid-flowchart">Workflow visual and mermaid flowchart</a>
+<a href="#case-law-integration-and-practical-pitfalls">Case law integration and practical pitfalls</a>
+<a href="#knowledge-check">Knowledge check</a>
+<a href="#quiz-answers">Quiz answers</a>
+<a href="#key-takeaways-and-suggested-further-reading">Key takeaways and suggested further reading</a>
+</nav><div class="lesson-content-wrapper"><details class="lesson-details" id="executive-summary" open=""><summary class="lesson-summary"><h2 style="display: inline;">Executive summary</h2></summary><div class="section-content">
 <p>Taxpayer account management is the operational “engine room” of tax debt management: it is how liabilities, assessments, payments, credits, penalties, <span class="key-term">interest</span>, refunds, and enforcement actions are converted into a single coherent ledger position that is legally defensible and operationally actionable. In Zimbabwe’s domestic taxes context, this occurs increasingly through <span class="key-term"><strong>ZIMRA</strong></span>’s Tax and Revenue Management System (<strong>TaRMS</strong>), whose “single account concept” changes the mechanics of payment receipt and allocation: taxpayers pay into a <span class="key-term"><strong>ZIMRA</strong></span> single bank account (ZWL and USD), <strong>TaRMS</strong> maintains a taxpayer “single account” balance, and the system then handles payment allocation, assessments, and refunds. </p>
 <p>This lesson treats taxpayer accounts as both a <strong>legal artifact</strong> (tax debts and credits are governed by statute, and set-off/offset rules, partial-payment ordering, and garnishee/agent powers are prescribed) and a <strong>systems artifact</strong> (<strong>TaRMS</strong> modules, automated allocation, and workflow controls). It synthesizes the controlling legal rules (<strong>Revenue Authority Act</strong>, <span class="leg-ref"><strong>Income Tax Act</strong></span>, <span class="leg-ref"><strong>VAT Act</strong></span>, and <strong>Finance Act</strong> amendments as reflected in consolidated texts) with <strong>TaRMS</strong> public notices/FAQs and key cases (Packers, Murowa Diamonds, Zimplats) to build a professional-grade, audit-ready approach to taxpayer ledger integrity. </p>
 <p><strong>Assumptions and access limits (explicit):</strong> No proprietary <span class="key-term"><strong>ZIMRA</strong></span> internal SOPs or <strong>TaRMS</strong> configuration manuals were provided in this chat. <strong>TaRMS</strong> operational descriptions in this lesson rely on <span class="key-term"><strong>ZIMRA</strong></span> public notices, <span class="key-term"><strong>ZIMRA</strong></span> TaRMS FAQs, and publicly available judicial decisions. Where <strong>Finance Act</strong> amendment <em>section numbers</em> are not visible in the consolidated statute extracts, the amendment is flagged as “section unspecified.” </p>
-</div>
-</section>
-<section class="lesson-section" id="lesson-context-and-objectives">
-<h2>Lesson context and objectives</h2>
-<div class="section-content">
+</div></details><details class="lesson-details" id="lesson-context-and-objectives"><summary class="lesson-summary"><h2 style="display: inline;">Lesson context and objectives</h2></summary><div class="section-content">
 <p><strong>A. Section Context</strong></p>
 <p>Lesson Five aligns to Chapter 5 of your sitemap (“Taxpayer Account Management”) and should be taught after debt creation/assessments and before <span class="key-term">interest</span>/penalties and payment mechanics. In the course logic, it answers: “How does a legal liability become a ledger entry, and how do payments/credits legally and systemically extinguish (or fail to extinguish) that entry?”</p>
 <p>TaRMS is explicitly structured around modules that include <strong>Payment Management</strong>, <strong>Revenue Accounting</strong>, <strong>Taxpayer Accounting</strong>, <strong>Debt Management</strong>, and <strong>Refund Management</strong>, and <span class="key-term"><strong>ZIMRA</strong></span> has stated that tax return submission, domestic tax payments, debt management, refunds, and access to tax statements can be done in TaRMS. </p>
@@ -230,11 +228,7 @@ By the end of this lesson, learners should be able to:</p>
 <p>Apply statutory set-off/offset rules for <strong>VAT refunds</strong> (including cross-tax offsets) and system constraints on currency offsets in TaRMS. </p>
 <p>Identify and correct common taxpayer account errors: misallocation, unposted deposits, missing returns, cross-currency mismatches, and documentation gaps (e.g., withholding certificates). </p>
 <p>Connect account management to enforcement powers and dispute risks through cases such as <strong><span class="key-term">ZIMRA</span> v Packers</strong> and <strong>Murowa Diamonds</strong>. </p>
-</div>
-</section>
-<section class="lesson-section" id="legislative-and-policy-framework">
-<h2>Legislative and policy framework</h2>
-<div class="section-content">
+</div></details><details class="lesson-details" id="legislative-and-policy-framework"><summary class="lesson-summary"><h2 style="display: inline;">Legislative and policy framework</h2></summary><div class="section-content">
 <p><strong>B. Legislative Framework (Zimbabwe)</strong></p>
 <p>This section highlights the <strong>minimum legal rules</strong> a debt-management professional must know to manage taxpayer accounts correctly. It focuses on provisions that directly drive <strong>ledger outcomes</strong>: what can be posted, what can be offset, how payments must be applied, and when <span class="key-term">ZIMRA</span> can compel third parties to pay.</p>
 <p><strong>Revenue Authority Act <span class="leg-ref">[Chapter 23:11]</span></strong></p>
@@ -276,11 +270,7 @@ The consolidated <span class="leg-ref"><strong>VAT Act</strong></span> text indi
 - <strong>Finance Act</strong> <strong>10/2020</strong> (section unspecified in the excerpt) 
 - <strong>Finance Act</strong> <strong>7/2021</strong>, <strong><span class="leg-ref">section 56</span></strong> (explicitly stated) 
 - Finance Act <strong>8/2022</strong> (section unspecified in the excerpt) </p>
-</div>
-</section>
-<section class="lesson-section" id="detailed-conceptual-explanation-of-taxpayer-account-management">
-<h2>Detailed conceptual explanation of taxpayer account management</h2>
-<div class="section-content">
+</div></details><details class="lesson-details" id="detailed-conceptual-explanation-of-taxpayer-account-management"><summary class="lesson-summary"><h2 style="display: inline;">Detailed conceptual explanation of taxpayer account management</h2></summary><div class="section-content">
 <p><strong>What is a taxpayer account in practical terms?</strong></p>
 <p>A taxpayer account is the structured record that allows <span class="key-term">ZIMRA</span> (and the taxpayer) to answer, at any moment:</p>
 <p>What is the taxpayer’s <strong>cash/credit position</strong> available to settle tax obligations?</p>
@@ -323,11 +313,7 @@ The consolidated <span class="leg-ref"><strong>VAT Act</strong></span> text indi
 <p>reconcile any “available funds” in the Single Account vs obligations due,</p>
 <p>confirm cross-tax offsets were applied lawfully (e.g., <span class="leg-ref">VAT Act</span> s44(6)),</p>
 <p>verify currency ledger segregation (USD vs ZWL), as TaRMS restricts cross-currency offsetting. </p>
-</div>
-</section>
-<section class="lesson-section" id="tarms-and-real-world-zimra-account-operations">
-<h2>TaRMS and real-world ZIMRA account operations</h2>
-<div class="section-content">
+</div></details><details class="lesson-details" id="tarms-and-real-world-zimra-account-operations"><summary class="lesson-summary"><h2 style="display: inline;">TaRMS and real-world ZIMRA account operations</h2></summary><div class="section-content">
 <p><strong>D. Real-world applicability with <span class="key-term">ZIMRA</span> processes and TaRMS references</strong></p>
 <p><strong>TaRMS modules that matter for account management</strong></p>
 <p><span class="key-term">ZIMRA</span>’s TaRMS go-live notice identifies core functionalities including <strong>Payment Management</strong>, <strong>Revenue Accounting</strong>, <strong>Taxpayer Accounting</strong>, <strong>Debt Management</strong>, and <strong>Refund Management</strong>, and indicates that accessing tax statements and refund processing can be done in TaRMS. </p>
@@ -354,17 +340,9 @@ The consolidated <span class="leg-ref"><strong>VAT Act</strong></span> text indi
 <p>Professional controls (adaptable to <span class="key-term">ZIMRA</span> or tax practice settings):</p>
 <p>Refund governance: confirm refund decisions follow VAT s44 (set-off priority, return-filing holds). </p>
 <p>Currency segregation checks: confirm ZWL and USD obligations treated separately; do not net across currencies in internal reconciliations because TaRMS disallows cross-currency offset. </p>
-</div>
-</section>
-<section class="lesson-section" id="allocation-rules-comparison-table">
-<h2>Allocation rules comparison table</h2>
-<div class="section-content">
+</div></details><details class="lesson-details" id="allocation-rules-comparison-table"><summary class="lesson-summary"><h2 style="display: inline;">Allocation rules comparison table</h2></summary><div class="section-content">
 <p>The table below is designed as a training reference for professionals who must understand both the <strong>statutory basis</strong> (what the law allows/requires) and the <strong>TaRMS/system behavior</strong> (what typically happens operationally).</p>
-</div>
-</section>
-<section class="lesson-section" id="workflow-visual-and-mermaid-flowchart">
-<h2>Workflow visual and mermaid flowchart</h2>
-<div class="section-content">
+</div></details><details class="lesson-details" id="workflow-visual-and-mermaid-flowchart"><summary class="lesson-summary"><h2 style="display: inline;">Workflow visual and mermaid flowchart</h2></summary><div class="section-content">
 <p>The workflow below abstracts the taxpayer account lifecycle under TaRMS: payment receipt into the Single Account, obligation creation via returns/assessments, automated allocation, reconciliation, dispute correction, and escalation to debt management/enforcement. It is grounded in <span class="key-term">ZIMRA</span>’s published TaRMS single-account model and the existence of TaRMS modules (Payment, Taxpayer Accounting, Debt, Refunds), plus statutory allocation/set-off rules. </p>
 <div class="mermaid">
 flowchart TD
@@ -396,11 +374,7 @@ flowchart TD
     O --&gt; R
     M --&gt; R
 </div>
-</div>
-</section>
-<section class="lesson-section" id="case-law-integration-and-practical-pitfalls">
-<h2>Case law integration and practical pitfalls</h2>
-<div class="section-content">
+</div></details><details class="lesson-details" id="case-law-integration-and-practical-pitfalls"><summary class="lesson-summary"><h2 style="display: inline;">Case law integration and practical pitfalls</h2></summary><div class="section-content">
 <p><strong>E. Case law integration</strong></p>
 <p><strong><span class="key-term">ZIMRA</span> v Packers International (Pvt) Ltd, Supreme Court, SC 28/16 (reported)</strong></p>
 <p><strong>Core holding (for this lesson):</strong> The Supreme Court recognized that <span class="leg-ref">VAT Act</span> <strong>s48</strong> (power to appoint agent) creates a strong statutory mechanism: the obligation of an appointed agent is not subject to other laws and s48 overrides contrary provisions. The Court also noted that a VAT <span class="key-term"><strong>registered operator</strong></span>’s liability remains extant despite an <span class="key-term">appeal</span> unless the Commissioner directs otherwise; thus collection through agent appointment may proceed. </p>
@@ -431,11 +405,7 @@ Allocation, set-off, and credit recognition are not “fairness-driven” accoun
 <p><strong>Control:</strong> Implement a certificate management register and reconcile certificate totals to remittances and to assessment-era credits.</p>
 <p><strong>Pitfall cluster: third-party collections and incorrect taxpayer attribution</strong></p>
 <p>Where <span class="key-term">ZIMRA</span> appoints an agent (Income Tax s58; VAT s48), collections may be received from a third party such as a bank. Misposting those remittances to the wrong TIN or wrong tax head can immediately create severe disputes and business disruption—a risk highlighted by enforcement litigation such as <strong>Packers</strong> and the enforcement fears in <strong>Murowa Diamonds</strong>. </p>
-</div>
-</section>
-<section class="lesson-section" id="knowledge-check">
-<h2>Knowledge check</h2>
-<div class="section-content">
+</div></details><details class="lesson-details" id="knowledge-check"><summary class="lesson-summary"><h2 style="display: inline;">Knowledge check</h2></summary><div class="section-content">
 <p><strong>G. Knowledge check (short questions)</strong></p>
 <p>Under <strong>Revenue Authority Act</strong> s33A(10), when a taxpayer makes a short payment (less than principal + penalties + <span class="key-term">interest</span>), what is the statutory order of allocation? </p>
 <p>Under <span class="leg-ref">VAT Act</span> s44(6), can a VAT refund be set off against non-VAT tax debts administered by the Commissioner? </p>
@@ -444,11 +414,7 @@ Allocation, set-off, and credit recognition are not “fairness-driven” accoun
 <p>Under <span class="leg-ref">VAT Act</span> s44(7), when may the Commissioner withhold a refund otherwise due to a <span class="key-term"><strong>registered operator</strong></span>? </p>
 <p>Under <span class="leg-ref"><strong>Income Tax Act</strong></span> s58 and <span class="leg-ref">VAT Act</span> s48, what is the legal mechanism that allows third parties (including banks) to be compelled to pay a taxpayer’s tax from money held for that taxpayer? </p>
 <p>Under <span class="leg-ref">Income Tax Act</span> <span class="leg-ref">section 80</span> framework in the excerpt, when are withheld amounts treated as a credit against the payee’s income tax? </p>
-</div>
-</section>
-<section class="lesson-section" id="quiz-answers">
-<h2>Quiz answers</h2>
-<div class="section-content">
+</div></details><details class="lesson-details" id="quiz-answers"><summary class="lesson-summary"><h2 style="display: inline;">Quiz answers</h2></summary><div class="section-content">
 <p>Principal tax/<span class="key-term">additional tax</span>/duty due first, then <span class="key-term">penalty</span>/fine, then <span class="key-term">interest</span>. </p>
 <p>Yes. <span class="leg-ref">VAT Act</span> s44(6)(b) allows set-off where the operator owes amounts under any Act administered by the Commissioner and is in default. </p>
 <p>No. A ZWL refund cannot offset a USD obligation (and vice versa). </p>
@@ -456,18 +422,23 @@ Allocation, set-off, and credit recognition are not “fairness-driven” accoun
 <p>If the <span class="key-term"><strong>registered operator</strong></span> has failed to furnish a return for any required <span class="key-term">tax period</span>, the Commissioner may withhold the refund until the return is furnished. </p>
 <p>Appointment of an agent: the Commissioner may declare a person to be the agent of another taxpayer and require the agent to pay tax/<span class="key-term">penalty</span>/<span class="key-term">interest</span> from money held for or due to the taxpayer (<span class="leg-ref">Income Tax Act</span> s58; <span class="leg-ref">VAT Act</span> s48). </p>
 <p>The Commissioner retains remitted withholding until the income tax payable has been assessed; after assessment, the amount is allowed as a credit against the assessed income tax (or refunded if excess). </p>
-</div>
-</section>
-<section class="lesson-section" id="key-takeaways-and-suggested-further-reading">
-<h2>Key takeaways and suggested further reading</h2>
-<div class="section-content">
+</div></details><details class="lesson-details" id="key-takeaways-and-suggested-further-reading"><summary class="lesson-summary"><h2 style="display: inline;">Key takeaways and suggested further reading</h2></summary><div class="section-content">
 <p><strong>I. Key takeaways</strong></p>
 <p>Taxpayer account management is legally constrained bookkeeping: it is not merely “accounting best practice,” but the operationalization of statutory rules governing payment ordering, set-off, refunds, and third-party collections. </p>
 <p>TaRMS changes the payment/allocation paradigm: payments do not require the tax head at the bank; instead, the system keeps a Single Account balance and allocates based on posted obligations. This increases the professional importance of timely return filing, posting integrity, and 3-way matching in reconciliation. </p>
 <p>Refunds are not automatically cash: VAT refunds are subject to set-off across taxes and may be withheld for missing returns; TaRMS supports offsetting refunds against other obligations but enforces currency separation (no ZWL-to-USD offsets). </p>
 <p>Enforcement and account management are inseparable: agent appointment powers (VAT s48; Income Tax s58) can result in forced third-party payments that must be posted correctly, and case law (Packers, Murowa Diamonds) shows how quickly disputes arise when payments, credits, or set-offs are contested. </p>
-</div>
-</section>
+</div></details></div>
+
+
+
+
+
+
+
+
+
+
 </div><!-- /lesson-container -->
 </div><!-- /col-lg-9 -->
 <!-- Sidebar -->
@@ -787,7 +758,24 @@ document.addEventListener('DOMContentLoaded', () => {
 	});
 });
 </script>
-<script src="js/globe-hero.js" type="module"></script><script src="js/feature-steps.js"></script><script>
+<script src="js/globe-hero.js" type="module"></script><script>
+
+document.addEventListener('DOMContentLoaded', () => {
+	const sections = document.querySelectorAll('.lesson-details');
+	const navLinks = document.querySelectorAll('.lesson-nav a');
+	window.addEventListener('scroll', () => {
+		let current = '';
+		sections.forEach(section => {
+			const sectionTop = section.offsetTop;
+			if (pageYOffset >= sectionTop - 150) { current = section.getAttribute('id'); }
+		});
+		navLinks.forEach(link => {
+			link.classList.remove('active');
+			if (link.getAttribute('href').includes(current)) { link.classList.add('active'); }
+		});
+	});
+});
+</script><script src="js/feature-steps.js"></script><script>
 		document.addEventListener('DOMContentLoaded', () => {
 			new FeatureSteps('lesson-overview-steps', {
 				features: [

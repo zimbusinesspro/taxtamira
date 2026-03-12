@@ -12,15 +12,15 @@
 <link href="css/bootstrap.min.css" rel="stylesheet"/>
 <link href="css/main.css" rel="stylesheet"/>
 <link href="css/responsive.css" rel="stylesheet"/>
-<link href="css/lessons.css" rel="stylesheet">
-<link href="css/globe-hero.css" rel="stylesheet"/><link href="css/feature-steps.css" rel="stylesheet"/>
+<link href="css/lessons.css" rel="stylesheet"/>
+<link href="css/globe-hero.css" rel="stylesheet"><link href="css/feature-steps.css" rel="stylesheet"/>
 <!-- OG tags -->
 <meta content="en_US" property="og:locale"/>
 <meta content="website" property="og:type"/>
-<meta content="TaxTami" property="og:title">
-<meta content="PAGE_URL" property="og:url"/>
-<meta content="TaxTami" property="og:site_name">
-<meta content="#" property="og:image"/>
+<meta content="TaxTami" property="og:title"/>
+<meta content="PAGE_URL" property="og:url">
+<meta content="TaxTami" property="og:site_name"/>
+<meta content="#" property="og:image">
 <meta content="Zimbabwe-focused tax education, consulting and digital tools for taxpayers, SMEs and professionals." property="og:description"/>
 <!-- Fonts -->
 <link href="https://fonts.googleapis.com" rel="preconnect"/>
@@ -135,15 +135,7 @@
 </nav>
 </div>
 </header>
-<div class="section section--page-title">
-<div class="container">
-<div class="row">
-<div class="col-12 text-center">
-<h1 class="page-title">Technology in Tax Debt Management</h1>
-</div>
-</div>
-</div>
-</div>
+
 <!-- Main Content -->
 <div class="section">
 <div class="container">
@@ -209,35 +201,28 @@
 </div>
 </div>
 </section>
-<section class="lesson-section" id="executive-summary">
-<h2>Executive summary</h2>
-<div class="section-content">
+<nav class="lesson-nav" style="flex-wrap: wrap; gap: 10px;">
+<a href="#executive-summary">Executive summary</a>
+<a href="#assumptions-scope-and-how-to-localize-the-lesson">Assumptions, scope, and how to localize the lesson</a>
+<a href="#key-legal-and-regulatory-frameworks-for-digital-debt-management">Key legal and regulatory frameworks for digital debt management</a>
+<a href="#tarms-and-tarms-like-system-architecture-and-operational-workflows">TaRMS and TaRMS-like system architecture and operational workflows</a>
+<a href="#data-analytics-risk-profiling-and-automated-decision-governance">Data analytics, risk profiling, and automated decision governance</a>
+<a href="#lesson-plan-and-supporting-classroom-materials-for-a-6090-minute-class">Lesson plan and supporting classroom materials for a 60–90 minute class</a>
+</nav><div class="lesson-content-wrapper"><details class="lesson-details" id="executive-summary" open=""><summary class="lesson-summary"><h2 style="display: inline;">Executive summary</h2></summary><div class="section-content">
 <p>Modern tax debt management is increasingly driven by <strong>core revenue management systems</strong> (CRMS) that unify the taxpayer register, filing, payments, taxpayer accounting (ledger), and debt management into a single platform, typically exposed through a <strong>digital taxpayer account</strong> (portal/app). In Zimbabwe, <span class="key-term"><strong>ZIMRA</strong></span>’s <strong>Tax and Revenue Management System (TaRMS)</strong> is a prominent example: it replaces older domestic-tax systems and emphasizes automation, bank integration, and a “single account” taxpayer-ledger approach designed to reduce payment allocation errors and support automated debt detection, penalties/<span class="key-term">interest</span> computation, reminders, and installment-plan applications. </p>
 <p>At a policy level, the OECD’s tax-debt management work frames effective collection around four strategic principles: <strong>engagement before due date</strong>, maximizing collection after due date but before enforcement, effective enforcement, and realistic recovery/write-off. The same research highlights the shift toward <strong>e-services and contemporary digital channels</strong> (online payment plans, certified e-mail notifications, electronic auctions, and digital payment options) and the growing role of <strong>analytics, segmentation, and predictive models</strong> in choosing the right intervention for the right debtor at the right time. </p>
 <p>Because the jurisdiction for your class is <strong>unspecified</strong>, this lesson treats <strong>TaRMS</strong> as a <strong>worked example</strong> (using official <span class="key-term"><strong>ZIMRA</strong></span> materials) while teaching a <strong>jurisdiction-neutral reference model</strong> for <strong>TaRMS</strong>-like systems. The lesson also foregrounds constraints: tax authorities handle highly sensitive data, so technology-driven debt management must align with <strong>tax secrecy/confidentiality rules</strong>, <strong>data protection/privacy laws</strong>, and governance requirements for <strong>automated decision-making/profiling</strong> (often including a right to human review for decisions with legal or similarly significant effects). </p>
-</div>
-</section>
-<section class="lesson-section" id="assumptions-scope-and-how-to-localize-the-lesson">
-<h2>Assumptions, scope, and how to localize the lesson</h2>
-<div class="section-content">
+</div></details><details class="lesson-details" id="assumptions-scope-and-how-to-localize-the-lesson"><summary class="lesson-summary"><h2 style="display: inline;">Assumptions, scope, and how to localize the lesson</h2></summary><div class="section-content">
 <p><strong>Assumptions made (explicit).</strong> - <strong>Jurisdiction is unspecified.</strong> The lesson therefore provides (a) an internationally common framework, (b) “common variants” across jurisdictions, and (c) a <strong>TaRMS (Zimbabwe) worked example</strong> because <strong>TaRMS</strong> has substantial public, primary documentation and is clearly a tax administration platform with debt-management features.  - <strong>Access to vendor/implementation documentation is limited.</strong> Public materials describe <strong>TaRMS</strong> capabilities and taxpayer-facing workflows, but not full internal architecture, data models, or enforcement parameterization. Architecture and analytics sections therefore present a <strong>TaRMS-like reference architecture</strong> that you can adapt if you obtain internal manuals, system design documents, or procurement specs.  - “Technology in debt management” is treated as the intersection of: (1) taxpayer accounts and communications channels, (2) automated workflow engines and business rules, (3) analytics/risk scoring, and (4) governance controls (privacy, security, due process). </p>
 <p><strong>How to localize for any jurisdiction (simple teacher method).</strong> - Replace the “Legal/Regulatory table” below with your country’s equivalents for (a) tax secrecy, (b) data protection, (c) e-service of notices, (d) automated decision-making safeguards, and (e) records management. Use the lesson’s <strong>system workflows and governance checklists</strong> unchanged. </p>
-</div>
-</section>
-<section class="lesson-section" id="key-legal-and-regulatory-frameworks-for-digital-debt-management">
-<h2>Key legal and regulatory frameworks for digital debt management</h2>
-<div class="section-content">
+</div></details><details class="lesson-details" id="key-legal-and-regulatory-frameworks-for-digital-debt-management"><summary class="lesson-summary"><h2 style="display: inline;">Key legal and regulatory frameworks for digital debt management</h2></summary><div class="section-content">
 <p>The legal overlay for a tech-enabled debt system is usually “stacked”: <strong>tax administration law</strong> authorizes debt, penalties/<span class="key-term">interest</span>, recovery powers, and communications; <strong>secrecy/confidentiality</strong> constrains disclosure; <strong>data protection/privacy</strong> constrains processing, sharing, retention, and automated decisions; and <strong>cybersecurity/identity</strong> rules shape authentication and secure integration.</p>
 <p><strong>Leading case law and regulatory guidance themes for automation and profiling</strong></p>
 <p>Because jurisdiction is unspecified, the lesson uses widely cited <strong>public-sector automation</strong> precedents and “regulator guidance” rather than a single country’s tax caselaw:</p>
 <p><strong>Robodebt Royal Commission (Australia) — cautionary precedent (cross-sector debt).</strong> The Australian government’s release summarizes the Commission’s finding that Robodebt was “neither fair nor legal” and notes a Federal Court finding of unlawfulness (late 2019). For a tax classroom, this is a high-impact case study on what can go wrong when automated debt processes are deployed without lawful basis, proper evidentiary logic, and robust human oversight. </p>
 <p><strong>SyRI (Netherlands) — risk-indication/profiling constraints (public fraud/benefits/taxes).</strong> The Netherlands’ judiciary communication on the SyRI case reports that the court found the SyRI legislation did not comply with <strong>Article 8 ECHR</strong> (privacy), highlighting proportionality and transparency concerns around government risk-profiling systems used for fraud detection in areas including taxes. </p>
 <p><strong>EDPB + ICO guidance — operationalizing safeguards.</strong> EU-level guidance (EDPB) and UK guidance (ICO) provide detailed interpretations of automated decision-making/profiling requirements, including what counts as “solely automated” decisioning and what rights/safeguards are expected (e.g., meaningful human review). </p>
-</div>
-</section>
-<section class="lesson-section" id="tarms-and-tarms-like-system-architecture-and-operational-workflows">
-<h2>TaRMS and TaRMS-like system architecture and operational workflows</h2>
-<div class="section-content">
+</div></details><details class="lesson-details" id="tarms-and-tarms-like-system-architecture-and-operational-workflows"><summary class="lesson-summary"><h2 style="display: inline;">TaRMS and TaRMS-like system architecture and operational workflows</h2></summary><div class="section-content">
 <p><strong>What TaRMS is and what it automates</strong></p>
 <p><span class="key-term"><strong>ZIMRA</strong></span> states <strong>TaRMS</strong> is the new automation platform for domestic tax processes, replacing older systems and aiming to simplify processes for taxpayers through a Self-Service Portal (SSP). </p>
 <p><strong>Key TaRMS debt-management capabilities (officially described).</strong> <strong>TaRMS</strong> is described as enabling: automatic detection of unpaid liabilities, automated aging by set parameters, daily calculation of <span class="key-term">interest</span> and penalties, automated reversals of <span class="key-term">interest</span>/penalties on adjusted liabilities, automated reminders for payments and returns (before due date, on due date, and after due date), and online installment-plan applications. </p>
@@ -311,11 +296,7 @@ flowchart TD
   Q --&gt; R[Human approval gate + legal checks]
   R --&gt; S[Enforcement action taken + logged]
 </div>
-</div>
-</section>
-<section class="lesson-section" id="data-analytics-risk-profiling-and-automated-decision-governance">
-<h2>Data analytics, risk profiling, and automated decision governance</h2>
-<div class="section-content">
+</div></details><details class="lesson-details" id="data-analytics-risk-profiling-and-automated-decision-governance"><summary class="lesson-summary"><h2 style="display: inline;">Data analytics, risk profiling, and automated decision governance</h2></summary><div class="section-content">
 <p><strong>Data sources for debt analytics and risk scoring</strong></p>
 <p>The IMF notes that analytics in tax administration are used for essential functions including monitoring filing and payment, analyzing arrears, segmenting taxpayers, and predicting behaviors. 
 TaRMS sources (explicitly named) include integration with registries and banks for validation and payments workflows. </p>
@@ -344,11 +325,7 @@ Convert predicted risk to action bands (thresholds) that reflect policy/legal co
 - <strong>Robust evidentiary logic.</strong> Robodebt is a powerful warning: large-scale automated debt activity that uses flawed logic can be found unlawful and cause large-scale harm, eroding trust. </p>
 <p><strong>Sample “features/costs/pros-cons” table for TaRMS-like systems</strong></p>
 <p>This table is <strong>illustrative</strong> for classroom comparison (use it to teach budgeting drivers when specific procurement costs are unavailable).</p>
-</div>
-</section>
-<section class="lesson-section" id="lesson-plan-and-supporting-classroom-materials-for-a-6090-minute-class">
-<h2>Lesson plan and supporting classroom materials for a 60–90 minute class</h2>
-<div class="section-content">
+</div></details><details class="lesson-details" id="lesson-plan-and-supporting-classroom-materials-for-a-6090-minute-class"><summary class="lesson-summary"><h2 style="display: inline;">Lesson plan and supporting classroom materials for a 60–90 minute class</h2></summary><div class="section-content">
 <p><strong>Learning objectives</strong></p>
 <p><strong>Knowledge objectives (students can explain).</strong> Students will be able to explain: - What a <strong>TaRMS-like core revenue management system</strong> is and how it supports the debt lifecycle (ledger → detection/aging → reminders → payment plans → enforcement). 
 - What a <strong>digital taxpayer account</strong> provides (view balances, notices, payment history, modify profile, request payment plans), using real-world examples from HMRC and IRS. 
@@ -465,8 +442,12 @@ D. Data protection laws do not apply to government processing
 <strong>A-grade coverage:</strong> OECD analytics/segmentation maturity; EDPB/ICO safeguards; DPIA; human review; explainability; audit logging; lessons from Robodebt and SyRI. </p>
 <p>2) Design a TaRMS-like automated collections playbook for a mid-sized tax authority, specifying triggers, channels, and review points.
 <strong>A-grade coverage:</strong> pre-due engagement; post-due reminders; <strong>payment plan</strong> pathways; enforcement gating; secure communications and anti-phishing measures. </p>
-</div>
-</section>
+</div></details></div>
+
+
+
+
+
 </div><!-- /lesson-container -->
 </div><!-- /col-lg-9 -->
 <!-- Sidebar -->
@@ -786,7 +767,24 @@ document.addEventListener('DOMContentLoaded', () => {
 	});
 });
 </script>
-<script src="js/globe-hero.js" type="module"></script><script src="js/feature-steps.js"></script><script>
+<script src="js/globe-hero.js" type="module"></script><script>
+
+document.addEventListener('DOMContentLoaded', () => {
+	const sections = document.querySelectorAll('.lesson-details');
+	const navLinks = document.querySelectorAll('.lesson-nav a');
+	window.addEventListener('scroll', () => {
+		let current = '';
+		sections.forEach(section => {
+			const sectionTop = section.offsetTop;
+			if (pageYOffset >= sectionTop - 150) { current = section.getAttribute('id'); }
+		});
+		navLinks.forEach(link => {
+			link.classList.remove('active');
+			if (link.getAttribute('href').includes(current)) { link.classList.add('active'); }
+		});
+	});
+});
+</script><script src="js/feature-steps.js"></script><script>
 		document.addEventListener('DOMContentLoaded', () => {
 			new FeatureSteps('lesson-overview-steps', {
 				features: [
