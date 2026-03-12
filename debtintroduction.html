@@ -10,15 +10,15 @@
 <link href="replace_with_your_PAGE_URL" rel="canonical"/>
 <!-- Stylesheets -->
 <link href="css/bootstrap.min.css" rel="stylesheet"/>
-<link href="css/main.css" rel="stylesheet">
-<link href="css/responsive.css" rel="stylesheet"/>
+<link href="css/main.css" rel="stylesheet"/>
+<link href="css/responsive.css" rel="stylesheet">
 <link href="css/lessons.css" rel="stylesheet"/>
-<link href="css/globe-hero.css" rel="stylesheet"/>
+<link href="css/globe-hero.css" rel="stylesheet"/><link href="css/feature-steps.css" rel="stylesheet"/>
 <!-- OG tags -->
-<meta content="en_US" property="og:locale">
-<meta content="website" property="og:type"/>
-<meta content="TaxTami" property="og:title">
-<meta content="PAGE_URL" property="og:url"/>
+<meta content="en_US" property="og:locale"/>
+<meta content="website" property="og:type">
+<meta content="TaxTami" property="og:title"/>
+<meta content="PAGE_URL" property="og:url">
 <meta content="TaxTami" property="og:site_name"/>
 <meta content="#" property="og:image"/>
 <meta content="Zimbabwe-focused tax education, consulting and digital tools for taxpayers, SMEs and professionals." property="og:description"/>
@@ -153,8 +153,61 @@
 <div class="lesson-container"><div class="lesson-page-header">
 <span class="lesson-name">Lesson: Introduction to Tax Debt Management in Zimbabwe</span>
 <span class="lesson-excerpt">This opening lesson establishes the logic of tax debt management as a core function of Zimbabwe’s revenue administration: it is the disciplined end-to-end work of preventing , detecting , classifying , and resolving unpa…</span>
+</div><section class="feature-steps-container" id="lesson-overview-steps">
+<div class="feature-steps-wrapper">
+<div class="feature-steps-grid">
+<div class="steps-list">
+<!-- Step 1 -->
+<div class="step-item" data-index="0">
+<div class="step-number-wrap">1</div>
+<div class="step-content">
+<h3>Context</h3>
+<p>Tax debt management is the process by which ZIMRA identifies, assesses, and recovers unpaid tax obligations owed by individuals, businesses, and other entities.</p>
+<div class="step-progress-container">
+<div class="step-progress-bar"></div>
 </div>
-
+</div>
+</div>
+<!-- Step 2 -->
+<div class="step-item" data-index="1">
+<div class="step-number-wrap">2</div>
+<div class="step-content">
+<h3>Legislation</h3>
+<p>Governed by the Income Tax Act [Chapter 23:06], the VAT Act [Chapter 23:12], the ZIMRA Act [Chapter 23:11], and the Finance Act 2025, which collectively define ZIMRA's collection mandate.</p>
+<div class="step-progress-container">
+<div class="step-progress-bar"></div>
+</div>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="step-item" data-index="2">
+<div class="step-number-wrap">3</div>
+<div class="step-content">
+<h3>Concepts</h3>
+<p>This lesson covers the nature of tax debt, ZIMRA's statutory debt collection mandate, the debt management lifecycle, and the importance of proactive compliance by taxpayers.</p>
+<div class="step-progress-container">
+<div class="step-progress-bar"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="feature-image-side">
+<div class="feature-image-item active">
+<img alt="Context" src="https://images.unsplash.com/photo-1723958929247-ef054b525153?q=80&amp;w=2070&amp;auto=format&amp;fit=crop"/>
+<div class="image-overlay"></div>
+</div>
+<div class="feature-image-item">
+<img alt="Legislation" src="https://images.unsplash.com/photo-1723931464622-b7df7c71e380?q=80&amp;w=2070&amp;auto=format&amp;fit=crop"/>
+<div class="image-overlay"></div>
+</div>
+<div class="feature-image-item">
+<img alt="Concepts" src="https://images.unsplash.com/photo-1725961476494-efa87ae3106a?q=80&amp;w=2070&amp;auto=format&amp;fit=crop"/>
+<div class="image-overlay"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
 <section class="lesson-section" id="executive-summary">
 <h2>Executive summary</h2>
 <div class="section-content">
@@ -664,5 +717,16 @@ document.addEventListener('DOMContentLoaded', () => {
 	});
 });
 </script>
-<script src="js/globe-hero.js" type="module"></script>
+<script src="js/globe-hero.js" type="module"></script><script src="js/feature-steps.js"></script><script>
+		document.addEventListener('DOMContentLoaded', () => {
+			new FeatureSteps('lesson-overview-steps', {
+				features: [
+					{ title: 'Context' },
+					{ title: 'Legislation' },
+					{ title: 'Concepts' }
+				],
+				autoPlayInterval: 4000
+			});
+		});
+	</script>
 </html>

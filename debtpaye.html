@@ -5,18 +5,18 @@
 <meta charset="utf-8"/>
 <title>TaxTami - Tax Training Zimbabwe</title>
 <meta content="TaxTami - Zimbabwe Tax Training &amp; Compliance" name="description"/>
-<meta content="width=device-width, initial-scale=1" name="viewport">
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
 <link href="https://gmpg.org/xfn/11" rel="profile"/>
 <link href="replace_with_your_PAGE_URL" rel="canonical"/>
 <!-- Stylesheets -->
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="css/main.css" rel="stylesheet"/>
+<link href="css/bootstrap.min.css" rel="stylesheet"/>
+<link href="css/main.css" rel="stylesheet">
 <link href="css/responsive.css" rel="stylesheet"/>
-<link href="css/globe-hero.css" rel="stylesheet"/>
+<link href="css/globe-hero.css" rel="stylesheet"/><link href="css/feature-steps.css" rel="stylesheet"/>
 <!-- Open Graph (OG) meta tags are snippets of code that control how URLs are displayed when shared on social media  -->
-<meta content="en_US" property="og:locale"/>
-<meta content="website" property="og:type">
-<meta content="TaxTami" property="og:title"/>
+<meta content="en_US" property="og:locale">
+<meta content="website" property="og:type"/>
+<meta content="TaxTami" property="og:title">
 <meta content="PAGE_URL" property="og:url"/>
 <meta content="TaxTami" property="og:site_name"/>
 <!-- For the og:image content, replace the # with a link of an image -->
@@ -39,7 +39,7 @@
   "url": "www.taxtami.com"
 }
 </script>
-</meta></link></meta></head>
+</meta></meta></link></head>
 <body>
 <div class="page-wrapper">
 <!-- Main Header-->
@@ -156,17 +156,62 @@
 <div class="content-side col-lg-9 col-md-12 col-sm-12">
 <div class="service-detail">
 <div class="inner-box">
-<div class="globe-hero" id="globe-debtpaye">
-<div class="globe-hero-content">
-<span class="hero-label">TaxTami Lesson</span>
-<h1 class="hero-title">Introduction to ZIMRA Debt Management</h1>
-<p class="hero-subtitle">TaxTami - Zimbabwe Tax Training</p>
+
+<section class="feature-steps-container" id="lesson-overview-steps">
+<div class="feature-steps-wrapper">
+<div class="feature-steps-grid">
+<div class="steps-list">
+<!-- Step 1 -->
+<div class="step-item" data-index="0">
+<div class="step-number-wrap">1</div>
+<div class="step-content">
+<h3>Context</h3>
+<p>PAYE debt arises when employers fail to remit withheld employee income tax to ZIMRA, creating a high-priority category of tax debt given that the funds are held in trust on behalf of employees.</p>
+<div class="step-progress-container">
+<div class="step-progress-bar"></div>
 </div>
-<div class="globe-hero-canvas-wrap">
-<canvas></canvas>
 </div>
 </div>
-<div class="lower-content">
+<!-- Step 2 -->
+<div class="step-item" data-index="1">
+<div class="step-number-wrap">2</div>
+<div class="step-content">
+<h3>Legislation</h3>
+<p>Employer PAYE obligations and the deemed trust nature of withheld amounts are established by the Income Tax Act [Chapter 23:06], Section 72 agent provisions, and PAYE regulations under the Finance Act 2025.</p>
+<div class="step-progress-container">
+<div class="step-progress-bar"></div>
+</div>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="step-item" data-index="2">
+<div class="step-number-wrap">3</div>
+<div class="step-content">
+<h3>Concepts</h3>
+<p>This lesson covers the employer's role as collecting agent, the trust character of withheld PAYE, personal director liability for PAYE arrears, ZIMRA's priority enforcement approach, and compliance strategies for employers managing PAYE obligations.</p>
+<div class="step-progress-container">
+<div class="step-progress-bar"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="feature-image-side">
+<div class="feature-image-item active">
+<img alt="Context" src="https://images.unsplash.com/photo-1723958929247-ef054b525153?q=80&amp;w=2070&amp;auto=format&amp;fit=crop"/>
+<div class="image-overlay"></div>
+</div>
+<div class="feature-image-item">
+<img alt="Legislation" src="https://images.unsplash.com/photo-1723931464622-b7df7c71e380?q=80&amp;w=2070&amp;auto=format&amp;fit=crop"/>
+<div class="image-overlay"></div>
+</div>
+<div class="feature-image-item">
+<img alt="Concepts" src="https://images.unsplash.com/photo-1725961476494-efa87ae3106a?q=80&amp;w=2070&amp;auto=format&amp;fit=crop"/>
+<div class="image-overlay"></div>
+</div>
+</div>
+</div>
+</div>
+</section><div class="lower-content">
 <strong>1.1 Introduction to Income Tax In Zimbabwe</strong>
 <p></p>
 <p>Income tax is one of the most important pillars of any modern tax system, and
@@ -1031,6 +1076,17 @@
 <script src="js/translations.js"></script>
 <script src="js/i18n.js"></script>
 <script src="js/script.js"></script>
-<script src="js/globe-hero.js" type="module"></script>
+<script src="js/globe-hero.js" type="module"></script><script src="js/feature-steps.js"></script><script>
+		document.addEventListener('DOMContentLoaded', () => {
+			new FeatureSteps('lesson-overview-steps', {
+				features: [
+					{ title: 'Context' },
+					{ title: 'Legislation' },
+					{ title: 'Concepts' }
+				],
+				autoPlayInterval: 4000
+			});
+		});
+	</script>
 </body>
 </html>

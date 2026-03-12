@@ -10,15 +10,15 @@
 <link href="replace_with_your_PAGE_URL" rel="canonical"/>
 <!-- Stylesheets -->
 <link href="css/bootstrap.min.css" rel="stylesheet"/>
-<link href="css/main.css" rel="stylesheet">
-<link href="css/responsive.css" rel="stylesheet"/>
+<link href="css/main.css" rel="stylesheet"/>
+<link href="css/responsive.css" rel="stylesheet">
 <link href="css/lessons.css" rel="stylesheet"/>
-<link href="css/globe-hero.css" rel="stylesheet"/>
+<link href="css/globe-hero.css" rel="stylesheet"/><link href="css/feature-steps.css" rel="stylesheet"/>
 <!-- OG tags -->
-<meta content="en_US" property="og:locale">
-<meta content="website" property="og:type"/>
-<meta content="TaxTami" property="og:title">
-<meta content="PAGE_URL" property="og:url"/>
+<meta content="en_US" property="og:locale"/>
+<meta content="website" property="og:type">
+<meta content="TaxTami" property="og:title"/>
+<meta content="PAGE_URL" property="og:url">
 <meta content="TaxTami" property="og:site_name"/>
 <meta content="#" property="og:image"/>
 <meta content="Zimbabwe-focused tax education, consulting and digital tools for taxpayers, SMEs and professionals." property="og:description"/>
@@ -154,7 +154,61 @@
 <span class="lesson-number">Debt Lesson 11</span>
 <span class="lesson-name">Tax Debt Enforcement Powers</span>
 <span class="lesson-excerpt">Executive Summary: This lesson examines the legal tools and processes by which ZIMRA enforces unpaid tax debts.</span>
+</div><section class="feature-steps-container" id="lesson-overview-steps">
+<div class="feature-steps-wrapper">
+<div class="feature-steps-grid">
+<div class="steps-list">
+<!-- Step 1 -->
+<div class="step-item" data-index="0">
+<div class="step-number-wrap">1</div>
+<div class="step-content">
+<h3>Context</h3>
+<p>When voluntary collection methods fail, ZIMRA has broad statutory powers to compel payment — including seizure of assets, restriction of business operations, and third-party collection orders.</p>
+<div class="step-progress-container">
+<div class="step-progress-bar"></div>
 </div>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="step-item" data-index="1">
+<div class="step-number-wrap">2</div>
+<div class="step-content">
+<h3>Legislation</h3>
+<p>Enforcement powers are derived from the Income Tax Act [Chapter 23:06], the VAT Act [Chapter 23:12], and enhanced provisions introduced by the Finance Act 2025 and the Finance Bill 2026.</p>
+<div class="step-progress-container">
+<div class="step-progress-bar"></div>
+</div>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="step-item" data-index="2">
+<div class="step-number-wrap">3</div>
+<div class="step-content">
+<h3>Concepts</h3>
+<p>This lesson covers ZIMRA's full spectrum of enforcement tools, the principles of proportionality and escalation, taxpayer rights during enforcement, and how to respond to enforcement notices.</p>
+<div class="step-progress-container">
+<div class="step-progress-bar"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="feature-image-side">
+<div class="feature-image-item active">
+<img alt="Context" src="https://images.unsplash.com/photo-1723958929247-ef054b525153?q=80&amp;w=2070&amp;auto=format&amp;fit=crop"/>
+<div class="image-overlay"></div>
+</div>
+<div class="feature-image-item">
+<img alt="Legislation" src="https://images.unsplash.com/photo-1723931464622-b7df7c71e380?q=80&amp;w=2070&amp;auto=format&amp;fit=crop"/>
+<div class="image-overlay"></div>
+</div>
+<div class="feature-image-item">
+<img alt="Concepts" src="https://images.unsplash.com/photo-1725961476494-efa87ae3106a?q=80&amp;w=2070&amp;auto=format&amp;fit=crop"/>
+<div class="image-overlay"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
 <section class="lesson-section" id="lesson-11-tax-debt-enforcement-powers">
 <h2>Lesson 11: Tax Debt Enforcement Powers</h2>
 <div class="section-content">
@@ -578,5 +632,16 @@ document.addEventListener('DOMContentLoaded', () => {
 	});
 });
 </script>
-<script src="js/globe-hero.js" type="module"></script>
+<script src="js/globe-hero.js" type="module"></script><script src="js/feature-steps.js"></script><script>
+		document.addEventListener('DOMContentLoaded', () => {
+			new FeatureSteps('lesson-overview-steps', {
+				features: [
+					{ title: 'Context' },
+					{ title: 'Legislation' },
+					{ title: 'Concepts' }
+				],
+				autoPlayInterval: 4000
+			});
+		});
+	</script>
 </html>
