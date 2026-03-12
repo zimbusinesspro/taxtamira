@@ -13,17 +13,17 @@
 <link href="css/main.css" rel="stylesheet"/>
 <link href="css/responsive.css" rel="stylesheet"/>
 <link href="css/lessons.css" rel="stylesheet"/>
-<link href="css/globe-hero.css" rel="stylesheet">
+<link href="css/globe-hero.css" rel="stylesheet"/><link href="css/feature-steps.css" rel="stylesheet"/>
 <!-- OG tags -->
 <meta content="en_US" property="og:locale"/>
 <meta content="website" property="og:type"/>
 <meta content="TaxTami" property="og:title"/>
-<meta content="PAGE_URL" property="og:url">
-<meta content="TaxTami" property="og:site_name"/>
-<meta content="#" property="og:image">
-<meta content="Zimbabwe-focused tax education, consulting and digital tools for taxpayers, SMEs and professionals." property="og:description"/>
+<meta content="PAGE_URL" property="og:url"/>
+<meta content="TaxTami" property="og:site_name">
+<meta content="#" property="og:image"/>
+<meta content="Zimbabwe-focused tax education, consulting and digital tools for taxpayers, SMEs and professionals." property="og:description">
 <!-- Fonts -->
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com" rel="preconnect">
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;500;600;700;900&amp;family=Libre+Baskerville:wght@400;700&amp;family=Work+Sans:wght@100;200;300;400;500;600;700;800;900&amp;family=Sacramento&amp;display=swap" rel="stylesheet"/>
 <!-- Favicon -->
@@ -33,7 +33,7 @@
 <script type="application/ld+json">
 {"@context":"http://schema.org","@type":"WebSite","name":"TaxTami - Tax Training Zimbabwe","url":"www.taxtami.com"}
 	</script>
-</meta></meta></link>
+</link></meta></meta>
 <style class="mermaid-style">
     .mermaid {
         background: #f4f8f6;
@@ -150,7 +150,6 @@
 <div class="content-side col-lg-9 col-md-12 col-sm-12">
 <div class="service-detail lesson-container">
 <div class="inner-box">
-
 <section class="feature-steps-container" id="lesson-overview-steps">
 <div class="feature-steps-wrapper">
 <div class="feature-steps-grid">
@@ -692,7 +691,18 @@ document.addEventListener('DOMContentLoaded', () => {
 	});
 });
 </script>
-<script src="https://cdn.jsdelivr.net/npm/cobe@0.6.3/dist/cobe.min.js"></script>
-<script src="js/globe-hero.js"></script>
+
+<script src="js/globe-hero.js"></script><script src="js/feature-steps.js"></script><script>
+		document.addEventListener('DOMContentLoaded', () => {
+			new FeatureSteps('lesson-overview-steps', {
+				features: [
+					{ title: 'Context' },
+					{ title: 'Legislation' },
+					{ title: 'Concepts' }
+				],
+				autoPlayInterval: 4000
+			});
+		});
+	</script>
 </body>
 </html>
