@@ -48,6 +48,15 @@ html { scroll-behavior: smooth; }
 /* ==========================================================================
    1 · LESSON CONTAINER
    ========================================================================== */
+
+/* Debt / newer lesson pages wrap content in div.section (no built-in padding).
+   Match the 90px top / 70px bottom spacing of .sidebar-page-container used
+   by ITC lessons so all lesson page types have identical vertical breathing room. */
+.section > .container {
+    padding-top: 90px;
+    padding-bottom: 70px;
+}
+
 .lesson-container {
     font-family: 'Work Sans', sans-serif;
     line-height: 1.8;
