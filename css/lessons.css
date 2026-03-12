@@ -1,0 +1,715 @@
+/* ==========================================================================
+   TAXTAMI — lessons.css
+   Unified green theme for all lesson page types:
+
+     Type A · lesson-details accordion   (ITC pages like itcfarming.html)
+              <details class="lesson-details">
+                <summary class="lesson-summary"><h2>…</h2></summary>
+                <div class="section-content">…</div>
+              </details>
+
+     Type B · lesson-section plain h2    (VAT / Debt / newer ITC pages)
+              <section class="lesson-section">
+                <h2>…</h2>
+                <p>…</p>
+              </section>
+
+     Type C · lesson-section badge h3    (itcfoundations / CGT pages)
+              <section class="lesson-section">
+                <h3><span class="section-letter">A</span> …</h3>
+                <p>…</p>
+              </section>
+
+   Colour palette
+   ─────────────────────────────────────────────────────────────────────────
+   --primary-color   #2c724f   dark green   (borders, badges, headings)
+   --primary-mid     #3d8f65   mid green    (hover states)
+   --primary-light   #e9f1ed   pale green   (header bands, tinted rows)
+   --secondary-color #f7b731   amber/gold   (case-law accents, ✓ ticks)
+   ========================================================================== */
+
+/* ── CSS custom properties ─────────────────────────────────────────────── */
+:root {
+    --primary-color:    #2c724f;
+    --primary-mid:      #3d8f65;
+    --primary-light:    #e9f1ed;
+    --secondary-color:  #f7b731;
+    --text-dark:        #2d3436;
+    --text-muted:       #636e72;
+    --bg-light:         #f9f9f9;
+    --white:            #ffffff;
+    --shadow:           0 4px 6px rgba(0, 0, 0, 0.1);
+    --border-radius:    12px;
+    --header-band-pad:  30px;     /* must match .lesson-section padding    */
+}
+
+html { scroll-behavior: smooth; }
+
+/* ==========================================================================
+   1 · LESSON CONTAINER
+   ========================================================================== */
+.lesson-container {
+    font-family: 'Work Sans', sans-serif;
+    line-height: 1.8;
+    color: var(--text-dark);
+}
+
+/* ==========================================================================
+   2 · LESSON NAVIGATION BAR (top pill links)
+   ========================================================================== */
+.lesson-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+    padding: 15px;
+    background: var(--bg-light);
+    border-radius: var(--border-radius);
+    position: relative;
+    z-index: 10;
+    box-shadow: var(--shadow);
+}
+
+.lesson-nav a {
+    background: var(--white);
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-muted);
+    transition: all 0.25s ease;
+    border: 1px solid #dde8e3;
+    text-decoration: none;
+}
+
+.lesson-nav a:hover,
+.lesson-nav a.active {
+    background: var(--primary-color);
+    color: var(--white);
+    border-color: var(--primary-color);
+}
+
+/* ==========================================================================
+   3 · TYPE A — ACCORDION SECTIONS  (lesson-details / lesson-summary)
+   ========================================================================== */
+
+/* The card wrapper --------------------------------------------------------- */
+.lesson-details {
+    margin-bottom: 22px;
+    background: var(--white);
+    border-radius: var(--border-radius);
+    border-left: 5px solid var(--primary-color);
+    box-shadow: var(--shadow);
+    overflow: hidden;              /* clips the header band to rounded corners */
+    transition: box-shadow 0.3s ease;
+}
+
+.lesson-details:hover {
+    box-shadow: 0 8px 20px rgba(44, 114, 79, 0.15);
+}
+
+/* The clickable summary / header band ------------------------------------- */
+.lesson-summary {
+    padding: 18px 30px;
+    cursor: pointer;
+    list-style: none;
+    outline: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* GREEN HEADER BAND — the defining visual of the itcfarming.html theme  */
+    background: var(--primary-light);
+    border-bottom: 2px solid var(--primary-color);
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+    transition: background 0.25s ease;
+}
+
+/* Remove browser default markers */
+.lesson-summary::-webkit-details-marker { display: none; }
+
+/* Custom chevron arrow */
+.lesson-summary::after {
+    content: '\25BC';
+    font-size: 11px;
+    color: var(--primary-color);
+    flex-shrink: 0;
+    transition: transform 0.3s ease;
+    margin-left: 10px;
+}
+
+.lesson-details[open] .lesson-summary::after {
+    transform: rotate(180deg);
+}
+
+/* When closed — no bottom border, fully rounded card */
+.lesson-details:not([open]) .lesson-summary {
+    border-bottom-color: transparent;
+    border-radius: var(--border-radius);
+}
+
+.lesson-summary:hover {
+    background: #d4e5db;
+}
+
+/* Heading text inside the summary bar */
+.lesson-summary h2 {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+    border: none;
+    display: inline;
+}
+
+/* Content area below the summary bar */
+.section-content {
+    padding: 20px 30px 24px 30px;
+}
+
+/* Small extra space when accordion is open */
+.lesson-details[open] {
+    padding-bottom: 0;             /* section-content already has its own   */
+}
+
+/* ==========================================================================
+   4 · TYPE B & C — STATIC SECTION CARDS  (lesson-section)
+   Each card gets a green header band identical to the accordion summary bar,
+   created by expanding the first heading element to break out of the card's
+   padding using negative margins.
+   ========================================================================== */
+
+.lesson-section {
+    margin-bottom: 28px;
+    padding: var(--header-band-pad);
+    background: var(--white);
+    border-radius: var(--border-radius);
+    border-left: 5px solid var(--primary-color);
+    box-shadow: var(--shadow);
+    overflow: hidden;              /* required: clips breakout header band   */
+    transition: box-shadow 0.3s ease;
+}
+
+.lesson-section:hover {
+    box-shadow: 0 8px 20px rgba(44, 114, 79, 0.15);
+}
+
+/* ── Section header band mixin (applied to both h2 and h3) ─────────────── */
+/* The negative margins exactly cancel the parent's 30px padding so the
+   heading stretches edge-to-edge and sits flush with the card top.        */
+.lesson-section > h2,
+.lesson-section > h3 {
+    /* positioning — break out of card padding */
+    margin: calc(-1 * var(--header-band-pad))
+            calc(-1 * var(--header-band-pad))
+            24px
+            calc(-1 * var(--header-band-pad));
+    padding: 18px var(--header-band-pad);
+    /* appearance — matches lesson-summary */
+    background: var(--primary-light);
+    border-bottom: 2px solid var(--primary-color);
+    border-radius: 0;              /* parent overflow:hidden handles corners */
+    /* typography */
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 1.2rem;
+    /* layout — flex allows section-letter badge to sit inline */
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Section-letter circle badge (A, B, C …) — used in Type C pages */
+.lesson-section > h3 .section-letter,
+.lesson-section > h2 .section-letter {
+    background: var(--primary-color);
+    color: var(--white);
+    width: 34px;
+    height: 34px;
+    min-width: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+/* ==========================================================================
+   5 · HEADINGS INSIDE CONTENT AREAS
+   Sub-headings that appear within section content (below the header band).
+   ========================================================================== */
+
+/* h2 / h3 used as content sub-headings (inside section-content or after
+   the main heading in lesson-section)                                      */
+.section-content h2,
+.section-content h3,
+.lesson-section > .section-content h2,
+.lesson-section > .section-content h3 {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 1.15rem;
+    margin-top: 2em;
+    margin-bottom: 0.6em;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--primary-light);
+    /* NOT full-width — these are inline content headings */
+    display: block;
+}
+
+/* h4, h5 — tertiary headings */
+.section-content h4,
+.section-content h5,
+.lesson-section h4,
+.lesson-section h5 {
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-top: 1.8em;
+    margin-bottom: 0.5em;
+}
+
+/* h6 — minor labels */
+.section-content h6,
+.lesson-section h6 {
+    color: var(--primary-mid);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-size: 0.9rem;
+    margin-top: 1.4em;
+    margin-bottom: 0.4em;
+}
+
+/* First heading inside any content area — reduced top gap */
+.section-content h2:first-child,
+.section-content h3:first-child,
+.section-content h4:first-child,
+.section-content h5:first-child,
+.section-content h6:first-child,
+.lesson-section p:first-of-type + h4,
+.lesson-section p:first-of-type + h5 {
+    margin-top: 0.5em;
+}
+
+/* ==========================================================================
+   6 · COMPONENT BOXES
+   Themed containers used inside section content to highlight different
+   content types (legislation, case law, pitfalls, etc.).
+   ========================================================================== */
+
+/* ── A. Legislative / framework box ──────────────────────────────────────*/
+.framework-box {
+    background: var(--primary-light);
+    border: 1px dashed var(--primary-color);
+    border-left: 4px solid var(--primary-color);
+    padding: 20px 22px;
+    border-radius: 8px;
+    margin: 16px 0;
+}
+
+/* ── B. Legal update / Finance Act amendment notice ─────────────────────*/
+.legal-update {
+    background: #fffbee;
+    border: 1px solid var(--secondary-color);
+    border-left: 4px solid var(--secondary-color);
+    padding: 15px 20px;
+    border-radius: 8px;
+    margin: 14px 0;
+    font-style: italic;
+}
+
+/* ── C. Case law box ─────────────────────────────────────────────────────*/
+.case-box {
+    border-left: 4px solid var(--secondary-color);
+    background: #fffdf5;
+    padding: 20px 22px;
+    margin: 16px 0;
+    border-radius: 0 8px 8px 0;
+}
+
+.case-citation {
+    font-weight: 700;
+    color: #8a6200;
+    margin-bottom: 6px;
+}
+
+/* ── D. Applicability grid (D-section individual / SME / corporate) ──────*/
+.applicability-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+    margin-top: 18px;
+}
+
+.applicability-card {
+    background: var(--white);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #d4e8db;
+    border-top: 4px solid var(--primary-color);
+    text-align: left;
+}
+
+.applicability-card h4 {
+    color: var(--primary-color);
+    margin-bottom: 12px;
+    font-size: 1rem;
+    margin-top: 0;
+}
+
+/* ── E. Inner service box (alternative applicability card) ───────────────*/
+.inner-service-box {
+    background: var(--white);
+    border: 1px solid #d4e8db;
+    border-left: 4px solid var(--primary-color);
+    border-radius: 8px;
+    padding: 20px 24px;
+    margin-bottom: 18px;
+    transition: box-shadow 0.2s ease;
+}
+
+.inner-service-box:hover {
+    box-shadow: 0 4px 14px rgba(44, 114, 79, 0.15);
+}
+
+.inner-service-box h5 {
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+/* ── F. Pitfall / warning box ────────────────────────────────────────────*/
+.pitfall-box {
+    background: #fff4f4;
+    border-left: 4px solid #c0392b;
+    padding: 20px 22px;
+    margin: 16px 0;
+    border-radius: 0 8px 8px 0;
+}
+
+.pitfall-title {
+    color: #c0392b;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+/* ── G. Quiz questions ───────────────────────────────────────────────────*/
+.quiz-question {
+    background: #f5f6fa;
+    padding: 18px 22px;
+    border-radius: 8px;
+    margin: 14px 0;
+    border: 1px solid #dde3ea;
+    border-left: 4px solid var(--primary-mid);
+}
+
+/* ── H. Quiz answer / explanation ────────────────────────────────────────*/
+.quiz-explanation {
+    background: #edfaf4;
+    padding: 18px 22px;
+    border-radius: 8px;
+    margin: 12px 0;
+    border-left: 4px solid var(--primary-color);
+}
+
+/* ── I. Key takeaway sections (dark green panel, white text) ─────────────*/
+.takeaway-list,
+.takeaway-box {
+    background: var(--primary-color);
+    color: var(--white);
+    padding: 30px 36px;
+    border-radius: var(--border-radius);
+    margin-top: 10px;
+}
+
+.takeaway-list p,   .takeaway-box p,
+.takeaway-list li,  .takeaway-box li,
+.takeaway-list strong, .takeaway-box strong,
+.takeaway-list div, .takeaway-box div,
+.takeaway-list table, .takeaway-box table,
+.takeaway-list th,  .takeaway-box th,
+.takeaway-list td,  .takeaway-box td {
+    color: var(--white) !important;
+}
+
+.takeaway-list h3,
+.takeaway-box h3 {
+    color: var(--white);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+.takeaway-list ul li,
+.takeaway-box ul li {
+    margin-bottom: 14px;
+    position: relative;
+    padding-left: 28px;
+    color: var(--white);
+}
+
+.takeaway-list ul li::before,
+.takeaway-box ul li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--secondary-color);
+    font-weight: 700;
+}
+
+/* ==========================================================================
+   7 · CONTENT ELEMENTS (tables, definition lists, blockquotes)
+   Consistent green-palette styling across all section types.
+   ========================================================================== */
+
+/* ── Tables ──────────────────────────────────────────────────────────────*/
+.lesson-section table,
+.section-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 18px 0;
+    font-size: 0.95rem;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(44, 114, 79, 0.10);
+}
+
+.lesson-section table thead tr,
+.section-content table thead tr {
+    background: var(--primary-color);
+}
+
+.lesson-section table thead th,
+.section-content table thead th {
+    padding: 12px 16px;
+    font-weight: 600;
+    text-align: left;
+    color: var(--white);
+    border: none;
+}
+
+.lesson-section table tbody tr:nth-child(even),
+.section-content table tbody tr:nth-child(even) {
+    background: var(--primary-light);
+}
+
+.lesson-section table tbody tr:nth-child(odd),
+.section-content table tbody tr:nth-child(odd) {
+    background: var(--white);
+}
+
+.lesson-section table tbody td,
+.section-content table tbody td {
+    padding: 10px 16px;
+    border-bottom: 1px solid #d8eae2;
+    vertical-align: top;
+}
+
+/* ── Definition lists ────────────────────────────────────────────────────*/
+.lesson-section dl,
+.section-content dl {
+    margin: 16px 0;
+}
+
+.lesson-section dt,
+.section-content dt {
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-top: 14px;
+    padding-left: 12px;
+    border-left: 3px solid var(--primary-color);
+}
+
+.lesson-section dd,
+.section-content dd {
+    margin-left: 18px;
+    margin-top: 4px;
+    padding: 6px 12px 6px 14px;
+    background: var(--primary-light);
+    border-radius: 0 6px 6px 0;
+    font-size: 0.97rem;
+}
+
+/* ── Blockquotes ─────────────────────────────────────────────────────────*/
+.lesson-section blockquote,
+.section-content blockquote {
+    border-left: 4px solid var(--primary-color);
+    background: var(--primary-light);
+    margin: 18px 0;
+    padding: 16px 20px;
+    border-radius: 0 8px 8px 0;
+    font-style: italic;
+    color: var(--text-dark);
+}
+
+/* ── Paragraph spacing ───────────────────────────────────────────────────*/
+.section-content p,
+.lesson-section > p {
+    margin-bottom: 1em;
+    line-height: 1.85;
+}
+
+/* ── Unordered/ordered list styling inside content ───────────────────────*/
+.section-content ul,
+.section-content ol,
+.lesson-section > ul,
+.lesson-section > ol {
+    padding-left: 1.6em;
+    margin-bottom: 1em;
+}
+
+.section-content ul li,
+.section-content ol li,
+.lesson-section > ul li,
+.lesson-section > ol li {
+    margin-bottom: 0.4em;
+}
+
+/* ==========================================================================
+   8 · SIDEBAR ELEMENTS
+   ========================================================================== */
+
+/* Lesson sections list widget */
+.lesson-list li a {
+    color: var(--text-dark);
+    display: block;
+    padding: 5px 0;
+    transition: color 0.2s ease;
+    text-decoration: none;
+}
+
+.lesson-list li a:hover {
+    color: var(--primary-color);
+}
+
+/* Category boxed sidebar links */
+.category-boxed.current,
+.category-boxed.current a {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    color: var(--white);
+}
+
+/* ==========================================================================
+   9 · READABILITY HIGHLIGHTS  (applied by readability_enhancer.py)
+   Two inline highlight types to improve scan-ability of lesson content.
+
+   .leg-ref  — legislative references (section numbers, act names, schedules,
+               statutory instruments).  Green tint matches site primary colour.
+
+   .key-term — core Zimbabwean tax concepts / defined terms.  Amber/gold tint
+               matches the site's secondary colour (case-law accents).
+   ========================================================================== */
+
+/* ── Legislative reference (Section 8(1)(a), Finance Act 2025, etc.) ──────── */
+.leg-ref {
+    background: rgba(44, 114, 79, 0.10);
+    color: #1a5c35;
+    border-bottom: 2px solid var(--primary-color);
+    padding: 1px 5px;
+    border-radius: 3px;
+    font-weight: 700;
+    font-size: 0.94em;
+    display: inline;
+    cursor: default;
+    transition: background 0.2s ease;
+}
+
+.leg-ref:hover {
+    background: rgba(44, 114, 79, 0.20);
+}
+
+/* Invert colours inside dark takeaway panels */
+.takeaway-list .leg-ref,
+.takeaway-box .leg-ref {
+    background: rgba(255, 255, 255, 0.18);
+    color: #b8ffda;
+    border-bottom-color: var(--secondary-color);
+}
+
+/* ── Key defined tax term / concept ───────────────────────────────────────── */
+.key-term {
+    background: rgba(247, 183, 49, 0.15);
+    color: #6b4000;
+    border-bottom: 2px dotted var(--secondary-color);
+    padding: 1px 4px;
+    border-radius: 3px;
+    font-weight: 700;
+    font-style: italic;
+    display: inline;
+    cursor: default;
+    transition: background 0.2s ease;
+}
+
+.key-term:hover {
+    background: rgba(247, 183, 49, 0.30);
+}
+
+/* Invert colours inside dark takeaway panels */
+.takeaway-list .key-term,
+.takeaway-box .key-term {
+    background: rgba(255, 255, 255, 0.15);
+    color: #ffe8a0;
+    border-bottom-color: var(--secondary-color);
+}
+
+/* ── Leg-ref inside a key-term (or vice-versa) — avoid double border ──────── */
+.key-term .leg-ref,
+.leg-ref .key-term {
+    border-bottom: none;
+    padding: 0;
+    background: transparent;
+}
+
+/* ==========================================================================
+   10 · RESPONSIVE ADJUSTMENTS
+   ========================================================================== */
+@media (max-width: 992px) {
+    .lesson-section > h2,
+    .lesson-section > h3 {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        --header-band-pad: 20px;
+    }
+
+    .lesson-section {
+        padding: var(--header-band-pad);
+    }
+
+    .lesson-summary {
+        padding: 15px 20px;
+    }
+
+    .section-content {
+        padding: 16px 20px 20px 20px;
+    }
+
+    .lesson-summary h2 {
+        font-size: 1rem;
+    }
+
+    .lesson-section > h2,
+    .lesson-section > h3 {
+        font-size: 1rem;
+        padding: 14px var(--header-band-pad);
+    }
+
+    .takeaway-list,
+    .takeaway-box {
+        padding: 20px;
+    }
+
+    .lesson-section table,
+    .section-content table {
+        font-size: 0.88rem;
+    }
+
+    .applicability-grid {
+        grid-template-columns: 1fr;
+    }
+}

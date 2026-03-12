@@ -1,0 +1,235 @@
+/* Chatbot CTA Section Styles */
+.chatbot-cta-container {
+    position: relative;
+    width: 100%;
+    min-height: 480px;
+    background: #2c724f;
+    border-radius: 24px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+    border: none;
+}
+
+/* Canvas Dot Matrix Reveal Effect */
+.canvas-reveal-container {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.chatbot-cta-container:hover .canvas-reveal-container {
+    opacity: 0.3;
+}
+
+#canvas-dot-matrix {
+    width: 100%;
+    height: 100%;
+}
+
+/* Floating Background Icons */
+.bg-floating-icon {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.08);
+    z-index: 1;
+    pointer-events: none;
+}
+
+.icon-1 { top: 10%; left: 5%; width: 120px; height: 120px; animation: drift-1 20s infinite linear; }
+.icon-2 { bottom: 15%; right: 10%; width: 250px; height: 250px; animation: drift-2 25s infinite linear; }
+.icon-3 { top: 40%; right: 5%; width: 80px; height: 80px; animation: drift-3 18s infinite linear; }
+.icon-4 { bottom: 10%; left: 15%; width: 180px; height: 180px; animation: drift-4 30s infinite linear; }
+.icon-5 { top: 70%; left: 50%; width: 100px; height: 100px; animation: drift-1 22s infinite linear reverse; }
+.icon-6 { top: 20%; left: 40%; width: 150px; height: 150px; animation: drift-2 28s infinite linear reverse; }
+.icon-7 { bottom: 30%; left: 60%; width: 90px; height: 90px; animation: drift-3 21s infinite linear reverse; }
+.icon-8 { top: 50%; left: 10%; width: 200px; height: 200px; animation: drift-4 35s infinite linear reverse; }
+
+@keyframes drift-1 {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    33% { transform: translate(30px, -50px) rotate(10deg); }
+    66% { transform: translate(-20px, -20px) rotate(-5deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+@keyframes drift-2 {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    50% { transform: translate(-40px, -40px) rotate(-15deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+@keyframes drift-3 {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(-20px, 20px) rotate(5deg); }
+    75% { transform: translate(20px, -20px) rotate(-5deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+@keyframes drift-4 {
+    0% { transform: translate(0, 0) rotate(0deg); }
+    40% { transform: translate(50px, 20px) rotate(20deg); }
+    80% { transform: translate(-30px, 40px) rotate(-10deg); }
+    100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+/* Content Layer */
+.chatbot-cta-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 800px;
+    text-align: center;
+}
+
+/* Animated Gradient Text */
+.gradient-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.gradient-span {
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1;
+    letter-spacing: -0.05em;
+    color: #ffffff;
+    position: relative;
+}
+
+/* Background layers for the "before" effect in React */
+.gradient-span::before {
+    content: attr(data-content);
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    color: #ffffff;
+    text-align: center;
+}
+
+/* Gradient 1: Solid White */
+.gradient-1 {
+    animation: gradient-foreground-1 6s infinite;
+}
+.gradient-1::before {
+    animation: gradient-background-1 6s infinite;
+}
+
+/* Gradient 2: Solid White */
+.gradient-2 {
+    animation: gradient-foreground-2 6s infinite;
+}
+.gradient-2::before {
+    animation: gradient-background-2 6s infinite;
+}
+
+@keyframes gradient-foreground-1 {
+    0%, 40%, 100% { opacity: 1; }
+    50%, 90% { opacity: 0; }
+}
+
+@keyframes gradient-background-1 {
+    0%, 40%, 100% { opacity: 0; }
+    50%, 90% { opacity: 1; }
+}
+
+@keyframes gradient-foreground-2 {
+    0%, 40%, 100% { opacity: 0; }
+    50%, 90% { opacity: 1; }
+}
+
+@keyframes gradient-background-2 {
+    0%, 40%, 100% { opacity: 1; }
+    50%, 90% { opacity: 0; }
+}
+
+/* Chat Input UI */
+.chat-input-wrapper {
+    position: relative;
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.chat-scroll-area {
+    height: 120px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #666;
+}
+
+.chat-input-container {
+    position: relative;
+    width: 100%;
+    height: 50px;
+}
+
+.chat-input {
+    width: 100%;
+    height: 100%;
+    padding: 0 45px 0 50px;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    background: #fff;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.2s;
+}
+
+.chat-input:focus {
+    border-color: #007cf0;
+    box-shadow: 0 0 0 2px rgba(0, 124, 240, 0.1);
+}
+
+.chat-btn-new {
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 34px;
+    height: 34px;
+    background: #1a1a1a;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.chat-btn-send {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 34px;
+    height: 34px;
+    background: #1a1a1a;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .gradient-span {
+        font-size: 1.8rem;
+    }
+    .chatbot-cta-container {
+        min-height: 400px;
+        padding: 1rem;
+    }
+}

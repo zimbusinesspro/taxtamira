@@ -1,0 +1,46 @@
+# AI tool directories (Claude, Cursor, Gemini, GitHub Copilot agent)
+.claude/
+.cursor/
+.gemini/
+.agent/
+.github/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor/IDE
+.vscode/
+*.code-workspace
+
+# PHP config / mail
+mail.php
+default.php
+
+# One-off migration / fix scripts (not part of live site)
+*.ps1
+fix_*.py
+update_*.py
+inject.py
+populate_*.py
+populate_recovery*.ps1
+populate_final*.ps1
+process_cgt*.ps1
+fix_export.ps1
+fix_import.ps1
+update_sidebars*.ps1
+assess_approach.ps1
+
+# Keep readability_enhancer.py (it's a useful ongoing tool)
+!readability_enhancer.py
+
+# Internal / backup files
+*_backup.html
+*_old_format.html
+2022_notes_memory_bank.html
