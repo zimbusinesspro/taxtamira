@@ -33,7 +33,23 @@
 <script type="application/ld+json">
 {"@context":"http://schema.org","@type":"WebSite","name":"TaxTami - Tax Training Zimbabwe","url":"www.taxtami.com"}
 	</script>
-</meta></meta></link></head>
+</meta></meta></link>
+    <style class="mermaid-style">
+    .mermaid {
+        background: #f4f8f6;
+        border: 1px solid #c5ddd0;
+        border-radius: 10px;
+        padding: 28px 20px;
+        margin: 24px 0;
+        overflow-x: auto;
+        text-align: center;
+    }
+    .mermaid svg { max-width: 100%; height: auto; }
+    </style>
+    <!-- Mermaid.js flowchart renderer -->
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.3/dist/mermaid.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function () {  mermaid.initialize({    startOnLoad: true,    theme: "base",    themeVariables: {      primaryColor: "#d6ede2",      primaryBorderColor: "#2c724f",      primaryTextColor: "#1a3a2a",      lineColor: "#2c724f",      secondaryColor: "#e9f5ee",      tertiaryColor: "#f4faf7",      edgeLabelBackground: "#ffffff",      fontFamily: "Work Sans, Heebo, sans-serif",      fontSize: "14px"    }  });});</script>
+</head>
 <div class="page-wrapper">
 <!-- Main Header-->
 <header class="main-header style-three">
@@ -178,12 +194,12 @@ Many systems require proactive decisions about paying while disputing. ATO <span
 Audit-driven debt is distinguished by (i) <strong>information‑gathering powers</strong>, (ii) a staged path from <strong>proposed</strong> adjustments to <strong>enforceable</strong> assessments, and (iii) time‑boxed <span class="key-term">appeal</span> windows. IRS examination guidance frames audits as examinations that may be correspondence, office, or field based, with procedural steps before/during/after examination. 
 In the U.K., HMRC describes what happens during a compliance check and available help/support, making it a good “process map” source for teaching. </p>
 <p>Key analytical moves students should learn:
-<em>Classify the issue type</em> (income omission, deduction support failure, withholding failure, VAT/GST position, <span class="key-term">transfer pricing</span>). Then <em>separate</em> (a) principal tax computation from (b) <span class="key-term">penalty</span> basis (behavior + disclosure + offshore multipliers where relevant) and (c) <span class="key-term">interest</span> clock rules.</p>
+<em>Classify the issue type</em> (income omission, deduction support failure, withholding failure, VAT/GST position, <span class="key-term"><strong>transfer pricing</strong></span>). Then <em>separate</em> (a) principal tax computation from (b) <span class="key-term">penalty</span> basis (behavior + disclosure + offshore multipliers where relevant) and (c) <span class="key-term">interest</span> clock rules.</p>
 <p><strong>Debt arising from voluntary disclosures</strong>
 Voluntary disclosure regimes often trade <strong>increasing certainty and reduced punitive outcomes</strong> for <strong>speed, completeness, and payment</strong>.</p>
 <p>Anchor examples for teaching:</p>
 <p><strong>U.K. Digital Disclosure Service (DDS):</strong> DDS is used for several taxes but <strong>not</strong> VAT errors (VAT has separate correction mechanisms). It requires “notify,” then “disclose,” and the disclosure must be submitted <strong>within 90 days</strong> of HMRC acknowledging the notification; payment is expected by the same deadline or payment arrangements must be made. </p>
-<p><strong>Canada CRA VDP (IC00‑1R7, effective for applications received on/after Oct. 1, 2025):</strong> VDP may provide <span class="key-term">penalty</span> relief, <span class="key-term">interest</span> relief, and “no referral for criminal prosecution” if relief is granted. Eligibility conditions include that the disclosure relates to a year at least one year past the filing due date and includes an error/omission with applicable <span class="key-term">interest</span>/penalties; payment (or a payment arrangement request) is required for estimated tax owing where applicable. IC00‑1R7 also describes a two‑level relief model: unprompted (general) relief typically includes <strong>75% <span class="key-term">interest</span> relief and 100% <span class="key-term">penalty</span> relief</strong>, while prompted (partial) relief typically includes <strong>25% <span class="key-term">interest</span> relief</strong> and up to 100% <span class="key-term">penalty</span> relief. </p>
+<p><strong>Canada CRA VDP (IC00‑1R7, effective for applications received on/after Oct. 1, 2025):</strong> VDP may provide <span class="key-term">penalty</span> relief, <span class="key-term">interest</span> relief, and “no referral for criminal prosecution” if relief is granted. Eligibility conditions include that the disclosure relates to a year at least one year past the filing due date and includes an error/omission with applicable <span class="key-term">interest</span>/penalties; payment (or a <strong>payment arrangement</strong> request) is required for estimated tax owing where applicable. IC00‑1R7 also describes a two‑level relief model: unprompted (general) relief typically includes <strong>75% <span class="key-term">interest</span> relief and 100% <span class="key-term">penalty</span> relief</strong>, while prompted (partial) relief typically includes <strong>25% <span class="key-term">interest</span> relief</strong> and up to 100% <span class="key-term">penalty</span> relief. </p>
 <p><strong>Australia ATO voluntary disclosures:</strong> ATO requires voluntary disclosures to be made in an <strong>approved form</strong> (with different lodgment options depending on timing and nature) and discusses penalties/<span class="key-term">interest</span> and reductions for voluntary corrections. </p>
 <p><strong>U.S. (IRS Criminal Investigation) Voluntary Disclosure Practice (VDP):</strong> IRS CI describes circumstances that make a taxpayer ineligible for the VDP pathway, including having a civil examination or criminal investigation commenced, or having the IRS receive information from third parties about the noncompliance. </p>
 <p><strong>Debt involving cross-border taxpayers</strong>
@@ -255,7 +271,7 @@ Using r ≈ 0.00027397: (1+r)^(180) ≈ 1.050 (approx).
 <span class="key-term">Interest</span> ≈ <strong>AU$5,000</strong> (approximation for intuition; do not present as exact).</p>
 <p><strong>Teaching note:</strong> Even if <span class="key-term">interest</span> rates look similar across countries, daily compounding (ATO) vs simple <span class="key-term">interest</span> (many U.K. applications) changes the slope of debt growth. </p>
 <p><strong>Worked example: NGO/exempt entity — unrelated business income trigger (U.S. anchor)</strong></p>
-<p><strong>Scenario:</strong> A tax-exempt organization runs a side business unrelated to its exempt purpose and earns $25,000 <span class="key-term">gross income</span> and $8,000 directly connected expenses (simplified). Determine filing trigger and compute taxable base.</p>
+<p><strong>Scenario:</strong> A tax-exempt organization runs a side business unrelated to its exempt purpose and earns $25,000 <span class="key-term"><strong>gross income</strong></span> and $8,000 directly connected expenses (simplified). Determine filing trigger and compute taxable base.</p>
 <p>IRS rule anchor: if the exempt organization has <strong>$1,000 or more of <span class="key-term">gross income</span> from an unrelated business</strong>, it must file Form 990‑T. </p>
 <p><strong>Taxable base (simplified):</strong> UBTI ≈ 25,000 − 8,000 = <strong>$17,000</strong>
 Tax rate depends on entity classification and current corporate/trust rates (not computed here; substitute local/period applicable rates).</p>
@@ -284,7 +300,7 @@ Group outputs should be one page: (i) issue list, (ii) procedural map, (iii) num
 <p><strong>Cross‑border lab:</strong> Use Convention Articles 4 and 11 to decide whether EOI vs recovery request is viable and what “foreseeably relevant” means. </p>
 <p><strong>Role-play scenarios (scriptable)</strong></p>
 <p><strong>Role-play A: Payment plan negotiation (taxpayer/representative vs tax authority officer)</strong>
-Roles: taxpayer CFO, tax adviser, tax authority collections officer. Objective: reach a payment arrangement while staying compliant.</p>
+Roles: taxpayer CFO, tax adviser, tax authority collections officer. Objective: reach a <strong>payment arrangement</strong> while staying compliant.</p>
 <p>Anchors for realism:
 - IRS: Form 9465 is used to request an installment agreement. 
 - HMRC: government guidance describes “pay in instalments” if you cannot pay on time. 
@@ -333,7 +349,7 @@ B. daily on a compounding basis
 C. annually, fixed rate
 D. only after a court judgment
 <strong>Answer:</strong> B. </p>
-<p>7) In the U.S., an exempt organization with at least how much <span class="key-term">gross income</span> from an unrelated business must file Form 990‑T?
+<p>7) In the U.S., an exempt organization with at least how much <span class="key-term"><strong>gross income</strong></span> from an unrelated business must file Form 990‑T?
 A. $0 B. $500 C. $1,000 D. $10,000
 <strong>Answer:</strong> C. </p>
 <p>8) Which event can trigger automatic revocation of U.S. tax‑exempt status (as an IRS-administered rule)?
@@ -346,7 +362,7 @@ D. Any unrelated business income
 1) Explain why audit debt and disclosure debt differ in <em><span class="key-term">penalty</span> posture</em> even when tax principal is identical. Anchor your answer in “prompted vs unprompted” and “quality of disclosure.” 
 2) List four data elements that an applicant state should include in an international assistance request under the Convention framework (focus on identification, claim components, and requested action type). 
 3) Describe two ways a government entity can become a “tax debtor” even if it is exempt from some taxes. Provide one payroll/withholding example and one VAT/GST example. 
-4) In Canada’s VDP, why is payment (or payment arrangement request) part of eligibility screening? Explain from a collections-risk perspective. citeturn22view0 (rubric references eligibility and payment requirement)
+4) In Canada’s VDP, why is payment (or <strong>payment arrangement</strong> request) part of eligibility screening? Explain from a collections-risk perspective. citeturn22view0 (rubric references eligibility and payment requirement)
 5) Give one compliance control that prevents NGO revocation risk and one that prevents unrelated business income tax risk.</p>
 </div>
 </section>
@@ -362,32 +378,32 @@ D. Any unrelated business income
 <p><strong>Mermaid flows for teaching (timelines/decision charts)</strong></p>
 <div class="mermaid">
 flowchart TD
-A[Potential noncompliance] --&gt; B{How discovered?}
-B --&gt;|Authority initiates audit/check| C[Audit/Compliance check]
-B --&gt;|Taxpayer identifies issue| D[Consider voluntary correction/disclosure]
-C --&gt; E[Proposed adjustment / findings]
-E --&gt; F{Accept?}
-F --&gt;|Yes| G[Assessment/Reassessment -&gt; Balance due]
-F --&gt;|No| H[<span class="key-term">Appeal</span>/<span class="key-term">objection</span> window]
-H --&gt; I[Decision / settlement]
-I --&gt; G
-G --&gt; J{Pay in full?}
-J --&gt;|Yes| K[Case closed]
-J --&gt;|No| L[Payment plan / enforcement / cross-border tools]
+A[Potential noncompliance] --> B{How discovered?}
+B -->|Authority initiates audit/check| C[Audit/Compliance check]
+B -->|Taxpayer identifies issue| D[Consider voluntary correction/disclosure]
+C --> E[Proposed adjustment / findings]
+E --> F{Accept?}
+F -->|Yes| G[Assessment/Reassessment -> Balance due]
+F -->|No| H[Appeal/objection window]
+H --> I[Decision / settlement]
+I --> G
+G --> J{Pay in full?}
+J -->|Yes| K[Case closed]
+J -->|No| L[Payment plan / enforcement / cross-border tools]
 </div>
 <div class="mermaid">
 flowchart TD
-A[Cross-border taxpayer debt] --&gt; B[Identify assets/income/residency footprints]
-B --&gt; C{Double taxation risk?}
-C --&gt;|Yes| D[Consider MAP / Competent Authority]
-D --&gt; E[MAP resolution or bilateral agreement]
-C --&gt;|No or parallel| F{Need information abroad?}
-F --&gt;|Yes| G[EOI request: "foreseeably relevant"]
-F --&gt;|No| H{Need recovery abroad?}
-G --&gt; H
-H --&gt;|Yes| I[Recovery request with enforceable instrument; check contest status]
-I --&gt; J[Requested State recovers as own claim]
-H --&gt;|Also| K[Service of documents abroad]
+A[Cross-border taxpayer debt] --> B[Identify assets/income/residency footprints]
+B --> C{Double taxation risk?}
+C -->|Yes| D[Consider MAP / Competent Authority]
+D --> E[MAP resolution or bilateral agreement]
+C -->|No or parallel| F{Need information abroad?}
+F -->|Yes| G[EOI request: "foreseeably relevant"]
+F -->|No| H{Need recovery abroad?}
+G --> H
+H -->|Yes| I[Recovery request with enforceable instrument; check contest status]
+I --> J[Requested State recovers as own claim]
+H -->|Also| K[Service of documents abroad]
 </div>
 <p><strong>Templates/forms with sample wording (adaptable)</strong></p>
 <p>These are <strong>teaching templates</strong> (not jurisdiction-specific legal advice). Pair each with the relevant official form/process in your jurisdiction.</p>
@@ -398,7 +414,7 @@ H --&gt;|Also| K[Service of documents abroad]
 To: [Tax Authority / Program Unit]
 Re: Voluntary disclosure – [Taxpayer name, TIN, address]
 Disclosure type: [Unprompted / Prompted] (where applicable)
-Tax types: [Income tax / VAT-GST / <span class="key-term">PAYE</span>-withholding / Excise / Other]
+Tax types: [Income tax / VAT-GST / <span class="key-term"><strong>PAYE</strong></span>-withholding / Excise / Other]
 Years/periods: [YYYY–YYYY]
 
 1. Purpose
@@ -419,7 +435,7 @@ Attached schedules show:
 We attach [returns/forms/schedules/bank statements/contracts/invoices] for the relevant years.
 
 5. Payment proposal
-We enclose payment of [amount] OR request a payment arrangement:
+We enclose payment of [amount] OR request a <strong>payment arrangement</strong>:
 Proposed plan: [amount per month], starting [date], ending [date].
 Basis: [cash flow statement attached].
 
@@ -438,10 +454,10 @@ Sincerely,
 <p>[Date]
 
 To: [Collections Office]
-Subject: Request for payment arrangement – [Taxpayer name, reference number]
+Subject: Request for <strong>payment arrangement</strong> – [Taxpayer name, reference number]
 
 We acknowledge the outstanding balance of [amount] for [tax type] covering [periods].
-We request approval for a payment arrangement because we cannot pay in full by the due date.
+We request approval for a <strong>payment arrangement</strong> because we cannot pay in full by the due date.
 
 1) Proposed installment schedule:
 - Initial payment: [amount] on [date]
@@ -828,7 +844,5 @@ document.addEventListener('DOMContentLoaded', () => {
 	});
 });
 </script>
-<script src="https://cdn.jsdelivr.net/npm/mermaid@10.0.0/dist/mermaid.min.js"></script>
-<script>mermaid.initialize({startOnLoad:true});</script>
 <script src="js/globe-hero.js" type="module"></script>
 </html>

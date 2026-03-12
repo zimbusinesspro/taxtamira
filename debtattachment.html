@@ -33,7 +33,23 @@
 <script type="application/ld+json">
 {"@context":"http://schema.org","@type":"WebSite","name":"TaxTami - Tax Training Zimbabwe","url":"www.taxtami.com"}
 	</script>
-</meta></meta></link></head>
+</meta></meta></link>
+    <style class="mermaid-style">
+    .mermaid {
+        background: #f4f8f6;
+        border: 1px solid #c5ddd0;
+        border-radius: 10px;
+        padding: 28px 20px;
+        margin: 24px 0;
+        overflow-x: auto;
+        text-align: center;
+    }
+    .mermaid svg { max-width: 100%; height: auto; }
+    </style>
+    <!-- Mermaid.js flowchart renderer -->
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.3/dist/mermaid.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function () {  mermaid.initialize({    startOnLoad: true,    theme: "base",    themeVariables: {      primaryColor: "#d6ede2",      primaryBorderColor: "#2c724f",      primaryTextColor: "#1a3a2a",      lineColor: "#2c724f",      secondaryColor: "#e9f5ee",      tertiaryColor: "#f4faf7",      edgeLabelBackground: "#ffffff",      fontFamily: "Work Sans, Heebo, sans-serif",      fontSize: "14px"    }  });});</script>
+</head>
 <div class="page-wrapper">
 <!-- Main Header-->
 <header class="main-header style-three">
@@ -236,11 +252,11 @@
 <p><strong>Sample Proceeds Distribution Chart:</strong> (percentages for illustration)</p>
 <p>pie
     title Distribution of Sale Proceeds
-    "Sale &amp; Enforcement Costs" : 15
+    <span class="quoted-text">"Sale &amp; Enforcement Costs"</span> : 15
     "Accrued <span class="key-term">Interest</span>"        : 10
-    "Principal Judgment Debt" : 55
-    "Senior Liens/Mortgages"  : 15
-    "Surplus to Debtor"       : 5</p>
+    <span class="quoted-text">"Principal Judgment Debt"</span> : 55
+    <span class="quoted-text">"Senior Liens/Mortgages"</span>  : 15
+    <span class="quoted-text">"Surplus to Debtor"</span>       : 5</p>
 <p><em>Example:</em> Debtor owes $80,000 (plus costs). Auction of his car yields $20,000. $2,000 of sale costs and $1,000 of accrued <span class="key-term">interest</span> are deducted, leaving $17,000. Suppose Debtor had a prior $15,000 bank lien on the car. The bank’s lien is paid next, leaving $2,000. The judgment-creditor receives this $2,000 (applying pro rata to debt) and remains with a $78,000 unpaid balance (which it may pursue separately). No surplus is returned since all funds were consumed.</p>
 </div>
 </section>
@@ -291,7 +307,7 @@ Case No. ___.</p>
 <p><strong>Court of [Jurisdiction]</strong>
 Case No. ___.</p>
 <p><strong>Order of Sale:</strong> Pursuant to the decree and subsequent attachment above, it is ordered that the following property be sold at public auction:</p>
-<p><strong>Property:</strong> [Detailed description: e.g. "Lot 5, Block 3 of XYZ Subdivision; or Vehicle - 2015 Toyota Camry, VIN..."].
+<p><strong>Property:</strong> [Detailed description: e.g. <span class="quoted-text">"Lot 5, Block 3 of XYZ Subdivision; or Vehicle - 2015 Toyota Camry, VIN..."</span>].
 <strong>Time/Place of Sale:</strong> The property will be sold on [date] at [time] at [location: e.g. Courthouse steps or specified auction venue], pursuant to CPC Order XXI.
 <strong>Terms:</strong> The successful bidder shall immediately pay a deposit of [e.g. 25%] of the purchase price (required for land). The balance of the purchase money shall be paid into Court within [15 days] as required by law. In default, the deposit will be forfeited and the property re-sold.
 <strong>Redemption:</strong> No redemption right will be permitted after confirmation of sale.</p>
@@ -645,7 +661,5 @@ document.addEventListener('DOMContentLoaded', () => {
 	});
 });
 </script>
-<script src="https://cdn.jsdelivr.net/npm/mermaid@10.0.0/dist/mermaid.min.js"></script>
-<script>mermaid.initialize({startOnLoad:true});</script>
 <script src="js/globe-hero.js" type="module"></script>
 </html>

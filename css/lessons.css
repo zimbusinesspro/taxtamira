@@ -630,27 +630,25 @@ html { scroll-behavior: smooth; }
 
 /* ── Key defined tax term / concept ───────────────────────────────────────── */
 .key-term {
-    background: rgba(247, 183, 49, 0.15);
-    color: #6b4000;
+    background: none;
+    color: inherit;
     border-bottom: 2px dotted var(--secondary-color);
-    padding: 1px 4px;
-    border-radius: 3px;
+    padding: 0 2px;
+    border-radius: 0;
     font-weight: 700;
     font-style: italic;
     display: inline;
     cursor: default;
-    transition: background 0.2s ease;
 }
 
 .key-term:hover {
-    background: rgba(247, 183, 49, 0.30);
+    background: none;
 }
 
 /* Invert colours inside dark takeaway panels */
 .takeaway-list .key-term,
 .takeaway-box .key-term {
-    background: rgba(255, 255, 255, 0.15);
-    color: #ffe8a0;
+    color: inherit;
     border-bottom-color: var(--secondary-color);
 }
 
@@ -660,6 +658,26 @@ html { scroll-behavior: smooth; }
     border-bottom: none;
     padding: 0;
     background: transparent;
+}
+
+/* ── Quoted text ("direct quotes / scare-quoted terms") ──────────────────── */
+.quoted-text {
+    font-weight: 700;
+    font-style: italic;
+    color: #1a3a4f;
+    border-left: 3px solid var(--primary-color);
+    padding: 0 5px 0 6px;
+    background: rgba(44, 114, 79, 0.06);
+    border-radius: 0 3px 3px 0;
+    display: inline;
+}
+
+/* Inside dark takeaway panels */
+.takeaway-list .quoted-text,
+.takeaway-box .quoted-text {
+    color: #cbe8d8;
+    background: rgba(255, 255, 255, 0.10);
+    border-left-color: var(--secondary-color);
 }
 
 /* ==========================================================================

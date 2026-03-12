@@ -34,6 +34,22 @@
 {"@context":"http://schema.org","@type":"WebSite","name":"TaxTami - Tax Training Zimbabwe","url":"www.taxtami.com"}
 	</script>
 </meta></link></meta> <link href="css/feature-steps.css" rel="stylesheet"/>
+
+    <style class="mermaid-style">
+    .mermaid {
+        background: #f4f8f6;
+        border: 1px solid #c5ddd0;
+        border-radius: 10px;
+        padding: 28px 20px;
+        margin: 24px 0;
+        overflow-x: auto;
+        text-align: center;
+    }
+    .mermaid svg { max-width: 100%; height: auto; }
+    </style>
+    <!-- Mermaid.js flowchart renderer -->
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.3/dist/mermaid.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function () {  mermaid.initialize({    startOnLoad: true,    theme: "base",    themeVariables: {      primaryColor: "#d6ede2",      primaryBorderColor: "#2c724f",      primaryTextColor: "#1a3a2a",      lineColor: "#2c724f",      secondaryColor: "#e9f5ee",      tertiaryColor: "#f4faf7",      edgeLabelBackground: "#ffffff",      fontFamily: "Work Sans, Heebo, sans-serif",      fontSize: "14px"    }  });});</script>
 </head>
 <body>
 <div class="page-wrapper">
@@ -126,7 +142,7 @@
 <div class="auto-container">
 <div class="service-title-box">
 <h2>Capital vs Revenue Receipts</h2>
-<p>The core distinction in Zimbabwean Gross Income</p>
+<p>The core distinction in Zimbabwean <strong>Gross Income</strong></p>
 </div>
 <div class="row clearfix">
 <!-- Content Side -->
@@ -144,7 +160,7 @@
 <div class="step-number-wrap">1</div>
 <div class="step-content">
 <h3>Executive summary</h3>
-<p>Zimbabwe’s <span class="leg-ref">Income Tax Act [Chapter 23:06]</span> taxes “<span class="key-term">gross income</span>” that is received by or accrued to a person from a Zimbabwean source, but it expressl...</p>
+<p>Zimbabwe’s <span class="leg-ref"><strong>Income Tax Act</strong> [Chapter 23:06]</span> taxes “<span class="key-term"><strong>gross income</strong></span>” that is received by or accrued to a person from a Zimbabwean source, but it expressl...</p>
 <div class="step-progress-container">
 <div class="step-progress-bar"></div>
 </div>
@@ -201,11 +217,11 @@
 <h1 id="capital-vs-revenue-receipts-in-zimbabwean-tax-law">Capital vs Revenue Receipts in Zimbabwean Tax Law</h1>
 <section class="lesson-section" id="executive-summary">
 <h2 id="executive-summary">Executive summary</h2>
-<p>Zimbabwe’s <span class="leg-ref">Income Tax Act [Chapter 23:06]</span> taxes <strong>“<span class="key-term">gross income</span>”</strong> that is <strong>received by or accrued to</strong> a person from a <strong>Zimbabwean source</strong>, but it expressly <strong>excludes amounts proved by the taxpayer to be “of a capital nature”</strong>—unless a specific inclusion paragraph brings the amount back into <span class="key-term">gross income</span>. The Act <strong>does not define</strong> what “of a capital nature” means in an exhaustive way; Zimbabwean courts (and historically, Southern Rhodesian/Rhodesia &amp; Nyasaland authority, still influential) therefore apply <strong>multiple indicia</strong> (not a single universal test), especially <strong>intention</strong>, the <strong>profit‑making scheme</strong> approach, and <strong>fixed vs floating (circulating) capital</strong> analysis.</p>
-<p>A technically decisive point for practice is that the <span class="leg-ref">Income Tax Act</span> places a <strong>formal burden of proof</strong> on the taxpayer in objections/appeals to show non-liability/exemption/deduction/credit; read with the <span class="key-term">gross income</span> definition, this legal architecture strongly incentivises <strong>contemporaneous evidence</strong> supporting “capital” classification.</p>
-<p>Even where proceeds are capital, income tax exposure can still arise through <strong><span class="key-term">recoupment</span> mechanics</strong>: the <span class="key-term">gross income</span> definition includes amounts “recovered or recouped” where the taxpayer previously obtained deductions/allowances (including <span class="key-term">capital allowance</span> deductions), meaning the “capital” label does not automatically keep cash out of income tax.</p>
-<p>Capital receipts can also be taxed under the <strong><span class="key-term">Capital Gains Tax</span> (CGT) regime</strong> (<span class="leg-ref">Capital Gains Tax Act [Chapter 23:01]</span> and <span class="key-term">ZIMRA</span>’s CGT administrative practice), typically on <span class="key-term">disposal</span> of a <strong>“<span class="key-term">specified asset</span>”</strong> (immovable property, <span class="key-term">marketable securities</span>, and certain registered intangible rights), at rates <span class="key-term">ZIMRA</span> states as <strong>20% of the <span class="key-term">capital gain</span></strong> (post‑1 Feb 2009 acquisitions) or <strong>5% of gross capital amount</strong> (pre‑1 Feb 2009 acquisitions), subject to listed exemptions/reliefs.</p>
-<p>Finally, classification interacts with <strong>rate application</strong> in computing the liability: <span class="key-term">ZIMRA</span>’s published domestic tax rates indicate, for example, <strong>company income</strong> is generally taxed at <strong>25%</strong> and <strong>AIDS levy</strong> at <strong>3% of tax chargeable</strong>, while <span class="key-term">PAYE</span> tables apply progressive rates for <span class="key-term">employment income</span> (illustrated in <span class="key-term">ZIMRA</span>’s USD <span class="key-term">PAYE</span> tables).</p>
+<p>Zimbabwe’s <span class="leg-ref"><strong>Income Tax Act</strong> [Chapter 23:06]</span> taxes <strong>“<span class="key-term">gross income</span>”</strong> that is <strong>received by or accrued to</strong> a person from a <strong>Zimbabwean source</strong>, but it expressly <strong>excludes amounts proved by the taxpayer to be “of a capital nature”</strong>—unless a specific inclusion paragraph brings the amount back into <span class="key-term"><strong>gross income</strong></span>. The Act <strong>does not define</strong> what “of a capital nature” means in an exhaustive way; Zimbabwean courts (and historically, Southern Rhodesian/Rhodesia &amp; Nyasaland authority, still influential) therefore apply <strong>multiple indicia</strong> (not a single universal test), especially <strong>intention</strong>, the <strong>profit‑making scheme</strong> approach, and <strong>fixed vs floating (circulating) capital</strong> analysis.</p>
+<p>A technically decisive point for practice is that the <span class="leg-ref"><strong>Income Tax Act</strong></span> places a <strong>formal burden of proof</strong> on the taxpayer in objections/appeals to show non-liability/exemption/deduction/credit; read with the <span class="key-term"><strong>gross income</strong></span> definition, this legal architecture strongly incentivises <strong>contemporaneous evidence</strong> supporting “capital” classification.</p>
+<p>Even where proceeds are capital, income tax exposure can still arise through <strong><span class="key-term">recoupment</span> mechanics</strong>: the <span class="key-term"><strong>gross income</strong></span> definition includes amounts “recovered or recouped” where the taxpayer previously obtained deductions/allowances (including <span class="key-term">capital allowance</span> deductions), meaning the “capital” label does not automatically keep cash out of income tax.</p>
+<p><strong>Capital receipts</strong> can also be taxed under the <strong><span class="key-term">Capital Gains Tax</span> (CGT) regime</strong> (<span class="leg-ref"><strong>Capital Gains Tax</strong> Act [Chapter 23:01]</span> and <span class="key-term"><strong>ZIMRA</strong></span>’s CGT administrative practice), typically on <span class="key-term">disposal</span> of a <strong>“<span class="key-term">specified asset</span>”</strong> (immovable property, <span class="key-term">marketable securities</span>, and certain registered intangible rights), at rates <span class="key-term"><strong>ZIMRA</strong></span> states as <strong>20% of the <span class="key-term">capital gain</span></strong> (post‑1 Feb 2009 acquisitions) or <strong>5% of gross capital amount</strong> (pre‑1 Feb 2009 acquisitions), subject to listed exemptions/reliefs.</p>
+<p>Finally, classification interacts with <strong>rate application</strong> in computing the liability: <span class="key-term"><strong>ZIMRA</strong></span>’s published domestic tax rates indicate, for example, <strong>company income</strong> is generally taxed at <strong>25%</strong> and <strong>AIDS levy</strong> at <strong>3% of tax chargeable</strong>, while <span class="key-term"><strong>PAYE</strong></span> tables apply progressive rates for <span class="key-term"><strong>employment income</strong></span> (illustrated in <span class="key-term"><strong>ZIMRA</strong></span>’s USD <span class="key-term"><strong>PAYE</strong></span> tables).</p>
 <hr/>
 </section>
 <section class="lesson-section" id="lesson-content">
@@ -213,20 +229,20 @@
 </section>
 <section class="lesson-section" id="a-section-context-placement-importance-examinability-zimra-interest">
 <h3 id="a-section-context-placement-importance-examinability-zimra-interest">A) Section context: placement, importance, examinability, ZIMRA interest</h3>
-<p><strong>Placement in the tax chapter.</strong> The capital vs revenue receipts distinction sits at the heart of the <span class="leg-ref">Income Tax Act</span>’s charging structure: income tax is charged on <strong>“<span class="key-term">taxable income</span>”</strong> (Part III), whose computation begins with identifying <strong>“<span class="key-term">gross income</span>”</strong> in <strong><span class="leg-ref">section 8</span></strong>. “<span class="key-term">Gross income</span>” is expressly framed as including income from a <span class="key-term">Zimbabwe source</span> <strong>“excluding any amount… proved… to be of a capital nature”</strong> (subject to specific inclusions).</p>
+<p><strong>Placement in the tax chapter.</strong> The capital vs <strong>revenue receipts</strong> distinction sits at the heart of the <span class="leg-ref"><strong>Income Tax Act</strong></span>’s charging structure: income tax is charged on <strong>“<span class="key-term">taxable income</span>”</strong> (Part III), whose computation begins with identifying <strong>“<span class="key-term">gross income</span>”</strong> in <strong><span class="leg-ref">section 8</span></strong>. “<span class="key-term"><strong>Gross income</strong></span>” is expressly framed as including income from a <span class="key-term">Zimbabwe source</span> <strong>“excluding any amount… proved… to be of a capital nature”</strong> (subject to specific inclusions).</p>
 <p><strong>Practical importance.</strong> Whether a receipt is characterised as <strong>capital</strong> or <strong>revenue</strong> determines which of three broad outcomes applies:</p>
 <ol>
-<li>it is <strong>taxed as income</strong> under the <span class="leg-ref">Income Tax Act</span> (<span class="key-term">revenue receipt</span> usually included in <span class="key-term">gross income</span>);</li>
+<li>it is <strong>taxed as income</strong> under the <span class="leg-ref"><strong>Income Tax Act</strong></span> (<span class="key-term">revenue receipt</span> usually included in <span class="key-term">gross income</span>);</li>
 <li>it is <strong>excluded from <span class="key-term">gross income</span></strong> but may be taxed under <strong><span class="key-term">Capital Gains Tax</span></strong> if it arises from <span class="key-term">disposal</span> of a <strong><span class="key-term">specified asset</span></strong>; or</li>
 <li>it is excluded from <span class="key-term">gross income</span> and <strong>not taxed</strong> (where neither income tax inclusions nor CGT applies).</li>
 </ol>
 <p>It also materially affects timing, recordkeeping, objections and appeals—because the legislation places the burden on the taxpayer to prove exclusions/non-liability.</p>
 <p><strong>Examinability.</strong> In Zimbabwean professional tax examinations and advanced practice, this topic is a “high-frequency” test area because it combines: (i) statutory interpretation, (ii) case-law driven tests, and (iii) computations (income tax vs CGT vs <span class="key-term">recoupment</span>). The field is unsettled and heavily case-law driven in Zimbabwe.</p>
-<p><strong><span class="key-term">ZIMRA</span> <span class="key-term">interest</span>.</strong> <span class="key-term">ZIMRA</span> audit risk is high where taxpayers:</p>
+<p><strong><span class="key-term">ZIMRA</span> <span class="key-term">interest</span>.</strong> <span class="key-term"><strong>ZIMRA</strong></span> audit risk is high where taxpayers:</p>
 <ul>
 <li>treat profits on disposals (especially land/immovable property, shares, rights) as capital without robust evidence of investment intention;</li>
 <li>claim “capital” treatment to avoid income tax while simultaneously claiming deductions/allowances that later trigger <strong>recoupments</strong>; or</li>
-<li>misapply CGT exemptions or understate open market values (<span class="key-term">ZIMRA</span>’s CGT guidance notes valuation uplift powers under the CGT Act).</li>
+<li>misapply CGT exemptions or understate open market values (<span class="key-term"><strong>ZIMRA</strong></span>’s CGT guidance notes valuation uplift powers under the CGT Act).</li>
 </ul>
 <hr/>
 </section>
@@ -244,16 +260,16 @@
 <li>The <span class="key-term">gross income</span> definition itself embeds an evidentiary requirement: an amount is excluded only if it is <strong>“proved by the taxpayer to be of a capital nature.”</strong></li>
 <li>Separately, <strong><span class="leg-ref">section 63</span></strong> states that in objections/appeals, the <strong>burden of proof</strong> that an amount is exempt/not liable or subject to deductions/credits is on the person claiming it, and the court will not reverse the Commissioner unless the appellant shows the decision is wrong.</li>
 </ul>
-<p><strong><span class="key-term">Recoupment</span> / clawback integration in <span class="key-term">gross income</span>.</strong> The capital/revenue divide is statutorily “porous”: paragraph <strong>(j)</strong> within the <span class="key-term">gross income</span> definition brings into <span class="key-term">gross income</span> certain amounts “recovered or recouped” where deductions/allowances were previously allowed—commonly impacting proceeds on <span class="key-term">disposal</span>/insurance recoveries of capital assets where <span class="key-term">capital allowances</span> were claimed.</p>
-<p><strong>Timing rule for prepayments.</strong> <span class="leg-ref">Finance Act 2018</span> amended the <span class="leg-ref">Income Tax Act</span> by inserting <strong><span class="leg-ref">section 8(3)</span></strong>: prepayments received for goods/services/benefits to be used up in a later year are excluded from <span class="key-term">gross income</span> in the year of receipt and included when “used up” (proportionately if in stages). This is not “capital vs revenue” in substance but is often an exam trap because it changes <em>when</em> revenue receipts are taxed.</p>
+<p><strong><span class="key-term">Recoupment</span> / clawback integration in <span class="key-term">gross income</span>.</strong> The capital/revenue divide is statutorily “porous”: paragraph <strong>(j)</strong> within the <span class="key-term">gross income</span> definition brings into <span class="key-term">gross income</span> certain amounts “recovered or recouped” where deductions/allowances were previously allowed—commonly impacting proceeds on <span class="key-term">disposal</span>/insurance recoveries of capital assets where <span class="key-term"><strong>capital allowances</strong></span> were claimed.</p>
+<p><strong>Timing rule for prepayments.</strong> <span class="leg-ref"><strong>Finance Act</strong> 2018</span> amended the <span class="leg-ref"><strong>Income Tax Act</strong></span> by inserting <strong><span class="leg-ref">section 8(3)</span></strong>: prepayments received for goods/services/benefits to be used up in a later year are excluded from <span class="key-term">gross income</span> in the year of receipt and included when “used up” (proportionately if in stages). This is not “capital vs revenue” in substance but is often an exam trap because it changes <em>when</em> <strong>revenue receipts</strong> are taxed.</p>
 <p><strong><span class="leg-ref">Capital Gains Tax Act [Chapter 23:01]</span> (CGTA).</strong></p>
-<p>CGT is triggered on <span class="key-term">disposal</span> of a <strong><span class="key-term">specified asset</span></strong>. <span class="key-term">ZIMRA</span>’s CGT guidance defines <span class="key-term">specified assets</span> to include <strong>immovable property</strong> and <strong><span class="key-term">marketable securities</span></strong>, and notes the enlarged definition (from 1 Jan 2017) includes certain registered tangible/intangible rights (e.g., mining rights, patents, trade marks, industrial designs, copyright-related rights).</p>
+<p>CGT is triggered on <span class="key-term">disposal</span> of a <strong><span class="key-term">specified asset</span></strong>. <span class="key-term">ZIMRA</span>’s CGT guidance defines <span class="key-term"><strong>specified assets</strong></span> to include <strong>immovable property</strong> and <strong><span class="key-term">marketable securities</span></strong>, and notes the enlarged definition (from 1 Jan 2017) includes certain registered tangible/intangible rights (e.g., mining rights, patents, trade marks, industrial designs, copyright-related rights).</p>
 <p>The CGT system interacts with income tax classification via the concept of <strong>gross capital amount</strong> in the CGT Act, which is structured to exclude amounts that are proved to constitute <span class="key-term">gross income</span> (thus managing overlap), while still including certain <span class="key-term">recoupment</span>-type amounts.</p>
 <p><strong>Rates and charging instruments.</strong></p>
 <ul>
-<li><span class="key-term">ZIMRA</span>’s tax rate page indicates general <strong>company</strong> income tax is <strong>25%</strong> (Finance Act s14(2c)) and AIDS levy is <strong>3% of tax chargeable</strong>.</li>
-<li><span class="key-term">ZIMRA</span>’s CGT page states CGT rates of <strong>20% of the <span class="key-term">capital gain</span></strong> for <span class="key-term">specified assets</span> acquired after <strong>1 Feb 2009</strong>, or <strong>5% of gross capital amount</strong> for <span class="key-term">specified assets</span> acquired before that date.</li>
-<li>For <span class="key-term">employment income</span>, <span class="key-term">ZIMRA</span>’s <strong>USD Jan–Dec 2025 <span class="key-term">PAYE</span> tax table</strong> shows progressive bands and confirms AIDS levy is <strong>3% of the individual’s tax payable</strong>.</li>
+<li><span class="key-term">ZIMRA</span>’s tax rate page indicates general <strong>company</strong> income tax is <strong>25%</strong> (<strong>Finance Act</strong> s14(2c)) and AIDS levy is <strong>3% of tax chargeable</strong>.</li>
+<li><span class="key-term">ZIMRA</span>’s CGT page states CGT rates of <strong>20% of the <span class="key-term">capital gain</span></strong> for <span class="key-term"><strong>specified assets</strong></span> acquired after <strong>1 Feb 2009</strong>, or <strong>5% of gross capital amount</strong> for <span class="key-term"><strong>specified assets</strong></span> acquired before that date.</li>
+<li>For <span class="key-term"><strong>employment income</strong></span>, <span class="key-term">ZIMRA</span>’s <strong>USD Jan–Dec 2025 <span class="key-term">PAYE</span> tax table</strong> shows progressive bands and confirms AIDS levy is <strong>3% of the individual’s tax payable</strong>.</li>
 </ul>
 <hr/>
 </section>
@@ -266,17 +282,17 @@
 *   Escape hatch: exclude if proved by taxpayer to be capital.
 *   Anti-escape hatch: certain inclusion paragraphs (notably recoupments) override “capital” exclusion.</p>
 <h4 id="legal-vs-ordinary-meaning">Legal vs ordinary meaning</h4>
-<p>In ordinary business usage, “capital receipts” are associated with financing and asset disposals (sale of land, shares, equipment; proceeds of loans; owner contributions), while “revenue receipts” are operating inflows (sales, fees, rentals, <span class="key-term">interest</span>). Zimbabwean tax law uses a similar intuition but refines it through:</p>
+<p>In ordinary business usage, “<strong>capital receipts</strong>” are associated with financing and asset disposals (sale of land, shares, equipment; proceeds of loans; owner contributions), while “<strong>revenue receipts</strong>” are operating inflows (sales, fees, rentals, <span class="key-term">interest</span>). Zimbabwean tax law uses a similar intuition but refines it through:</p>
 <ul>
 <li>the <strong>taxpayer’s purpose/intention</strong> at acquisition and at <span class="key-term">disposal</span>;</li>
 <li>character of the asset as <strong>fixed vs <span class="key-term">floating capital</span></strong>;</li>
 <li>whether the transaction is a <strong>mere realisation of an investment</strong> or a <strong>profit-making scheme/trade</strong>; and</li>
 <li>whether the receipt substitutes for income or compensates for structural capital.</li>
 </ul>
-<p>A classic warning repeatedly emphasised in Zimbabwean academic/practitioner discussion is that what is capital in one person’s hands may be <span class="key-term">trading stock</span> (income) in another’s.</p>
+<p>A classic warning repeatedly emphasised in Zimbabwean academic/practitioner discussion is that what is capital in one person’s hands may be <span class="key-term"><strong>trading stock</strong></span> (income) in another’s.</p>
 <h4 id="step-by-step-classification-framework">Step-by-step classification framework</h4>
 <p><strong>Step 1: Identify the “amount” and the <span class="key-term">year of assessment</span>.</strong><br/>
-The <span class="leg-ref">Income Tax Act</span> taxes the “total amount received or accrued… in any <span class="key-term">year of assessment</span>.” Non-cash benefits can be “amounts” too (Zimbabwe courts have treated incorporeal rights/benefits with money value as “amount”).</p>
+The <span class="leg-ref">Income Tax Act</span> taxes the “total amount received or accrued… in any <span class="key-term"><strong>year of assessment</strong></span>.” Non-cash benefits can be “amounts” too (Zimbabwe courts have treated incorporeal rights/benefits with money value as “amount”).</p>
 <p><strong>Step 2: Confirm Zimbabwean source (or <span class="key-term">deemed source</span>).</strong><br/>
 <span class="key-term">Gross income</span> requires a source within or deemed within Zimbabwe. (This is not the focus of this lesson, but it is a gating requirement.)</p>
 <p><strong>Step 3: Ask whether the receipt falls under a specific inclusion paragraph in the <span class="key-term">gross income</span> definition, even if it seems capital.</strong><br/>
@@ -285,11 +301,11 @@ The <span class="key-term">gross income</span> definition excludes capital amoun
 Indicia include:
 *   <strong>Intention / purpose</strong>: what was the taxpayer’s real object at acquisition and <span class="key-term">disposal</span>, and did it change?
 *   <strong>Profit-making scheme</strong>: was the taxpayer carrying on a scheme of profit-making (trade-like behaviour) rather than holding an investment?
-*   <strong>Fixed vs <span class="key-term">floating capital</span></strong>: was the asset part of the taxpayer’s profit‑making structure (<span class="key-term">fixed capital</span>) or circulating/<span class="key-term">trading stock</span> (<span class="key-term">floating capital</span>)?</p>
+*   <strong>Fixed vs <span class="key-term">floating capital</span></strong>: was the asset part of the taxpayer’s profit‑making structure (<span class="key-term">fixed capital</span>) or circulating/<span class="key-term"><strong>trading stock</strong></span> (<span class="key-term">floating capital</span>)?</p>
 <p><strong>Step 5: Apply the statutory burden-of-proof posture.</strong><br/>
 Evidence (board minutes, business plans, accounting treatment, frequency of transactions, etc.) is not optional. <span class="leg-ref">Section 63</span>'s burden rule makes the taxpayer's recordkeeping decisive.</p>
 <p><strong>Step 7: Compute <span class="key-term">taxable income</span> and tax payable.</strong><br/>
-Apply corporate rates (25% + AIDS) or individual <span class="key-term">PAYE</span>/CGT rates as appropriate.</p>
+Apply corporate rates (25% + AIDS) or individual <span class="key-term"><strong>PAYE</strong></span>/CGT rates as appropriate.</p>
 <hr/>
 </section>
 <section class="lesson-section" id="d-real-world-applicability-zimbabwean-examples">
@@ -302,13 +318,13 @@ Apply corporate rates (25% + AIDS) or individual <span class="key-term">PAYE</sp
 <p><strong>Computation:</strong>
 *   <span class="key-term">Capital gain</span> = 35,000 − 15,000 = <strong>USD 20,000</strong>
 *   CGT (20%) = <strong>USD 4,000</strong>
-*   Employment tax (<span class="key-term">PAYE</span> on $30k) = ~<strong>USD 8,280</strong> (plus AIDS levy)</p>
+*   Employment tax (<span class="key-term"><strong>PAYE</strong></span> on $30k) = ~<strong>USD 8,280</strong> (plus AIDS levy)</p>
 <h4 id="example-2-sme-sale-of-delivery-vehicle-recoupment">Example 2: SME sale of delivery vehicle (Recoupment)</h4>
-<p><strong>Facts:</strong> Mbare Eats (Pvt) Ltd has operating profit of <strong>USD 30,000</strong>. It bought a delivery vehicle in 2023 for <strong>USD 20,000</strong> and has claimed cumulative <span class="key-term">capital allowances</span> of <strong>USD 10,000</strong> (tax value USD 10,000). In 2026 it sells the vehicle for <strong>USD 15,000</strong>.</p>
+<p><strong>Facts:</strong> Mbare Eats (Pvt) Ltd has operating profit of <strong>USD 30,000</strong>. It bought a delivery vehicle in 2023 for <strong>USD 20,000</strong> and has claimed cumulative <span class="key-term"><strong>capital allowances</strong></span> of <strong>USD 10,000</strong> (tax value USD 10,000). In 2026 it sells the vehicle for <strong>USD 15,000</strong>.</p>
 <p><strong>Classification:</strong> The sale is a <span class="key-term">disposal</span> of a <span class="key-term">capital asset</span>, but it creates a <strong><span class="key-term">recoupment</span></strong> included in <span class="key-term">gross income</span> under <span class="leg-ref">paragraph (j)</span> because tax relief was previously obtained.</p>
 <p><strong>Computation:</strong>
 *   Proceeds (15,000) - Tax Value (10,000) = <strong>USD 5,000 <span class="key-term">Recoupment</span></strong>
-*   <span class="key-term">Taxable Income</span> = 30,000 (operating) + 5,000 (<span class="key-term">recoupment</span>) = <strong>USD 35,000</strong>
+*   <span class="key-term"><strong>Taxable Income</strong></span> = 30,000 (operating) + 5,000 (<span class="key-term">recoupment</span>) = <strong>USD 35,000</strong>
 *   Company Tax (25%) = <strong>USD 8,750</strong> (+ AIDS levy)</p>
 <hr/>
 </section>
@@ -318,7 +334,7 @@ Apply corporate rates (25% + AIDS) or individual <span class="key-term">PAYE</sp
 *   <strong>Facts:</strong> Taxpayer company subdivided and sold farms after holding them for years.
 *   <strong>Principle:</strong> Surplus held taxable as income. The company bought land with the intention of profitable <span class="key-term">disposal</span> (profit-making scheme) rather than long-term investment.</p>
 <p><strong>‘C’ Ltd v Commissioner (1961 R &amp; N 309)</strong>
-*   <strong>Principle:</strong> Expectation of profit alone isn't enough to make a receipt revenue nature; the "prime object" must be a profit-making scheme. It supports taxpayers where the narrative is "investment first."</p>
+*   <strong>Principle:</strong> Expectation of profit alone isn't enough to make a receipt revenue nature; the <span class="quoted-text">"prime object"</span> must be a profit-making scheme. It supports taxpayers where the narrative is <span class="quoted-text">"investment first."</span></p>
 <p><strong>Willoughby’s Consolidated Co Ltd v Commissioner of Taxes (1958 RLR 870)</strong>
 *   <strong>Principle:</strong> The fixed vs circulating capital test is useful but not decisive. All circumstances (intention, frequency, conduct) must be viewed together in a multi-factor analysis.</p>
 <hr/>
@@ -327,10 +343,10 @@ Apply corporate rates (25% + AIDS) or individual <span class="key-term">PAYE</sp
 <h3 id="f-common-pitfalls">F) Common pitfalls</h3>
 <ul>
 <li><strong>Ignoring the Burden of Proof:</strong> Forgetting that <span class="leg-ref">Section 63</span> puts the onus on the taxpayer to prove an amount is capital.</li>
-<li><strong>Capital = Tax-Free Myth:</strong> Thinking capital receipts are never taxed (ignoring CGT and <span class="key-term">Recoupment</span>).</li>
+<li><strong>Capital = Tax-Free Myth:</strong> Thinking <strong>capital receipts</strong> are never taxed (ignoring CGT and <span class="key-term">Recoupment</span>).</li>
 <li><strong>The "Single Factor" Error:</strong> Relying only on holding period or only on intention, rather than the totality of facts.</li>
-<li><strong><span class="key-term">Recoupment</span> Blindness:</strong> Failing to check if <span class="key-term">capital allowances</span> were claimed on an asset before treating the proceeds as purely capital.</li>
-<li><strong>Mixing Tax Heads:</strong> Thinking that because an item is "capital" for income tax, it is automatically exempt from VAT (incorrect—VAT has its own rules).</li>
+<li><strong><span class="key-term">Recoupment</span> Blindness:</strong> Failing to check if <span class="key-term"><strong>capital allowances</strong></span> were claimed on an asset before treating the proceeds as purely capital.</li>
+<li><strong>Mixing Tax Heads:</strong> Thinking that because an item is <span class="quoted-text">"capital"</span> for income tax, it is automatically exempt from VAT (incorrect—VAT has its own rules).</li>
 </ul>
 <hr/>
 </section>
@@ -340,8 +356,8 @@ Apply corporate rates (25% + AIDS) or individual <span class="key-term">PAYE</sp
 <li><strong>Question:</strong> A salaried <span class="key-term">employee</span> sells a second residential stand bought in 2018 for $12k for $30k in 2026. Is the $18k profit taxable under income tax, CGT, or both?</li>
 <li><strong>Question:</strong> A company buys equipment for $80k, claims $50k in allowances, and sells it for $60k. Compute the <span class="key-term">gross income</span> inclusion.</li>
 <li><strong>Question:</strong> Who bears the burden of proof in showing an amount is of a capital nature in an <span class="key-term">objection</span>?</li>
-<li><strong>Question:</strong> What is the "fixed vs circulating capital" test?</li>
-<li><strong>Question:</strong> How does <span class="leg-ref">Section 8(3)</span> affect the timing of revenue receipts?</li>
+<li><strong>Question:</strong> What is the <span class="quoted-text">"fixed vs circulating capital"</span> test?</li>
+<li><strong>Question:</strong> How does <span class="leg-ref">Section 8(3)</span> affect the timing of <strong>revenue receipts</strong>?</li>
 </ol>
 <hr/>
 </section>
@@ -352,7 +368,7 @@ Apply corporate rates (25% + AIDS) or individual <span class="key-term">PAYE</sp
 <li><strong>Answer:</strong> <strong>$30,000 <span class="key-term">Recoupment</span></strong> (Proceeds $60k minus tax value $30k). Included in <span class="key-term">gross income</span> under 8(1)(j).</li>
 <li><strong>Answer:</strong> The <strong>Taxpayer</strong> (<span class="leg-ref">Section 63</span> and <span class="leg-ref">section 8(1)</span>).</li>
 <li><strong>Answer:</strong> A test distinguishing between the profit-making structure (<span class="key-term">fixed capital</span>) and the assets turned over for profit (floating/circulating capital).</li>
-<li><strong>Answer:</strong> It defers the inclusion of <strong>prepayments</strong> until the goods/services are actually "used up."</li>
+<li><strong>Answer:</strong> It defers the inclusion of <strong>prepayments</strong> until the goods/services are actually <span class="quoted-text">"used up."</span></li>
 </ol>
 <hr/>
 </section>
@@ -388,8 +404,8 @@ Apply corporate rates (25% + AIDS) or individual <span class="key-term">PAYE</sp
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Economic Character</strong></td>
-<td style="text-align: left;">"Fruit" (Operating inflow)</td>
-<td style="text-align: left;">"Tree" (Profit-making structure)</td>
+<td style="text-align: left;"><span class="quoted-text">"Fruit"</span> (Operating inflow)</td>
+<td style="text-align: left;"><span class="quoted-text">"Tree"</span> (Profit-making structure)</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Key Tests</strong></td>
@@ -404,7 +420,7 @@ Apply corporate rates (25% + AIDS) or individual <span class="key-term">PAYE</sp
 <tr>
 <td style="text-align: left;"><strong>Secondary Tax</strong></td>
 <td style="text-align: left;">N/A</td>
-<td style="text-align: left;"><strong>CGT</strong> (on <span class="key-term">Specified Assets</span>)</td>
+<td style="text-align: left;"><strong>CGT</strong> (on <span class="key-term"><strong>Specified Assets</strong></span>)</td>
 </tr>
 <tr>
 <td style="text-align: left;"><strong>Evidence Focus</strong></td>
@@ -418,17 +434,17 @@ Apply corporate rates (25% + AIDS) or individual <span class="key-term">PAYE</sp
 <h3 id="mermaid-flowchart-decision-process-for-capital-vs-revenue-receipts-zimbabwe">Mermaid flowchart: decision process for capital vs revenue receipts (Zimbabwe)</h3>
 <div class="mermaid">
 flowchart TD
-  A[Identify receipt/accrual: amount in money or money's worth] --&gt; B[Confirm <span class="key-term">year of assessment</span> + source within/deemed within Zimbabwe]
-  B --&gt; C{Is it included by a specific <span class="key-term">gross income</span> inclusion paragraph?}
-  C --&gt;|Yes| D[Include in <span class="key-term">gross income</span> (e.g., <span class="key-term">recoupment</span> <span class="leg-ref">paragraph (j)</span>, service receipts, etc.)]
-  C --&gt;|No| E{Taxpayer proves capital nature?}
-  E --&gt;|No / insufficient evidence| D
-  E --&gt;|Yes| F[Exclude from <span class="key-term">gross income</span> as capital]
-  F --&gt; G{Is it <span class="key-term">disposal</span> of a <span class="key-term">specified asset</span>?}
-  G --&gt;|Yes| H[Consider CGT: compute <span class="key-term">capital gain</span> and apply CGT rates]
-  G --&gt;|No| I[No CGT; keep record for audit]
-  D --&gt; J[Compute <span class="key-term">taxable income</span>, apply rates + AIDS levy]
-  H --&gt; J
+  A[Identify receipt/accrual: amount in money or money's worth] --> B[Confirm year of assessment + source within/deemed within Zimbabwe]
+  B --> C{Is it included by a specific gross income inclusion paragraph?}
+  C -->|Yes| D[Include in gross income (e.g., recoupment paragraph (j), service receipts, etc.)]
+  C -->|No| E{Taxpayer proves capital nature?}
+  E -->|No / insufficient evidence| D
+  E -->|Yes| F[Exclude from gross income as capital]
+  F --> G{Is it disposal of a specified asset?}
+  G -->|Yes| H[Consider CGT: compute capital gain and apply CGT rates]
+  G -->|No| I[No CGT; keep record for audit]
+  D --> J[Compute taxable income, apply rates + AIDS levy]
+  H --> J
 </div>
 </section>
 </div>
@@ -701,8 +717,6 @@ document.addEventListener('DOMContentLoaded', () => {
 	});
 });
 </script>
-<script src="https://cdn.jsdelivr.net/npm/mermaid@10.0.0/dist/mermaid.min.js"></script>
-<script>mermaid.initialize({startOnLoad:true});</script>
 <script src="js/globe-hero.js" type="module"></script>
 <script src="js/feature-steps.js"></script>
 <script>

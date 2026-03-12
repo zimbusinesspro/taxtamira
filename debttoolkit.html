@@ -33,7 +33,23 @@
 <script type="application/ld+json">
 {"@context":"http://schema.org","@type":"WebSite","name":"TaxTami - Tax Training Zimbabwe","url":"www.taxtami.com"}
 	</script>
-</meta></meta></link></head>
+</meta></meta></link>
+    <style class="mermaid-style">
+    .mermaid {
+        background: #f4f8f6;
+        border: 1px solid #c5ddd0;
+        border-radius: 10px;
+        padding: 28px 20px;
+        margin: 24px 0;
+        overflow-x: auto;
+        text-align: center;
+    }
+    .mermaid svg { max-width: 100%; height: auto; }
+    </style>
+    <!-- Mermaid.js flowchart renderer -->
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.3/dist/mermaid.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function () {  mermaid.initialize({    startOnLoad: true,    theme: "base",    themeVariables: {      primaryColor: "#d6ede2",      primaryBorderColor: "#2c724f",      primaryTextColor: "#1a3a2a",      lineColor: "#2c724f",      secondaryColor: "#e9f5ee",      tertiaryColor: "#f4faf7",      edgeLabelBackground: "#ffffff",      fontFamily: "Work Sans, Heebo, sans-serif",      fontSize: "14px"    }  });});</script>
+</head>
 <div class="page-wrapper">
 <!-- Main Header-->
 <header class="main-header style-three">
@@ -160,20 +176,20 @@
 <p>The workflow below is jurisdiction-neutral, with reference-jurisdiction “hooks” at each gate (U.S./UK/Canada/civil-law examples).</p>
 <div class="mermaid">
 flowchart TD
-  A[Case intake\nOpen file, verify identity, pull balances &amp; periods] --&gt; B[Legal status check\nIs debt valid? <span class="key-term">appeal</span>/pause? insolvency? deceased?]
-  B --&gt; C[Segmentation / triage\nAbility-to-pay, willingness, value, risk, vulnerability, safety]
-  C --&gt; D[First compliant contact\nExplain debt &amp; rights; offer options; set response deadline]
-  D --&gt; E{Taxpayer response?}
-  E --&gt;|Yes| F[Diagnose barrier\nDispute? hardship? cashflow? admin error?]
-  E --&gt;|No| G[Second contact + nudge\nChannel shift; simplified action steps]
-  F --&gt; H[Resolution path selection\nPay in full / payment plan / hardship delay / compromise]
-  H --&gt; I[Document decision + agreement\nTerms, evidence, monitoring plan]
-  I --&gt; J[Monitor\nNew debt? missed payment? info mismatch?]
-  J --&gt;|Compliant| K[Close case\nConfirm zero/managed balance; prevention education]
-  J --&gt;|Non-compliant| L[Proportionate escalation\nLarger interventions; approvals; enforce]
-  L --&gt; M[Enforcement execution\nThird-party action, lien/charge, levy/seizure, court steps]
-  M --&gt; N[Post-enforcement actions\nRelease/withdraw where required; update records; audit trail]
-  N --&gt; J
+  A[Case intake\nOpen file, verify identity, pull balances & periods] --> B[Legal status check\nIs debt valid? appeal/pause? insolvency? deceased?]
+  B --> C[Segmentation / triage\nAbility-to-pay, willingness, value, risk, vulnerability, safety]
+  C --> D[First compliant contact\nExplain debt & rights; offer options; set response deadline]
+  D --> E{Taxpayer response?}
+  E -->|Yes| F[Diagnose barrier\nDispute? hardship? cashflow? admin error?]
+  E -->|No| G[Second contact + nudge\nChannel shift; simplified action steps]
+  F --> H[Resolution path selection\nPay in full / payment plan / hardship delay / compromise]
+  H --> I[Document decision + agreement\nTerms, evidence, monitoring plan]
+  I --> J[Monitor\nNew debt? missed payment? info mismatch?]
+  J -->|Compliant| K[Close case\nConfirm zero/managed balance; prevention education]
+  J -->|Non-compliant| L[Proportionate escalation\nLarger interventions; approvals; enforce]
+  L --> M[Enforcement execution\nThird-party action, lien/charge, levy/seizure, court steps]
+  M --> N[Post-enforcement actions\nRelease/withdraw where required; update records; audit trail]
+  N --> J
 </div>
 <p><strong>Why this structure is defensible:</strong>
 - “Rights + due process” gates exist because statutes often require prescribed notices and hearing opportunities before intrusive enforcement (e.g., U.S. lien notice hearing rights under §6320 and levy hearing rights under §6330; Canada’s “collections restrictions” delaying certain legal actions in the first 90 days after assessment; UK’s minimum “notice of enforcement” period before taking control of goods). 
@@ -182,14 +198,14 @@ flowchart TD
 <p>Use an escalation ladder that is <strong>proportionate</strong> (least intrusive effective intervention) and <strong>legally gated</strong> (no jumping over required notices/hearings).</p>
 <div class="mermaid">
 flowchart LR
-  A[Stage 0\nPrevention &amp; reminders] --&gt; B[Stage 1\nDemand + options menu\npayment plan/hardship]
-  B --&gt; C[Stage 2\nFinancial verification\ncollect info &amp; validate]
-  C --&gt; D[Stage 3\nFormal arrangement\ninstallment/TT P/payment arrangement]
-  D --&gt; E[Stage 4\nEnhanced monitoring\nmissed payment triggers]
-  E --&gt; F[Stage 5\nPre-enforcement notice gate\nright to be heard / hearing rights]
-  F --&gt; G[Stage 6\nThird-party collection\nbank/wage/offset]
-  G --&gt; H[Stage 7\nSecurity &amp; seizure tools\nlien/charge; taking control of goods; levy/seizure]
-  H --&gt; I[Stage 8\nCourt-based recovery\njudgment/certification/insolvency referral]
+  A[Stage 0\nPrevention & reminders] --> B[Stage 1\nDemand + options menu\npayment plan/hardship]
+  B --> C[Stage 2\nFinancial verification\ncollect info & validate]
+  C --> D[Stage 3\nFormal arrangement\ninstallment/TT P/payment arrangement]
+  D --> E[Stage 4\nEnhanced monitoring\nmissed payment triggers]
+  E --> F[Stage 5\nPre-enforcement notice gate\nright to be heard / hearing rights]
+  F --> G[Stage 6\nThird-party collection\nbank/wage/offset]
+  G --> H[Stage 7\nSecurity & seizure tools\nlien/charge; taking control of goods; levy/seizure]
+  H --> I[Stage 8\nCourt-based recovery\njudgment/certification/insolvency referral]
 </div>
 <p><strong>Reference jurisdiction guardrails for Stage 5 (“notice gate”).</strong>
 - <strong>U.S.</strong>: assessment is followed by “notice and demand” (§6303), lien arises after demand if unpaid (§6321), and specific notice/hearing rules apply for lien-filing and levy pathways (§6320; §6330). 
@@ -211,7 +227,7 @@ Purpose:
 - Create a clean, legally compliant case file that can support escalation or litigation.
 
 Steps:
-1) Open case file and assign unique case ID; log source (return assessment, audit assessment, <span class="key-term">self-assessment</span>, third-party report).
+1) Open case file and assign unique case ID; log source (return assessment, audit assessment, <span class="key-term"><strong>self-assessment</strong></span>, third-party report).
 2) Identity verification:
    - Confirm taxpayer legal name, TIN/ID, business number, registered address(es), authorized contact(s).
    - Confirm representative authorization (POA/agent authorization) before discussing case.
@@ -239,11 +255,11 @@ Inputs:
 - Debt size/age; compliance history; prior broken arrangements; asset signals; vulnerability indicators; safety indicators.
 
 Segmentation outcomes (choose one):
-A) "Can pay / will pay"  -&gt; fast digital/self-serve resolution
-B) "Can pay / won't pay" -&gt; structured escalation with tight deadlines
-C) "Can't pay / will pay" -&gt; payment plan or hardship pathway
-D) "Can't pay / won't pay" -&gt; verify facts; enforce key safeguards; consider insolvency referral
-E) "Disputed/uncertain" -&gt; route to dispute resolution; pause enforcement where required
+A) <span class="quoted-text">"Can pay / will pay"</span>  -&gt; fast digital/self-serve resolution
+B) <span class="quoted-text">"Can pay / won't pay"</span> -&gt; structured escalation with tight deadlines
+C) <span class="quoted-text">"Can't pay / will pay"</span> -&gt; <strong>payment plan</strong> or hardship pathway
+D) <span class="quoted-text">"Can't pay / won't pay"</span> -&gt; verify facts; enforce key safeguards; consider insolvency referral
+E) <span class="quoted-text">"Disputed/uncertain"</span> -&gt; route to dispute resolution; pause enforcement where required
 
 Mandatory outputs:
 - Segment label
@@ -263,7 +279,7 @@ Mandatory outputs:
    - Confirm identity.
    - State purpose and amount, period(s), and due date(s).
    - Explain rights/review options in plain language.
-   - Offer menu: pay in full; payment plan; hardship; dispute pathway where eligible.
+   - Offer menu: pay in full; <strong>payment plan</strong>; hardship; dispute pathway where eligible.
    - Confirm next step and deadline.
 
 3) Documentation requirements (same day):
@@ -274,7 +290,7 @@ Mandatory outputs:
    - Record next scheduled action and escalation trigger.</p>
 <p><strong>Reference anchors:</strong> IRS IRM 5.1.10 (Taxpayer Contacts) is explicitly designed to guide actions “prior to, during and following” taxpayer contact and includes a “Case Histories” section, reinforcing the need for disciplined case notes. </p>
 <p><strong>SOP template for payment-plan processing</strong></p>
-<p>SOP: Payment Plan Processing (Installment / Time-to-Pay / Arrangement)
+<p>SOP: <strong>Payment Plan</strong> Processing (Installment / Time-to-Pay / Arrangement)
 
 1) Eligibility gate:
    - Confirm debt is enforceable.
@@ -713,7 +729,5 @@ document.addEventListener('DOMContentLoaded', () => {
 	});
 });
 </script>
-<script src="https://cdn.jsdelivr.net/npm/mermaid@10.0.0/dist/mermaid.min.js"></script>
-<script>mermaid.initialize({startOnLoad:true});</script>
 <script src="js/globe-hero.js" type="module"></script>
 </html>

@@ -33,7 +33,23 @@
 <script type="application/ld+json">
 {"@context":"http://schema.org","@type":"WebSite","name":"TaxTami - Tax Training Zimbabwe","url":"www.taxtami.com"}
 	</script>
-</meta></meta></link></head>
+</meta></meta></link>
+    <style class="mermaid-style">
+    .mermaid {
+        background: #f4f8f6;
+        border: 1px solid #c5ddd0;
+        border-radius: 10px;
+        padding: 28px 20px;
+        margin: 24px 0;
+        overflow-x: auto;
+        text-align: center;
+    }
+    .mermaid svg { max-width: 100%; height: auto; }
+    </style>
+    <!-- Mermaid.js flowchart renderer -->
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.3/dist/mermaid.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function () {  mermaid.initialize({    startOnLoad: true,    theme: "base",    themeVariables: {      primaryColor: "#d6ede2",      primaryBorderColor: "#2c724f",      primaryTextColor: "#1a3a2a",      lineColor: "#2c724f",      secondaryColor: "#e9f5ee",      tertiaryColor: "#f4faf7",      edgeLabelBackground: "#ffffff",      fontFamily: "Work Sans, Heebo, sans-serif",      fontSize: "14px"    }  });});</script>
+</head>
 <div class="page-wrapper">
 <!-- Main Header-->
 <header class="main-header style-three">
@@ -143,10 +159,10 @@
 <section class="lesson-section" id="executive-summary">
 <h2>Executive summary</h2>
 <div class="section-content">
-<p>Debt collection strategy is the disciplined choice of <strong>what action to take, when, and against whom</strong>—so that <span class="key-term">ZIMRA</span> maximizes revenue recovery while staying lawful, proportionate, and operationally efficient. In Zimbabwe, debt collection is anchored in a legal framework that deliberately limits “delay by dispute” (income tax and VAT “pay now, argue later”), enables strong third‑party recovery tools (agent appointment/garnishee), and provides an expedited enforcement path for “duly assessed” and unchallenged debts (Revenue Authority Act s 33A). ()</p>
-<p>Modern collection strategy cannot be separated from TaRMS: <span class="key-term">ZIMRA</span>’s implementation of the Single Account model and TaRMS debt management modules means that (i) some “debts” arise from <strong>posting gaps</strong> rather than true non-payment, (ii) reminders/demands and payment plan processes can be system-driven, and (iii) enforcement escalation must be aligned to what TaRMS has actually recognized as posted liabilities and arrears. <span class="key-term">ZIMRA</span> has publicly emphasized that payments without corresponding returns remain in the taxpayer’s Single Account until a return is submitted and the obligation can be recognized and posted—an operational fact that should shape early-stage collection (fix posting first, then enforce). ()</p>
+<p>Debt collection strategy is the disciplined choice of <strong>what action to take, when, and against whom</strong>—so that <span class="key-term"><strong>ZIMRA</strong></span> maximizes revenue recovery while staying lawful, proportionate, and operationally efficient. In Zimbabwe, debt collection is anchored in a legal framework that deliberately limits “delay by dispute” (income tax and VAT “pay now, argue later”), enables strong third‑party recovery tools (agent appointment/garnishee), and provides an expedited enforcement path for “duly assessed” and unchallenged debts (<strong>Revenue Authority Act</strong> s 33A). ()</p>
+<p>Modern collection strategy cannot be separated from <strong>TaRMS</strong>: <span class="key-term"><strong>ZIMRA</strong></span>’s implementation of the Single Account model and <strong>TaRMS</strong> debt management modules means that (i) some “debts” arise from <strong>posting gaps</strong> rather than true non-payment, (ii) reminders/demands and <strong>payment plan</strong> processes can be system-driven, and (iii) enforcement escalation must be aligned to what <strong>TaRMS</strong> has actually recognized as posted liabilities and arrears. <span class="key-term"><strong>ZIMRA</strong></span> has publicly emphasized that payments without corresponding returns remain in the taxpayer’s Single Account until a return is submitted and the obligation can be recognized and posted—an operational fact that should shape early-stage collection (fix posting first, then enforce). ()</p>
 <p>This lesson builds a <strong>risk-based collection pathway</strong>: start with voluntary compliance and soft collection (reminders, nudges, service resolution), escalate to demand letters and structured payment arrangements, and reserve enforcement tools (agent appointment, attachment, court recovery) for cases where voluntary approaches fail or where risk signals are high (e.g., flight risk, repeated default, high-value debts). Case law—especially <strong><span class="key-term">ZIMRA</span> v Packers International (SC 28/2016)</strong> and <strong>Murowa Diamonds (HH 1-11)</strong>—illustrates the legal acceptability of strong recovery tools and the limits of taxpayer “set-off” or hardship arguments where statutory processes are not followed. ()</p>
-<p>Assumptions and access limits: No internal <span class="key-term">ZIMRA</span> debt SOPs, templates, or TaRMS internal user manuals were provided in this chat. The “uploaded case pack” referenced in your earlier prompts was not accessible here; case law is therefore drawn from public sources. Where Finance Act amendment section numbers are not visible in consolidated Act excerpts, references are marked <strong>unspecified</strong>.</p>
+<p>Assumptions and access limits: No internal <span class="key-term"><strong>ZIMRA</strong></span> debt SOPs, templates, or <strong>TaRMS</strong> internal user manuals were provided in this chat. The “uploaded case pack” referenced in your earlier prompts was not accessible here; case law is therefore drawn from public sources. Where <strong>Finance Act</strong> amendment section numbers are not visible in consolidated Act excerpts, references are marked <strong>unspecified</strong>.</p>
 </div>
 </section>
 <section class="lesson-section" id="section-context-and-learning-outcomes">
@@ -158,11 +174,11 @@
 <h2>A. Section Context</h2>
 <div class="section-content">
 <p>Lesson Nine sits at the midpoint between “understanding the debt” (creation, assessments, classification, taxpayer accounts, <span class="key-term">interest</span>/penalties, payment mechanics, <span class="key-term">tax clearance</span>) and “using powers” (payment plans, enforcement powers, attachment, courts, insolvency, write‑offs). It answers:</p>
-<p>How do we make strategies operational in TaRMS?</p>
+<p>How do we make strategies operational in <strong>TaRMS</strong>?</p>
 <p>By the end of this 60–90 minute session, learners should be able to:</p>
 <p>Distinguish soft collection from coercive enforcement and articulate when each is appropriate.</p>
 <p>Describe how statutory rules on collectability during dispute shape strategy (“pay now, argue later”).</p>
-<p>Use TaRMS realities (Single Account posting, outstanding returns, automatic estimates, debt module workflows) to choose the correct first action.</p>
+<p>Use <strong>TaRMS</strong> realities (Single Account posting, outstanding returns, automatic estimates, debt module workflows) to choose the correct first action.</p>
 <p>Avoid common strategy failures: premature enforcement, misapplication of s 33A, ignoring currency ledger constraints, and reputational risk.</p>
 </div>
 </section>
@@ -191,7 +207,7 @@ When tax becomes due or is payable, it is deemed a debt due to the State and rec
 The Commissioner may appoint a person as an agent to pay tax from monies held for or due to the taxpayer, including bank accounts; this is the key “third-party recovery” power in income tax. ()</p>
 <p><strong><span class="leg-ref">VAT Act [Chapter 23:12]</span></strong></p>
 <p><strong>Pay-now-argue-later (s 36).</strong>
-VAT obligations to pay tax/<span class="key-term">additional tax</span>/<span class="key-term">penalty</span>/<span class="key-term">interest</span> are not suspended pending <span class="key-term">objection</span>/<span class="key-term">appeal</span> unless the Commissioner directs; the Act notes s 36 was substituted by Finance Act 8/2022 (Finance Act section number unspecified in the consolidated extract). ()</p>
+VAT obligations to pay tax/<span class="key-term">additional tax</span>/<span class="key-term">penalty</span>/<span class="key-term">interest</span> are not suspended pending <span class="key-term">objection</span>/<span class="key-term">appeal</span> unless the Commissioner directs; the Act notes s 36 was substituted by <strong>Finance Act</strong> 8/2022 (<strong>Finance Act</strong> section number unspecified in the consolidated extract). ()</p>
 <p><strong>Agent appointment (s 48).</strong>
 VAT empowers the Commissioner to appoint an agent to pay amounts due from monies held for or due to the taxpayer—central for garnishee-style recovery. ()</p>
 <p><strong><span class="key-term">Penalty</span>/<span class="key-term">interest</span> and urgency (s 39).</strong>
@@ -209,17 +225,17 @@ Late payment can trigger <span class="key-term">penalty</span> equal to tax and 
 <p>A disciplined debt collection strategy is <strong>not</strong> synonymous with enforcement. It is a sequencing model that uses the least costly/legal-risk-heavy intervention that will achieve payment.</p>
 <p><strong>Voluntary compliance approaches</strong></p>
 <p>Voluntary compliance strategies aim to resolve debt without coercion by removing friction and information asymmetry. In a TaRMS context, the first and most common voluntary compliance fix is <strong>posting and matching</strong>:</p>
-<p>If a taxpayer has paid into the Single Account but failed to submit the return, TaRMS may not recognize the payment for settlement. <span class="key-term">ZIMRA</span> states payments without returns remain in the Single Account until the return is submitted. This is often a “false debt” and should be resolved with filing assistance rather than enforcement. ()</p>
+<p>If a taxpayer has paid into the Single Account but failed to submit the return, TaRMS may not recognize the payment for settlement. <span class="key-term"><strong>ZIMRA</strong></span> states payments without returns remain in the Single Account until the return is submitted. This is often a “false debt” and should be resolved with filing assistance rather than enforcement. ()</p>
 <p><strong>Soft collection methods</strong></p>
 <p>Soft collection is structured communication that escalates in tone and consequence but remains non-coercive:</p>
-<p>offer of a payment plan.</p>
-<p>In Zimbabwe’s environment, soft collection must also explicitly reference legal consequences truthfully (<span class="key-term">interest</span>/penalties; withholding impacts; clearance blockage), while remaining proportionate to the debt. VAT and income tax statutes and <span class="key-term">ZIMRA</span> notices support the idea of penalties and estimates for non-filing/non-payment, making reminders credible without being coercive. ()</p>
+<p>offer of a <strong>payment plan</strong>.</p>
+<p>In Zimbabwe’s environment, soft collection must also explicitly reference legal consequences truthfully (<span class="key-term">interest</span>/penalties; withholding impacts; clearance blockage), while remaining proportionate to the debt. VAT and income tax statutes and <span class="key-term"><strong>ZIMRA</strong></span> notices support the idea of penalties and estimates for non-filing/non-payment, making reminders credible without being coercive. ()</p>
 <p><strong>Reminder notice</strong>: early-stage, compliance-oriented, often automated; assumes omission or friction.</p>
 <p><strong>Demand letter</strong>: a formal notice that payment is required by a defined deadline and failure will lead to enforcement. Demand letters should summarize: tax heads, periods, amounts (principal/<span class="key-term">penalty</span>/<span class="key-term">interest</span>), due dates, and payment options, and record that non-payment may trigger statutory recovery powers.</p>
 <p>Although statutes do not always prescribe “demand letter” content, due process principles and evidentiary needs under s 33A (service of assessment and lapse of <span class="key-term">objection</span>/<span class="key-term">appeal</span>) imply that debt teams should maintain robust documentation of notices and timelines. ()</p>
 <p><strong>Payment arrangements as a collection strategy</strong></p>
-<p>Payment arrangements reduce enforcement cost and protect revenue where immediate full payment is unlikely but the taxpayer is viable. Zimbabwe’s <span class="leg-ref">Income Tax Act</span> allows tax to be paid in instalments as determined by the Commissioner under s 71, providing a statutory basis for arrangements. ()</p>
-<p>TaRMS operationally supports payment plan application through the Debt Management module, and <span class="key-term">ZIMRA</span>’s migration notices indicated that legacy payment plans were nullified and new plans must be applied for in TaRMS. This makes payment arrangements a standard, system-mediated strategy. ()</p>
+<p>Payment arrangements reduce enforcement cost and protect revenue where immediate full payment is unlikely but the taxpayer is viable. Zimbabwe’s <span class="leg-ref"><strong>Income Tax Act</strong></span> allows tax to be paid in instalments as determined by the Commissioner under s 71, providing a statutory basis for arrangements. ()</p>
+<p>TaRMS operationally supports <strong>payment plan</strong> application through the Debt Management module, and <span class="key-term">ZIMRA</span>’s migration notices indicated that legacy payment plans were nullified and new plans must be applied for in TaRMS. This makes payment arrangements a standard, system-mediated strategy. ()</p>
 <p><strong>Operational correctness</strong>: “true debt” vs “posting gap” vs “estimate debt”.</p>
 <p>TaRMS supports a risk-based posture through automated detection, single-account statements, and data analytics aspirations; <span class="key-term">ZIMRA</span> has described TaRMS as improving data availability and decision-making, which supports segmentation (the underlying risk scoring algorithm is not published, so this lesson uses general best-practice segmentation principles grounded in TaRMS capability statements). ()</p>
 </div>
@@ -242,7 +258,7 @@ Late payment can trigger <span class="key-term">penalty</span> equal to tax and 
 <p>This is especially important for s 33A, which requires affidavit evidence that the assessment was served and no <span class="key-term">objection</span>/<span class="key-term">appeal</span> was lodged (or was not pursued) and payment remains outstanding. ()</p>
 <p><strong>Agent/garnishee appointment and third-party recovery</strong></p>
 <p>TaRMS workflows should be aligned with statutory agent appointment mechanisms:</p>
-<p><span class="leg-ref">VAT Act</span> s 48 and <span class="leg-ref">Income Tax Act</span> s 58 permit third-party recovery from money held for the taxpayer. ()</p>
+<p><span class="leg-ref"><strong>VAT Act</strong></span> s 48 and <span class="leg-ref"><strong>Income Tax Act</strong></span> s 58 permit third-party recovery from money held for the taxpayer. ()</p>
 <p>Packers illustrates that garnishee against bank accounts is a lawful and practical recovery method once assessment exists and the taxpayer has not paid; thus, in high-risk cases, agent appointment is an appropriate escalation tool. ()</p>
 <p>more than 6 years have elapsed since payable (s 33A(8)),</p>
 <p>the debt is still within active dispute timelines (and you cannot swear affidavit truthfully about no <span class="key-term">objection</span>/<span class="key-term">appeal</span>),</p>
@@ -259,7 +275,7 @@ Late payment can trigger <span class="key-term">penalty</span> equal to tax and 
 <h2>E. Case law integration</h2>
 <div class="section-content">
 <p>Key strategic lessons:</p>
-<p>VAT relies on <span class="key-term">self-assessment</span> and periodic audits due to scale; the framework includes strong recovery tools and a pay-now posture. ()</p>
+<p>VAT relies on <span class="key-term"><strong>self-assessment</strong></span> and periodic audits due to scale; the framework includes strong recovery tools and a pay-now posture. ()</p>
 <p>Garnishee and agent appointment are recognized as legitimate collection methods: “once an assessment is made … garnishee is a possibility.” ()</p>
 <p>Hardship relief is a Commissioner discretion and requires the taxpayer to put facts before the Commissioner; courts should not substitute themselves for the Commissioner. ()</p>
 <p>Strategy relevance: do not pause collections merely because an <span class="key-term">appeal</span> exists unless collection is lawfully suspended; ensure taxpayers know the correct relief pathway; use enforcement tools where voluntary compliance fails.</p>
@@ -283,30 +299,30 @@ Late payment can trigger <span class="key-term">penalty</span> equal to tax and 
 <div class="section-content">
 <div class="mermaid">
 flowchart TD
-  A[Debt detected in TaRMS\n(ledger arrears or estimate)] --&gt; B[Validate integrity\nPosting check: return filed?\nPayment in Single Account posted?]
-  B --&gt;|Posting error| C[Service resolution\nFile return / correct TIN / reconcile\nThen re-evaluate debt status]
-  B --&gt;|True arrears| D[Segment debt\nValue, age, behavior, currency,\nrepeat default, flight risk]
+  A[Debt detected in TaRMS\n(ledger arrears or estimate)] --> B[Validate integrity\nPosting check: return filed?\nPayment in Single Account posted?]
+  B -->|Posting error| C[Service resolution\nFile return / correct TIN / reconcile\nThen re-evaluate debt status]
+  B -->|True arrears| D[Segment debt\nValue, age, behavior, currency,\nrepeat default, flight risk]
 
-  D --&gt; E{Low risk / cooperative?}
-  E --&gt;|Yes| F[Soft collection\nAutomated reminders + call/email\nOffer payment plan]
-  E --&gt;|No| G[Enhanced action\nDemand letter with deadline\nImmediate risk controls]
+  D --> E{Low risk / cooperative?}
+  E -->|Yes| F[Soft collection\nAutomated reminders + call/email\nOffer payment plan]
+  E -->|No| G[Enhanced action\nDemand letter with deadline\nImmediate risk controls]
 
-  F --&gt; H{Paid or plan accepted?}
-  H --&gt;|Yes| I[Monitor\nPlan compliance + new liabilities\nClose when current]
-  H --&gt;|No| J[Escalate\nFinal demand + enforcement readiness]
+  F --> H{Paid or plan accepted?}
+  H -->|Yes| I[Monitor\nPlan compliance + new liabilities\nClose when current]
+  H -->|No| J[Escalate\nFinal demand + enforcement readiness]
 
-  G --&gt; K{High-risk indicators?}
-  K --&gt;|Yes| L[Rapid enforcement\nAgent/garnishee; consider s33A if eligible]
-  K --&gt;|No| M[Standard escalation\nDemand -&gt; plan -&gt; enforcement]
+  G --> K{High-risk indicators?}
+  K -->|Yes| L[Rapid enforcement\nAgent/garnishee; consider s33A if eligible]
+  K -->|No| M[Standard escalation\nDemand -> plan -> enforcement]
 
-  J --&gt; N{Legal eligibility for s33A?}
-  N --&gt;|Yes| O[Proceed under RAA s33A\n(expedited recovery)]
-  N --&gt;|No| P[Use agent appointment\nor court recovery path]
+  J --> N{Legal eligibility for s33A?}
+  N -->|Yes| O[Proceed under RAA s33A\n(expedited recovery)]
+  N -->|No| P[Use agent appointment\nor court recovery path]
 
-  L --&gt; Q[Post enforcement proceeds\nApply statutory allocation order\nReconcile ledger and close/monitor]
-  O --&gt; Q
-  P --&gt; Q
-  I --&gt; Q
+  L --> Q[Post enforcement proceeds\nApply statutory allocation order\nReconcile ledger and close/monitor]
+  O --> Q
+  P --> Q
+  I --> Q
 </div>
 </div>
 </section>
@@ -343,7 +359,7 @@ Packers supports strong collection tools, but it also implies that lawful proced
 <p>What is the strategic difference between a reminder notice and a demand letter, and why does it matter for escalations under s 33A?</p>
 <p>In TaRMS Single Account operations, what is the “posting gap” that can create false arrears, and how should collections handle it?</p>
 <p>State the legal basis for agent appointment in (a) VAT and (b) income tax.</p>
-<p>What constraints limit the use of Revenue Authority Act s 33A as an enforcement strategy?</p>
+<p>What constraints limit the use of <strong>Revenue Authority Act</strong> s 33A as an enforcement strategy?</p>
 <p>In Packers, what did the Supreme Court indicate about the lawfulness of garnishee/agent action after an assessment exists?</p>
 <p>Why is it risky to pause collection merely because a taxpayer has “lodged an <span class="key-term">appeal</span>”? Cite the relevant statutory logic.</p>
 <p>Give two risk segmentation indicators that justify accelerated enforcement rather than extended soft collection.</p>
@@ -354,10 +370,10 @@ Packers supports strong collection tools, but it also implies that lawful proced
 <div class="section-content">
 <p>Reminder = early-stage compliance nudge; demand letter = formal notice of required payment by a set date with enforcement consequence. Demand documentation supports evidence needs for escalation and court-related recovery processes such as s 33A, which depends on service/finality and non-payment proof. ()</p>
 <p>Payments can sit in the Single Account without settling a liability if the corresponding return/obligation is not posted; collections should first resolve return filing and posting to avoid enforcing against false arrears. ()</p>
-<p>VAT: <span class="leg-ref">VAT Act</span> s 48; Income tax: <span class="leg-ref">Income Tax Act</span> s 58. ()</p>
+<p>VAT: <span class="leg-ref"><strong>VAT Act</strong></span> s 48; Income tax: <span class="leg-ref"><strong>Income Tax Act</strong></span> s 58. ()</p>
 <p>s 33A requires service and lapse of <span class="key-term">objection</span>/<span class="key-term">appeal</span> steps and unpaid debt; action under s 33A is barred after six years since the tax/duty/<span class="key-term">penalty</span> became payable (s 33A(8)). ()</p>
 <p>Packers recognized that garnishee/agent appointment is a lawful recovery possibility once an assessment exists; it emphasized that suspension of payment pending <span class="key-term">appeal</span> is a Commissioner discretion, not a court usurpation. ()</p>
-<p>Because both income tax and VAT impose pay‑now‑argue‑later: payment obligations are not suspended by <span class="key-term">objection</span>/<span class="key-term">appeal</span> unless the Commissioner directs otherwise (<span class="leg-ref">Income Tax Act</span> s 69; <span class="leg-ref">VAT Act</span> s 36). ()</p>
+<p>Because both income tax and VAT impose pay‑now‑argue‑later: payment obligations are not suspended by <span class="key-term">objection</span>/<span class="key-term">appeal</span> unless the Commissioner directs otherwise (<span class="leg-ref"><strong>Income Tax Act</strong></span> s 69; <span class="leg-ref"><strong>VAT Act</strong></span> s 36). ()</p>
 <p>Examples: high value debt; repeated defaults; evidence taxpayer may abscond; persistent non-filing (estimate risk); non-responsiveness to demands; third-party funds clearly available (bank balances) enabling efficient garnishee.</p>
 </div>
 </section>
@@ -689,7 +705,5 @@ document.addEventListener('DOMContentLoaded', () => {
 	});
 });
 </script>
-<script src="https://cdn.jsdelivr.net/npm/mermaid@10.0.0/dist/mermaid.min.js"></script>
-<script>mermaid.initialize({startOnLoad:true});</script>
 <script src="js/globe-hero.js" type="module"></script>
 </html>

@@ -33,7 +33,23 @@
 <script type="application/ld+json">
 {"@context":"http://schema.org","@type":"WebSite","name":"TaxTami - Tax Training Zimbabwe","url":"www.taxtami.com"}
 	</script>
-</meta></meta></link></head>
+</meta></meta></link>
+    <style class="mermaid-style">
+    .mermaid {
+        background: #f4f8f6;
+        border: 1px solid #c5ddd0;
+        border-radius: 10px;
+        padding: 28px 20px;
+        margin: 24px 0;
+        overflow-x: auto;
+        text-align: center;
+    }
+    .mermaid svg { max-width: 100%; height: auto; }
+    </style>
+    <!-- Mermaid.js flowchart renderer -->
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.3/dist/mermaid.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function () {  mermaid.initialize({    startOnLoad: true,    theme: "base",    themeVariables: {      primaryColor: "#d6ede2",      primaryBorderColor: "#2c724f",      primaryTextColor: "#1a3a2a",      lineColor: "#2c724f",      secondaryColor: "#e9f5ee",      tertiaryColor: "#f4faf7",      edgeLabelBackground: "#ffffff",      fontFamily: "Work Sans, Heebo, sans-serif",      fontSize: "14px"    }  });});</script>
+</head>
 <div class="page-wrapper">
 <!-- Main Header-->
 <header class="main-header style-three">
@@ -145,7 +161,7 @@
 <div class="section-content">
 <p>This lesson equips learners to manage tax obligations and tax-debt risk when a business stops trading, with a special focus on the director and company‑closure interface: final returns, final assessments, debt recovery/enforcement, director personal exposure, and striking off/dissolution where tax liabilities exist. Across jurisdictions, tax authorities consistently require a “final” set of filings when trade ceases (income/corporate tax plus consumption taxes and payroll/withholding), and they retain strong powers to collect assessed debts through third parties (garnishment/levy), liens, seizure of assets, court action, and insolvency triggers. </p>
 <p>A repeated compliance pattern emerges: (1) determine the cessation date and stop incurring new liabilities; (2) file and mark “final” returns (and, where required, file corporate dissolution notices); (3) deregister from VAT/GST and payroll schemes; (4) pay or arrange payment of taxes; (5) preserve records through the applicable limitation period and statutory retention rules; and (6) only then proceed to dissolution/strike‑off—because striking off is not a substitute for insolvency and creditors (often including the tax authority) can object or seek restoration to pursue unpaid debts. </p>
-<p>Because your jurisdiction is intentionally unspecified, this lesson uses a “common-law + revenue authority toolkit” approach (typical of <span class="key-term">self-assessment</span> systems) and flags where rules materially diverge. It also provides jurisdictional exemplars from official guidance and primary law (UK, US, Canada, Australia, New Zealand, South Africa) to help students see how the same problems are solved in different statutory architectures. </p>
+<p>Because your jurisdiction is intentionally unspecified, this lesson uses a “common-law + revenue authority toolkit” approach (typical of <span class="key-term"><strong>self-assessment</strong></span> systems) and flags where rules materially diverge. It also provides jurisdictional exemplars from official guidance and primary law (UK, US, Canada, Australia, New Zealand, South Africa) to help students see how the same problems are solved in different statutory architectures. </p>
 </div>
 </section>
 <section class="lesson-section" id="learning-objectives-and-lesson-structure">
@@ -170,15 +186,15 @@
 <p>Because the jurisdiction is unspecified, teach the pattern and then show “how statutes instantiate the pattern” using exemplars:</p>
 <p><strong>Final returns and closure notifications</strong> - United States (federal): IRS “Closing a business” identifies final return filing requirements by entity type, including checking the “final return” box and filing Form 966 for corporate dissolution/liquidation; it also specifies final employment tax return actions (Forms 941/944/940, W‑2/W‑3) and EIN cancellation after filing and paying. 
 - United States (primary law for Form 966 timing): 26 CFR §1.6043‑1 requires a return on Form 966 within 30 days after adoption of a dissolution/liquidation plan. 
-- United Kingdom (VAT): VAT Notice 700/11 cites the <span class="leg-ref">VAT Act</span> 1994 schedules governing cancellation and the VAT <span class="leg-ref">Regulations 1995</span> rules on notifying cancellation and the final VAT return; it also warns of penalties for failure to notify changes within 30 days and explains “<span class="key-term">deemed supply</span>” VAT on stock/assets on hand at cancellation (subject to thresholds). 
+- United Kingdom (VAT): VAT Notice 700/11 cites the <span class="leg-ref"><strong>VAT Act</strong></span> 1994 schedules governing cancellation and the VAT <span class="leg-ref">Regulations 1995</span> rules on notifying cancellation and the final VAT return; it also warns of penalties for failure to notify changes within 30 days and explains “<span class="key-term">deemed supply</span>” VAT on stock/assets on hand at cancellation (subject to thresholds). 
 - Canada: CRA guidance on closing GST/HST and payroll program accounts requires notification/closure steps and final returns. 
 - New Zealand: Inland Revenue’s GST cancellation process requires filing a final return when cancelling GST registration. 
-- South Africa: SARS VAT cancellation guidance states the Commissioner issues a cancellation notice identifying the effective date and “final <span class="key-term">tax period</span>,” and requires <span class="key-term">output tax</span> declarations in the VAT return for that final period (including on certain assets on hand). </p>
+- South Africa: SARS VAT cancellation guidance states the Commissioner issues a cancellation notice identifying the effective date and “final <span class="key-term">tax period</span>,” and requires <span class="key-term"><strong>output tax</strong></span> declarations in the VAT return for that final period (including on certain assets on hand). </p>
 <p><strong>Director exposure and duties during financial distress</strong> - United States: the “Trust Fund Recovery <span class="key-term">Penalty</span>” can make responsible persons personally liable for unpaid trust-fund taxes (e.g., employment withholding) when they willfully fail to withhold/account for/deposit/pay specified taxes; 26 U.S.C. §6672 provides the statutory basis for this <span class="key-term">penalty</span>. 
 - Australia: ATO guidance states directors can become personally liable under the director <span class="key-term">penalty</span> regime for certain unpaid company amounts (notably PAYG withholding, GST and super guarantee charge), and ASIC’s RG 217 explains the director duty to prevent insolvent trading under Corporations Act s588G and safe harbour concepts. 
 - United Kingdom: <span class="leg-ref">Companies Act</span> 2006 s172(3) recognizes that directors’ duty to promote the success of the company operates subject to any rule requiring <span class="key-term">consideration</span> of creditors’ interests in certain circumstances; Insolvency Act 1986 s214 empowers a court, on application by a liquidator, to order directors to contribute to company assets for wrongful trading. 
 - United Kingdom (case law illustration of creditor-duty trigger): the UK Supreme Court decision in <em>BTI 2014 LLC v Sequana SA</em> addresses when the creditor-duty is engaged (and treats a mere “real risk” of insolvency as insufficient on the facts). 
-- Canada: directors may be jointly and severally liable for failures to remit under <span class="leg-ref">Income Tax Act</span> s227.1 (source deductions) and Excise Tax Act s323 (net GST/HST); CRA’s director-liability circular consolidates the statutory basis and due-diligence concept. </p>
+- Canada: directors may be jointly and severally liable for failures to remit under <span class="leg-ref"><strong>Income Tax Act</strong></span> s227.1 (source deductions) and Excise Tax Act s323 (net GST/HST); CRA’s director-liability circular consolidates the statutory basis and due-diligence concept. </p>
 <p><strong>Strike‑off/dissolution where tax liabilities exist</strong> - United Kingdom: Companies House guidance stresses strike‑off is for dormant/no longer trading companies and “not an alternative to formal insolvency proceedings”; it highlights that even after dissolution, creditors can apply to restore the company; it also imposes strict notice requirements to affected parties (including HMRC) and criminal consequences for noncompliance. 
 - United Kingdom (restoration): official “Company restoration guide” identifies who may apply (including creditors) and gives a general six-year time limit (except personal injury claims), showing dissolution is not always the end of enforceability. </p>
 <p><strong>Comparison table of director liability pathways</strong></p>
@@ -191,37 +207,25 @@
 <p><strong>Process overview flowchart</strong></p>
 <div class="mermaid">
 flowchart TD
-  A[Cessation decision taken] --&gt; B[Confirm cessation date
-stop incurring new debts]
-  B --&gt; C[Inventory tax accounts
-(income/corporate, VAT/GST, payroll/withholding, excise, local)]
-  C --&gt; D[Close-out operations
-final invoices, collect receivables, settle employment]
-  D --&gt; E[Prepare final accounts
-to cessation date]
-  E --&gt; F[File final returns
-mark "final" where applicable]
-  F --&gt; G{Tax debt outstanding?}
-  G -- No --&gt; H[Deregister/cancel tax registrations
-VAT/GST, payroll schemes, IDs if required]
-  H --&gt; I[Distribute assets per law
-keep records]
-  I --&gt; J[Apply for dissolution/strike-off
-notify creditors/tax authority]
-  J --&gt; K[Monitor objections/public notice period]
-  K --&gt; L[Company dissolved / business closed]
+  A[Cessation decision taken] --> B[Confirm cessation date<br/>stop incurring new debts]
+  B --> C[Inventory tax accounts<br/>(income/corporate, VAT/GST, payroll/withholding, excise, local)]
+  C --> D[Close-out operations<br/>final invoices, collect receivables, settle employment]
+  D --> E[Prepare final accounts<br/>to cessation date]
+  E --> F[File final returns<br/>mark "final" where applicable]
+  F --> G{Tax debt outstanding?}
+  G -- No --> H[Deregister/cancel tax registrations<br/>VAT/GST, payroll schemes, IDs if required]
+  H --> I[Distribute assets per law<br/>keep records]
+  I --> J[Apply for dissolution/strike-off<br/>notify creditors/tax authority]
+  J --> K[Monitor objections/public notice period]
+  K --> L[Company dissolved / business closed]
 
-  G -- Yes --&gt; M[Engage tax authority early
-payment plan / settlement proposal]
-  M --&gt; N{Solvent and can pay within plan?}
-  N -- Yes --&gt; F
-  N -- No --&gt; O[Consider formal insolvency
-liquidation/administration/bankruptcy]
-  O --&gt; P[Director-risk controls
-avoid insolvent trading/wrongful trading]
-  P --&gt; Q[Resolution via insolvency outcomes
-or creditor arrangements]
-  Q --&gt; H
+  G -- Yes --> M[Engage tax authority early<br/>payment plan / settlement proposal]
+  M --> N{Solvent and can pay within plan?}
+  N -- Yes --> F
+  N -- No --> O[Consider formal insolvency<br/>liquidation/administration/bankruptcy]
+  O --> P[Director-risk controls<br/>avoid insolvent trading/wrongful trading]
+  P --> Q[Resolution via insolvency outcomes<br/>or creditor arrangements]
+  Q --> H
 </div>
 <p>This flow matches how official checklists structure closure: final returns; <span class="key-term">employee</span>/payroll closeout; paying or arranging tax; deregistration; and (for companies) only then dissolution/strike‑off, with creditor <span class="key-term">objection</span>/restoration risk if debts remain. </p>
 <p><strong>Closure steps with checklists and a practical timeline</strong></p>
@@ -229,7 +233,7 @@ or creditor arrangements]
 <p><strong>Relative closure timeline (teaching baseline)</strong>
 On Day 0, confirm the legal “cessation date” and immediately stop creating new liabilities, especially payroll/withholding and VAT/GST on continuing <span class="key-term">taxable supplies</span> (because those taxes are often collected from others and attract sharper enforcement tools). </p>
 <p>Within the first 7–14 days, you typically: inform relevant revenue agencies that taxable activities will cease; close or mark payroll schemes for cessation; and gather records needed for final returns (asset register, stock on hand, debtors/creditors, payroll summaries). Official examples: UK payroll cessation requires notifying HMRC “straight away” and submitting a final payroll return (FPS/EPS); in Canada, the payroll account closure workflow closes the account once deductions are remitted and information returns are filed. </p>
-<p>Within the next periodic filing cycle (often 1–3 months), file the final VAT/GST return and apply required stock/asset “exit” adjustments. For example, UK VAT deregistration rules contemplate a final VAT return and may require accounting for VAT on stocks and assets on hand (a <span class="key-term">deemed supply</span>), and SARS similarly requires <span class="key-term">output tax</span> declarations for the final VAT period including on certain assets on hand. </p>
+<p>Within the next periodic filing cycle (often 1–3 months), file the final VAT/GST return and apply required stock/asset “exit” adjustments. For example, UK VAT deregistration rules contemplate a final VAT return and may require accounting for VAT on stocks and assets on hand (a <span class="key-term">deemed supply</span>), and SARS similarly requires <span class="key-term"><strong>output tax</strong></span> declarations for the final VAT period including on certain assets on hand. </p>
 <p>Within company-income-tax and annual payroll reporting deadlines, file final income/corporation tax returns, employment tax returns, and information returns; pay or arrange payment of assessed liabilities; and maintain records for statutory periods. Illustrations: IRS requires a final return for the year you close and, if you had employees, final Forms 941/944/940 plus W‑2/W‑3; it also requires keeping employment tax records at least four years. UK strike‑off guidance recommends keeping business documents for seven years after the company is struck off. </p>
 <p><strong>Director-focused closure checklist</strong></p>
 <p>This checklist is drafted to work in most common-law corporate settings (then adapted to local law):</p>
@@ -246,17 +250,17 @@ On Day 0, confirm the legal “cessation date” and immediately stop creating n
 <p>These are teaching templates (jurisdiction-neutral). For live teaching, have students compare them to official forms/guidance used in their jurisdiction (examples cited throughout).</p>
 <p>Use this as a standard “closure docket” cover page for any final filing pack:</p>
 <p><strong>Taxpayer identification</strong>: Legal name; trading name; tax IDs; entity type; registered addresses; representative details.
-<strong>Cessation event details</strong>: Date trade ceased; date last <span class="key-term">taxable supply</span>; date last payroll; date business bank account closed.
+<strong>Cessation event details</strong>: Date trade ceased; date last <span class="key-term"><strong>taxable supply</strong></span>; date last payroll; date business bank account closed.
 <strong>Filings included</strong>: Final income/corporate return; final VAT/GST return; final payroll/withholding return(s); information returns (contractors/employees).
-<strong>Requests</strong>: Deregistration/cancellation of VAT/GST and payroll scheme; confirmation of account closure; request for statement of account showing nil balance (or payment plan terms).
+<strong>Requests</strong>: Deregistration/cancellation of VAT/GST and payroll scheme; confirmation of account closure; request for statement of account showing nil balance (or <strong>payment plan</strong> terms).
 <strong>Records custodian</strong>: Name/address for record retention (important where revenue authority requires attaching keeper details to the final payroll return, as in IRS practice). </p>
 <p><strong>Annotated final VAT/GST return example</strong></p>
-<p><strong>Scenario</strong>: Business ceases trading on March 31; deregisters effective March 31; has remaining inventory and a computer bought with <span class="key-term">input tax credit</span>.</p>
-<p>Key teaching points: - Many VAT/GST systems treat deregistration as a “<span class="key-term">deemed supply</span>” event for stock/assets on hand, requiring <span class="key-term">output tax</span> on those items unless thresholds/exemptions apply. UK VAT Notice 700/11 expressly describes a “<span class="key-term">deemed supply</span>” of goods on hand and potential VAT accounting on business assets/stock, and SARS requires <span class="key-term">output tax</span> on certain assets on hand at cessation in the final VAT period. 
+<p><strong>Scenario</strong>: Business ceases trading on March 31; deregisters effective March 31; has remaining inventory and a computer bought with <span class="key-term"><strong>input tax</strong> credit</span>.</p>
+<p>Key teaching points: - Many VAT/GST systems treat deregistration as a “<span class="key-term">deemed supply</span>” event for stock/assets on hand, requiring <span class="key-term"><strong>output tax</strong></span> on those items unless thresholds/exemptions apply. UK VAT Notice 700/11 expressly describes a “<span class="key-term">deemed supply</span>” of goods on hand and potential VAT accounting on business assets/stock, and SARS requires <span class="key-term"><strong>output tax</strong></span> on certain assets on hand at cessation in the final VAT period. 
 - Do not stop charging VAT/GST merely because you applied to deregister: UK guidance says you should continue charging/accounting until the authority confirms cancellation, and cancellation cannot be backdated. </p>
-<p><strong>Teaching template fields (annotate in class):</strong> - <span class="key-term">Output tax</span> on last taxable sales through cessation date
-- <span class="key-term">Output tax</span> adjustment: “<span class="key-term">deemed supply</span>” on inventory/assets kept (market value basis in many regimes; confirm local rule) 
-- <span class="key-term">Input tax</span> claims up to cessation date (ensure invoices received and eligibility met)
+<p><strong>Teaching template fields (annotate in class):</strong> - <span class="key-term"><strong>Output tax</strong></span> on last taxable sales through cessation date
+- <span class="key-term"><strong>Output tax</strong></span> adjustment: “<span class="key-term">deemed supply</span>” on inventory/assets kept (market value basis in many regimes; confirm local rule) 
+- <span class="key-term"><strong>Input tax</strong></span> claims up to cessation date (ensure invoices received and eligibility met)
 - Net VAT/GST payable/refundable; reconcile against statements of account
 - Tick/mark “final return” if the system includes a final-return designation; attach deregistration confirmation where required (jurisdiction-specific). </p>
 <p><strong>Annotated final payroll/withholding return example</strong></p>
@@ -294,7 +298,7 @@ On Day 0, confirm the legal “cessation date” and immediately stop creating n
 <p><strong>Closure plan workshop (core activity, 20–25 minutes)</strong>
 Give student groups a scenario: “RetailCo stops trading today, has employees, is VAT/GST registered, owes tax, and directors want to strike off.” Groups must produce: (a) a 30/60/90‑day checklist; (b) a filing matrix of final returns; (c) a risk memo to directors on personal exposure and strike‑off. Anchor them in official strike‑off criteria and notice obligations, plus final return rules. </p>
 <p><strong>Enforcement role-play (10 minutes)</strong>
-Roles: tax authority collections officer; director; insolvency practitioner; secured lender. Trigger: unpaid VAT/GST and payroll withholding. Students must identify which enforcement tools might be used (garnishment/levy, lien, seizure, insolvency) and what the director should do first (engage, payment plan, formal insolvency if needed). Use HMRC’s escalation narrative and the CRA/ATO garnishment tools and IRS levy/lien summaries to keep the role-play fact-grounded. </p>
+Roles: tax authority collections officer; director; insolvency practitioner; secured lender. Trigger: unpaid VAT/GST and payroll withholding. Students must identify which enforcement tools might be used (garnishment/levy, lien, seizure, insolvency) and what the director should do first (engage, <strong>payment plan</strong>, formal insolvency if needed). Use HMRC’s escalation narrative and the CRA/ATO garnishment tools and IRS levy/lien summaries to keep the role-play fact-grounded. </p>
 <p><strong>Mini-template completion (10 minutes)</strong>
 Each student completes the final-return cover sheet (above) and highlights: cessation date; which returns get “final” marked; which deregistrations must be requested; and who will keep records and for how long (using at least one cited jurisdictional example). </p>
 <p><strong>Discussion questions</strong></p>
@@ -310,7 +314,7 @@ Students receive a two-page fact pattern: a small company ceases trade, has VAT/
 <p><strong>Marking scheme (30 marks)</strong> - Identification of required final filings and deregistrations (8): must include income/corporate, VAT/GST, payroll/withholding; must mention “final return” marking where applicable (or equivalent). 
 - Accuracy on director personal exposure (8): recognizes at least two personal-liability pathways (e.g., trust fund taxes; director <span class="key-term">penalty</span> regimes; director liability for remittances; insolvent/wrongful trading) and ties them to statutory authority. 
 - Strike‑off analysis quality (6): references eligibility/“not an alternative to insolvency,” notice obligations, <span class="key-term">objection</span>/restoration risk, and asset forfeiture implications. 
-- Enforcement + remedy reasoning (4): correctly describes a tool (lien/levy/garnishment/seizure) and at least one practical response (payment plan, dispute, insolvency route), grounded in official sources. 
+- Enforcement + remedy reasoning (4): correctly describes a tool (lien/levy/garnishment/seizure) and at least one practical response (<strong>payment plan</strong>, dispute, insolvency route), grounded in official sources. 
 - Professional presentation and specificity (4): clear timeline, assigns responsibility, uses defined cessation dates, avoids generic statements. </p>
 </div>
 </section>
@@ -633,7 +637,5 @@ document.addEventListener('DOMContentLoaded', () => {
 	});
 });
 </script>
-<script src="https://cdn.jsdelivr.net/npm/mermaid@10.0.0/dist/mermaid.min.js"></script>
-<script>mermaid.initialize({startOnLoad:true});</script>
 <script src="js/globe-hero.js" type="module"></script>
 </html>

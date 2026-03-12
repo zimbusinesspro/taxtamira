@@ -34,7 +34,23 @@
 {"@context":"http://schema.org","@type":"WebSite","name":"TaxTami - Tax Training Zimbabwe","url":"www.taxtami.com"}
 \t</script>
 <link href="css/feature-steps.css" rel="stylesheet"/>
-</meta></link></meta></head>
+</meta></link></meta>
+    <style class="mermaid-style">
+    .mermaid {
+        background: #f4f8f6;
+        border: 1px solid #c5ddd0;
+        border-radius: 10px;
+        padding: 28px 20px;
+        margin: 24px 0;
+        overflow-x: auto;
+        text-align: center;
+    }
+    .mermaid svg { max-width: 100%; height: auto; }
+    </style>
+    <!-- Mermaid.js flowchart renderer -->
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.3/dist/mermaid.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function () {  mermaid.initialize({    startOnLoad: true,    theme: "base",    themeVariables: {      primaryColor: "#d6ede2",      primaryBorderColor: "#2c724f",      primaryTextColor: "#1a3a2a",      lineColor: "#2c724f",      secondaryColor: "#e9f5ee",      tertiaryColor: "#f4faf7",      edgeLabelBackground: "#ffffff",      fontFamily: "Work Sans, Heebo, sans-serif",      fontSize: "14px"    }  });});</script>
+</head>
 <body>
 <div class="page-wrapper">
 <!-- Main Header-->
@@ -156,7 +172,7 @@
 <div class="step-number-wrap">2</div>
 <div class="step-content">
 <h3>Legislation</h3>
-<p><span class="leg-ref">Section 8(1)(f)</span> of the <span class="leg-ref">Income Tax Act</span> brings into Gross
+<p><span class="leg-ref">Section 8(1)(f)</span> of the <span class="leg-ref"><strong>Income Tax Act</strong></span> brings into Gross
                                                 Income:</p>
 <div class="step-progress-container">
 <div class="step-progress-bar"></div>
@@ -232,7 +248,7 @@
                                                 respect of his employment, including board, quarters, residence,
                                                 furniture..."
                                             </blockquote>
-<p>This "catch-all" section ensures that almost any perk is taxable unless
+<p>This <span class="quoted-text">"catch-all"</span> section ensures that almost any perk is taxable unless
                                                 specifically exempted.</p>
 </div>
 </section>
@@ -242,8 +258,8 @@
 <h4>1. Motoring Benefits</h4>
 <p>This arises when an <span class="key-term">employee</span> uses a company vehicle for <strong>private
                                                 purposes</strong> (including travel between home and work).</p>
-<p><strong>Deemed Cost Method:</strong> <span class="key-term">ZIMRA</span> publishes annual tables based on
-                                            engine capacity. (Example values - check Finance Act):</p>
+<p><strong>Deemed Cost Method:</strong> <span class="key-term"><strong>ZIMRA</strong></span> publishes annual tables based on
+                                            engine capacity. (Example values - check <strong>Finance Act</strong>):</p>
 <ul>
 <li><strong>Up to 1500cc:</strong> e.g., $1,800/annum</li>
 <li><strong>1501cc - 2000cc:</strong> e.g., $2,400/annum</li>
@@ -276,7 +292,7 @@
 <!-- D. Allowances vs Benefits -->
 <section class="lesson-section" id="valuation">
 <h3><span class="section-letter">D</span> Allowances vs Benefits</h3>
-<p>It is crucial to distinguish between cash "allowances" and "benefits in
+<p>It is crucial to distinguish between cash <span class="quoted-text">"allowances"</span> and "benefits in
                                             kind":</p>
 <div class="row">
 <div class="col-md-6">
@@ -285,7 +301,7 @@
 <p>e.g., Transport Allowance of $100 cash given to <span class="key-term">employee</span>.</p>
 <p><strong>Treatment:</strong> Fully taxable unless the <span class="key-term">employee</span>
                                                         proves it was spent on business (rare for transport). Usually
-                                                        taxed 100% via <span class="key-term">PAYE</span>.</p>
+                                                        taxed 100% via <span class="key-term"><strong>PAYE</strong></span>.</p>
 </div>
 </div>
 <div class="col-md-6">
@@ -298,7 +314,7 @@
 </div>
 </div>
 </div>
-<p><strong>Planning Point:</strong> Benefits in kind are often more
+<p><strong>Planning Point:</strong> <strong>Benefits in kind</strong> are often more
                                             tax-efficient than cash allowances.</p>
 </section>
 <!-- E. Case Law Integration -->
@@ -318,9 +334,9 @@
 <section class="lesson-section" id="pitfalls">
 <h3><span class="section-letter">F</span> Common Pitfalls</h3>
 <div class="pitfall-box">
-<p class="pitfall-title"><span class="ti-alert"></span> The "Business Use"
+<p class="pitfall-title"><span class="ti-alert"></span> The <span class="quoted-text">"Business Use"</span>
                                                 Misconception</p>
-<p>Employees often think "I only use the car for work." If you take the car
+<p>Employees often think <span class="quoted-text">"I only use the car for work."</span> If you take the car
                                                 home at night, that trip is <strong>private use</strong>. Thus, the full
                                                 deemed benefit applies unless the car is parked at the office overnight
                                                 (pool car).</p>
@@ -362,7 +378,7 @@
 </div>
 <div class="quiz-explanation">
 <p><strong>A2: Yes, Fully Taxable.</strong> This is the settlement of a
-                                                debt/expense on behalf of the <span class="key-term">employee</span>. It is a "benefit or advantage".
+                                                debt/expense on behalf of the <span class="key-term">employee</span>. It is a <span class="quoted-text">"benefit or advantage"</span>.
                                             </p>
 </div>
 <div class="quiz-explanation">
@@ -648,8 +664,6 @@ document.addEventListener('DOMContentLoaded', () => {
 	});
 });
 </script>
-<script src="https://cdn.jsdelivr.net/npm/mermaid@10.0.0/dist/mermaid.min.js"></script>
-<script>mermaid.initialize({startOnLoad:true});</script>
 <script src="js/globe-hero.js" type="module"></script>
 <script src="js/feature-steps.js"></script>
 <script>

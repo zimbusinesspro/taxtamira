@@ -33,7 +33,23 @@
 <script type="application/ld+json">
 {"@context":"http://schema.org","@type":"WebSite","name":"TaxTami - Tax Training Zimbabwe","url":"www.taxtami.com"}
 	</script>
-</meta></meta></link></head>
+</meta></meta></link>
+    <style class="mermaid-style">
+    .mermaid {
+        background: #f4f8f6;
+        border: 1px solid #c5ddd0;
+        border-radius: 10px;
+        padding: 28px 20px;
+        margin: 24px 0;
+        overflow-x: auto;
+        text-align: center;
+    }
+    .mermaid svg { max-width: 100%; height: auto; }
+    </style>
+    <!-- Mermaid.js flowchart renderer -->
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.3/dist/mermaid.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function () {  mermaid.initialize({    startOnLoad: true,    theme: "base",    themeVariables: {      primaryColor: "#d6ede2",      primaryBorderColor: "#2c724f",      primaryTextColor: "#1a3a2a",      lineColor: "#2c724f",      secondaryColor: "#e9f5ee",      tertiaryColor: "#f4faf7",      edgeLabelBackground: "#ffffff",      fontFamily: "Work Sans, Heebo, sans-serif",      fontSize: "14px"    }  });});</script>
+</head>
 <div class="page-wrapper">
 <!-- Main Header-->
 <header class="main-header style-three">
@@ -145,9 +161,9 @@
 <div class="section-content">
 <p>Payment plans (instalment arrangements) are the most important “middle path” between voluntary immediate payment and coercive enforcement. They preserve revenue where a taxpayer is <strong>unable to pay in full now</strong> but remains <strong>viable and willing</strong> to pay over time; they also reduce enforcement costs and can stabilize compliance by aligning payment obligations with cashflow. In Zimbabwe, instalment arrangements are not merely administrative convenience—they are legally recognized in the <strong><span class="leg-ref">Income Tax Act</span></strong> (the Commissioner may determine that tax is payable in instalments) and also operate within VAT’s payment-in-full framework through administrative discretion and related mechanisms (including deposits for provisional payment where VAT cannot be accurately calculated). ()</p>
 <p>At the enforcement end, the law is designed to prevent “delay by dispute.” For both income tax and VAT, the obligation to pay is generally not suspended by <span class="key-term">objection</span>/<span class="key-term">appeal</span> unless the Commissioner directs otherwise; this means payment plans operate against a background of <strong>collectability even during dispute</strong> and interact with escalating enforcement tools such as agent appointment/garnishee and expedited recovery. ()</p>
-<p>TaRMS has changed payment plan practice. <span class="key-term">ZIMRA</span> explicitly stated that legacy payment plans under SAP TRM did not carry over: they were nullified before migration, and taxpayers in arrears must apply for new payment plans via the <strong>TaRMS Self Service Portal</strong> under the <strong>Debt Management module</strong>. () As a result, debt strategists must be fluent in the system lifecycle: application → assessment of viability and risk → approval → automated monitoring and reminders → default handling → revision or cancellation → enforcement.</p>
+<p><strong>TaRMS</strong> has changed <strong>payment plan</strong> practice. <span class="key-term"><strong>ZIMRA</strong></span> explicitly stated that legacy payment plans under SAP TRM did not carry over: they were nullified before migration, and taxpayers in arrears must apply for new payment plans via the <strong>TaRMS Self Service Portal</strong> under the <strong>Debt Management module</strong>. () As a result, debt strategists must be fluent in the system lifecycle: application → assessment of viability and risk → approval → automated monitoring and reminders → default handling → revision or cancellation → enforcement.</p>
 <p>Case law reinforces the boundaries: <strong><span class="key-term">ZIMRA</span> v Packers (SC 28/2016)</strong> emphasizes that suspension of payment pending <span class="key-term">appeal</span> is for the Commissioner’s discretion; courts should not usurp that power, and strong collection tools like garnishee/agent appointment can lawfully follow assessment. <strong>Murowa Diamonds (HH 1-11)</strong> illustrates that asserted set-off or claimed overpayment does not automatically block statutory recovery powers absent proof and proper procedure. These principles support a payment-plan policy that is supportive but firm: arrangements are conditional and must be monitored, and default should trigger rapid escalation. ()</p>
-<p>Assumptions and access limits: No internal <span class="key-term">ZIMRA</span> payment-plan SOPs/templates or detailed TaRMS internal workflow manuals were provided in this chat. The analysis relies on statutory texts and <span class="key-term">ZIMRA</span> public notices/FAQs. The “uploaded case pack” referenced in earlier prompts was not accessible; case law is cited from public sources. Where Finance Act amendment section numbering is not visible in consolidated texts, it is flagged as <strong>unspecified</strong>.</p>
+<p>Assumptions and access limits: No internal <span class="key-term"><strong>ZIMRA</strong></span> payment-plan SOPs/templates or detailed <strong>TaRMS</strong> internal workflow manuals were provided in this chat. The analysis relies on statutory texts and <span class="key-term"><strong>ZIMRA</strong></span> public notices/FAQs. The “uploaded case pack” referenced in earlier prompts was not accessible; case law is cited from public sources. Where <strong>Finance Act</strong> amendment section numbering is not visible in consolidated texts, it is flagged as <strong>unspecified</strong>.</p>
 </div>
 </section>
 <section class="lesson-section" id="lesson-context-and-learning-outcomes">
@@ -184,19 +200,19 @@ Tax is deemed a debt due to the State when due; recovery proceedings are deemed 
 <p><strong><span class="leg-ref">VAT Act [Chapter 23:12]</span></strong></p>
 <p>VAT does not present payment plans as explicitly as income tax; however, the statutory architecture still provides hooks:</p>
 <p><strong>Payment-in-full and the “deposit” mechanism (<span class="leg-ref">VAT Act</span> s 38).</strong>
-VAT must be paid “in full” within the timelines allowed; however, where tax due cannot be accurately calculated within time due to circumstances beyond a person’s control, the Commissioner may accept a <strong>deposit equal to estimated liability</strong>, which is treated as provisional payment; excess is refundable and short payment recoverable. This is not a general payment plan, but it demonstrates that VAT law recognizes managed payment timing under Commissioner satisfaction, which can be operationally adjacent to arrangements. ()</p>
+VAT must be paid “in full” within the timelines allowed; however, where tax due cannot be accurately calculated within time due to circumstances beyond a person’s control, the Commissioner may accept a <strong>deposit equal to estimated liability</strong>, which is treated as provisional payment; excess is refundable and short payment recoverable. This is not a general <strong>payment plan</strong>, but it demonstrates that VAT law recognizes managed payment timing under Commissioner satisfaction, which can be operationally adjacent to arrangements. ()</p>
 <p><strong>Pay-now-argue-later (<span class="leg-ref">VAT Act</span> s 36).</strong>
-The obligation to pay tax/<span class="key-term">additional tax</span>/<span class="key-term">penalty</span>/<span class="key-term">interest</span> is not suspended pending <span class="key-term">objection</span>/<span class="key-term">appeal</span> unless the Commissioner directs otherwise. This is critical: payment arrangements are often sought during disputes. The <span class="leg-ref">VAT Act</span> indicates s 36 was substituted by Finance Act 8/2022 (Finance Act section number unspecified in the consolidated excerpt). ()</p>
+The obligation to pay tax/<span class="key-term">additional tax</span>/<span class="key-term">penalty</span>/<span class="key-term">interest</span> is not suspended pending <span class="key-term">objection</span>/<span class="key-term">appeal</span> unless the Commissioner directs otherwise. This is critical: payment arrangements are often sought during disputes. The <span class="leg-ref"><strong>VAT Act</strong></span> indicates s 36 was substituted by <strong>Finance Act</strong> 8/2022 (<strong>Finance Act</strong> section number unspecified in the consolidated excerpt). ()</p>
 <p><strong><span class="key-term">Penalty</span>/<span class="key-term">interest</span> consequences (<span class="leg-ref">VAT Act</span> s 39).</strong>
 Late payment triggers <span class="key-term">penalty</span> and <span class="key-term">interest</span> which continue unless remission applies; payment plans must therefore be designed with awareness that debt can inflate. ()</p>
 <p><strong>Revenue Authority Act <span class="leg-ref">[Chapter 23:11]</span></strong></p>
-<p>The Revenue Authority Act does not spell out payment plans in detail, but it shapes the plan environment because it defines sharper enforcement pathways:</p>
+<p>The <strong>Revenue Authority Act</strong> does not spell out payment plans in detail, but it shapes the plan environment because it defines sharper enforcement pathways:</p>
 <p><strong>Expedited recovery (s 33A).</strong>
-Where conditions are met (served assessment; no <span class="key-term">objection</span> or no <span class="key-term">appeal</span> pursued; unpaid tax), <span class="key-term">ZIMRA</span> can pursue expedited recovery procedures including attachments. This is the “backstop” that gives leverage to payment arrangement negotiations—plans are an alternative to immediate enforcement, not a replacement for it. ()</p>
+Where conditions are met (served assessment; no <span class="key-term">objection</span> or no <span class="key-term">appeal</span> pursued; unpaid tax), <span class="key-term"><strong>ZIMRA</strong></span> can pursue expedited recovery procedures including attachments. This is the “backstop” that gives leverage to <strong>payment arrangement</strong> negotiations—plans are an alternative to immediate enforcement, not a replacement for it. ()</p>
 <p><strong>Partial-payment ordering (s 33A(10)).</strong>
 Where payment is less than the total (principal + <span class="key-term">penalty</span>/fine + <span class="key-term">interest</span>), it is deemed to settle principal first, then <span class="key-term">penalty</span>/fine, then <span class="key-term">interest</span>. Plans should expect that partial payments will reduce principal first, leaving penalties/<span class="key-term">interest</span> visible until later stages; communications must manage taxpayer expectations accordingly. ()</p>
 <p><strong>Finance Act amendments</strong></p>
-<p>For payment plans specifically, Finance Act references are mostly indirect (adjusting due dates, <span class="key-term">interest</span> rates, or administrative provisions). Where Finance Acts are referenced in the consolidated laws but section numbers are not shown, this lesson flags them as <strong>unspecified</strong>.</p>
+<p>For payment plans specifically, <strong>Finance Act</strong> references are mostly indirect (adjusting due dates, <span class="key-term">interest</span> rates, or administrative provisions). Where Finance Acts are referenced in the consolidated laws but section numbers are not shown, this lesson flags them as <strong>unspecified</strong>.</p>
 </div>
 </section>
 <section class="lesson-section" id="payment-plan-strategy-and-mechanics">
@@ -208,14 +224,14 @@ Where payment is less than the total (principal + <span class="key-term">penalty
 <h2>C. Detailed conceptual explanation</h2>
 <div class="section-content">
 <p>Payment arrangements exist in a triangle of authority:</p>
-<p><strong>Express statutory discretion</strong> (income tax) – <span class="leg-ref">Income Tax Act</span> s 71 expressly allows instalment times “determined by the Commissioner.” ()</p>
+<p><strong>Express statutory discretion</strong> (income tax) – <span class="leg-ref"><strong>Income Tax Act</strong></span> s 71 expressly allows instalment times “determined by the Commissioner.” ()</p>
 <p><strong>Administrative practice within statutory payment/recovery systems</strong> (VAT) – VAT’s “full payment” structure is rigid, but s 38 deposit logic shows controlled flexibility when the Commissioner is satisfied; this supports a practical approach where arrangements must still manage <span class="key-term">interest</span>/<span class="key-term">penalty</span> consequences and maintain compliance. ()</p>
 <p><strong>Enforcement backstop</strong> – The existence of strong enforcement options (agent appointment, s 33A expedited recovery) means an arrangement is accepted because it is expected to maximize recovery versus immediate enforcement, not because debt becomes non-collectable. ()</p>
 <p>A robust professional framework uses four eligibility lenses:</p>
 <p><strong>Ability to pay (affordability)</strong>
-Assess credible cashflow, existing obligations, and realistic surplus. In TaRMS, account statements reflect current liabilities, but viability requires taxpayer-provided evidence (bank statements, management accounts, cashflow forecasts).</p>
+Assess credible cashflow, existing obligations, and realistic surplus. In <strong>TaRMS</strong>, account statements reflect current liabilities, but viability requires taxpayer-provided evidence (bank statements, management accounts, cashflow forecasts).</p>
 <p><strong>Willingness to pay (behavioral compliance)</strong>
-Past compliance history: filing timeliness, responsiveness, prior defaults, history of estimated assessments due to non-filing (a strong negative signal in TaRMS contexts). <span class="key-term">ZIMRA</span> warns that lack of returns can result in estimated assessments, which suggests teams should treat chronic non-filing as high risk. ()</p>
+Past compliance history: filing timeliness, responsiveness, prior defaults, history of estimated assessments due to non-filing (a strong negative signal in <strong>TaRMS</strong> contexts). <span class="key-term"><strong>ZIMRA</strong></span> warns that lack of returns can result in estimated assessments, which suggests teams should treat chronic non-filing as high risk. ()</p>
 <p><strong>Debt characteristics</strong>
 Debt amount, age, compounding rate (VAT penalties/<span class="key-term">interest</span> can escalate quickly), currency mix (USD/ZWL), and whether debt is disputed (collectible unless suspended). ()</p>
 <p><strong>Risk and enforceability</strong>
@@ -229,10 +245,10 @@ Availability of assets/third-party funds (if garnishee is possible), flight risk
 <p><strong>Critical Zimbabwe nuance:</strong> Because pay-now-argue-later applies, a taxpayer in dispute may still have to adhere to a plan unless collection is formally suspended. Packers explains hardship relief/suspension is a Commissioner discretion and requires taxpayer-supplied facts; that logic supports requiring proactive disclosure and evidence in plan applications, particularly where the taxpayer seeks suspension or special terms. ()</p>
 <p><strong>Monitoring taxpayer compliance with payment plans</strong></p>
 <p>Monitoring is the difference between a plan and a delay tactic. Monitoring should include:</p>
-<p><strong>Payment verification</strong>: confirm each instalment posts in TaRMS ledger to the correct currency and obligations; TaRMS allows payments to sit in the Single Account until returns are submitted, so monitoring must include <strong>return submission compliance</strong>. ()</p>
-<p><strong>New obligations</strong>: taxpayer must not accrue new arrears (especially VAT/<span class="key-term">PAYE</span>).</p>
+<p><strong>Payment verification</strong>: confirm each instalment posts in <strong>TaRMS</strong> ledger to the correct currency and obligations; <strong>TaRMS</strong> allows payments to sit in the Single Account until returns are submitted, so monitoring must include <strong>return submission compliance</strong>. ()</p>
+<p><strong>New obligations</strong>: taxpayer must not accrue new arrears (especially VAT/<span class="key-term"><strong>PAYE</strong></span>).</p>
 <p><strong>Trigger thresholds</strong>: if one payment missed → immediate contact; two missed → default/cancellation; deterioration in compliance → escalate.</p>
-<p>TaRMS is designed to support monitoring by showing statements, balances, and debt module workflow tasks (as indicated in <span class="key-term">ZIMRA</span>’s TaRMS operational notices and go-live communications). ()</p>
+<p>TaRMS is designed to support monitoring by showing statements, balances, and debt module workflow tasks (as indicated in <span class="key-term"><strong>ZIMRA</strong></span>’s TaRMS operational notices and go-live communications). ()</p>
 <p>falsified financial disclosure.</p>
 <p>Default consequences should be immediate and credible: reclassify debt as enforcement-ready and consider agent appointment, garnishee, or s 33A expedited recovery (if finality conditions exist). ()</p>
 <p>Murowa Diamonds illustrates why default also interacts with contested credits: asserted set-offs do not neutralize collection powers absent proof; therefore, default plus unproven credit claims should not freeze enforcement. ()</p>
@@ -262,7 +278,7 @@ Availability of assets/third-party funds (if garnishee is possible), flight risk
 <p>taxpayer must submit returns on time, otherwise their instalments may not settle obligations properly and may trigger estimated assessments.</p>
 <p>TaRMS FAQ indicates the system raises estimates after a grace period (9 days after due date), reinforcing that missing returns during a plan can quickly create new debts. ()</p>
 <p><strong>Refund offsets and impact on plan balances</strong></p>
-<p><span class="leg-ref">VAT Act</span> s 44(6) authorizes set-off of VAT refunds against unpaid VAT and other domestic tax debts; TaRMS FAQ confirms refund offsets are possible, but cross-currency offsets are not allowed (ZWL refund cannot offset USD obligation). ()</p>
+<p><span class="leg-ref"><strong>VAT Act</strong></span> s 44(6) authorizes set-off of VAT refunds against unpaid VAT and other domestic tax debts; TaRMS FAQ confirms refund offsets are possible, but cross-currency offsets are not allowed (ZWL refund cannot offset USD obligation). ()</p>
 <p>plan schedules must be crafted per currency ledger,</p>
 <p>predicted refunds should not be treated as cash until set-off rules and return compliance are satisfied.</p>
 </div>
@@ -280,10 +296,10 @@ Availability of assets/third-party funds (if garnishee is possible), flight risk
 <p>Strong recovery tools (garnishee/agent) can lawfully follow assessment where there is non-payment. ()</p>
 <p>Practical plan implication: payment plans are not substitutes for statutory obligations; they are a managed compliance pathway. A taxpayer seeking a plan during dispute must still respect pay-now logic unless suspension is granted.</p>
 <p>Relevance:</p>
-<p>The taxpayer admitted <span class="key-term">withholding tax</span> was due but argued for set-off based on alleged overpayment; <span class="key-term">ZIMRA</span> emphasized its statutory recovery and agent appointment powers; the court refused to restrain recovery absent proof and proper basis. ()</p>
+<p>The taxpayer admitted <span class="key-term"><strong>withholding tax</strong></span> was due but argued for set-off based on alleged overpayment; <span class="key-term">ZIMRA</span> emphasized its statutory recovery and agent appointment powers; the court refused to restrain recovery absent proof and proper basis. ()</p>
 <p>Practical plan implication: debt teams must not accept unproven set-off “promises” in lieu of payments; plan eligibility should require clear proof of credits/refunds and posted ledger positions.</p>
 <p>Relevance:</p>
-<p>The court reaffirmed strict statutory interpretation principles (“no equity about a tax”), meaning payment plan discretion must operate within legal authority and cannot be purely equitable. ()</p>
+<p>The court reaffirmed strict statutory interpretation principles (“no equity about a tax”), meaning <strong>payment plan</strong> discretion must operate within legal authority and cannot be purely equitable. ()</p>
 <p>Practical implication: plan approvals, extensions without <span class="key-term">interest</span>, and remissions must be justified under statutory criteria and documented accordingly.</p>
 </div>
 </section>
@@ -302,7 +318,7 @@ Because TaRMS posting depends on returns, a taxpayer can pay into the Single Acc
 <p><strong>Insufficient security for high-risk debtors</strong>
 Where assets exist and flight risk is high, a plan without safeguards can lead to revenue loss; the strategic alternative is agent appointment or expedited recovery. Packers illustrates that garnishee is a lawful possibility post‑assessment. ()</p>
 <p><strong>Incorrect allocation expectations in short-payment contexts</strong>
-Revenue Authority Act s 33A(10) deems payments to settle principal first, then penalties, then <span class="key-term">interest</span>, which can surprise taxpayers (“why is <span class="key-term">interest</span> still there?”). Plans should incorporate clear messaging about how payments reduce components. ()</p>
+<strong>Revenue Authority Act</strong> s 33A(10) deems payments to settle principal first, then penalties, then <span class="key-term">interest</span>, which can surprise taxpayers (“why is <span class="key-term">interest</span> still there?”). Plans should incorporate clear messaging about how payments reduce components. ()</p>
 <p><strong>Currency mismatch and cross-currency offset assumptions</strong>
 TaRMS does not allow a ZWL refund to offset a USD obligation. Plans must therefore be currency-structured. ()</p>
 <p><strong>Reputational risk</strong>
@@ -312,8 +328,8 @@ Granting plans to “connected” taxpayers without objective criteria undermine
 <section class="lesson-section" id="payment-plan-criteria-and-typical-terms-table">
 <h2>Payment plan criteria and typical terms table</h2>
 <div class="section-content">
-<p>This table presents a training-grade “best practice” framework aligned to Zimbabwe legal constraints and TaRMS realities (not a published <span class="key-term">ZIMRA</span> SOP). Statutory anchors listed are where the Act provides relevant discretion, not necessarily a “payment plan program” clause.</p>
-<p>Key statutory anchors referenced for the table: <span class="leg-ref">Income Tax Act</span> s 71 (instalments; <span class="key-term">interest</span>-free extension), <span class="leg-ref">Income Tax Act</span> s 69 (payment not suspended), <span class="leg-ref">VAT Act</span> s 36 (payment not suspended), <span class="leg-ref">VAT Act</span> s 39(5) remission in principle, and Revenue Authority Act s 33A (enforcement backdrop and allocation ordering). ()</p>
+<p>This table presents a training-grade “best practice” framework aligned to Zimbabwe legal constraints and TaRMS realities (not a published <span class="key-term">ZIMRA</span> SOP). Statutory anchors listed are where the Act provides relevant discretion, not necessarily a “<strong>payment plan</strong> program” clause.</p>
+<p>Key statutory anchors referenced for the table: <span class="leg-ref"><strong>Income Tax Act</strong></span> s 71 (instalments; <span class="key-term">interest</span>-free extension), <span class="leg-ref"><strong>Income Tax Act</strong></span> s 69 (payment not suspended), <span class="leg-ref"><strong>VAT Act</strong></span> s 36 (payment not suspended), <span class="leg-ref"><strong>VAT Act</strong></span> s 39(5) remission in principle, and <strong>Revenue Authority Act</strong> s 33A (enforcement backdrop and allocation ordering). ()</p>
 </div>
 </section>
 <section class="lesson-section" id="mermaid-flowchart-payment-plan-lifecycle">
@@ -321,29 +337,29 @@ Granting plans to “connected” taxpayers without objective criteria undermine
 <div class="section-content">
 <div class="mermaid">
 flowchart TD
-  A[Debt identified in TaRMS\n(arrears or classified risk case)] --&gt; B[Integrity checks\nReturn filed? Payment posted?\nCurrency ledger check]
-  B --&gt;|Posting/return issue| C[Service resolution\nFile return / correct TIN / reconcile\nThen re-evaluate]
-  B --&gt;|True arrears| D[Taxpayer requests plan\nor <span class="key-term">ZIMRA</span> offers plan option]
+  A[Debt identified in TaRMS\n(arrears or classified risk case)] --> B[Integrity checks\nReturn filed? Payment posted?\nCurrency ledger check]
+  B -->|Posting/return issue| C[Service resolution\nFile return / correct TIN / reconcile\nThen re-evaluate]
+  B -->|True arrears| D[Taxpayer requests plan\nor ZIMRA offers plan option]
 
-  D --&gt; E[Application via TaRMS SSP\nDebt Management module]
-  E --&gt; F[Assessment of eligibility\nability to pay + compliance history\nrisk scoring + debt characteristics]
-  F --&gt; G{Approve?}
+  D --> E[Application via TaRMS SSP\nDebt Management module]
+  E --> F[Assessment of eligibility\nability to pay + compliance history\nrisk scoring + debt characteristics]
+  F --> G{Approve?}
 
-  G -- No --&gt; H[Refuse plan\nProceed with collection escalation\n(demand -&gt; enforcement)]
-  G -- Yes --&gt; I[Plan agreement created\nSchedule + deposit + conditions\n(current filing + no new arrears)]
-  I --&gt; J[Payments made into Single Account\nand posted to obligations]
-  J --&gt; K[Monitoring cycle\nledger posting + return compliance\nnew arrears detection]
+  G -- No --> H[Refuse plan\nProceed with collection escalation\n(demand -> enforcement)]
+  G -- Yes --> I[Plan agreement created\nSchedule + deposit + conditions\n(current filing + no new arrears)]
+  I --> J[Payments made into Single Account\nand posted to obligations]
+  J --> K[Monitoring cycle\nledger posting + return compliance\nnew arrears detection]
 
-  K --&gt; L{Compliant with plan?}
-  L -- Yes --&gt; M[Continue monitoring until paid off]
-  M --&gt; N[Debt cleared\nClose plan and update status]
+  K --> L{Compliant with plan?}
+  L -- Yes --> M[Continue monitoring until paid off]
+  M --> N[Debt cleared\nClose plan and update status]
 
-  L -- No --&gt; O{Material hardship change?}
-  O -- Yes --&gt; P[Revision request\nnew evidence + revised terms]
-  P --&gt; I
-  O -- No --&gt; Q[Default declared\ncancel plan / accelerate debt]
-  Q --&gt; R[Enforcement escalation\nagent/garnishee or s33A (if eligible)]
-  R --&gt; S[Post enforcement proceeds\nreconcile ledger\nclose or continue recovery]
+  L -- No --> O{Material hardship change?}
+  O -- Yes --> P[Revision request\nnew evidence + revised terms]
+  P --> I
+  O -- No --> Q[Default declared\ncancel plan / accelerate debt]
+  Q --> R[Enforcement escalation\nagent/garnishee or s33A (if eligible)]
+  R --> S[Post enforcement proceeds\nreconcile ledger\nclose or continue recovery]
 </div>
 </div>
 </section>
@@ -358,16 +374,16 @@ flowchart TD
 <p>Which statutory provision provides the clearest basis for instalment arrangements for income tax liabilities?</p>
 <p>Under Zimbabwe’s pay-now-argue-later rules, does lodging an <span class="key-term">appeal</span> automatically suspend the obligation to pay, and who has discretion to suspend?</p>
 <p>What did <span class="key-term">ZIMRA</span>’s Public Notice 87 of 2023 say about legacy payment plans during migration to TaRMS?</p>
-<p>Name three eligibility criteria you would use to decide whether to approve a payment plan.</p>
-<p>Why must a TaRMS-era payment plan include “return filing compliance” as a condition?</p>
+<p>Name three eligibility criteria you would use to decide whether to approve a <strong>payment plan</strong>.</p>
+<p>Why must a TaRMS-era <strong>payment plan</strong> include “return filing compliance” as a condition?</p>
 <p>What are two “default” triggers that should lead to cancellation and enforcement escalation?</p>
-<p>Under Revenue Authority Act s 33A(10), how are short payments applied across principal, penalties, and <span class="key-term">interest</span>?</p>
+<p>Under <strong>Revenue Authority Act</strong> s 33A(10), how are short payments applied across principal, penalties, and <span class="key-term">interest</span>?</p>
 </div>
 </section>
 <section class="lesson-section" id="h-quiz-answers">
 <h2>H. Quiz answers</h2>
 <div class="section-content">
-<p><span class="leg-ref">Income Tax Act</span> <strong>s 71</strong>, which allows payment in one sum or in instalments “as may be determined by the Commissioner.” ()</p>
+<p><span class="leg-ref"><strong>Income Tax Act</strong></span> <strong>s 71</strong>, which allows payment in one sum or in instalments “as may be determined by the Commissioner.” ()</p>
 <p>No. Income tax: s 69; VAT: s 36. Payment is not suspended unless the <strong>Commissioner</strong> directs otherwise (subject to terms/conditions). ()</p>
 <p><span class="key-term">ZIMRA</span> stated that payment plans under SAP TRM were nullified before migration; taxpayers must apply for new payment plans via the TaRMS Self Service Portal under the Debt Management module. ()</p>
 <p>Ability to pay (cashflow), willingness to pay (compliance history/responsiveness), and debt characteristics/risk (amount, age, repeated default, currency profile, dispute status).</p>
@@ -709,7 +725,5 @@ document.addEventListener('DOMContentLoaded', () => {
 	});
 });
 </script>
-<script src="https://cdn.jsdelivr.net/npm/mermaid@10.0.0/dist/mermaid.min.js"></script>
-<script>mermaid.initialize({startOnLoad:true});</script>
 <script src="js/globe-hero.js" type="module"></script>
 </html>

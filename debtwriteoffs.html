@@ -33,7 +33,23 @@
 <script type="application/ld+json">
 {"@context":"http://schema.org","@type":"WebSite","name":"TaxTami - Tax Training Zimbabwe","url":"www.taxtami.com"}
 	</script>
-</meta></meta></link></head>
+</meta></meta></link>
+    <style class="mermaid-style">
+    .mermaid {
+        background: #f4f8f6;
+        border: 1px solid #c5ddd0;
+        border-radius: 10px;
+        padding: 28px 20px;
+        margin: 24px 0;
+        overflow-x: auto;
+        text-align: center;
+    }
+    .mermaid svg { max-width: 100%; height: auto; }
+    </style>
+    <!-- Mermaid.js flowchart renderer -->
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.3/dist/mermaid.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function () {  mermaid.initialize({    startOnLoad: true,    theme: "base",    themeVariables: {      primaryColor: "#d6ede2",      primaryBorderColor: "#2c724f",      primaryTextColor: "#1a3a2a",      lineColor: "#2c724f",      secondaryColor: "#e9f5ee",      tertiaryColor: "#f4faf7",      edgeLabelBackground: "#ffffff",      fontFamily: "Work Sans, Heebo, sans-serif",      fontSize: "14px"    }  });});</script>
+</head>
 <div class="page-wrapper">
 <!-- Main Header-->
 <header class="main-header style-three">
@@ -189,7 +205,7 @@
 - <strong><span class="key-term">Penalty</span> relief:</strong> IRS explains <span class="key-term">penalty</span> relief pathways (reasonable cause, statutory exceptions, first-time abate), including written requests using Form 843 where needed. </p>
 <p><strong>United Kingdom (HMRC):</strong> - <strong>Revenue loss taxonomy (remissions vs write-offs):</strong> UK Parliament (Treasury answer) states: remissions are recoverable debts not pursued for value-for-money; write-offs are debts considered irrecoverable because no practical means for pursuing. 
 - <strong>Operational controls / reversals:</strong> HMRC internal manual indicates that when HMRC chooses not to pursue or cannot collect an underpayment, it may be recorded as a “Revenue Loss (remission/write off),” and it can be reversed (with strict controls and authorization procedures). </p>
-<p><strong>Canada (CRA):</strong> - <strong>Taxpayer relief (penalties/<span class="key-term">interest</span>):</strong> <span class="leg-ref">Income Tax Act</span> <strong>s 220(3.1)</strong> authorizes the Minister to waive/cancel penalties or <span class="key-term">interest</span> within a defined period; the statute text sets the power and timing constraint. 
+<p><strong>Canada (CRA):</strong> - <strong>Taxpayer relief (penalties/<span class="key-term">interest</span>):</strong> <span class="leg-ref"><strong>Income Tax Act</strong></span> <strong>s 220(3.1)</strong> authorizes the Minister to waive/cancel penalties or <span class="key-term">interest</span> within a defined period; the statute text sets the power and timing constraint. 
 - <strong>Collections limitation period:</strong> CRA explains that collection is time-limited (often 6 or 10 years depending on debt type), can be restarted by specified actions, and provides start/length tables. 
 - <strong>Remission order (extraordinary):</strong> CRA defines remission as rare/extraordinary, last resort, providing relief from tax/<span class="key-term">interest</span>/penalties/other debts under CRA-administered legislation. 
 - <strong>Public finance authority examples for write-off/remission:</strong> Canada’s Public Accounts explanatory material summarizes authority types for write-off/forgiveness (including remission) under the Financial Administration Act framework (e.g., ministerial and Governor in Council authority). </p>
@@ -223,32 +239,32 @@
 <p><strong>Recommendation and decision</strong> 8. Prepare a reasoned recommendation: debt type, collection history, legal test, evidence summary, risk rating, alternatives considered (instalment arrangements, security, compromise), and value-for-money analysis (where applicable—HMRC “remissions” framed explicitly in VfM terms). 
 9. Route to appropriate delegated decision-maker (case officer → manager → executive/minister/GIC, depending on regime). Canada’s Public Accounts guidance illustrates how write-off/forgiveness authorities can escalate from ministerial to Governor in Council to Parliament depending on conditions and accounting treatment. </p>
 <p><strong>Communication and implementation</strong> 10. Issue a decision letter including: decision, reasons, amounts affected, conditions, and review/recourse options (e.g., SARS dispute pathways include RFR/<span class="key-term">objection</span>/<span class="key-term">appeal</span>; CRA provides “recourse options” if denied; IRS provides routes for <span class="key-term">penalty</span> relief requests). 
-11. Implement the ledger action: adjust assessment (if remission/abatement), mark CNC/non-pursuit/write-off status, release/maintain liens, and set diary for re-review where the action is not a legal extinguishment. HMRC’s <span class="key-term">PAYE</span> manual indicates revenue loss entries may be reversed, implying monitoring and correction are expected. </p>
+11. Implement the ledger action: adjust assessment (if remission/abatement), mark CNC/non-pursuit/write-off status, release/maintain liens, and set diary for re-review where the action is not a legal extinguishment. HMRC’s <span class="key-term"><strong>PAYE</strong></span> manual indicates revenue loss entries may be reversed, implying monitoring and correction are expected. </p>
 <p><strong>Mermaid flowchart: request to decision, <span class="key-term">appeal</span>, and post-decision monitoring</strong></p>
 <div class="mermaid">
 flowchart TD
-A[Cessation trigger: taxpayer requests write-off/remission OR agency identifies uncollectable debt] --&gt; B[Intake &amp; verify account/periods/balance]
-B --&gt; C{What is being requested?}
-C --&gt;|Pause/stop collection| D[Administrative non-pursuit / CNC / write-off classification]
-C --&gt;|Cancel/reduce penalties/<span class="key-term">interest</span>| E[<span class="key-term">Penalty</span>/<span class="key-term">interest</span> remission/abatement pathway]
-C --&gt;|Cancel/reduce core tax| F[Statutory remission/release/compromise gate]
-D --&gt; G[Evidence of inability to pay + collection info statement]
-E --&gt; H[Evidence: extraordinary events / hardship / agency delay + statutory criteria]
-F --&gt; I[Authority check: statute/regulation/delegation + eligibility]
-G --&gt; J[Risk &amp; fraud screening + segregation of duties]
-H --&gt; J
-I --&gt; J
-J --&gt; K[Recommendation memo + alternatives considered]
-K --&gt; L{Approval level met?}
-L --&gt;|Within delegation| M[Approve / refuse / partial relief]
-L --&gt;|Exceeds delegation| N[Escalate: senior official / minister / cabinet / parliament (varies)]
-N --&gt; M
-M --&gt; O[Decision letter + amounts affected + reasons + review rights]
-O --&gt; P[Ledger action: adjust assessment OR status change; stop/continue enforcement]
-P --&gt; Q{Post-decision monitoring needed?}
-Q --&gt;|Yes| R[Diary review / possible reinstatement if circumstances change]
-Q --&gt;|No| S[Close case + retain records for audit]
-O --&gt; T[If denied: <span class="key-term">objection</span>/<span class="key-term">appeal</span>/JR routes (jurisdiction-specific)]
+A[Cessation trigger: taxpayer requests write-off/remission OR agency identifies uncollectable debt] --> B[Intake & verify account/periods/balance]
+B --> C{What is being requested?}
+C -->|Pause/stop collection| D[Administrative non-pursuit / CNC / write-off classification]
+C -->|Cancel/reduce penalties/interest| E[Penalty/interest remission/abatement pathway]
+C -->|Cancel/reduce core tax| F[Statutory remission/release/compromise gate]
+D --> G[Evidence of inability to pay + collection info statement]
+E --> H[Evidence: extraordinary events / hardship / agency delay + statutory criteria]
+F --> I[Authority check: statute/regulation/delegation + eligibility]
+G --> J[Risk & fraud screening + segregation of duties]
+H --> J
+I --> J
+J --> K[Recommendation memo + alternatives considered]
+K --> L{Approval level met?}
+L -->|Within delegation| M[Approve / refuse / partial relief]
+L -->|Exceeds delegation| N[Escalate: senior official / minister / cabinet / parliament (varies)]
+N --> M
+M --> O[Decision letter + amounts affected + reasons + review rights]
+O --> P[Ledger action: adjust assessment OR status change; stop/continue enforcement]
+P --> Q{Post-decision monitoring needed?}
+Q -->|Yes| R[Diary review / possible reinstatement if circumstances change]
+Q -->|No| S[Close case + retain records for audit]
+O --> T[If denied: objection/appeal/JR routes (jurisdiction-specific)]
 </div>
 <p><strong>Timelines and evidence checklist (portable)</strong></p>
 <p><strong>Typical timeline for processing (illustrative)</strong> - <strong>Day 0–7:</strong> Intake, identity verification, completeness check; request missing docs.
@@ -281,7 +297,7 @@ O --&gt; T[If denied: <span class="key-term">objection</span>/<span class="key-t
 <p><strong>5. Attachments (index)</strong> - Bank statements (typically 3 months where requested). 
 - Collection info statement (where required—IRS indicates it may request Form 433 series). 
 - Medical/disaster documentation, insolvency documents, etc.</p>
-<p><strong>6. Alternatives considered</strong> - Instalment arrangement proposal (if feasible).
+<p><strong>6. Alternatives considered</strong> - <strong>Instalment arrangement</strong> proposal (if feasible).
 - Security offer (if permitted).
 - Explaining why compromise/instalments won’t work (if seeking remission/release).</p>
 <p><strong>Template B: Internal “write-off/remission recommendation memo” (for agency staff training)</strong></p>
@@ -309,7 +325,7 @@ O --&gt; T[If denied: <span class="key-term">objection</span>/<span class="key-t
 <p><strong>What happens to enforcement after different outcomes?</strong></p>
 <p><strong>Administrative write-off / CNC (collection pause):</strong> - Enforcement is typically paused or reduced, but debt persists; <span class="key-term">interest</span>/penalties may continue; liens may still be filed; ability to pay may be reviewed again. </p>
 <p><strong>Statutory remission/release/abatement:</strong> - Requires ledger adjustments to assessments and may reduce related <span class="key-term">interest</span> automatically where rules link <span class="key-term">interest</span> to penalties (IRS notes related <span class="key-term">interest</span> reduction when penalties are reduced). </p>
-<p><strong>Time-bar / limitation expiry:</strong> - Enforcement rights can end or be curtailed, but many regimes allow the limitation to be restarted/extended by specified taxpayer or agency actions; CRA lists examples such as voluntary payments, payment arrangement proposals, written acknowledgements, objections/appeals, etc. </p>
+<p><strong>Time-bar / limitation expiry:</strong> - Enforcement rights can end or be curtailed, but many regimes allow the limitation to be restarted/extended by specified taxpayer or agency actions; CRA lists examples such as voluntary payments, <strong>payment arrangement</strong> proposals, written acknowledgements, objections/appeals, etc. </p>
 <p><strong>Reinstatement / reversal risk:</strong> - Learners must understand that “write-off” in administrative systems may be reversible. HMRC indicates revenue loss entries may be reversed and are tightly controlled. </p>
 <p><strong>Risks, compliance pitfalls, and controls</strong></p>
 <p><strong>Pitfall: confusing accounting presentation with legal cancellation.</strong> Accounting allowances (impairment) do not necessarily cancel debts; federal accounting guidance explicitly notes allowance is not a legal write-off. </p>
@@ -663,7 +679,5 @@ document.addEventListener('DOMContentLoaded', () => {
 	});
 });
 </script>
-<script src="https://cdn.jsdelivr.net/npm/mermaid@10.0.0/dist/mermaid.min.js"></script>
-<script>mermaid.initialize({startOnLoad:true});</script>
 <script src="js/globe-hero.js" type="module"></script>
 </html>

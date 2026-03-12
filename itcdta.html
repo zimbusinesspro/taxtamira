@@ -34,6 +34,22 @@
 {"@context":"http://schema.org","@type":"WebSite","name":"TaxTami - Tax Training Zimbabwe","url":"www.taxtami.com"}
 	</script>
 </meta></link></meta> <link href="css/feature-steps.css" rel="stylesheet"/>
+
+    <style class="mermaid-style">
+    .mermaid {
+        background: #f4f8f6;
+        border: 1px solid #c5ddd0;
+        border-radius: 10px;
+        padding: 28px 20px;
+        margin: 24px 0;
+        overflow-x: auto;
+        text-align: center;
+    }
+    .mermaid svg { max-width: 100%; height: auto; }
+    </style>
+    <!-- Mermaid.js flowchart renderer -->
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.3/dist/mermaid.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function () {  mermaid.initialize({    startOnLoad: true,    theme: "base",    themeVariables: {      primaryColor: "#d6ede2",      primaryBorderColor: "#2c724f",      primaryTextColor: "#1a3a2a",      lineColor: "#2c724f",      secondaryColor: "#e9f5ee",      tertiaryColor: "#f4faf7",      edgeLabelBackground: "#ffffff",      fontFamily: "Work Sans, Heebo, sans-serif",      fontSize: "14px"    }  });});</script>
 </head>
 <body>
 <div class="page-wrapper">
@@ -155,7 +171,7 @@
 <div class="step-number-wrap">2</div>
 <div class="step-content">
 <h3>Legislation</h3>
-<p><span class="leg-ref">Section 91</span> of the <span class="leg-ref">Income Tax Act</span> empowers the President
+<p><span class="leg-ref">Section 91</span> of the <span class="leg-ref"><strong>Income Tax Act</strong></span> empowers the President
                                                 to sign agreements with other states to rel...</p>
 <div class="step-progress-container">
 <div class="step-progress-bar"></div>
@@ -252,7 +268,7 @@
                                         </div>
 <h4>Example</h4>
 <p>Mrs. Moyo (Zim <span class="key-term">Resident</span>) earns $100,000 gross fees from a contract in South
-                                            Africa. SA charges 15% <span class="key-term">Withholding Tax</span> ($15,000).</p>
+                                            Africa. SA charges 15% <span class="key-term"><strong>Withholding Tax</strong></span> ($15,000).</p>
 <p><strong>Step 3: Relief</strong><br/>
                                             The lower amount is $15,000.</p>
 <p><strong>Net Payable to <span class="key-term">ZIMRA</span>:</strong> $25,000 (Gross Liability) - $15,000
@@ -264,8 +280,8 @@
 <div class="case-box">
 <div class="case-citation">Secretary for Inland Revenue vs Downing</div>
 <p><strong>Treaty Override:</strong> The court confirmed that DTA provisions
-                                                generally take precedence over the domestic <span class="leg-ref">Income Tax Act</span>. If the DTA
-                                                says "pensions are only taxable in the country of residence", the source
+                                                generally take precedence over the domestic <span class="leg-ref"><strong>Income Tax Act</strong></span>. If the DTA
+                                                says <span class="quoted-text">"pensions are only taxable in the country of residence"</span>, the source
                                                 country cannot tax them, even if its local law says so.</p>
 </div>
 </section>
@@ -273,9 +289,9 @@
 <section class="lesson-section" id="pitfalls">
 <h3><span class="section-letter">F</span> Common Pitfalls</h3>
 <div class="pitfall-box">
-<p class="pitfall-title"><span class="ti-alert"></span> No "Refunds"</p>
+<p class="pitfall-title"><span class="ti-alert"></span> No <span class="quoted-text">"Refunds"</span></p>
 <p>If Foreign Tax ($30,000) is higher than Zim Tax ($25,000), your credit is
-                                                limited to $25,000. You pay $0 to <span class="key-term">ZIMRA</span>, but you do NOT get a $5,000
+                                                limited to $25,000. You pay $0 to <span class="key-term"><strong>ZIMRA</strong></span>, but you do NOT get a $5,000
                                                 refund for the excess foreign tax.</p>
 </div>
 <div class="pitfall-box">
@@ -313,7 +329,7 @@
 </div>
 <div class="quiz-explanation">
 <p><strong>A2: No (Credit Method).</strong> Without a DTA, you usually fall
-                                                back to "Unilateral Relief" (S17 Deduction), where the foreign tax is a
+                                                back to <span class="quoted-text">"Unilateral Relief"</span> (S17 Deduction), where the foreign tax is a
                                                 deductible expense, not a full tax credit.</p>
 </div>
 <div class="quiz-explanation">
@@ -601,8 +617,6 @@ document.addEventListener('DOMContentLoaded', () => {
 	});
 });
 </script>
-<script src="https://cdn.jsdelivr.net/npm/mermaid@10.0.0/dist/mermaid.min.js"></script>
-<script>mermaid.initialize({startOnLoad:true});</script>
 <script src="js/globe-hero.js" type="module"></script>
 <script src="js/feature-steps.js"></script>
 <script>

@@ -33,7 +33,23 @@
 <script type="application/ld+json">
 {"@context":"http://schema.org","@type":"WebSite","name":"TaxTami - Tax Training Zimbabwe","url":"www.taxtami.com"}
 	</script>
-</meta></link></meta></head>
+</meta></link></meta>
+    <style class="mermaid-style">
+    .mermaid {
+        background: #f4f8f6;
+        border: 1px solid #c5ddd0;
+        border-radius: 10px;
+        padding: 28px 20px;
+        margin: 24px 0;
+        overflow-x: auto;
+        text-align: center;
+    }
+    .mermaid svg { max-width: 100%; height: auto; }
+    </style>
+    <!-- Mermaid.js flowchart renderer -->
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.3/dist/mermaid.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function () {  mermaid.initialize({    startOnLoad: true,    theme: "base",    themeVariables: {      primaryColor: "#d6ede2",      primaryBorderColor: "#2c724f",      primaryTextColor: "#1a3a2a",      lineColor: "#2c724f",      secondaryColor: "#e9f5ee",      tertiaryColor: "#f4faf7",      edgeLabelBackground: "#ffffff",      fontFamily: "Work Sans, Heebo, sans-serif",      fontSize: "14px"    }  });});</script>
+</head>
 <div class="page-wrapper">
 <!-- Main Header-->
 <header class="main-header style-three">
@@ -144,8 +160,8 @@
 <h2>A. Lesson Context</h2>
 <div class="section-content">
 <p><strong>Executive summary</strong></p>
-<p>Civil recovery through courts is the formal litigation route by which <span class="key-term">ZIMRA</span> (acting for the State) converts an assessed and unpaid tax liability into a court-enforceable judgment and then uses judicial execution processes—via the Sheriff of the High Court or the Messenger of Court in the magistrates’ courts—to attach and sell property (or otherwise enforce payment). Zimbabwe’s tax system deliberately gives tax debts a powerful legal character: once tax is “due and payable,” it becomes a civil debt recoverable by court action, while the taxpayer’s ability to dispute correctness is channelled into the specialised <span class="key-term">objection</span>-and-<span class="key-term">appeal</span> framework rather than the debt recovery suit itself. This lesson therefore connects directly to earlier lessons on (i) creation of tax debt and enforceability (Lessons 2–3), (ii) the evidentiary status and finality of assessments (Lesson 3), (iii) <span class="key-term">interest</span> and penalties that swell the recoverable balance (Lesson 6), and (iv) administrative enforcement powers and third-party collections (Lessons 11–13).</p>
-<p>In practice, civil recovery is also the “bridge” between <span class="key-term">ZIMRA</span>’s internal debt ledger (now typically administered through digital taxpayer accounts and TaRMS-supported workflows) and the courts’ enforcement machinery. <span class="key-term">ZIMRA</span>’s digitisation agenda (including TaRMS guidance and notices) underscores that accurate account balances, allocations, and audit trails are prerequisites to sustainable court recovery because litigation elevates the taxpayer account into sworn evidence and court process. </p>
+<p>Civil recovery through courts is the formal litigation route by which <span class="key-term"><strong>ZIMRA</strong></span> (acting for the State) converts an assessed and unpaid tax liability into a court-enforceable judgment and then uses judicial execution processes—via the Sheriff of the High Court or the Messenger of Court in the magistrates’ courts—to attach and sell property (or otherwise enforce payment). Zimbabwe’s tax system deliberately gives tax debts a powerful legal character: once tax is “due and payable,” it becomes a civil debt recoverable by court action, while the taxpayer’s ability to dispute correctness is channelled into the specialised <span class="key-term">objection</span>-and-<span class="key-term">appeal</span> framework rather than the debt recovery suit itself. This lesson therefore connects directly to earlier lessons on (i) creation of tax debt and enforceability (Lessons 2–3), (ii) the evidentiary status and finality of assessments (Lesson 3), (iii) <span class="key-term">interest</span> and penalties that swell the recoverable balance (Lesson 6), and (iv) administrative enforcement powers and third-party collections (Lessons 11–13).</p>
+<p>In practice, civil recovery is also the “bridge” between <span class="key-term"><strong>ZIMRA</strong></span>’s internal debt ledger (now typically administered through digital taxpayer accounts and <strong>TaRMS</strong>-supported workflows) and the courts’ enforcement machinery. <span class="key-term"><strong>ZIMRA</strong></span>’s digitisation agenda (including <strong>TaRMS</strong> guidance and notices) underscores that accurate account balances, allocations, and audit trails are prerequisites to sustainable court recovery because litigation elevates the taxpayer account into sworn evidence and court process. </p>
 <p><strong>First principles: what “civil recovery through courts” means</strong></p>
 <p>A tax system needs rules for (1) determining what is payable (assessment), and (2) compelling payment when voluntary compliance fails (enforcement). Civil recovery through courts is the classic enforcement pathway used when persuasion, reminders, internal offsets, payment plans, or administrative attachments are inadequate or inappropriate.</p>
 <p>From first principles, a <strong>civil action</strong> is a legal proceeding in which one party (plaintiff/applicant) seeks relief from a court against another (defendant/respondent). In tax debt matters, the relief is typically a <strong>money judgment</strong> (an order to pay a quantified sum), followed by <strong>execution</strong> (court-sanctioned seizure or enforcement steps) if payment still does not occur.</p>
@@ -159,14 +175,14 @@
 <p><strong>Tax as “debt due to the State”</strong> once due and payable, enabling ordinary civil action. </p>
 <p><strong>Restriction on collateral challenges</strong> in recovery proceedings: the correctness of an assessment is generally not litigated in the recovery suit; it is litigated through objections/appeals. </p>
 <p><strong>Evidentiary shortcuts</strong>: copies/extracts of notices of assessment can be “conclusive evidence” of the making and contents of assessments (Income Tax and VAT statutory equivalents), reducing evidentiary burdens in court. </p>
-<p><strong>Expedited recovery pathway</strong> under the Revenue Authority Act that allows a streamlined Magistrates Court application with immediate attachment by the Messenger of Court, subject to defined statutory conditions and time limits. </p>
+<p><strong>Expedited recovery pathway</strong> under the <strong>Revenue Authority Act</strong> that allows a streamlined Magistrates Court application with immediate attachment by the Messenger of Court, subject to defined statutory conditions and time limits. </p>
 <p>These features mean that tax debt litigation is not “ordinary debt collection.” It is debt collection under an evidentiary and procedural regime shaped by public finance imperatives.</p>
 </div>
 </section>
 <section class="lesson-section" id="b-legislative-framework">
 <h2>B. Legislative Framework</h2>
 <div class="section-content">
-<p>Zimbabwe’s <span class="leg-ref">Income Tax Act</span> provides a direct and foundational civil recovery rule:</p>
+<p>Zimbabwe’s <span class="leg-ref"><strong>Income Tax Act</strong></span> provides a direct and foundational civil recovery rule:</p>
 <p><strong><span class="leg-ref">Section 77(1)</span></strong>: When any tax becomes <strong>due and payable</strong> under the Act, it becomes a <strong>debt due to the State</strong> and is <strong>recoverable by civil action</strong> in a court of competent jurisdiction. </p>
 <p><strong><span class="leg-ref">Section 77(2)</span></strong>: Where <span class="key-term">additional tax</span>/penalties/<span class="key-term">interest</span> are payable in addition to tax, any payment less than the total is deemed to be applied first to tax (and thereafter to other components). </p>
 <p><strong><span class="leg-ref">Section 78</span> (Form of proceedings)</strong>: In recovery proceedings, the taxpayer generally may not <strong>question the correctness</strong> of any assessment; the focus is whether the amount is due and unpaid, not whether it is “right.” </p>
@@ -175,16 +191,16 @@
 <p><span class="leg-ref">Value Added Tax Act [Chapter 23:12]</span></p>
 <p>For VAT, the scheme similarly treats assessment evidence as conclusive:</p>
 <p><strong><span class="leg-ref">Section 42</span> (Evidence as to assessments)</strong>: A document issued by the Commissioner purporting to be a copy/extract of a notice of assessment is <strong>conclusive evidence</strong> of the assessment and, except in <span class="key-term">appeal</span> proceedings, conclusive evidence that the amount and particulars are correct. </p>
-<p>A critical practice point is that the <span class="leg-ref">VAT Act</span>’s historical “recovery” section is shown as <strong>repealed</strong> in the current consolidated text, which increases the practical importance of the <span class="leg-ref">Income Tax Act</span>’s general recovery architecture and the Revenue Authority Act’s expedited recovery mechanism where applicable. </p>
-<p><span class="leg-ref">Capital Gains Tax Act [Chapter 23:01]</span></p>
-<p><span class="key-term">Capital gains tax</span> recovery is designed to “borrow” the <span class="leg-ref">Income Tax Act</span>’s collection powers:</p>
-<p>The CGT Act provides that, for collecting CGT and <span class="key-term">interest</span>, the Commissioner has the <strong>same powers</strong> as conferred by the “Taxes Act” (in Zimbabwean drafting, typically the <span class="leg-ref">Income Tax Act</span> framework) for the collection of income tax, and those provisions apply with necessary changes. </p>
+<p>A critical practice point is that the <span class="leg-ref"><strong>VAT Act</strong></span>’s historical “recovery” section is shown as <strong>repealed</strong> in the current consolidated text, which increases the practical importance of the <span class="leg-ref"><strong>Income Tax Act</strong></span>’s general recovery architecture and the <strong>Revenue Authority Act</strong>’s expedited recovery mechanism where applicable. </p>
+<p><span class="leg-ref"><strong>Capital Gains Tax</strong> Act [Chapter 23:01]</span></p>
+<p><span class="key-term"><strong>Capital gains tax</strong></span> recovery is designed to “borrow” the <span class="leg-ref"><strong>Income Tax Act</strong></span>’s collection powers:</p>
+<p>The CGT Act provides that, for collecting CGT and <span class="key-term">interest</span>, the Commissioner has the <strong>same powers</strong> as conferred by the “Taxes Act” (in Zimbabwean drafting, typically the <span class="leg-ref"><strong>Income Tax Act</strong></span> framework) for the collection of income tax, and those provisions apply with necessary changes. </p>
 <p>This means civil recovery for CGT ultimately relies on the same enforcement philosophy: quantified liability, due date, and court-backed collection if necessary.</p>
 <p><strong>Revenue Authority Act <span class="leg-ref">[Chapter 23:11]</span> and <span class="key-term">ZIMRA</span>’s litigation powers</strong></p>
 <p>Expedited recovery for outstanding taxes: <span class="leg-ref">section 33A</span></p>
-<p>The Revenue Authority Act contains a specialised court-based enforcement pathway:</p>
-<p><strong><span class="leg-ref">Section 33A(1)</span></strong> authorises <span class="key-term">ZIMRA</span> to recover outstanding tax/duty (including <span class="key-term">interest</span> and <span class="key-term">penalty</span>) payable under specified revenue Acts (including the <span class="leg-ref">Income Tax Act</span>, <span class="leg-ref">VAT Act</span>, CGT Act, Customs and Excise, Stamp Duties). </p>
-<p><strong><span class="leg-ref">Section 33A(2)</span></strong> allows <span class="key-term">ZIMRA</span> to make an <strong>application on notice</strong> in a Magistrates Court seeking payment and authorisation for the <strong>Messenger of Court</strong> to attach the taxpayer’s <strong>movable property itemised in the application</strong> to satisfy the debt upon service of the order. </p>
+<p>The <strong>Revenue Authority Act</strong> contains a specialised court-based enforcement pathway:</p>
+<p><strong><span class="leg-ref">Section 33A(1)</span></strong> authorises <span class="key-term"><strong>ZIMRA</strong></span> to recover outstanding tax/duty (including <span class="key-term">interest</span> and <span class="key-term">penalty</span>) payable under specified revenue Acts (including the <span class="leg-ref"><strong>Income Tax Act</strong></span>, <span class="leg-ref"><strong>VAT Act</strong></span>, CGT Act, Customs and Excise, Stamp Duties). </p>
+<p><strong><span class="leg-ref">Section 33A(2)</span></strong> allows <span class="key-term"><strong>ZIMRA</strong></span> to make an <strong>application on notice</strong> in a Magistrates Court seeking payment and authorisation for the <strong>Messenger of Court</strong> to attach the taxpayer’s <strong>movable property itemised in the application</strong> to satisfy the debt upon service of the order. </p>
 <p><strong><span class="leg-ref">Section 33A(3)</span></strong> requires a supporting affidavit setting out that (a) an assessment was served; and (b) the taxpayer did not object, or if <span class="key-term">objection</span> was made, did not <span class="key-term">appeal</span> within prescribed time, yet failed to pay. </p>
 <p><strong><span class="leg-ref">Section 33A(7)</span></strong> overrides ordinary monetary jurisdiction limits: an application may be made in the relevant Magistrates Court <strong>for any amount whatsoever</strong> (a major practical tool in large tax debts). </p>
 <p><strong><span class="leg-ref">Section 33A(8)</span></strong> provides a <strong>six-year limit</strong>: no action under this section may be taken if more than six years have elapsed since the tax/duty/<span class="key-term">penalty</span> became payable. </p>
@@ -192,7 +208,7 @@
 <p><strong><span class="leg-ref">Section 33A(15)</span></strong> imposes a stringent enforcement stance: an <span class="key-term">appeal</span> against an order does <strong>not suspend</strong> its operation and courts are directed not to grant a stay of execution of such order. </p>
 <p>This is an “expedited court recovery” regime: it uses a court order, but it is designed for speed and attachment rather than full-length civil trial procedures.</p>
 <p>Authority’s general power to litigate</p>
-<p>The Revenue Authority Act also lists, as part of <span class="key-term">ZIMRA</span>’s powers, the ability to institute proceedings in any court or tribunal for recovery of revenues (as an agent of the State). </p>
+<p>The <strong>Revenue Authority Act</strong> also lists, as part of <span class="key-term"><strong>ZIMRA</strong></span>’s powers, the ability to institute proceedings in any court or tribunal for recovery of revenues (as an agent of the State). </p>
 <p>High Court Rules, 2021 (S.I. 202 of 2021)</p>
 <p>Where <span class="key-term">ZIMRA</span> proceeds in the High Court (often for large or complex matters), execution mechanics are governed by the High Court Rules:</p>
 <p><strong>Part XI (Execution of Judgments)</strong> includes:</p>
@@ -206,7 +222,7 @@
 <p><strong>Important limitation of this research output:</strong> the full consolidated text of the Magistrates Court (Civil) Rules (S.I. 11 of 2019) and several amendments could not be reliably fetched for direct quotation within the tool constraints and access controls, so specific Order/Rule numbers for certain magistrates’ processes (including “judgment summons”) are treated as <em>procedurally recognised</em> in practice but <strong>section/rule pinpointing is noted as unspecified</strong> unless expressly evidenced in accessible sources. This is consistent with the accuracy standard required for teaching-grade notes.</p>
 <p>Statutory <span class="key-term">interest</span> rates on unpaid income tax</p>
 <p><span class="key-term">Interest</span> is not discretionary; it is a statutory incident of delinquency. Zimbabwe has updated <span class="key-term">interest</span> rate instruments:</p>
-<p><strong>Income Tax (Rate of <span class="key-term">Interest</span>) Notice, 2025 (S.I. 26 of 2025)</strong> sets the <span class="key-term">interest</span> rate for unpaid income tax (for the relevant <span class="leg-ref">Income Tax Act</span> sections) at:</p>
+<p><strong>Income Tax (Rate of <span class="key-term">Interest</span>) Notice, 2025 (S.I. 26 of 2025)</strong> sets the <span class="key-term">interest</span> rate for unpaid income tax (for the relevant <span class="leg-ref"><strong>Income Tax Act</strong></span> sections) at:</p>
 <p><strong>10%</strong> for foreign currency income tax. </p>
 <p>This matters because a civil claim typically pleads not only principal tax but also statutory <span class="key-term">interest</span> as it accrues up to date of payment, and this can be substantial.</p>
 <p>VAT <span class="key-term">interest</span> rate modernisation</p>
@@ -229,7 +245,7 @@
 <p>This is the standard approach contemplated by <span class="leg-ref">section 77</span> of the <span class="leg-ref">Income Tax Act</span>: <span class="key-term">ZIMRA</span> sues the taxpayer as a debtor in a civil court of competent jurisdiction. </p>
 <p>Core characteristics include: - Pleadings (summons/particulars or application procedure, depending on forum and claim form). - Potential for defenses, but <strong>not</strong> defenses that challenge correctness of assessment in the recovery suit (<span class="leg-ref">section 78</span>). 
 - Judgment (default, consent, summary, or after contest). - Execution through Sheriff/Messenger under court rules.</p>
-<p>Expedited procedure under Revenue Authority Act <span class="leg-ref">section 33A</span></p>
+<p>Expedited procedure under <strong>Revenue Authority Act</strong> <span class="leg-ref">section 33A</span></p>
 <p>This is a special remedy: <span class="key-term">ZIMRA</span> applies on notice to the Magistrates Court for an order for payment and <strong>immediate attachment of movable property</strong> by the Messenger of Court, supported by an affidavit confirming service of assessment and exhaustion/non-use of <span class="key-term">objection</span>/<span class="key-term">appeal</span> steps. </p>
 <p>Core characteristics include: - Designed for speed and direct attachment. - Statutory override of magistrates’ monetary jurisdiction. 
 - Strong anti-dissipation rule: taxpayer may not deal with itemised property pending determination, with criminal sanction for diminishing it. 
@@ -241,7 +257,7 @@
 <p>Zimbabwean legal equivalents: assessment extracts as conclusive evidence</p>
 <p>Zimbabwean statutes do not always label the document “certificate of tax liability,” but they create a functional equivalent:</p>
 <p><span class="leg-ref">Income Tax Act</span>: a copy/extract of a notice of assessment is <strong>conclusive evidence</strong> of the assessment and its particulars (outside <span class="key-term">appeal</span> proceedings). </p>
-<p><span class="leg-ref">VAT Act</span>: the same evidentiary approach applies (<span class="leg-ref">section 42</span>). </p>
+<p><span class="leg-ref"><strong>VAT Act</strong></span>: the same evidentiary approach applies (<span class="leg-ref">section 42</span>). </p>
 <p>Therefore, in teaching terms, the <strong>assessment extract/copy</strong> is the legal “certificate-like” evidentiary backbone for court recovery.</p>
 <p><span class="key-term">ZIMRA</span>’s expedited application: affidavit-supported “certificate package”</p>
 <p><span class="leg-ref">Section 33A</span> requires an affidavit establishing service, non-<span class="key-term">objection</span> or non-<span class="key-term">appeal</span>, and outstanding amount—this affidavit, together with assessment extracts and a taxpayer ledger statement, forms the practical “certificate package” for expedited court enforcement. </p>
@@ -250,7 +266,7 @@
 <p>Step one: assessment and due date</p>
 <p>Assessment must be served, and tax must become due and payable. In CGT practice, <span class="key-term">objection</span> must be lodged within <strong>30 days</strong> after notice of assessment or decision notification. 
 In VAT, objections to assessments are also tied to a <strong>30-day</strong> window after the date of notice of assessment. </p>
-<p>These timelines matter to Revenue Authority Act <span class="leg-ref">section 33A</span> because <span class="key-term">ZIMRA</span> must be able to swear either that the taxpayer <strong>did not object</strong> or <strong>did not <span class="key-term">appeal</span> within time</strong> (after <span class="key-term">objection</span>). </p>
+<p>These timelines matter to <strong>Revenue Authority Act</strong> <span class="leg-ref">section 33A</span> because <span class="key-term">ZIMRA</span> must be able to swear either that the taxpayer <strong>did not object</strong> or <strong>did not <span class="key-term">appeal</span> within time</strong> (after <span class="key-term">objection</span>). </p>
 <p>Step two: decision point—ordinary action or expedited application</p>
 <p><span class="key-term">ZIMRA</span> selects the route: - Ordinary civil action under <span class="leg-ref">Income Tax Act</span> <span class="leg-ref">section 77</span>. 
 - Expedited Magistrates Court application under Revenue Authority Act <span class="leg-ref">section 33A</span> (often preferred where speed and movable attachment is strategically valuable). </p>
@@ -266,30 +282,30 @@ In the High Court, execution and enforcement steps are formalised under High Cou
 <p><strong>Mermaid flowchart: civil recovery process (assessment → certificate → judgment → execution → sale)</strong></p>
 <div class="mermaid">
 flowchart TD
-  A[Assessment issued &amp; served] --&gt; B{<span class="key-term">Objection</span>/<span class="key-term">appeal</span> lodged in time?}
-  B -- Yes --&gt; C[Dispute pathway: <span class="key-term">objection</span>/<span class="key-term">appeal</span> (Lesson 17)]
-  C --&gt; D{Collection suspended?}
-  D -- If not suspended --&gt; E[Debt remains enforceable (pay-now-argue-later logic)]
-  D -- If suspended --&gt; F[Hold enforcement pending outcome]
-  B -- No --&gt; G[Assessment final/conclusive for recovery purposes]
-  G --&gt; H[Prepare evidence pack: assessment extract/copy + taxpayer ledger + <span class="key-term">interest</span> calc]
-  H --&gt; I{Choose recovery route}
-  I -- Ordinary civil action --&gt; J[Issue summons/application in court of competent jurisdiction]
-  I -- Expedited RA Act s33A --&gt; K[Magistrates Court application on notice + affidavit (s33A)]
-  J --&gt; L[Judgment (default/consent/contested)]
-  K --&gt; M[Order for payment + immediate attachment of movables]
-  L --&gt; N[Execution: writ of execution to Sheriff (High Court Rules)]
-  M --&gt; O[Execution: attachment by Messenger of Court]
-  N --&gt; P[Attachment of movables/immovables]
-  O --&gt; P
-  P --&gt; Q[Sale in execution]
-  Q --&gt; R[Proceeds applied to tax, penalties, <span class="key-term">interest</span>, costs; balance refunded if any]
+  A[Assessment issued & served] --> B{Objection/appeal lodged in time?}
+  B -- Yes --> C[Dispute pathway: objection/appeal (Lesson 17)]
+  C --> D{Collection suspended?}
+  D -- If not suspended --> E[Debt remains enforceable (pay-now-argue-later logic)]
+  D -- If suspended --> F[Hold enforcement pending outcome]
+  B -- No --> G[Assessment final/conclusive for recovery purposes]
+  G --> H[Prepare evidence pack: assessment extract/copy + taxpayer ledger + interest calc]
+  H --> I{Choose recovery route}
+  I -- Ordinary civil action --> J[Issue summons/application in court of competent jurisdiction]
+  I -- Expedited RA Act s33A --> K[Magistrates Court application on notice + affidavit (s33A)]
+  J --> L[Judgment (default/consent/contested)]
+  K --> M[Order for payment + immediate attachment of movables]
+  L --> N[Execution: writ of execution to Sheriff (High Court Rules)]
+  M --> O[Execution: attachment by Messenger of Court]
+  N --> P[Attachment of movables/immovables]
+  O --> P
+  P --> Q[Sale in execution]
+  Q --> R[Proceeds applied to tax, penalties, interest, costs; balance refunded if any]
 </div>
 <p>Indicative timeline table (teaching model)</p>
 <p>Because court calendars vary, the table below states <strong>legal gating points</strong> rather than guaranteed durations.</p>
 <p>Sample “Certificate of Tax Liability / Extract of Assessment” (teaching template)</p>
-<p><em>Purpose:</em> To operationalise <span class="leg-ref">Income Tax Act</span> s 79 and <span class="leg-ref">VAT Act</span> s 42 evidentiary effect (conclusive evidence of assessment and particulars outside <span class="key-term">appeal</span> proceedings). </p>
-<p><span class="key-term">ZIMBABWE REVENUE AUTHORITY</span> (<span class="key-term">ZIMRA</span>)
+<p><em>Purpose:</em> To operationalise <span class="leg-ref">Income Tax Act</span> s 79 and <span class="leg-ref"><strong>VAT Act</strong></span> s 42 evidentiary effect (conclusive evidence of assessment and particulars outside <span class="key-term">appeal</span> proceedings). </p>
+<p><span class="key-term"><strong>ZIMBABWE REVENUE AUTHORITY</strong></span> (<span class="key-term">ZIMRA</span>)
 CERTIFICATE / EXTRACT OF NOTICE OF ASSESSMENT (FOR COURT PURPOSES)
 
 1. Taxpayer:
@@ -298,12 +314,12 @@ CERTIFICATE / EXTRACT OF NOTICE OF ASSESSMENT (FOR COURT PURPOSES)
    Address: _________________________
 
 2. Tax Head:
-   [Income Tax / <span class="key-term">PAYE</span> / VAT / CGT / Other] ___________________
+   [Income Tax / <span class="key-term"><strong>PAYE</strong></span> / VAT / CGT / Other] ___________________
 
 3. Assessment Details:
    Assessment No.: __________________
    Date of Notice of Assessment: _________
-   <span class="key-term">Tax Period</span>/<span class="key-term">Year of Assessment</span>: _________
+   <span class="key-term">Tax Period</span>/<span class="key-term"><strong>Year of Assessment</strong></span>: _________
    Amount Assessed (Principal Tax): [Local currency] _______ / [USD] _______
 
 4. Additional amounts (if applicable):
@@ -320,22 +336,22 @@ Name/Title: ___________________
 For: Commissioner-General / Authorised Officer
 Date: _________________________
 Official stamp: ________________</p>
-<p><strong>Legal significance (teaching note):</strong> the evidentiary “weight” of this document comes from statute: <span class="leg-ref">Income Tax Act</span> s 79 and <span class="leg-ref">VAT Act</span> s 42 treat such copies/extracts as conclusive evidence of the assessment and its particulars (outside <span class="key-term">appeal</span> proceedings). </p>
+<p><strong>Legal significance (teaching note):</strong> the evidentiary “weight” of this document comes from statute: <span class="leg-ref">Income Tax Act</span> s 79 and <span class="leg-ref"><strong>VAT Act</strong></span> s 42 treat such copies/extracts as conclusive evidence of the assessment and its particulars (outside <span class="key-term">appeal</span> proceedings). </p>
 <p><em>Purpose:</em> Statutorily required to support the application. </p>
 <p>IN THE MAGISTRATES COURT FOR THE PROVINCE OF ____________
 HELD AT ______________________
 
 In the matter between:
-<span class="key-term">ZIMBABWE REVENUE AUTHORITY</span> (<span class="key-term">ZIMRA</span>)                              Applicant
+<span class="key-term"><strong>ZIMBABWE REVENUE AUTHORITY</strong></span> (<span class="key-term">ZIMRA</span>)                              Applicant
 and
 [Taxpayer Name / Entity]                                         Respondent
 
 FOUNDING AFFIDAVIT (SECTION 33A REVENUE AUTHORITY ACT)
 
 I, _____________________, being an authorised officer acting for or on behalf of the
-Commissioner-General of the <span class="key-term">Zimbabwe Revenue Authority</span>, do hereby make oath and state:
+Commissioner-General of the <span class="key-term"><strong>Zimbabwe Revenue Authority</strong></span>, do hereby make oath and state:
 
-1. The Applicant is the <span class="key-term">Zimbabwe Revenue Authority</span>, established under the Revenue Authority Act
+1. The Applicant is the <span class="key-term"><strong>Zimbabwe Revenue Authority</strong></span>, established under the Revenue Authority Act
    <span class="leg-ref">[Chapter 23:11]</span>, responsible for assessing, collecting and enforcing payment of revenues.
 
 2. The Respondent was served with an assessment for [tax head] on [date], as evidenced by
@@ -411,9 +427,9 @@ Because the local currency rate references the bank policy rate “as revised fr
 <h2>D. Real-World Applicability (individual, SME, corporate)</h2>
 <div class="section-content">
 <p><strong>Individuals</strong></p>
-<p>Individual tax debts most commonly arise from: - <span class="key-term">PAYE</span> shortfalls (often through <span class="key-term">employer</span> non-remittance) or self-employed instalment/provisional tax under the income tax system. Once assessed and due, unpaid tax becomes a debt recoverable by civil action. </p>
+<p>Individual tax debts most commonly arise from: - <span class="key-term"><strong>PAYE</strong></span> shortfalls (often through <span class="key-term">employer</span> non-remittance) or self-employed instalment/<strong>provisional tax</strong> under the income tax system. Once assessed and due, unpaid tax becomes a debt recoverable by civil action. </p>
 <p><strong>Civil recovery scenario (Zimbabwean context):</strong>
-An individual contractor in Harare receives an additional assessment after a lifestyle audit. The individual does not object within the statutory window. <span class="key-term">ZIMRA</span> may proceed either by ordinary civil action (<span class="leg-ref">section 77</span> architecture) or by expedited Magistrates Court application under <span class="leg-ref">section 33A</span>, supported by an affidavit confirming service and non-<span class="key-term">objection</span>/non-<span class="key-term">appeal</span>, and may seek authority for the Messenger of Court to attach movable property (e.g., vehicle, equipment) itemised in the application. </p>
+An individual contractor in Harare receives an <strong>additional assessment</strong> after a lifestyle audit. The individual does not object within the statutory window. <span class="key-term">ZIMRA</span> may proceed either by ordinary civil action (<span class="leg-ref">section 77</span> architecture) or by expedited Magistrates Court application under <span class="leg-ref">section 33A</span>, supported by an affidavit confirming service and non-<span class="key-term">objection</span>/non-<span class="key-term">appeal</span>, and may seek authority for the Messenger of Court to attach movable property (e.g., vehicle, equipment) itemised in the application. </p>
 <p><strong>Taxpayer protections:</strong>
 Even in enforcement, taxpayers retain rights: - Interpleader protection exists where property attached is claimed by a third party; <span class="leg-ref">section 33A</span> anticipates interpleader proceedings. 
 - Excess sale proceeds must be returned to the taxpayer (<span class="leg-ref">section 33A</span> distribution logic includes balance paid back). </p>
@@ -440,7 +456,7 @@ Corporate defense teams often focus on: - Whether writs are properly issued and 
 <p><strong>Teaching relevance:</strong> In civil recovery suits, the taxpayer’s attempt to argue that the assessment is “wrong” is structurally constrained by the statute (<span class="leg-ref">section 78</span>) and evidentiary provisions (<span class="leg-ref">section 79</span>). </p>
 <p><em>Accuracy note:</em> A full fact-and-holding summary could not be independently verified here because the judgment text was not retrieved within tool limits. The legal significance is drawn from the statutory cross-reference embedded in the consolidated Act text. </p>
 <p><em class="case-name">Delta Beverages (Private) Limited v <span class="key-term">ZIMRA</span></em> (High Court, 2023)</p>
-<p><strong>Issue marker (from <span class="leg-ref">VAT Act</span> consolidated annotations):</strong> The <span class="leg-ref">VAT Act</span> text flags this case in connection with the question “what is an assessment.” </p>
+<p><strong>Issue marker (from <span class="leg-ref">VAT Act</span> consolidated annotations):</strong> The <span class="leg-ref"><strong>VAT Act</strong></span> text flags this case in connection with the question “what is an assessment.” </p>
 <p><strong>Teaching relevance:</strong> Civil recovery depends on a valid assessment. If litigation reveals that what <span class="key-term">ZIMRA</span> relies on is not legally an “assessment” (or was not properly issued/served), enforcement can be delayed or defeated, shifting the matter back to proper administrative steps.</p>
 <p><em>Accuracy note:</em> The specific factual matrix and ratio are not set out in the accessible <span class="leg-ref">VAT Act</span> extract; the case is referenced in the consolidated Act annotations. </p>
 <p><em class="case-name">Sabeta M v Commissioner</em>-General: <span class="key-term">ZIMRA</span> (High Court, 2012)</p>
@@ -472,7 +488,7 @@ Understanding ownership presumptions and evidentiary burdens is therefore crucia
 <h2>G. Knowledge Check</h2>
 <div class="section-content">
 <p><strong>Scenario (income tax civil action):</strong>
-A company is served with an income tax additional assessment for USD 50,000 on 1 February 2026. It takes no <span class="key-term">objection</span> steps. By 15 March 2026 it has paid USD 10,000 only. <span class="key-term">ZIMRA</span> issues a civil summons claiming “USD 50,000 plus <span class="key-term">interest</span> and penalties” and the company files a plea arguing the assessment is technically wrong because allowable deductions were ignored.
+A company is served with an income tax <strong>additional assessment</strong> for USD 50,000 on 1 February 2026. It takes no <span class="key-term">objection</span> steps. By 15 March 2026 it has paid USD 10,000 only. <span class="key-term">ZIMRA</span> issues a civil summons claiming “USD 50,000 plus <span class="key-term">interest</span> and penalties” and the company files a plea arguing the assessment is technically wrong because allowable deductions were ignored.
 Required: Identify (i) the correct legal character of the debt, (ii) whether the “assessment correctness” defense is competent in the recovery proceedings, and (iii) how partial payment should be treated against components of the debt.</p>
 <p><strong>Scenario (<span class="leg-ref">section 33A</span> expedited recovery):</strong>
 An SME has VAT arrears confirmed by an assessment, and the <span class="key-term">objection</span> period has lapsed. <span class="key-term">ZIMRA</span> seeks to use <span class="leg-ref">section 33A</span>.
@@ -842,7 +858,5 @@ document.addEventListener('DOMContentLoaded', () => {
 	});
 });
 </script>
-<script src="https://cdn.jsdelivr.net/npm/mermaid@10.0.0/dist/mermaid.min.js"></script>
-<script>mermaid.initialize({startOnLoad:true});</script>
 <script src="js/globe-hero.js" type="module"></script>
 </html>

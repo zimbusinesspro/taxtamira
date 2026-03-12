@@ -33,7 +33,23 @@
 <script type="application/ld+json">
 {"@context":"http://schema.org","@type":"WebSite","name":"TaxTami - Tax Training Zimbabwe","url":"www.taxtami.com"}
 	</script>
-</meta></meta></link></head>
+</meta></meta></link>
+    <style class="mermaid-style">
+    .mermaid {
+        background: #f4f8f6;
+        border: 1px solid #c5ddd0;
+        border-radius: 10px;
+        padding: 28px 20px;
+        margin: 24px 0;
+        overflow-x: auto;
+        text-align: center;
+    }
+    .mermaid svg { max-width: 100%; height: auto; }
+    </style>
+    <!-- Mermaid.js flowchart renderer -->
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.3/dist/mermaid.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function () {  mermaid.initialize({    startOnLoad: true,    theme: "base",    themeVariables: {      primaryColor: "#d6ede2",      primaryBorderColor: "#2c724f",      primaryTextColor: "#1a3a2a",      lineColor: "#2c724f",      secondaryColor: "#e9f5ee",      tertiaryColor: "#f4faf7",      edgeLabelBackground: "#ffffff",      fontFamily: "Work Sans, Heebo, sans-serif",      fontSize: "14px"    }  });});</script>
+</head>
 <div class="page-wrapper">
 <!-- Main Header-->
 <header class="main-header style-three">
@@ -136,7 +152,7 @@
 <section class="lesson-section" id="executive-summary">
 <h2>Executive summary</h2>
 <div class="section-content">
-<p>Debt management sits at the sharp edge of tax administration: it blends coercive state power (collection and enforcement) with high‑sensitivity data (financial identity, income, liabilities, enforcement status). In most systems, ethical failures in debt collection cluster around five recurring risks: unlawful disclosure or misuse of taxpayer information; disrespectful or unfair treatment of taxpayers; abuse of authority (using powers for improper purposes); unmanaged conflicts of <span class="key-term">interest</span>; and weak controls that enable fraud, bribery, or retaliatory behavior. Modern tax systems respond by combining (a) <strong>tax‑specific secrecy laws</strong> (e.g., U.S. Internal Revenue Code §6103; U.K. Commissioners for Revenue and Customs Act 2005 (CRCA) s18; Canada <span class="leg-ref">Income Tax Act</span> (ITA) s241; Australia Taxation Administration Act 1953 Sch 1 Div 355; South Africa Tax Administration Act 2011 s69; New Zealand Tax Administration Act 1994 s81) with (b) <strong>general data‑protection laws</strong> (e.g., UK data protection framework; Australia’s Privacy Act 1988 and Australian Privacy Principles; Canada’s Privacy Act; South Africa’s POPIA; New Zealand’s Privacy Act 2020). </p>
+<p>Debt management sits at the sharp edge of tax administration: it blends coercive state power (collection and enforcement) with high‑sensitivity data (financial identity, income, liabilities, enforcement status). In most systems, ethical failures in debt collection cluster around five recurring risks: unlawful disclosure or misuse of taxpayer information; disrespectful or unfair treatment of taxpayers; abuse of authority (using powers for improper purposes); unmanaged conflicts of <span class="key-term">interest</span>; and weak controls that enable fraud, bribery, or retaliatory behavior. Modern tax systems respond by combining (a) <strong>tax‑specific secrecy laws</strong> (e.g., U.S. Internal Revenue Code §6103; U.K. Commissioners for Revenue and Customs Act 2005 (CRCA) s18; Canada <span class="leg-ref"><strong>Income Tax Act</strong></span> (ITA) s241; Australia Taxation Administration Act 1953 Sch 1 Div 355; South Africa Tax Administration Act 2011 s69; New Zealand Tax Administration Act 1994 s81) with (b) <strong>general data‑protection laws</strong> (e.g., UK data protection framework; Australia’s Privacy Act 1988 and Australian Privacy Principles; Canada’s Privacy Act; South Africa’s POPIA; New Zealand’s Privacy Act 2020). </p>
 <p>A second pillar is <strong>codes of conduct</strong> and <strong>taxpayer‑rights instruments</strong> that prescribe “how” powers must be used: U.S. Taxpayer Bill of Rights and Publication 1 describe rights that apply during collection; the HMRC Charter is a statutory requirement under CRCA 2005; the ATO Charter sets service commitments; the CRA Taxpayer Bill of Rights includes a right to privacy and confidentiality and to professional, courteous, fair treatment. </p>
 <p>For instructors, the most teachable throughline is a <strong>two‑layer test</strong> for any debt‑management action: (1) <strong>legal authority</strong> (is it authorized by statute/delegation and used for a proper purpose?), and (2) <strong>ethical defensibility</strong> (is it necessary, proportionate, fair, and documented, with privacy safeguards and conflict‑of‑<span class="key-term">interest</span> controls?). Tax authorities explicitly frame disclosure decisions in those terms: HMRC’s information‑disclosure guide emphasizes lawful authority and proportionality, and ATO publishes formal procedures for disclosing protected information under its secrecy regime. </p>
 <p><strong>Disclaimer (educational).</strong> This lesson is for training/educational use and is not legal advice. Rules, penalties, and notification duties must be verified for the applicable jurisdiction, tax type, and agency delegations.</p>
@@ -239,36 +255,23 @@ Outcome and remediation: document findings, corrective actions (training, policy
 <p><strong>Mermaid flowchart from allegation to investigation to resolution and <span class="key-term">appeal</span></strong></p>
 <div class="mermaid">
 flowchart TD
-  A[Allegation or indicator
-privacy breach / abuse / COI / misconduct] --&gt; B[Immediate containment
-restrict access, preserve logs]
-  B --&gt; C[Triage classification
-Access? Disclosure? COI? Conduct? Bribery attempt?]
-  C --&gt; D[Assign independent investigator
-check investigator COI]
-  D --&gt; E[Evidence collection
-system logs, case file notes, comms, witness interviews]
-  E --&gt; F{Notifiable breach / mandatory report?}
-  F -- Yes --&gt; G[Notify regulator + affected persons as required
-document timing and content]
-  F -- No --&gt; H[Continue internal investigation]
-  G --&gt; H
-  H --&gt; I[Findings report
-facts, rule breaches, risk rating, recommendations]
-  I --&gt; J{Decision authority}
-  J --&gt; K[Disciplinary action / referral
-HR, professional body, police (if required)]
-  J --&gt; L[No breach substantiated
-close with documentation]
-  K --&gt; M[Remediation plan
-training, control changes, monitoring]
-  L --&gt; M
-  M --&gt; N[Communication to complainant
-outcome + review/<span class="key-term">appeal</span> route]
-  N --&gt; O[<span class="key-term">Appeal</span> / review / oversight route
-(jurisdiction-specific)]
-  O --&gt; P[Close and retain records
-audit-ready]
+  A[Allegation or indicator<br/>privacy breach / abuse / COI / misconduct] --> B[Immediate containment<br/>restrict access, preserve logs]
+  B --> C[Triage classification<br/>Access? Disclosure? COI? Conduct? Bribery attempt?]
+  C --> D[Assign independent investigator<br/>check investigator COI]
+  D --> E[Evidence collection<br/>system logs, case file notes, comms, witness interviews]
+  E --> F{Notifiable breach / mandatory report?}
+  F -- Yes --> G[Notify regulator + affected persons as required<br/>document timing and content]
+  F -- No --> H[Continue internal investigation]
+  G --> H
+  H --> I[Findings report<br/>facts, rule breaches, risk rating, recommendations]
+  I --> J{Decision authority}
+  J --> K[Disciplinary action / referral<br/>HR, professional body, police (if required)]
+  J --> L[No breach substantiated<br/>close with documentation]
+  K --> M[Remediation plan<br/>training, control changes, monitoring]
+  L --> M
+  M --> N[Communication to complainant<br/>outcome + review/appeal route]
+  N --> O[Appeal / review / oversight route<br/>(jurisdiction-specific)]
+  O --> P[Close and retain records<br/>audit-ready]
 </div>
 <p><strong>Anti-fraud and anti-corruption controls tailored to debt management</strong></p>
 <p>Debt management is unusually bribery‑susceptible because staff can influence outcomes (timing, enforcement intensity, write‑off recommendations). International integrity frameworks encourage risk‑based controls that reduce opportunities and strengthen accountability (OECD Public Integrity Recommendation and Handbook; UNCAC’s emphasis on public‑official codes and anti‑corruption measures). </p>
@@ -634,7 +637,5 @@ document.addEventListener('DOMContentLoaded', () => {
 	});
 });
 </script>
-<script src="https://cdn.jsdelivr.net/npm/mermaid@10.0.0/dist/mermaid.min.js"></script>
-<script>mermaid.initialize({startOnLoad:true});</script>
 <script src="js/globe-hero.js" type="module"></script>
 </html>

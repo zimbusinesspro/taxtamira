@@ -33,7 +33,23 @@
 <script type="application/ld+json">
 {"@context":"http://schema.org","@type":"WebSite","name":"TaxTami - Tax Training Zimbabwe","url":"www.taxtami.com"}
 	</script>
-</meta></meta></link></head>
+</meta></meta></link>
+    <style class="mermaid-style">
+    .mermaid {
+        background: #f4f8f6;
+        border: 1px solid #c5ddd0;
+        border-radius: 10px;
+        padding: 28px 20px;
+        margin: 24px 0;
+        overflow-x: auto;
+        text-align: center;
+    }
+    .mermaid svg { max-width: 100%; height: auto; }
+    </style>
+    <!-- Mermaid.js flowchart renderer -->
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.3/dist/mermaid.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function () {  mermaid.initialize({    startOnLoad: true,    theme: "base",    themeVariables: {      primaryColor: "#d6ede2",      primaryBorderColor: "#2c724f",      primaryTextColor: "#1a3a2a",      lineColor: "#2c724f",      secondaryColor: "#e9f5ee",      tertiaryColor: "#f4faf7",      edgeLabelBackground: "#ffffff",      fontFamily: "Work Sans, Heebo, sans-serif",      fontSize: "14px"    }  });});</script>
+</head>
 <div class="page-wrapper">
 <!-- Main Header-->
 <header class="main-header style-three">
@@ -143,15 +159,15 @@
 <section class="lesson-section" id="executive-summary">
 <h2>Executive summary</h2>
 <div class="section-content">
-<p>Modern tax debt management is increasingly driven by <strong>core revenue management systems</strong> (CRMS) that unify the taxpayer register, filing, payments, taxpayer accounting (ledger), and debt management into a single platform, typically exposed through a <strong>digital taxpayer account</strong> (portal/app). In Zimbabwe, <span class="key-term">ZIMRA</span>’s <strong>Tax and Revenue Management System (TaRMS)</strong> is a prominent example: it replaces older domestic-tax systems and emphasizes automation, bank integration, and a “single account” taxpayer-ledger approach designed to reduce payment allocation errors and support automated debt detection, penalties/<span class="key-term">interest</span> computation, reminders, and installment-plan applications. </p>
+<p>Modern tax debt management is increasingly driven by <strong>core revenue management systems</strong> (CRMS) that unify the taxpayer register, filing, payments, taxpayer accounting (ledger), and debt management into a single platform, typically exposed through a <strong>digital taxpayer account</strong> (portal/app). In Zimbabwe, <span class="key-term"><strong>ZIMRA</strong></span>’s <strong>Tax and Revenue Management System (TaRMS)</strong> is a prominent example: it replaces older domestic-tax systems and emphasizes automation, bank integration, and a “single account” taxpayer-ledger approach designed to reduce payment allocation errors and support automated debt detection, penalties/<span class="key-term">interest</span> computation, reminders, and installment-plan applications. </p>
 <p>At a policy level, the OECD’s tax-debt management work frames effective collection around four strategic principles: <strong>engagement before due date</strong>, maximizing collection after due date but before enforcement, effective enforcement, and realistic recovery/write-off. The same research highlights the shift toward <strong>e-services and contemporary digital channels</strong> (online payment plans, certified e-mail notifications, electronic auctions, and digital payment options) and the growing role of <strong>analytics, segmentation, and predictive models</strong> in choosing the right intervention for the right debtor at the right time. </p>
-<p>Because the jurisdiction for your class is <strong>unspecified</strong>, this lesson treats TaRMS as a <strong>worked example</strong> (using official <span class="key-term">ZIMRA</span> materials) while teaching a <strong>jurisdiction-neutral reference model</strong> for TaRMS-like systems. The lesson also foregrounds constraints: tax authorities handle highly sensitive data, so technology-driven debt management must align with <strong>tax secrecy/confidentiality rules</strong>, <strong>data protection/privacy laws</strong>, and governance requirements for <strong>automated decision-making/profiling</strong> (often including a right to human review for decisions with legal or similarly significant effects). </p>
+<p>Because the jurisdiction for your class is <strong>unspecified</strong>, this lesson treats <strong>TaRMS</strong> as a <strong>worked example</strong> (using official <span class="key-term"><strong>ZIMRA</strong></span> materials) while teaching a <strong>jurisdiction-neutral reference model</strong> for <strong>TaRMS</strong>-like systems. The lesson also foregrounds constraints: tax authorities handle highly sensitive data, so technology-driven debt management must align with <strong>tax secrecy/confidentiality rules</strong>, <strong>data protection/privacy laws</strong>, and governance requirements for <strong>automated decision-making/profiling</strong> (often including a right to human review for decisions with legal or similarly significant effects). </p>
 </div>
 </section>
 <section class="lesson-section" id="assumptions-scope-and-how-to-localize-the-lesson">
 <h2>Assumptions, scope, and how to localize the lesson</h2>
 <div class="section-content">
-<p><strong>Assumptions made (explicit).</strong> - <strong>Jurisdiction is unspecified.</strong> The lesson therefore provides (a) an internationally common framework, (b) “common variants” across jurisdictions, and (c) a <strong>TaRMS (Zimbabwe) worked example</strong> because TaRMS has substantial public, primary documentation and is clearly a tax administration platform with debt-management features.  - <strong>Access to vendor/implementation documentation is limited.</strong> Public materials describe TaRMS capabilities and taxpayer-facing workflows, but not full internal architecture, data models, or enforcement parameterization. Architecture and analytics sections therefore present a <strong>TaRMS-like reference architecture</strong> that you can adapt if you obtain internal manuals, system design documents, or procurement specs.  - “Technology in debt management” is treated as the intersection of: (1) taxpayer accounts and communications channels, (2) automated workflow engines and business rules, (3) analytics/risk scoring, and (4) governance controls (privacy, security, due process). </p>
+<p><strong>Assumptions made (explicit).</strong> - <strong>Jurisdiction is unspecified.</strong> The lesson therefore provides (a) an internationally common framework, (b) “common variants” across jurisdictions, and (c) a <strong>TaRMS (Zimbabwe) worked example</strong> because <strong>TaRMS</strong> has substantial public, primary documentation and is clearly a tax administration platform with debt-management features.  - <strong>Access to vendor/implementation documentation is limited.</strong> Public materials describe <strong>TaRMS</strong> capabilities and taxpayer-facing workflows, but not full internal architecture, data models, or enforcement parameterization. Architecture and analytics sections therefore present a <strong>TaRMS-like reference architecture</strong> that you can adapt if you obtain internal manuals, system design documents, or procurement specs.  - “Technology in debt management” is treated as the intersection of: (1) taxpayer accounts and communications channels, (2) automated workflow engines and business rules, (3) analytics/risk scoring, and (4) governance controls (privacy, security, due process). </p>
 <p><strong>How to localize for any jurisdiction (simple teacher method).</strong> - Replace the “Legal/Regulatory table” below with your country’s equivalents for (a) tax secrecy, (b) data protection, (c) e-service of notices, (d) automated decision-making safeguards, and (e) records management. Use the lesson’s <strong>system workflows and governance checklists</strong> unchanged. </p>
 </div>
 </section>
@@ -170,36 +186,36 @@
 <h2>TaRMS and TaRMS-like system architecture and operational workflows</h2>
 <div class="section-content">
 <p><strong>What TaRMS is and what it automates</strong></p>
-<p><span class="key-term">ZIMRA</span> states TaRMS is the new automation platform for domestic tax processes, replacing older systems and aiming to simplify processes for taxpayers through a Self-Service Portal (SSP). </p>
-<p><strong>Key TaRMS debt-management capabilities (officially described).</strong> TaRMS is described as enabling: automatic detection of unpaid liabilities, automated aging by set parameters, daily calculation of <span class="key-term">interest</span> and penalties, automated reversals of <span class="key-term">interest</span>/penalties on adjusted liabilities, automated reminders for payments and returns (before due date, on due date, and after due date), and online installment-plan applications. </p>
-<p><strong>Digital taxpayer account and ledger concept (“single account”).</strong> <span class="key-term">ZIMRA</span> describes a “Taxpayer’s Single Account” record in TaRMS that tracks the taxpayer’s balance held in a <span class="key-term">ZIMRA</span> single account at the taxpayer’s chosen bank; the system then handles payment allocations, assessments, and refunds based on submissions and integrated bank validation. </p>
+<p><span class="key-term"><strong>ZIMRA</strong></span> states <strong>TaRMS</strong> is the new automation platform for domestic tax processes, replacing older systems and aiming to simplify processes for taxpayers through a Self-Service Portal (SSP). </p>
+<p><strong>Key TaRMS debt-management capabilities (officially described).</strong> <strong>TaRMS</strong> is described as enabling: automatic detection of unpaid liabilities, automated aging by set parameters, daily calculation of <span class="key-term">interest</span> and penalties, automated reversals of <span class="key-term">interest</span>/penalties on adjusted liabilities, automated reminders for payments and returns (before due date, on due date, and after due date), and online installment-plan applications. </p>
+<p><strong>Digital taxpayer account and ledger concept (“single account”).</strong> <span class="key-term"><strong>ZIMRA</strong></span> describes a “Taxpayer’s Single Account” record in TaRMS that tracks the taxpayer’s balance held in a <span class="key-term"><strong>ZIMRA</strong></span> single account at the taxpayer’s chosen bank; the system then handles payment allocations, assessments, and refunds based on submissions and integrated bank validation. </p>
 <p><strong>Reference architecture for TaRMS-like debt management systems</strong></p>
 <p>A TaRMS-like system typically includes these layers (this is a generalized architecture, anchored to observed TaRMS capabilities and OECD/IMF patterns):</p>
 <p><strong>Mermaid diagram: architecture and data flows for a TaRMS-like platform</strong></p>
 <div class="mermaid">
 flowchart LR
-  TP[Taxpayer] --&gt;|Portal/App login + MFA| DTA[Digital Taxpayer Account]
-  AG[Tax Agent] --&gt; DTA
+  TP[Taxpayer] -->|Portal/App login + MFA| DTA[Digital Taxpayer Account]
+  AG[Tax Agent] --> DTA
 
-  DTA --&gt;|Returns, payment plan requests, messages| WF[Workflow &amp; Rules Engine]
-  WF --&gt; LED[Taxpayer Ledger / Revenue Accounting]
-  LED --&gt;|<span class="key-term">Interest</span>/<span class="key-term">penalty</span> calc, aging| DEBT[Debt Management Module]
+  DTA -->|Returns, payment plan requests, messages| WF[Workflow & Rules Engine]
+  WF --> LED[Taxpayer Ledger / Revenue Accounting]
+  LED -->|Interest/penalty calc, aging| DEBT[Debt Management Module]
 
-  BANK[(Banking network)] --&gt;|Payment validation + confirmations| INT[Integration Layer / API Gateway]
-  INT --&gt; LED
+  BANK[(Banking network)] -->|Payment validation + confirmations| INT[Integration Layer / API Gateway]
+  INT --> LED
 
-  REG[(Company &amp; Civil Registries)] --&gt;|ID/CRN validation| INT
-  INT --&gt; DTA
+  REG[(Company & Civil Registries)] -->|ID/CRN validation| INT
+  INT --> DTA
 
-  DEBT --&gt; COMM[Comms Engine: SMS/Email/Portal inbox/Letters]
-  COMM --&gt; TP
+  DEBT --> COMM[Comms Engine: SMS/Email/Portal inbox/Letters]
+  COMM --> TP
 
-  LED --&gt; DW[Data Warehouse/Lake]
-  DW --&gt; RISK[Risk Scoring &amp; Segmentation]
-  RISK --&gt; WF
-  RISK --&gt; CASE[Case Management: human review]
-  CASE --&gt; ENF[Enforcement Actions]
-  ENF --&gt; COMM
+  LED --> DW[Data Warehouse/Lake]
+  DW --> RISK[Risk Scoring & Segmentation]
+  RISK --> WF
+  RISK --> CASE[Case Management: human review]
+  CASE --> ENF[Enforcement Actions]
+  ENF --> COMM
 
   SEC[Security, Audit Logs, Governance] --- DTA
   SEC --- INT
@@ -212,7 +228,7 @@ flowchart LR
 <p><strong>Due date monitoring and “soft” collection.</strong> If unpaid, system detects unpaid liabilities and ages them; TaRMS explicitly describes automatic detection and aging of unpaid liabilities. </p>
 <p><strong>Automated charges.</strong> <span class="key-term">Interest</span> and penalties are automatically calculated and posted (TaRMS: daily basis; penalties from due date). </p>
 <p><strong>Segmentation &amp; channel selection.</strong> Analytics determine which message, which channel, and what escalation path is used; OECD notes analytics-supported segmentation and increasing automation for tailored engagement. </p>
-<p><strong>Self-service resolution.</strong> Encourage online payment plans and self-service tools; OECD and IRS examples show online payment plan creation and management. </p>
+<p><strong>Self-service resolution.</strong> Encourage online payment plans and self-service tools; OECD and IRS examples show online <strong>payment plan</strong> creation and management. </p>
 <p><strong>Human review gates and enforcement.</strong> For high-impact actions (garnishment, liens, third-party collector handoff, insolvency referral), systems typically require human approval aligned with legal safeguards for automated decisions. OECD emphasizes enforcement tools as a principle; privacy guidance emphasizes safeguards for automated decisioning in impactful scenarios. </p>
 <p><strong>Procedural steps and timelines for automated triggers and human review</strong></p>
 <p>TaRMS confirms reminders occur <strong>prior to due date, on due date, and after due date</strong> and that liabilities are aged based on “set parameters,” but does not publish exact day offsets. 
@@ -220,27 +236,27 @@ Accordingly, use the following as a <strong>configurable teaching template</stro
 <p><strong>Mermaid diagram: automated debt workflow (from liability to enforcement)</strong></p>
 <div class="mermaid">
 flowchart TD
-  A[Liability posted to taxpayer ledger] --&gt; B{Paid by due date?}
-  B -- Yes --&gt; C[Close: compliant]
-  B -- No --&gt; D[Debt flag + aging bucket update]
-  D --&gt; E[Auto-calculate <span class="key-term">interest</span> &amp; penalties]
-  E --&gt; F[Select comms strategy (segmentation + rules)]
-  F --&gt; G[Send reminders via portal/SMS/email/letter]
-  G --&gt; H{Taxpayer responds?}
-  H -- Pays --&gt; C
-  H -- Requests payment plan --&gt; I[Auto eligibility checks + risk scan]
-  I --&gt; J{Eligible under policy thresholds?}
-  J -- Yes --&gt; K[Approve plan + schedule monitoring]
-  J -- No --&gt; L[Human case review required]
-  L --&gt; M{Officer decision}
-  M -- Approve exception --&gt; K
-  M -- Deny --&gt; N[Escalate to stronger collection steps]
-  K --&gt; O{Plan default?}
-  O -- No --&gt; P[Continue monitoring]
-  O -- Yes --&gt; N
-  N --&gt; Q[Enforcement workflow]
-  Q --&gt; R[Human approval gate + legal checks]
-  R --&gt; S[Enforcement action taken + logged]
+  A[Liability posted to taxpayer ledger] --> B{Paid by due date?}
+  B -- Yes --> C[Close: compliant]
+  B -- No --> D[Debt flag + aging bucket update]
+  D --> E[Auto-calculate interest & penalties]
+  E --> F[Select comms strategy (segmentation + rules)]
+  F --> G[Send reminders via portal/SMS/email/letter]
+  G --> H{Taxpayer responds?}
+  H -- Pays --> C
+  H -- Requests payment plan --> I[Auto eligibility checks + risk scan]
+  I --> J{Eligible under policy thresholds?}
+  J -- Yes --> K[Approve plan + schedule monitoring]
+  J -- No --> L[Human case review required]
+  L --> M{Officer decision}
+  M -- Approve exception --> K
+  M -- Deny --> N[Escalate to stronger collection steps]
+  K --> O{Plan default?}
+  O -- No --> P[Continue monitoring]
+  O -- Yes --> N
+  N --> Q[Enforcement workflow]
+  Q --> R[Human approval gate + legal checks]
+  R --> S[Enforcement action taken + logged]
 </div>
 </div>
 </section>
@@ -265,7 +281,7 @@ Typical inputs: - Debt size (current), debt age (days past due), count of overdu
 This aligns with the IMF’s description that analytics help monitor payment, analyze arrears, and predict behaviors. </p>
 <p>2) <strong>Rules overlay (policy constraints):</strong>
 Convert predicted risk to action bands (thresholds) that reflect policy/legal constraints, for example: - <strong>S 0–30:</strong> automated reminders only; self-service plan auto-approval if requested
-- <strong>S 31–70:</strong> enhanced nudges + outbound phone queue; payment plan requires additional validation
+- <strong>S 31–70:</strong> enhanced nudges + outbound phone queue; <strong>payment plan</strong> requires additional validation
 - <strong>S 71–100:</strong> caseworker review before any escalation; consider security, fraud checks, and hardship flags</p>
 <p>This fits OECD’s principle of maximizing collection before enforcement and using tailored engagement based on segmentation. </p>
 <p><strong>Bias mitigation and “trustworthy AI” controls (minimum set).</strong> - <strong>Human-in-the-loop for high-impact decisions.</strong> OECD gives a concrete example outside tax debt: anomalies detected by AI are <strong>systematically verified by an official before action</strong>—a transferable governance pattern for enforcement decisions. 
@@ -294,7 +310,7 @@ Prompt: “Why do tax debts accumulate, and why is digitalization changing colle
 <p><strong>TaRMS-like system walkthrough (15 minutes).</strong>
 Use TaRMS as the example: single account, automatic detection/aging, daily <span class="key-term">interest</span>/penalties, reminders, online installment plan. </p>
 <p><strong>Hands-on workflow mapping (15 minutes).</strong>
-Students annotate the provided mermaid flowchart with where rules end and discretion begins (e.g., payment plan denial, enforcement triggers).</p>
+Students annotate the provided mermaid flowchart with where rules end and discretion begins (e.g., <strong>payment plan</strong> denial, enforcement triggers).</p>
 <p><strong>Analytics &amp; governance mini-lecture (15 minutes).</strong>
 Explain segmentation and scoring using OECD/IMF framing; then introduce safety governance: human-in-the-loop, DPIA, and Article 22-style safeguards; use Robodebt as a cautionary case. </p>
 <p><strong>Group exercise: “Design a risk-based collection policy” (15 minutes).</strong>
@@ -303,7 +319,7 @@ Groups design thresholds for three debtor segments and decide communications cha
 <p><strong>Handout A: TaRMS-like debt management workflow checklist (1 page).</strong> - When does a liability post to the ledger?
 - What triggers the first reminder (pre-due vs post-due)? 
 - When do <span class="key-term">interest</span>/penalties begin? How are reversals handled on amended liabilities? 
-- When is a payment plan offered / auto-approved? When must a caseworker decide? 
+- When is a <strong>payment plan</strong> offered / auto-approved? When must a caseworker decide? 
 - Enforcement gate: “No high-impact action without human review + logged reasons.” </p>
 <p><strong>Handout B: Risk scoring design template (2 pages).</strong> - Define target outcome (pay within X days; plan default risk) 
 - Features allowed vs prohibited (jurisdiction policy)
@@ -333,25 +349,25 @@ The Robodebt Royal Commission demonstrates catastrophic risk: the scheme was des
 <p><strong>Mermaid decision tree: risk score → action with legal safeguards</strong></p>
 <div class="mermaid">
 flowchart TD
-  A[Debt detected / overdue] --&gt; B[Compute risk score S: 0-100]
-  B --&gt; C{S &lt;= 30?}
-  C -- Yes --&gt; C1[Send low-friction reminders + portal link]
-  C -- No --&gt; D{S &lt;= 70?}
-  D -- Yes --&gt; D1[Enhanced outreach: SMS/email + call queue + offer payment plan]
-  D -- No --&gt; E[High risk / complex case]
+  A[Debt detected / overdue] --> B[Compute risk score S: 0-100]
+  B --> C{S <= 30?}
+  C -- Yes --> C1[Send low-friction reminders + portal link]
+  C -- No --> D{S <= 70?}
+  D -- Yes --> D1[Enhanced outreach: SMS/email + call queue + offer payment plan]
+  D -- No --> E[High risk / complex case]
 
-  D1 --&gt; F{Payment plan requested?}
-  F -- Yes --&gt; G[Auto pre-check eligibility]
-  G --&gt; H{Passes policy thresholds?}
-  H -- Yes --&gt; I[Auto approve + monitor]
-  H -- No --&gt; J[Human review required + record reasons]
+  D1 --> F{Payment plan requested?}
+  F -- Yes --> G[Auto pre-check eligibility]
+  G --> H{Passes policy thresholds?}
+  H -- Yes --> I[Auto approve + monitor]
+  H -- No --> J[Human review required + record reasons]
 
-  E --&gt; K[Caseworker review gate]
-  K --&gt; L{Enforcement proposed?}
-  L -- No --&gt; M[Negotiate plan / hardship / verify data]
-  L -- Yes --&gt; N[Legal + privacy checks]
-  N --&gt; O[Human approval + audit logging]
-  O --&gt; P[Enforcement action + notice + <span class="key-term">appeal</span> info]
+  E --> K[Caseworker review gate]
+  K --> L{Enforcement proposed?}
+  L -- No --> M[Negotiate plan / hardship / verify data]
+  L -- Yes --> N[Legal + privacy checks]
+  N --> O[Human approval + audit logging]
+  O --> P[Enforcement action + notice + appeal info]
 </div>
 <p><strong>MCQ (5).</strong></p>
 <p>1) In OECD’s strategic principles for successful tax debt management, which is listed as Principle 1?
@@ -360,7 +376,7 @@ B. Engage with taxpayers before the due date
 C. Outsource all collections
 D. Stop using digital channels
 <strong>Correct:</strong> B. </p>
-<p>2) TaRMS debt management (as described by <span class="key-term">ZIMRA</span>) includes which automation?
+<p>2) TaRMS debt management (as described by <span class="key-term"><strong>ZIMRA</strong></span>) includes which automation?
 A. Automatic detection and aging of unpaid liabilities
 B. Automatic criminal prosecution
 C. Automatic court judgments
@@ -395,7 +411,7 @@ D. Data protection laws do not apply to government processing
 <p>1) “Risk scoring improves efficiency but threatens fairness and legality.” Discuss, proposing a governance framework for tax debt analytics.
 <strong>A-grade coverage:</strong> OECD analytics/segmentation maturity; EDPB/ICO safeguards; DPIA; human review; explainability; audit logging; lessons from Robodebt and SyRI. </p>
 <p>2) Design a TaRMS-like automated collections playbook for a mid-sized tax authority, specifying triggers, channels, and review points.
-<strong>A-grade coverage:</strong> pre-due engagement; post-due reminders; payment plan pathways; enforcement gating; secure communications and anti-phishing measures. </p>
+<strong>A-grade coverage:</strong> pre-due engagement; post-due reminders; <strong>payment plan</strong> pathways; enforcement gating; secure communications and anti-phishing measures. </p>
 </div>
 </section>
 </div><!-- /lesson-container -->
@@ -717,7 +733,5 @@ document.addEventListener('DOMContentLoaded', () => {
 	});
 });
 </script>
-<script src="https://cdn.jsdelivr.net/npm/mermaid@10.0.0/dist/mermaid.min.js"></script>
-<script>mermaid.initialize({startOnLoad:true});</script>
 <script src="js/globe-hero.js" type="module"></script>
 </html>

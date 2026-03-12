@@ -33,7 +33,23 @@
 <script type="application/ld+json">
 {"@context":"http://schema.org","@type":"WebSite","name":"TaxTami - Tax Training Zimbabwe","url":"www.taxtami.com"}
 	</script>
-</meta></link></meta></head>
+</meta></link></meta>
+    <style class="mermaid-style">
+    .mermaid {
+        background: #f4f8f6;
+        border: 1px solid #c5ddd0;
+        border-radius: 10px;
+        padding: 28px 20px;
+        margin: 24px 0;
+        overflow-x: auto;
+        text-align: center;
+    }
+    .mermaid svg { max-width: 100%; height: auto; }
+    </style>
+    <!-- Mermaid.js flowchart renderer -->
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.3/dist/mermaid.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function () {  mermaid.initialize({    startOnLoad: true,    theme: "base",    themeVariables: {      primaryColor: "#d6ede2",      primaryBorderColor: "#2c724f",      primaryTextColor: "#1a3a2a",      lineColor: "#2c724f",      secondaryColor: "#e9f5ee",      tertiaryColor: "#f4faf7",      edgeLabelBackground: "#ffffff",      fontFamily: "Work Sans, Heebo, sans-serif",      fontSize: "14px"    }  });});</script>
+</head>
 <div class="page-wrapper">
 <!-- Main Header-->
 <header class="main-header style-three">
@@ -209,20 +225,20 @@ BFH (Federal Fiscal Court) decision detail (31 Oct 2018, III B 77/18): confirms 
 <p><strong>Mermaid: claim-priority classification flow</strong></p>
 <div class="mermaid">
 flowchart TD
-  A[Start: Identify tax-related liability] --&gt; B{Is the amount withheld/collected\nfrom third parties?}
-  B --&gt;|Yes| C[Trust/segregated funds analysis\n(e.g., IRC 7501; trustee holds in trust)]
-  B --&gt;|No| D{Is there a perfected lien/charge\nsecuring the tax?}
-  D --&gt;|Yes| E[Secured tax claim\n(distribution from collateral; lien rules)]
-  D --&gt;|No| F{Did liability arise after\ninsolvency commencement?}
-  F --&gt;|Yes| G[Estate/admin/mass liability\n(pay as expense; high priority)]
-  F --&gt;|No| H{Statute grants priority\nunsecured status?}
-  H --&gt;|Yes| I[Priority unsecured tax claim\n(pay before general unsecured)]
-  H --&gt;|No| J[General unsecured tax claim\n(pari passu with other unsecured)]
-  J --&gt; K[Consider penalties/<span class="key-term">interest</span> subordination,\nset-off, and objections]
-  I --&gt; K
-  G --&gt; K
-  E --&gt; K
-  C --&gt; K
+  A[Start: Identify tax-related liability] --> B{Is the amount withheld/collected\nfrom third parties?}
+  B -->|Yes| C[Trust/segregated funds analysis\n(e.g., IRC 7501; trustee holds in trust)]
+  B -->|No| D{Is there a perfected lien/charge\nsecuring the tax?}
+  D -->|Yes| E[Secured tax claim\n(distribution from collateral; lien rules)]
+  D -->|No| F{Did liability arise after\ninsolvency commencement?}
+  F -->|Yes| G[Estate/admin/mass liability\n(pay as expense; high priority)]
+  F -->|No| H{Statute grants priority\nunsecured status?}
+  H -->|Yes| I[Priority unsecured tax claim\n(pay before general unsecured)]
+  H -->|No| J[General unsecured tax claim\n(pari passu with other unsecured)]
+  J --> K[Consider penalties/interest subordination,\nset-off, and objections]
+  I --> K
+  G --> K
+  E --> K
+  C --> K
 </div>
 <p>This flow is grounded in how key statutes and guidance separate trust-withheld amounts, secured positions, post‑commencement liabilities, and priority vs ordinary unsecured tax claims. </p>
 </div>
@@ -677,7 +693,5 @@ document.addEventListener('DOMContentLoaded', () => {
 	});
 });
 </script>
-<script src="https://cdn.jsdelivr.net/npm/mermaid@10.0.0/dist/mermaid.min.js"></script>
-<script>mermaid.initialize({startOnLoad:true});</script>
 <script src="js/globe-hero.js" type="module"></script>
 </html>

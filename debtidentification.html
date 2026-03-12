@@ -33,7 +33,23 @@
 <script type="application/ld+json">
 {"@context":"http://schema.org","@type":"WebSite","name":"TaxTami - Tax Training Zimbabwe","url":"www.taxtami.com"}
 	</script>
-</meta></meta></link></head>
+</meta></meta></link>
+    <style class="mermaid-style">
+    .mermaid {
+        background: #f4f8f6;
+        border: 1px solid #c5ddd0;
+        border-radius: 10px;
+        padding: 28px 20px;
+        margin: 24px 0;
+        overflow-x: auto;
+        text-align: center;
+    }
+    .mermaid svg { max-width: 100%; height: auto; }
+    </style>
+    <!-- Mermaid.js flowchart renderer -->
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.3/dist/mermaid.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function () {  mermaid.initialize({    startOnLoad: true,    theme: "base",    themeVariables: {      primaryColor: "#d6ede2",      primaryBorderColor: "#2c724f",      primaryTextColor: "#1a3a2a",      lineColor: "#2c724f",      secondaryColor: "#e9f5ee",      tertiaryColor: "#f4faf7",      edgeLabelBackground: "#ffffff",      fontFamily: "Work Sans, Heebo, sans-serif",      fontSize: "14px"    }  });});</script>
+</head>
 <div class="page-wrapper">
 <!-- Main Header-->
 <header class="main-header style-three">
@@ -143,20 +159,20 @@
 <section class="lesson-section" id="executive-summary">
 <h2>Executive summary</h2>
 <div class="section-content">
-<p>Effective tax debt management starts with <strong>seeing the debt correctly</strong>. “Debt identification and classification” is the discipline of (i) detecting that a taxpayer has an unpaid, matured obligation (or an assessment/return that creates a receivable), (ii) confirming the <strong>legal status</strong> of that obligation (due, overdue, disputed, time‑barred for a specific recovery route, etc.), and (iii) placing it into an operational category that determines the <strong>next action</strong> (soft collection, payment plan, enforcement, monitoring, or write‑off workflow). In Zimbabwe, the statutes rarely define “collectable/uncollectable/dormant” as explicit legal categories, but they supply the legal triggers that allow a debt team to classify: tax becomes due and payable on prescribed dates (<span class="leg-ref">Income Tax Act</span> s 71; <span class="leg-ref">VAT Act</span> s 28), becomes a “debt due to the State” (<span class="leg-ref">Income Tax Act</span> s 77), remains payable pending dispute unless suspended (<span class="leg-ref">Income Tax Act</span> s 69; <span class="leg-ref">VAT Act</span> s 36 as substituted by Finance Act 8/2022), and may be constrained by time‑limit rules for certain actions or recoverability (<span class="leg-ref">Income Tax Act</span> s 47 six‑year limit on additional assessments; <span class="leg-ref">VAT Act</span> s 41(d) six‑year non‑recoverability rule under specified good‑faith conditions; Revenue Authority Act s 33A(8) six‑year limit for action under the expedited recovery procedure). </p>
-<p>TaRMS directly affects how debts are identified in practice. <span class="key-term">ZIMRA</span>’s public notices and FAQs show that (a) payments sit in a <strong>Single Account</strong> and require a return/obligation to be <strong>recognized and posted to the ledger</strong>, (b) non‑filing can result in <strong>system estimates</strong> (FAQs indicate “9 days after due date”), (c) penalties can be charged automatically on outstanding returns, and (d) compliance outputs like <span class="key-term">tax clearance</span> are automated and therefore sensitive to correct classification of outstanding returns and balances. </p>
-<p>This lesson provides a teaching‑grade classification framework tailored to Zimbabwe’s legal rules and TaRMS operational realities, with case law used to explain why “disputed” does not necessarily mean “not collectable,” and why misclassification can lead to unlawful enforcement, missed recoveries, or incorrect <span class="key-term">tax clearance</span> outcomes. </p>
+<p>Effective tax debt management starts with <strong>seeing the debt correctly</strong>. “Debt identification and classification” is the discipline of (i) detecting that a taxpayer has an unpaid, matured obligation (or an assessment/return that creates a receivable), (ii) confirming the <strong>legal status</strong> of that obligation (due, overdue, disputed, time‑barred for a specific recovery route, etc.), and (iii) placing it into an operational category that determines the <strong>next action</strong> (soft collection, <strong>payment plan</strong>, enforcement, monitoring, or write‑off workflow). In Zimbabwe, the statutes rarely define “collectable/uncollectable/dormant” as explicit legal categories, but they supply the legal triggers that allow a debt team to classify: tax becomes due and payable on prescribed dates (<span class="leg-ref"><strong>Income Tax Act</strong></span> s 71; <span class="leg-ref"><strong>VAT Act</strong></span> s 28), becomes a “debt due to the State” (<span class="leg-ref"><strong>Income Tax Act</strong></span> s 77), remains payable pending dispute unless suspended (<span class="leg-ref"><strong>Income Tax Act</strong></span> s 69; <span class="leg-ref"><strong>VAT Act</strong></span> s 36 as substituted by <strong>Finance Act</strong> 8/2022), and may be constrained by time‑limit rules for certain actions or recoverability (<span class="leg-ref"><strong>Income Tax Act</strong></span> s 47 six‑year limit on additional assessments; <span class="leg-ref"><strong>VAT Act</strong></span> s 41(d) six‑year non‑recoverability rule under specified good‑faith conditions; <strong>Revenue Authority Act</strong> s 33A(8) six‑year limit for action under the expedited recovery procedure). </p>
+<p><strong>TaRMS</strong> directly affects how debts are identified in practice. <span class="key-term"><strong>ZIMRA</strong></span>’s public notices and FAQs show that (a) payments sit in a <strong>Single Account</strong> and require a return/obligation to be <strong>recognized and posted to the ledger</strong>, (b) non‑filing can result in <strong>system estimates</strong> (FAQs indicate “9 days after due date”), (c) penalties can be charged automatically on outstanding returns, and (d) compliance outputs like <span class="key-term">tax clearance</span> are automated and therefore sensitive to correct classification of outstanding returns and balances. </p>
+<p>This lesson provides a teaching‑grade classification framework tailored to Zimbabwe’s legal rules and <strong>TaRMS</strong> operational realities, with case law used to explain why “disputed” does not necessarily mean “not collectable,” and why misclassification can lead to unlawful enforcement, missed recoveries, or incorrect <span class="key-term">tax clearance</span> outcomes. </p>
 </div>
 </section>
 <section class="lesson-section" id="lesson-context-and-learning-outcomes">
 <h2>Lesson context and learning outcomes</h2>
 <div class="section-content">
 <p><strong>A. Section Context</strong>
-Lesson Four follows “Tax Assessments and Their Role in Debt Collection” and precedes “Taxpayer Account Management.” Structurally, it is where learners transition from understanding <em>how an amount becomes assessed</em> to performing the practical work of <em>finding, aging, segmenting, and prioritizing</em> unpaid amounts across a population. This lesson is also the point in the curriculum where TaRMS turns from “platform background” into a core debt tool, because classification depends on how TaRMS posts obligations, maintains balances, and reflects compliance status. </p>
+Lesson Four follows “Tax Assessments and Their Role in Debt Collection” and precedes “Taxpayer Account Management.” Structurally, it is where learners transition from understanding <em>how an amount becomes assessed</em> to performing the practical work of <em>finding, aging, segmenting, and prioritizing</em> unpaid amounts across a population. This lesson is also the point in the curriculum where <strong>TaRMS</strong> turns from “platform background” into a core debt tool, because classification depends on how <strong>TaRMS</strong> posts obligations, maintains balances, and reflects compliance status. </p>
 <p>By the end of this 60–90 minute session, learners should be able to:</p>
 <p>Explain how Zimbabwe’s statutes define the <em>collectability posture</em> of a debt (due/payable; debt due to State; disputed but collectible unless suspended; time‑limit constraints). </p>
 <p>Apply a structured debt taxonomy (current/overdue/collectable/uncollectable/dormant/disputed/priority) and justify classifications with legal and system evidence. </p>
-<p>Use TaRMS process realities (single‑account posting, estimated assessments, currency rules, refund offsets, clearance automation) as “classification inputs.” </p>
+<p>Use <strong>TaRMS</strong> process realities (single‑account posting, estimated assessments, currency rules, refund offsets, clearance automation) as “classification inputs.” </p>
 <p>Identify common misclassification pitfalls and select correct management actions to minimize revenue loss and legal exposure. </p>
 </div>
 </section>
@@ -164,24 +180,24 @@ Lesson Four follows “Tax Assessments and Their Role in Debt Collection” and 
 <h2>Legislative framework for identifying and classifying tax debt</h2>
 <div class="section-content">
 <p><strong>B. Legislative Framework</strong>
-This section highlights the statutory “anchors” used to classify debt in Zimbabwe. Where a requested Finance Act section number is not visible from the consolidated Act excerpt, it is flagged as <strong>unspecified</strong>.</p>
+This section highlights the statutory “anchors” used to classify debt in Zimbabwe. Where a requested <strong>Finance Act</strong> section number is not visible from the consolidated Act excerpt, it is flagged as <strong>unspecified</strong>.</p>
 <p><strong>Revenue Authority Act <span class="leg-ref">[Chapter 23:11]</span></strong></p>
-<p>Revenue Authority Act <strong>s 33A</strong> (“Expedited Procedure for recovery of outstanding taxes”) is a classification cornerstone because it directly links: assessment service + lapse of <span class="key-term">objection</span>/<span class="key-term">appeal</span> steps + unpaid balance → eligibility for expedited recovery. It also expressly includes <strong><span class="key-term">interest</span> and penalties</strong> in “outstanding tax,” and provides an ordering rule for partial payments (principal first, then penalties/fines, then <span class="key-term">interest</span>). </p>
+<p><strong>Revenue Authority Act</strong> <strong>s 33A</strong> (“Expedited Procedure for recovery of outstanding taxes”) is a classification cornerstone because it directly links: assessment service + lapse of <span class="key-term">objection</span>/<span class="key-term">appeal</span> steps + unpaid balance → eligibility for expedited recovery. It also expressly includes <strong><span class="key-term">interest</span> and penalties</strong> in “outstanding tax,” and provides an ordering rule for partial payments (principal first, then penalties/fines, then <span class="key-term">interest</span>). </p>
 <p>Two provisions matter for “collectable vs time‑barred for this recovery route”:</p>
 <p><strong>s 33A(8)</strong>: <em>No action</em> under s 33A may be taken where <strong>more than six years</strong> have elapsed since the tax/duty/<span class="key-term">penalty</span> became payable. </p>
 <p><strong>s 33A(10)</strong>: partial payment allocation order—important for correctly classifying which components remain unpaid. </p>
-<p><span class="key-term">Tax clearance</span> certificates also appear in the Revenue Authority Act text (section <strong>34C</strong>) but are noted as <strong>suspended indefinitely by Act 7 of 2021</strong> in the consolidated version used here. Nevertheless, the section’s content illustrates the statutory logic: issuance depends on filing and payment (or satisfactory arrangements). Because of the suspension note, treat s 34C as <strong>historical/conditional</strong> and validate the currently operative clearance framework via <span class="leg-ref">Income Tax Act</span> s 80A and current <span class="key-term">ZIMRA</span> operational guidance. </p>
+<p><span class="key-term">Tax clearance</span> certificates also appear in the <strong>Revenue Authority Act</strong> text (section <strong>34C</strong>) but are noted as <strong>suspended indefinitely by Act 7 of 2021</strong> in the consolidated version used here. Nevertheless, the section’s content illustrates the statutory logic: issuance depends on filing and payment (or satisfactory arrangements). Because of the suspension note, treat s 34C as <strong>historical/conditional</strong> and validate the currently operative clearance framework via <span class="leg-ref"><strong>Income Tax Act</strong></span> s 80A and current <span class="key-term"><strong>ZIMRA</strong></span> operational guidance. </p>
 <p><strong><span class="leg-ref">Income Tax Act [Chapter 23:06]</span></strong></p>
-<p>The <span class="leg-ref">Income Tax Act</span> supplies the basic “collectable debt” toggle:</p>
+<p>The <span class="leg-ref"><strong>Income Tax Act</strong></span> supplies the basic “collectable debt” toggle:</p>
 <p><strong>s 71</strong>: tax becomes <strong>due and payable</strong> on fixed/prescribed dates (or by Commissioner notice where no time/place is fixed). </p>
 <p><strong>s 77(1)</strong>: any tax, when due/payable, is deemed a <strong>debt due to the State</strong>—a legal foundation for classifying the balance as recoverable debt. </p>
 <p><strong>s 69</strong>: payment is <strong>not suspended</strong> by <span class="key-term">objection</span>/<span class="key-term">appeal</span> unless the Commissioner directs otherwise (so “disputed” is not automatically “not collectable”). </p>
 <p>Time‑limit rules important for classification:</p>
-<p><strong>s 47 (Additional assessments)</strong> includes a <strong>six‑year limit</strong> for reopening by additional assessment from the end of the relevant <span class="key-term">year of assessment</span>, unless the Commissioner is satisfied there was fraud, misrepresentation, or wilful non‑disclosure, in which case reopening can occur at any time thereafter. This matters for classifying “exposure” and deciding whether certain historic periods are still assessable. </p>
+<p><strong>s 47 (Additional assessments)</strong> includes a <strong>six‑year limit</strong> for reopening by <strong>additional assessment</strong> from the end of the relevant <span class="key-term"><strong>year of assessment</strong></span>, unless the Commissioner is satisfied there was fraud, misrepresentation, or wilful non‑disclosure, in which case reopening can occur at any time thereafter. This matters for classifying “exposure” and deciding whether certain historic periods are still assessable. </p>
 <p><strong>s 48 (Reduced assessments and refunds)</strong> includes a six‑year limit for claims for reduction/refund, which affects whether old overpayments can be offset and therefore whether a debt remains outstanding. </p>
 <p><span class="key-term">Tax clearance</span> linkage:</p>
-<p><strong>s 80A</strong> requires a valid <span class="key-term">tax clearance certificate</span> before certain trades/services/entities are licensed/registered, which makes classification errors immediately operational (a wrongly classified small balance or missing return can block clearance). </p>
-<p>The consolidated <span class="leg-ref">Income Tax Act</span> also notes a <span class="leg-ref">Finance Act 2024</span> insertion affecting <span class="key-term">tax clearance</span> timing requirements for professional licensing (“valid no earlier than 30 days before production”), but the <strong>exact Finance Act section number is not specified</strong> in the excerpt shown here. </p>
+<p><strong>s 80A</strong> requires a valid <span class="key-term"><strong>tax clearance certificate</strong></span> before certain trades/services/entities are licensed/registered, which makes classification errors immediately operational (a wrongly classified small balance or missing return can block clearance). </p>
+<p>The consolidated <span class="leg-ref">Income Tax Act</span> also notes a <span class="leg-ref"><strong>Finance Act</strong> 2024</span> insertion affecting <span class="key-term">tax clearance</span> timing requirements for professional licensing (“valid no earlier than 30 days before production”), but the <strong>exact Finance Act section number is not specified</strong> in the excerpt shown here. </p>
 <p>VAT provides strong statutory “classification signals”:</p>
 <p><strong>s 28</strong> sets the filing/payment cycle and due date (return and payment within the period ending on the <strong>25th day</strong> of the first month after the <span class="key-term">tax period</span>, subject to detailed rules). This is a core anchor for “current vs overdue.” </p>
 <p><strong>s 39</strong> imposes <span class="key-term">penalty</span> and <span class="key-term">interest</span> where a person liable to pay VAT fails to pay within the period set by s 28, which sharply changes the debt composition and therefore classification and prioritization. </p>
@@ -195,13 +211,13 @@ This section highlights the statutory “anchors” used to classify debt in Zim
 <h2>Debt classification concepts and an applied taxonomy</h2>
 <div class="section-content">
 <p><strong>C. Detailed conceptual explanation</strong>
-Zimbabwean law gives the <em>legal triggers</em> for collectability; the operational categories below convert those triggers into a standardized working language used in debt teams globally (OECD) and adapted here to Zimbabwe/TaRMS. </p>
+Zimbabwean law gives the <em>legal triggers</em> for collectability; the operational categories below convert those triggers into a standardized working language used in debt teams globally (OECD) and adapted here to Zimbabwe/<strong>TaRMS</strong>. </p>
 <p><strong>Definition of collectable debt</strong></p>
 <p>In this course, <strong>collectable debt</strong> means an assessed/quantified tax obligation that is:</p>
-<p><strong>Due and payable</strong> under the relevant Act (e.g., <span class="leg-ref">Income Tax Act</span> s 71; <span class="leg-ref">VAT Act</span> s 28), </p>
+<p><strong>Due and payable</strong> under the relevant Act (e.g., <span class="leg-ref">Income Tax Act</span> s 71; <span class="leg-ref"><strong>VAT Act</strong></span> s 28), </p>
 <p>Legally characterized as recoverable (e.g., income tax deemed a debt due to the State under s 77), </p>
-<p>Not legally suspended from collection by an express statutory discretion decision (<span class="leg-ref">Income Tax Act</span> s 69; <span class="leg-ref">VAT Act</span> s 36), </p>
-<p>Not blocked by an applicable statutory limitation rule for the recovery mechanism being used (e.g., <span class="leg-ref">VAT Act</span> s 41(d) under its conditions; Revenue Authority Act s 33A(8) for action under s 33A). </p>
+<p>Not legally suspended from collection by an express statutory discretion decision (<span class="leg-ref">Income Tax Act</span> s 69; <span class="leg-ref"><strong>VAT Act</strong></span> s 36), </p>
+<p>Not blocked by an applicable statutory limitation rule for the recovery mechanism being used (e.g., <span class="leg-ref"><strong>VAT Act</strong></span> s 41(d) under its conditions; <strong>Revenue Authority Act</strong> s 33A(8) for action under s 33A). </p>
 <p>A debt can therefore be “collectable” even if it is disputed, unless and until suspension is granted. This is not merely theory; it is reinforced by Zimbabwean jurisprudence on VAT enforcement (“pay now, argue later”). </p>
 <p>These categories are chiefly <strong>time‑state descriptors</strong>:</p>
 <p><strong>Current (not yet overdue)</strong>: the liability is posted/quantified but the statutory payment due date has not yet passed (e.g., VAT s 28 payment window; income tax becomes due and payable on prescribed dates). </p>
@@ -209,7 +225,7 @@ Zimbabwean law gives the <em>legal triggers</em> for collectability; the operati
 <p>In TaRMS environments, “overdue” should never be determined purely by ledger balance; it must be tested against <strong>posting completeness</strong> (e.g., whether the relevant return was submitted so that payments are recognized and posted). </p>
 <p><strong>Collectable vs uncollectable tax debt</strong></p>
 <p><strong>Collectable</strong> is about legal recoverability and practical feasibility. <strong>Uncollectable</strong> is a narrower concept: amounts that may exist on a ledger but are not realistically recoverable, either because:</p>
-<p>A legal barrier removes recoverability under defined conditions (e.g., <span class="leg-ref">VAT Act</span> s 41(d) good‑faith six‑year limitation; or the six‑year limit for using Revenue Authority Act s 33A expedited procedure). </p>
+<p>A legal barrier removes recoverability under defined conditions (e.g., <span class="leg-ref">VAT Act</span> s 41(d) good‑faith six‑year limitation; or the six‑year limit for using <strong>Revenue Authority Act</strong> s 33A expedited procedure). </p>
 <p>Recovery is uneconomic or not feasible after exhaustive checks, or the taxpayer is bankrupt/defunct with no realizable assets—situations recognized in global best practice as requiring “realistic debt recovery” and potential write‑off or cessation of active pursuit. </p>
 <p>Important Zimbabwe nuance: even where a “six‑year” concept exists, it is <strong>not uniform</strong> across all powers. For example, income tax additional assessments are time‑limited to six years unless fraud/misrepresentation/wilful non‑disclosure is present; that’s an “assessability” limit, not automatically a “collection” limit for already‑assessed debt. </p>
 <p><strong>Dormant tax debt</strong></p>
@@ -225,10 +241,10 @@ Zimbabwean law gives the <em>legal triggers</em> for collectability; the operati
 <p>Zimbabwe‑specific “priority signals” often include:</p>
 <p>Debts that are large or rapidly compounding (e.g., VAT <span class="key-term">penalty</span> equal to tax plus <span class="key-term">interest</span> for late payment under s 39). </p>
 <p>Debts that affect licensing/clearance and therefore have high compliance leverage (<span class="leg-ref">Income Tax Act</span> s 80A; TaRMS automated clearance logic). </p>
-<p>Debts whose partial-payment allocation rules demand immediate principal settlement before penalties/<span class="key-term">interest</span> (Revenue Authority Act s 33A(10)), because misallocating can lead to persistent “principal outstanding,” which tends to be prioritized. </p>
+<p>Debts whose partial-payment allocation rules demand immediate principal settlement before penalties/<span class="key-term">interest</span> (<strong>Revenue Authority Act</strong> s 33A(10)), because misallocating can lead to persistent “principal outstanding,” which tends to be prioritized. </p>
 <p><strong>Risk classification of taxpayers</strong></p>
 <p>Risk classification is the taxpayer‑level overlay on debt categories. In modern debt management, risk classification answers: <strong>who is likely (or unlikely) to pay, and what approach minimizes collection cost and maximizes compliance?</strong> OECD’s debt management model emphasizes data analytics to segment workload, including extraction and categorization of data to analyse behavioral patterns. </p>
-<p><span class="key-term">ZIMRA</span>’s own TaRMS communications highlight that the new system supports automation and “full data analytics” enabling timely decision‑making, and that it will be integrated with other data sources and banks—an enabling platform for risk-based segmentation (inference: the statement describes capability, not a published risk score algorithm). </p>
+<p><span class="key-term"><strong>ZIMRA</strong></span>’s own TaRMS communications highlight that the new system supports automation and “full data analytics” enabling timely decision‑making, and that it will be integrated with other data sources and banks—an enabling platform for risk-based segmentation (inference: the statement describes capability, not a published risk score algorithm). </p>
 </div>
 </section>
 <section class="lesson-section" id="zimra-and-tarms-operational-classification-workflow">
@@ -237,15 +253,15 @@ Zimbabwean law gives the <em>legal triggers</em> for collectability; the operati
 <p><strong>D. Real‑world applicability with <span class="key-term">ZIMRA</span> processes and TaRMS references</strong>
 This section translates the legal model into a TaRMS‑aligned workflow for identifying and classifying debt. The goal is to reduce “false arrears” and to surface true collectable balances early.</p>
 <p><strong>Debt identification in TaRMS starts with posting logic</strong></p>
-<p>A critical TaRMS rule appears repeatedly in <span class="key-term">ZIMRA</span> notices: <strong>payments in the <span class="key-term">ZIMRA</span> bank/single account require an associated tax return to be recognized and posted to the taxpayer’s ledger</strong>. If the return is missing, the payment remains unposted and the taxpayer can appear delinquent. </p>
+<p>A critical TaRMS rule appears repeatedly in <span class="key-term"><strong>ZIMRA</strong></span> notices: <strong>payments in the <span class="key-term">ZIMRA</span> bank/single account require an associated tax return to be recognized and posted to the taxpayer’s ledger</strong>. If the return is missing, the payment remains unposted and the taxpayer can appear delinquent. </p>
 <p>Implication for identification: before labeling a taxpayer as “overdue,” confirm:</p>
 <p>whether the return exists for that period/obligation; and</p>
 <p>whether a payment exists but is sitting in the single account awaiting posting. </p>
 <p><strong>Aging and “current vs overdue” in a TaRMS environment</strong></p>
-<p>Statutes determine due dates (<span class="leg-ref">Income Tax Act</span> s 71; <span class="leg-ref">VAT Act</span> s 28). TaRMS provides the ledger and statements capable of showing obligations and settlements. <span class="key-term">ZIMRA</span>’s TaRMS Go‑Live notice explicitly lists “Taxpayer Accounting” and “Debt Management” modules and notes that accessing tax statements is possible. </p>
+<p>Statutes determine due dates (<span class="leg-ref">Income Tax Act</span> s 71; <span class="leg-ref">VAT Act</span> s 28). TaRMS provides the ledger and statements capable of showing obligations and settlements. <span class="key-term"><strong>ZIMRA</strong></span>’s TaRMS Go‑Live notice explicitly lists “Taxpayer Accounting” and “Debt Management” modules and notes that accessing tax statements is possible. </p>
 <p>A recommended operational aging model (training model; <strong>not prescribed in statute</strong>) is to segment overdue debt into age buckets (e.g., 1–30, 31–60, 61–90, 90+ days past due) and apply escalating actions. OECD guidance supports “tackling debt early” and maximizing recovery before enforcement. </p>
 <p><strong>Estimated assessments as an automated classification trigger</strong></p>
-<p><span class="key-term">ZIMRA</span>’s single account notice warns that failure to submit returns may result in <span class="key-term">ZIMRA</span> effecting estimated assessments. 
+<p><span class="key-term"><strong>ZIMRA</strong></span>’s single account notice warns that failure to submit returns may result in <span class="key-term">ZIMRA</span> effecting estimated assessments. 
 TaRMS FAQs provide an operational timeframe: the system may raise estimates on the <strong>9th day after due date</strong>. </p>
 <p>In classification terms:</p>
 <p>“No return submitted” is not just a compliance issue; it is a <strong>debt creation / debt inflation pathway</strong> because estimates can create balances that then become aged and collectible unless corrected. </p>
@@ -324,33 +340,33 @@ This section focuses on errors that cause the greatest downstream damage in debt
 <div class="section-content">
 <div class="mermaid">
 flowchart TD
-  A[TaRMS ledger population event\nReturn submitted / assessment posted] --&gt; B{Posting complete?}
-  B -- No --&gt; B1[Investigate unposted funds\n(Single account payment requires return)\nCorrect TIN/return linkage]
-  B -- Yes --&gt; C[Compute balance by tax head + currency\nDetermine due dates]
-  C --&gt; D{Due date passed?}
-  D -- No --&gt; E[Classify: Current\nPre-due engagement]
-  D -- Yes --&gt; F[Classify: Overdue\nAge (days past due)]
-  F --&gt; G{Dispute flag?}
-  G -- Yes --&gt; H{Suspension granted?}
-  H -- Yes --&gt; H1[Disputed - Suspended\nHold enforcement; monitor]
-  H -- No --&gt; H2[Disputed - Collectible\nProceed with soft collection/plan]
-  G -- No --&gt; I[Undisputed Overdue\nProceed with collection path]
-  I --&gt; J{Limitation / time-bar screens?}
-  J -- Yes --&gt; J1[Potential Uncollectable\n(legal limitation or route limitation)\nMove to write-off/dormant review]
-  J -- No --&gt; K[Risk scoring / segmentation\n(Value, age, behavior, sector, recurrence)]
-  K --&gt; L{Priority?}
-  L -- Yes --&gt; M[Priority queue\nFast-track plan or enforcement readiness]
-  L -- No --&gt; N[Standard queue]
-  M --&gt; O{Voluntary resolution?}
-  N --&gt; O
-  O -- Yes --&gt; P[Payment / plan monitoring\nReclassify to compliant if maintained]
-  O -- No --&gt; Q[Escalate enforcement tools\n(consistent with law and policy)]
-  Q --&gt; R{Write-off candidate?}
-  R -- Yes --&gt; S[Administrative write-off workflow\n(approval + audit trail)]
-  R -- No --&gt; T[Continue enforcement / monitoring cycle]
+  A[TaRMS ledger population event\nReturn submitted / assessment posted] --> B{Posting complete?}
+  B -- No --> B1[Investigate unposted funds\n(Single account payment requires return)\nCorrect TIN/return linkage]
+  B -- Yes --> C[Compute balance by tax head + currency\nDetermine due dates]
+  C --> D{Due date passed?}
+  D -- No --> E[Classify: Current\nPre-due engagement]
+  D -- Yes --> F[Classify: Overdue\nAge (days past due)]
+  F --> G{Dispute flag?}
+  G -- Yes --> H{Suspension granted?}
+  H -- Yes --> H1[Disputed - Suspended\nHold enforcement; monitor]
+  H -- No --> H2[Disputed - Collectible\nProceed with soft collection/plan]
+  G -- No --> I[Undisputed Overdue\nProceed with collection path]
+  I --> J{Limitation / time-bar screens?}
+  J -- Yes --> J1[Potential Uncollectable\n(legal limitation or route limitation)\nMove to write-off/dormant review]
+  J -- No --> K[Risk scoring / segmentation\n(Value, age, behavior, sector, recurrence)]
+  K --> L{Priority?}
+  L -- Yes --> M[Priority queue\nFast-track plan or enforcement readiness]
+  L -- No --> N[Standard queue]
+  M --> O{Voluntary resolution?}
+  N --> O
+  O -- Yes --> P[Payment / plan monitoring\nReclassify to compliant if maintained]
+  O -- No --> Q[Escalate enforcement tools\n(consistent with law and policy)]
+  Q --> R{Write-off candidate?}
+  R -- Yes --> S[Administrative write-off workflow\n(approval + audit trail)]
+  R -- No --> T[Continue enforcement / monitoring cycle]
 </div>
 <div class="mermaid">
-Flowchart anchors: posting logic and single-account dependencies come from <span class="key-term">ZIMRA</span> TaRMS notices; estimate timing, currency non-offset rules, and refund/clearance holds come from TaRMS FAQs; “disputed collectible unless suspended” is anchored in <span class="leg-ref">Income Tax Act</span> s 69 and <span class="leg-ref">VAT Act</span> s 36; limitation checks are anchored in Revenue Authority Act s 33A(8) and <span class="leg-ref">VAT Act</span> s 41(d); and the “uncollectable/dormant/write-off” strategy is supported as international best practice by OECD guidance (recognizing debt not economical to recover; temporary halt without write-off; and write-off after limitation periods).
+Flowchart anchors: posting logic and single-account dependencies come from ZIMRA TaRMS notices; estimate timing, currency non-offset rules, and refund/clearance holds come from TaRMS FAQs; “disputed collectible unless suspended” is anchored in Income Tax Act s 69 and VAT Act s 36; limitation checks are anchored in Revenue Authority Act s 33A(8) and VAT Act s 41(d); and the “uncollectable/dormant/write-off” strategy is supported as international best practice by OECD guidance (recognizing debt not economical to recover; temporary halt without write-off; and write-off after limitation periods).
 </div>
 </div>
 </section>
@@ -373,8 +389,8 @@ Flowchart anchors: posting logic and single-account dependencies come from <span
 <p><strong>H. Quiz answers</strong></p>
 <p><span class="leg-ref">Income Tax Act</span> <strong>s 77(1)</strong> provides that any tax, when due or payable, is deemed to be a <strong>debt due to the State</strong>, which supports collecting teams in classifying the balance as legally recoverable debt (subject to dispute/suspension and other limits). </p>
 <p><span class="leg-ref">VAT Act</span> <strong>s 28</strong> requires registered operators to submit returns and pay within the period ending on the <strong>25th day</strong> of the first month after the <span class="key-term">tax period</span> (subject to the detailed rules in the section), so a debt becomes “overdue” when that period expires without payment. </p>
-<p>“Disputed‑collectible” means collection continues despite a dispute because payment is not suspended unless directed otherwise; “disputed‑suspended” exists only where the Commissioner has directed suspension. Income tax: <strong>s 69</strong>; VAT: <strong>s 36</strong> (substituted by Finance Act 8/2022). </p>
-<p>Example 1: Revenue Authority Act <strong>s 33A(8)</strong> bars action under the <em>expedited recovery procedure</em> after six years since the tax became payable (route limitation). Example 2: <span class="leg-ref">VAT Act</span> <strong>s 41(d)</strong> provides that certain unpaid VAT amounts are not recoverable after six years under specified conditions, but the limitation does not apply if an assessment was issued by the end of the period (tax-type limitation with conditions). Income tax also has a six‑year additional assessment reopening limit (s 47) unless fraud/misrepresentation/wilful non‑disclosure exists, which affects assessability rather than automatically cancelling assessed debt. </p>
+<p>“Disputed‑collectible” means collection continues despite a dispute because payment is not suspended unless directed otherwise; “disputed‑suspended” exists only where the Commissioner has directed suspension. Income tax: <strong>s 69</strong>; VAT: <strong>s 36</strong> (substituted by <strong>Finance Act</strong> 8/2022). </p>
+<p>Example 1: Revenue Authority Act <strong>s 33A(8)</strong> bars action under the <em>expedited recovery procedure</em> after six years since the tax became payable (route limitation). Example 2: <span class="leg-ref">VAT Act</span> <strong>s 41(d)</strong> provides that certain unpaid VAT amounts are not recoverable after six years under specified conditions, but the limitation does not apply if an assessment was issued by the end of the period (tax-type limitation with conditions). Income tax also has a six‑year <strong>additional assessment</strong> reopening limit (s 47) unless fraud/misrepresentation/wilful non‑disclosure exists, which affects assessability rather than automatically cancelling assessed debt. </p>
 <p><span class="key-term">ZIMRA</span> notices state that funds in the single account require a tax return for the payment to be recognized and posted; otherwise payments may remain in the single account and not clear ledger debt. The fix is to submit the associated return (and ensure correct TIN linkage). </p>
 <p>A ZWL refund cannot offset a USD obligation (and vice versa), so netting across currencies can create false “credit” classification. Control: classify and reconcile by currency ledger and follow TaRMS currency rules. </p>
 <p><span class="key-term">ZIMRA</span> indicates failure to submit outstanding returns can make taxpayers ineligible for renewal of <span class="key-term">tax clearance</span> certificates, which are automatically issued in TaRMS, and TaRMS can automatically charge penalties on outstanding returns—so poor return/<span class="key-term">penalty</span> classification directly affects clearance outcomes. </p>
@@ -709,7 +725,5 @@ document.addEventListener('DOMContentLoaded', () => {
 	});
 });
 </script>
-<script src="https://cdn.jsdelivr.net/npm/mermaid@10.0.0/dist/mermaid.min.js"></script>
-<script>mermaid.initialize({startOnLoad:true});</script>
 <script src="js/globe-hero.js" type="module"></script>
 </html>

@@ -33,7 +33,23 @@
 <script type="application/ld+json">
 {"@context":"http://schema.org","@type":"WebSite","name":"TaxTami - Tax Training Zimbabwe","url":"www.taxtami.com"}
 	</script>
-</meta></meta></link></head>
+</meta></meta></link>
+    <style class="mermaid-style">
+    .mermaid {
+        background: #f4f8f6;
+        border: 1px solid #c5ddd0;
+        border-radius: 10px;
+        padding: 28px 20px;
+        margin: 24px 0;
+        overflow-x: auto;
+        text-align: center;
+    }
+    .mermaid svg { max-width: 100%; height: auto; }
+    </style>
+    <!-- Mermaid.js flowchart renderer -->
+    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.3/dist/mermaid.min.js"></script>
+    <script>document.addEventListener("DOMContentLoaded", function () {  mermaid.initialize({    startOnLoad: true,    theme: "base",    themeVariables: {      primaryColor: "#d6ede2",      primaryBorderColor: "#2c724f",      primaryTextColor: "#1a3a2a",      lineColor: "#2c724f",      secondaryColor: "#e9f5ee",      tertiaryColor: "#f4faf7",      edgeLabelBackground: "#ffffff",      fontFamily: "Work Sans, Heebo, sans-serif",      fontSize: "14px"    }  });});</script>
+</head>
 <div class="page-wrapper">
 <!-- Main Header-->
 <header class="main-header style-three">
@@ -143,9 +159,9 @@
 <section class="lesson-section" id="executive-summary">
 <h2>Executive summary</h2>
 <div class="section-content">
-<p><span class="key-term">Tax Clearance</span> Certificates (the ITF263 in common <span class="key-term">ZIMRA</span> practice) are more than “compliance badges.” They function as a <strong>transactional gatekeeper</strong> in Zimbabwe’s tax administration: they condition access to tenders and licensing, and they influence whether counterparties must withhold tax from payments or purchases. <span class="key-term">ZIMRA</span>’s authority to issue (or withhold) <span class="key-term">tax clearance</span> certificates sits primarily in <strong><span class="leg-ref">section 34C</span> of the Revenue Authority Act <span class="leg-ref">[Chapter 23:11]</span></strong>, which lists the “effects” a certificate may state (returns filed/arranged, taxes paid/arranged, <span class="key-term">presumptive tax</span> paid/arranged, public officer appointed, and—where relevant—VAT fiscalisation interfacing), and allows <span class="key-term">ZIMRA</span> to make issuance conditional on <strong>payment of tax arrears</strong>. </p>
-<p>A critical operational dimension is that, under TaRMS and the Single Account concept, <strong>payments that are not supported by a corresponding return may remain “stuck” in the Single Account and not post to the taxpayer’s ledger</strong>, leaving the taxpayer appearing non-compliant and therefore unable to obtain or validate clearance.  This is why “debt status” in practice is not just about money paid; it is about <strong>ledger-recognized obligations</strong> (posted liabilities) and <strong>ledger-recognized settlements</strong> (posted payments/credits), as well as return-filing compliance and fiscalisation integration for VAT operators. </p>
-<p>This lesson explains the legal framework, the practical TaRMS workflow for issuing/validating ITF263s, how clearance interacts with withholding regimes (notably <strong><span class="leg-ref">Income Tax Act</span> s80’s 30% tender/contract withholding</strong> and <strong><span class="leg-ref">VAT Act</span> s81A’s 5% value-chain withholding/eligibility rule</strong>), and the most common failure points that wrongly block clearance or expose third parties to withholding and penalties. </p>
+<p><span class="key-term">Tax Clearance</span> Certificates (the ITF263 in common <span class="key-term"><strong>ZIMRA</strong></span> practice) are more than “compliance badges.” They function as a <strong>transactional gatekeeper</strong> in Zimbabwe’s tax administration: they condition access to tenders and licensing, and they influence whether counterparties must withhold tax from payments or purchases. <span class="key-term"><strong>ZIMRA</strong></span>’s authority to issue (or withhold) <span class="key-term">tax clearance</span> certificates sits primarily in <strong><span class="leg-ref">section 34C</span> of the Revenue Authority Act <span class="leg-ref">[Chapter 23:11]</span></strong>, which lists the “effects” a certificate may state (returns filed/arranged, taxes paid/arranged, <span class="key-term">presumptive tax</span> paid/arranged, public officer appointed, and—where relevant—VAT fiscalisation interfacing), and allows <span class="key-term"><strong>ZIMRA</strong></span> to make issuance conditional on <strong>payment of tax arrears</strong>. </p>
+<p>A critical operational dimension is that, under <strong>TaRMS</strong> and the Single Account concept, <strong>payments that are not supported by a corresponding return may remain “stuck” in the Single Account and not post to the taxpayer’s ledger</strong>, leaving the taxpayer appearing non-compliant and therefore unable to obtain or validate clearance.  This is why “debt status” in practice is not just about money paid; it is about <strong>ledger-recognized obligations</strong> (posted liabilities) and <strong>ledger-recognized settlements</strong> (posted payments/credits), as well as return-filing compliance and fiscalisation integration for VAT operators. </p>
+<p>This lesson explains the legal framework, the practical <strong>TaRMS</strong> workflow for issuing/validating ITF263s, how clearance interacts with withholding regimes (notably <strong><span class="leg-ref">Income Tax Act</span> s80’s 30% tender/contract withholding</strong> and <strong><span class="leg-ref">VAT Act</span> s81A’s 5% value-chain withholding/eligibility rule</strong>), and the most common failure points that wrongly block clearance or expose third parties to withholding and penalties. </p>
 </div>
 </section>
 <section class="lesson-section" id="learning-outcomes-and-session-context">
@@ -153,19 +169,19 @@
 <div class="section-content">
 <p><strong>A. Section Context</strong></p>
 <p>This lesson builds on earlier course modules on creation of tax debt, assessments, and taxpayer accounts. The bridge is simple but powerful:</p>
-<p>A taxpayer’s <strong>tax debt status</strong> is operationally visible through the taxpayer’s account in TaRMS (posted liabilities, posted payments, aging, and compliance flags). </p>
-<p>A <span class="key-term">tax clearance certificate</span> is <span class="key-term">ZIMRA</span>’s <strong>formalized compliance signal</strong> to the market and to licensing/procurement authorities—yet it is conditional, time-bound in practice, and can be affected by return-filing gaps, fiscalisation compliance, or arrears. </p>
+<p>A taxpayer’s <strong>tax debt status</strong> is operationally visible through the taxpayer’s account in <strong>TaRMS</strong> (posted liabilities, posted payments, aging, and compliance flags). </p>
+<p>A <span class="key-term"><strong>tax clearance certificate</strong></span> is <span class="key-term"><strong>ZIMRA</strong></span>’s <strong>formalized compliance signal</strong> to the market and to licensing/procurement authorities—yet it is conditional, time-bound in practice, and can be affected by return-filing gaps, fiscalisation compliance, or arrears. </p>
 <p>Clearance status also affects <strong>withholding outcomes</strong>: failure to provide a valid clearance can trigger withholding at source, which is later credited/refunded only after assessment and proper documentation. </p>
-<p>By the end of a 60–90 minute session, participants should be able to (i) state the statutory basis for issuing/refusing clearance, (ii) map TaRMS issuance/verification steps, (iii) explain how debt and return compliance block/enable clearance, and (iv) advise on practical controls to prevent clearance failures that disrupt tenders, licensing, or cashflow.</p>
+<p>By the end of a 60–90 minute session, participants should be able to (i) state the statutory basis for issuing/refusing clearance, (ii) map <strong>TaRMS</strong> issuance/verification steps, (iii) explain how debt and return compliance block/enable clearance, and (iv) advise on practical controls to prevent clearance failures that disrupt tenders, licensing, or cashflow.</p>
 </div>
 </section>
 <section class="lesson-section" id="legislative-framework-and-authorities">
 <h2>Legislative framework and authorities</h2>
 <div class="section-content">
 <p><strong><span class="leg-ref">Section 34C</span> (<span class="key-term">Tax clearance</span> certificates)</strong> provides the core legal platform:</p>
-<p><span class="key-term">ZIMRA</span> “shall” issue a <span class="key-term">tax clearance certificate</span> on request <strong>if the person is entitled to such a certificate in terms of the <span class="leg-ref">Income Tax Act</span> or other Scheduled Acts</strong>. </p>
+<p><span class="key-term"><strong>ZIMRA</strong></span> “shall” issue a <span class="key-term"><strong>tax clearance certificate</strong></span> on request <strong>if the person is entitled to such a certificate in terms of the <span class="leg-ref">Income Tax Act</span> or other Scheduled Acts</strong>. </p>
 <p>The certificate may state (among other things) that the person has <strong>filed the last income tax return due</strong> (or made satisfactory arrangements), has <strong>paid taxes due</strong> (or made satisfactory arrangements), has <strong>paid <span class="key-term">presumptive tax</span></strong> (or arranged), and—if VAT-registered—has <strong>fiscalised operations interfaced with <span class="key-term">ZIMRA</span>’s server</strong>. </p>
-<p>Importantly, <span class="key-term">ZIMRA</span> may make issuance <strong>conditional on payment of tax arrears</strong>, even if returns have been filed. </p>
+<p>Importantly, <span class="key-term"><strong>ZIMRA</strong></span> may make issuance <strong>conditional on payment of tax arrears</strong>, even if returns have been filed. </p>
 <p>No fee is chargeable for issuance except prescribed fees for <strong>duplicate/replacement</strong> certificates. </p>
 <p><strong>Interpretive note (important for training):</strong> In the <span class="key-term">ZIMRA</span>-hosted consolidated PDF, an editorial annotation reading “[Section suspended indefinitely by Act 7 of 2021]” appears immediately before the heading “34C <span class="key-term">Tax clearance</span> certificates.”  The surrounding text also shows “Reward for information” just above, with its own insertion note.  For professional training, treat the placement of this “suspended” note as <strong>ambiguous without the Gazetted amending instrument in hand</strong>; operationally, <span class="key-term">ZIMRA</span> continues to issue ITF263s and cites s34C as governing authority. </p>
 <p><strong><span class="leg-ref">Section 80</span> (Withholding of amounts payable under contracts with the State/statutory bodies/quasi-government/registered taxpayers)</strong> makes <span class="key-term">tax clearance</span> a cashflow determinant:</p>
@@ -176,12 +192,12 @@
 <p>A licensing authority shall not issue or renew certain licenses (e.g., public service vehicle operator licenses; mining location registrations; shop licenses; designated tourist facility licensing) unless the applicant produces a <strong>valid <span class="key-term">tax clearance certificate</span></strong>. </p>
 <p>The provision’s scope includes a defined set of “licensing authorities” (road transport, mines, shop licenses, tourism). </p>
 <p><span class="key-term">ZIMRA</span> public guidance for professional bodies operationalizes this principle by requiring a “fresh” ITF263 (or a <span class="key-term">ZIMRA</span> confirmation letter where an ITF263 is older than a prescribed recency window) for professional licensing/registration workflows. </p>
-<p><strong>Finance Act amendment note (access-limited detail):</strong> The <span class="leg-ref">Income Tax Act</span> consolidation indicates subsections inserted by <span class="leg-ref">Finance Act 2024</span> regarding the recency requirement (commonly expressed as “not earlier than 30 days before production”). The <strong>exact section number within the <span class="leg-ref">Finance Act 2024</span></strong> is not specified in the excerpted lines available here, so treat that pinpoint as <strong>unspecified</strong> unless verified against the Gazette. </p>
+<p><strong>Finance Act amendment note (access-limited detail):</strong> The <span class="leg-ref"><strong>Income Tax Act</strong></span> consolidation indicates subsections inserted by <span class="leg-ref"><strong>Finance Act</strong> 2024</span> regarding the recency requirement (commonly expressed as “not earlier than 30 days before production”). The <strong>exact section number within the <span class="leg-ref">Finance Act 2024</span></strong> is not specified in the excerpted lines available here, so treat that pinpoint as <strong>unspecified</strong> unless verified against the Gazette. </p>
 <p><strong><span class="leg-ref">Section 81A</span> (Value-chain restrictions and withholding linked to <span class="key-term">tax clearance</span>)</strong> creates a VAT-side clearance lever:</p>
 <p>Subject to the section, <strong>only a <span class="key-term">registered operator</span> who produces proof of registration together with a valid <span class="key-term">tax clearance certificate</span> may purchase goods from a manufacturer</strong>. </p>
 <p>A manufacturer must withhold <strong>5%</strong> of the value of purchases by a “non-compliant manufacturer/wholesaler/retailer/person,” and a wholesaler must withhold <strong>5%</strong> from purchases by a “non-compliant retailer,” remitting to the Commissioner. </p>
 <p>Failure to comply can trigger a <span class="key-term">penalty</span> of <strong>200% of the amount to be withheld</strong> plus <span class="key-term">interest</span> at <strong>Bank Policy Rate + 5%</strong>, with discretionary waiver where there was no intent to evade. </p>
-<p>The Act compilation notes s81A was inserted by <strong>Finance Act 13/2023</strong> and substituted by <strong><span class="leg-ref">Finance Act 2024</span></strong> (exact Finance Act section numbers unspecified in the excerpt). </p>
+<p>The Act compilation notes s81A was inserted by <strong>Finance Act 13/2023</strong> and substituted by <strong><span class="leg-ref">Finance Act 2024</span></strong> (exact <strong>Finance Act</strong> section numbers unspecified in the excerpt). </p>
 <p><strong><span class="leg-ref">Section 44</span> (Refunds—set-off and withholding powers)</strong> explains why “refund expected” is not equivalent to “no debt”:</p>
 <p><span class="key-term">ZIMRA</span> may <strong>set off</strong> refundable VAT against unpaid VAT liabilities and also against amounts owed under <strong>any Act administered by the Commissioner</strong> where the taxpayer is in default. </p>
 <p>Where a return is outstanding, the Commissioner may <strong>withhold payment of refundable amounts</strong> until the return is furnished. </p>
@@ -192,18 +208,18 @@
 <h2>Core concepts and operational meaning in Zimbabwe</h2>
 <div class="section-content">
 <p><strong>What a <span class="key-term">tax clearance certificate</span> is and is not</strong></p>
-<p>A Zimbabwe <span class="key-term">tax clearance certificate</span> (in practice, <strong>ITF263</strong>) is described by <span class="key-term">ZIMRA</span> as a certificate issued to a person liable to pay tax, <strong>provided that the taxpayer’s tax position is satisfactory</strong>. </p>
-<p>Legally, under s34C, a “<span class="key-term">tax clearance certificate</span>” is a certificate issued <strong>to specified effects</strong> (returns filed/arranged; taxes paid/arranged; <span class="key-term">presumptive tax</span> paid/arranged; public officer appointed for new entities; VAT fiscalisation interfacing).  This framing is important: clearance is not necessarily a blanket declaration that the taxpayer will never be assessed for more tax; it is a compliance signal aligned to statutory filing/payment obligations and <span class="key-term">ZIMRA</span>’s satisfaction at the time of issuance. </p>
+<p>A Zimbabwe <span class="key-term"><strong>tax clearance certificate</strong></span> (in practice, <strong>ITF263</strong>) is described by <span class="key-term">ZIMRA</span> as a certificate issued to a person liable to pay tax, <strong>provided that the taxpayer’s tax position is satisfactory</strong>. </p>
+<p>Legally, under s34C, a “<span class="key-term"><strong>tax clearance certificate</strong></span>” is a certificate issued <strong>to specified effects</strong> (returns filed/arranged; taxes paid/arranged; <span class="key-term">presumptive tax</span> paid/arranged; public officer appointed for new entities; VAT fiscalisation interfacing).  This framing is important: clearance is not necessarily a blanket declaration that the taxpayer will never be assessed for more tax; it is a compliance signal aligned to statutory filing/payment obligations and <span class="key-term">ZIMRA</span>’s satisfaction at the time of issuance. </p>
 <p><strong>“Debt status” as the economic engine behind clearance</strong></p>
-<p>In practice, clearance is linked to whether TaRMS recognizes that the taxpayer is:</p>
+<p>In practice, clearance is linked to whether <strong>TaRMS</strong> recognizes that the taxpayer is:</p>
 <p>1) <strong>Up to date with returns</strong> (no outstanding statutory returns); and
-2) <strong>Up to date with payments across tax heads</strong> (VAT, <span class="key-term">PAYE</span>, income tax, royalties, withholding taxes, presumptive taxes), including where arrears exist but a <strong>payment plan/arrangement</strong> is approved and being honored. </p>
-<p>A crucial TaRMS nuance is that <strong>payment into the Single Account does not automatically “clear” a liability</strong> unless a corresponding return is filed so the payment can be recognized and posted.  This creates common “false arrears” situations (discussed later) that block clearance even when cash has been deposited.</p>
-<p><span class="leg-ref">Income Tax Act</span> s80 makes <span class="key-term">tax clearance</span> functionally equivalent to a “withholding relief certificate” in many public/large-buyer contracts:</p>
-<p>If the supplier cannot provide a <span class="key-term">tax clearance certificate</span>, the payer must withhold 30%. </p>
+2) <strong>Up to date with payments across tax heads</strong> (VAT, <span class="key-term"><strong>PAYE</strong></span>, income tax, royalties, withholding taxes, presumptive taxes), including where arrears exist but a <strong>payment plan/arrangement</strong> is approved and being honored. </p>
+<p>A crucial <strong>TaRMS</strong> nuance is that <strong>payment into the Single Account does not automatically “clear” a liability</strong> unless a corresponding return is filed so the payment can be recognized and posted.  This creates common “false arrears” situations (discussed later) that block clearance even when cash has been deposited.</p>
+<p><span class="leg-ref"><strong>Income Tax Act</strong></span> s80 makes <span class="key-term">tax clearance</span> functionally equivalent to a “withholding relief certificate” in many public/large-buyer contracts:</p>
+<p>If the supplier cannot provide a <span class="key-term"><strong>tax clearance certificate</strong></span>, the payer must withhold 30%. </p>
 <p>That withheld tax is not immediately “lost” to the supplier; it becomes a credit after assessment, but only if processes and documentation are correct. </p>
-<p><span class="key-term">ZIMRA</span>’s own ITF263 guidance explicitly lists “No 30% <span class="key-term">Withholding Tax</span> is deducted” as a benefit of having a valid clearance.  This is one of the most direct ways that tax debt status (and clearance eligibility) impacts market cashflow.</p>
-<p><span class="leg-ref">VAT Act</span> s81A extends the clearance consequence into the goods supply chain: lacking a valid <span class="key-term">tax clearance certificate</span> can restrict purchasing eligibility and trigger 5% withholding obligations on suppliers/manufacturers/wholesalers in defined circumstances. </p>
+<p><span class="key-term">ZIMRA</span>’s own ITF263 guidance explicitly lists “No 30% <span class="key-term"><strong>Withholding Tax</strong></span> is deducted” as a benefit of having a valid clearance.  This is one of the most direct ways that tax debt status (and clearance eligibility) impacts market cashflow.</p>
+<p><span class="leg-ref"><strong>VAT Act</strong></span> s81A extends the clearance consequence into the goods supply chain: lacking a valid <span class="key-term"><strong>tax clearance certificate</strong></span> can restrict purchasing eligibility and trigger 5% withholding obligations on suppliers/manufacturers/wholesalers in defined circumstances. </p>
 <p><strong>TaRMS as the clearance delivery platform</strong></p>
 <p><span class="key-term">ZIMRA</span> implemented a major process change: ITF263 certificates are accessible <strong>only through TaRMS</strong> to compliant taxpayers (effective 1 January 2024). </p>
 <p>Operational prerequisites emphasized by <span class="key-term">ZIMRA</span> include:</p>
@@ -228,37 +244,37 @@
 <p>This flowchart expresses the typical TaRMS-era lifecycle from application/request to issuance/refusal, including key enforcement consequences that link clearance to debt status. It is synthesized from RAA s34C, ITA s80/s80A, VAT s81A, and <span class="key-term">ZIMRA</span> public notices on TaRMS issuance, validation, and Single Account posting. </p>
 <div class="mermaid">
 flowchart TD
-  A[Taxpayer needs TCC/ITF263 for tender, licensing, onboarding] --&gt; B{Access route}
-  B --&gt;|TaRMS Self Service Portal| C[Request / retrieve ITF263 in TaRMS]
-  B --&gt;|Third-party receives ITF263| V[Validate ITF263 via mytaxselfservice: QR or TIN + Auth Code]
+  A[Taxpayer needs TCC/ITF263 for tender, licensing, onboarding] --> B{Access route}
+  B -->|TaRMS Self Service Portal| C[Request / retrieve ITF263 in TaRMS]
+  B -->|Third-party receives ITF263| V[Validate ITF263 via mytaxselfservice: QR or TIN + Auth Code]
 
-  C --&gt; D{System compliance checks (TaRMS)}
-  D --&gt; D1[Return filing up to date?]
-  D --&gt; D2[Payments up to date across tax heads?]
-  D --&gt; D3[Single Account deposits posted to ledger? (Return submitted for payment)]
-  D --&gt; D4[VAT operator: FDMS/fiscalisation interfaced?]
+  C --> D{System compliance checks (TaRMS)}
+  D --> D1[Return filing up to date?]
+  D --> D2[Payments up to date across tax heads?]
+  D --> D3[Single Account deposits posted to ledger? (Return submitted for payment)]
+  D --> D4[VAT operator: FDMS/fiscalisation interfaced?]
 
-  D1 --&gt;|No| R1[Blocked: outstanding returns]
-  D2 --&gt;|No| R2[Blocked: posted arrears / no approved arrangement]
-  D3 --&gt;|No| R3[Blocked: cash in Single Account not posted (no matching return)]
-  D4 --&gt;|No| R4[Blocked: fiscalisation non-compliance]
+  D1 -->|No| R1[Blocked: outstanding returns]
+  D2 -->|No| R2[Blocked: posted arrears / no approved arrangement]
+  D3 -->|No| R3[Blocked: cash in Single Account not posted (no matching return)]
+  D4 -->|No| R4[Blocked: fiscalisation non-compliance]
 
-  R1 --&gt; EA[Risk: <span class="key-term">ZIMRA</span> may raise estimated assessments]
-  EA --&gt; R2
+  R1 --> EA[Risk: ZIMRA may raise estimated assessments]
+  EA --> R2
 
-  D --&gt;|All Yes / arrangements satisfactory| E[ITF263 issued / accessible]
-  E --&gt; V
-  V --&gt;|Valid| F[Use in tender/licensing/vendor onboarding]
-  V --&gt;|Invalid / not authentic| G[Rejected by counterparty]
+  D -->|All Yes / arrangements satisfactory| E[ITF263 issued / accessible]
+  E --> V
+  V -->|Valid| F[Use in tender/licensing/vendor onboarding]
+  V -->|Invalid / not authentic| G[Rejected by counterparty]
 
-  F --&gt; H{Market consequences}
-  H --&gt;|<span class="leg-ref">Income Tax Act</span> s80 contract payments| WHT30[No 30% withholding if TCC furnished; else 30% withheld]
-  H --&gt;|<span class="leg-ref">VAT Act</span> s81A value-chain purchases| VATWHT[Eligibility to purchase + possible 5% withholding if non-compliant]
-  H --&gt;|<span class="leg-ref">Income Tax Act</span> s80A licensing| LIC[License/renewal permitted only with valid TCC]
+  F --> H{Market consequences}
+  H -->|Income Tax Act s80 contract payments| WHT30[No 30% withholding if TCC furnished; else 30% withheld]
+  H -->|VAT Act s81A value-chain purchases| VATWHT[Eligibility to purchase + possible 5% withholding if non-compliant]
+  H -->|Income Tax Act s80A licensing| LIC[License/renewal permitted only with valid TCC]
 
-  R2 --&gt; H2[No/expired/blocked TCC -&gt; may trigger withholding and licensing refusal]
-  R3 --&gt; H2
-  R4 --&gt; H2
+  R2 --> H2[No/expired/blocked TCC -> may trigger withholding and licensing refusal]
+  R3 --> H2
+  R4 --> H2
 </div>
 </div>
 </section>
@@ -268,10 +284,10 @@ flowchart TD
 <p><strong>E. Case law integration</strong></p>
 <p><strong>Source constraint note (assumption):</strong> Your prompt references an “uploaded case pack,” but no files were available in this workspace session. Some Zimbabwe judgments hosted on ZimLII returned access errors (HTTP 403) during research, so the lesson relies on alternative public legal repositories (notably LawPortal Zimbabwe and <span class="key-term">ZIMRA</span> materials) where full text was accessible. This limitation is flagged to support later upgrading with your internal case pack.</p>
 <p><strong>Zimbabwe: Tax debt status persists unless formally suspended</strong></p>
-<p>In <strong><span class="key-term">Zimbabwe Revenue Authority</span> v Packers International (Pvt) Ltd (SC 28/16)</strong>, the Supreme Court describes VAT as a system reliant on <span class="key-term">self-assessment</span> and reiterates the policy logic of “pay now, argue later” in VAT administration: a taxpayer’s obligation remains extant and is not extinguished merely by noting an <span class="key-term">appeal</span> unless the Commissioner suspends the obligation (commonly associated with <span class="leg-ref">VAT Act</span> s36 in Zimbabwe practice). </p>
+<p>In <strong><span class="key-term">Zimbabwe Revenue Authority</span> v Packers International (Pvt) Ltd (SC 28/16)</strong>, the Supreme Court describes VAT as a system reliant on <span class="key-term"><strong>self-assessment</strong></span> and reiterates the policy logic of “pay now, argue later” in VAT administration: a taxpayer’s obligation remains extant and is not extinguished merely by noting an <span class="key-term">appeal</span> unless the Commissioner suspends the obligation (commonly associated with <span class="leg-ref"><strong>VAT Act</strong></span> s36 in Zimbabwe practice). </p>
 <p><strong>Relevance to <span class="key-term">tax clearance</span>:</strong> Disputed liabilities frequently still appear as collectible debts in the taxpayer account unless a statutory suspension applies. That means a taxpayer may be procedurally “in dispute” but operationally “in debt,” and TaRMS-based clearance checks can block ITF263 issuance unless <span class="key-term">ZIMRA</span> has accepted arrangements or suspended collection in the relevant way. </p>
 <p><strong>Zimbabwe: Set-off/payment recognition disputes can block “clear” status</strong></p>
-<p>In <strong>Murowa Diamonds v Commissioner General of the <span class="key-term">Zimbabwe Revenue Authority</span> (HH 01/11)</strong>, the court addresses an attempted set-off or credit argument involving foreign currency payments made to the Reserve Bank and local currency postings to <span class="key-term">ZIMRA</span>. The judgment notes (among other points) that <span class="key-term">ZIMRA</span> may appoint a bank as agent under <span class="leg-ref">Income Tax Act</span> s58, and that payment mechanics and legal entitlement to set-off are not assumed simply because the “State benefited”—the taxpayer must establish a right to set-off in the circumstances. </p>
+<p>In <strong>Murowa Diamonds v Commissioner General of the <span class="key-term">Zimbabwe Revenue Authority</span> (HH 01/11)</strong>, the court addresses an attempted set-off or credit argument involving foreign currency payments made to the Reserve Bank and local currency postings to <span class="key-term">ZIMRA</span>. The judgment notes (among other points) that <span class="key-term">ZIMRA</span> may appoint a bank as agent under <span class="leg-ref"><strong>Income Tax Act</strong></span> s58, and that payment mechanics and legal entitlement to set-off are not assumed simply because the “State benefited”—the taxpayer must establish a right to set-off in the circumstances. </p>
 <p>A related LawPortal report of the same dispute context shows that the applicant alleged overpayment/set-off while <span class="key-term">ZIMRA</span> disputed that foreign-currency payments to the Reserve Bank constituted payment to <span class="key-term">ZIMRA</span>, and emphasized the taxpayer’s burden to prove payment/credit. </p>
 <p><strong>Relevance to <span class="key-term">tax clearance</span>:</strong> ITF263 issuance depends on <span class="key-term">ZIMRA</span>’s satisfaction that returns are filed and taxes are paid/arranged. Where “payments” are not legally recognized or are not posted correctly (including currency conversion/posting disputes), a taxpayer may view themselves as compliant but remain ledger-noncompliant. This is conceptually the same failure mode seen in TaRMS Single Account “unposted cash” situations—cash movement alone is not compliance unless the system recognizes it against the correct obligation. </p>
 <p><strong>Regional doctrinal anchors: defining <span class="key-term">taxable income</span> that drives liability and clearance</strong></p>
@@ -286,13 +302,13 @@ flowchart TD
 <div class="section-content">
 <p><strong>F. Common pitfalls and practical examples</strong></p>
 <p><strong>Payments made but not posted: the Single Account “false arrears” problem</strong></p>
-<p><strong>Scenario:</strong> A taxpayer deposits funds into the <span class="key-term">ZIMRA</span> Single Bank Account but fails to submit the corresponding return (e.g., VAT return, <span class="key-term">PAYE</span> return, withholding return).</p>
+<p><strong>Scenario:</strong> A taxpayer deposits funds into the <span class="key-term">ZIMRA</span> Single Bank Account but fails to submit the corresponding return (e.g., VAT return, <span class="key-term"><strong>PAYE</strong></span> return, withholding return).</p>
 <p><strong>Why clearance fails:</strong> <span class="key-term">ZIMRA</span> explicitly states that payments in the Single Account require a tax return to be recognized and posted; otherwise funds remain unallocated in the Single Account and may not liquidate liabilities. </p>
 <p><strong>Wrong TIN or unvalidated deposit details</strong></p>
 <p><span class="key-term">ZIMRA</span> notes that bank validation for Single Account postings uses the <strong>TIN</strong>, making correct capture of the TIN paramount. </p>
-<p><strong>Control:</strong> Implement dual verification of TIN on payment instructions (maker-checker control), especially for high-value tender payments and <span class="key-term">withholding tax</span> settlements.</p>
+<p><strong>Control:</strong> Implement dual verification of TIN on payment instructions (maker-checker control), especially for high-value tender payments and <span class="key-term"><strong>withholding tax</strong></span> settlements.</p>
 <p><strong>Outstanding returns despite payment: “paid but still non-compliant”</strong></p>
-<p><span class="key-term">ZIMRA</span> specifically observed taxpayers paying <span class="key-term">PAYE</span>/royalties/<span class="key-term">withholding tax</span> but failing to submit returns, warning that non-compliers would not be eligible for automatically issued clearances and that estimated assessments may be raised for outstanding returns. </p>
+<p><span class="key-term">ZIMRA</span> specifically observed taxpayers paying <span class="key-term"><strong>PAYE</strong></span>/royalties/<span class="key-term"><strong>withholding tax</strong></span> but failing to submit returns, warning that non-compliers would not be eligible for automatically issued clearances and that estimated assessments may be raised for outstanding returns. </p>
 <p><strong>Certificate validity confusion during system migrations</strong></p>
 <p><span class="key-term">ZIMRA</span> warned that certain older certificates (BP-number based, issued in SAP/e-services and overlapping beyond December 2023) were no longer valid from 1 January 2024 regardless of the printed expiry date. </p>
 <p><strong>Control:</strong> Always validate the certificate through the TaRMS verification portal (QR or TIN + authentication code) rather than relying on printed dates. </p>
@@ -310,18 +326,18 @@ flowchart TD
 <p><strong>G. Knowledge check</strong></p>
 <p>1) Under which provision does <span class="key-term">ZIMRA</span> issue <span class="key-term">tax clearance</span> certificates, and what core “effects” can the certificate state?
 2) In TaRMS/Single Account operations, why can a taxpayer who has deposited funds still fail a clearance check?
-3) What is the withholding consequence under <span class="leg-ref">Income Tax Act</span> s80 if a payee cannot furnish a <span class="key-term">tax clearance certificate</span> to a paying officer?
-4) What does <span class="leg-ref">VAT Act</span> s81A require a purchaser to produce to buy goods from a manufacturer, and what withholding may apply for “non-compliant” purchasers?
+3) What is the withholding consequence under <span class="leg-ref"><strong>Income Tax Act</strong></span> s80 if a payee cannot furnish a <span class="key-term">tax clearance certificate</span> to a paying officer?
+4) What does <span class="leg-ref"><strong>VAT Act</strong></span> s81A require a purchaser to produce to buy goods from a manufacturer, and what withholding may apply for “non-compliant” purchasers?
 5) Name two system-based controls <span class="key-term">ZIMRA</span> provides to validate whether an ITF263 is authentic.
 6) How can VAT refunds affect debt status and therefore clearance eligibility even when a taxpayer “expects a refund”?
 7) In <em class="case-name"><em class="case-name"><span class="key-term">ZIMRA</span> v Packers</em></em>, what is the practical implication of “pay now, argue later” for debt status during disputes?</p>
 <p><strong>H. Quiz answers</strong></p>
-<p>1) Revenue Authority Act <strong>s34C</strong>; certificate may state returns filed/arranged, taxes paid/arranged, <span class="key-term">presumptive tax</span> paid/arranged, public officer appointed (new entities), and VAT fiscalisation interfacing for VAT operators. 
+<p>1) <strong>Revenue Authority Act</strong> <strong>s34C</strong>; certificate may state returns filed/arranged, taxes paid/arranged, <span class="key-term">presumptive tax</span> paid/arranged, public officer appointed (new entities), and VAT fiscalisation interfacing for VAT operators. 
 2) Because funds in the Single Account require a corresponding tax return to be recognized and posted; otherwise the payment remains unposted/unallocated and liabilities can still show as unpaid. 
 3) The paying officer must withhold <strong>30%</strong> of each amount payable and remit it; the Commissioner retains it until assessment for credit/refund. 
 4) Proof of VAT registration <strong>and a valid <span class="key-term">tax clearance certificate</span></strong>; withholding of <strong>5%</strong> of purchase value applies in defined “non-compliant” purchaser situations. 
 5) Validation via TaRMS self-service portal using (i) <strong>QR code scan</strong> or (ii) <strong>TIN + authentication code</strong>. 
-6) <span class="leg-ref">VAT Act</span> s44 allows <span class="key-term">ZIMRA</span> to set off refunds against unpaid taxes (including under other administered Acts) and to withhold refunds where returns are outstanding—so “expected refund” may not clear arrears. 
+6) <span class="leg-ref"><strong>VAT Act</strong></span> s44 allows <span class="key-term">ZIMRA</span> to set off refunds against unpaid taxes (including under other administered Acts) and to withhold refunds where returns are outstanding—so “expected refund” may not clear arrears. 
 7) Liability remains extant unless suspended by the Commissioner; disputes do not automatically remove debt status, so enforcement/collection and clearance blocks can continue. </p>
 </div>
 </section>
@@ -655,7 +671,5 @@ document.addEventListener('DOMContentLoaded', () => {
 	});
 });
 </script>
-<script src="https://cdn.jsdelivr.net/npm/mermaid@10.0.0/dist/mermaid.min.js"></script>
-<script>mermaid.initialize({startOnLoad:true});</script>
 <script src="js/globe-hero.js" type="module"></script>
 </html>
