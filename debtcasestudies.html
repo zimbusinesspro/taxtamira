@@ -10,15 +10,15 @@
 <link href="replace_with_your_PAGE_URL" rel="canonical"/>
 <!-- Stylesheets -->
 <link href="css/bootstrap.min.css" rel="stylesheet"/>
-<link href="css/main.css" rel="stylesheet">
-<link href="css/responsive.css" rel="stylesheet"/>
+<link href="css/main.css" rel="stylesheet"/>
+<link href="css/responsive.css" rel="stylesheet">
 <link href="css/lessons.css" rel="stylesheet"/>
 <link href="css/globe-hero.css" rel="stylesheet"/>
 <!-- OG tags -->
-<meta content="en_US" property="og:locale">
-<meta content="website" property="og:type"/>
-<meta content="TaxTami" property="og:title">
-<meta content="PAGE_URL" property="og:url"/>
+<meta content="en_US" property="og:locale"/>
+<meta content="website" property="og:type">
+<meta content="TaxTami" property="og:title"/>
+<meta content="PAGE_URL" property="og:url">
 <meta content="TaxTami" property="og:site_name"/>
 <meta content="#" property="og:image"/>
 <meta content="Zimbabwe-focused tax education, consulting and digital tools for taxpayers, SMEs and professionals." property="og:description"/>
@@ -34,7 +34,7 @@
 {"@context":"http://schema.org","@type":"WebSite","name":"TaxTami - Tax Training Zimbabwe","url":"www.taxtami.com"}
 	</script>
 </meta></meta></link>
-    <style class="mermaid-style">
+<style class="mermaid-style">
     .mermaid {
         background: #f4f8f6;
         border: 1px solid #c5ddd0;
@@ -46,9 +46,9 @@
     }
     .mermaid svg { max-width: 100%; height: auto; }
     </style>
-    <!-- Mermaid.js flowchart renderer -->
-    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.3/dist/mermaid.min.js"></script>
-    <script>document.addEventListener("DOMContentLoaded", function () {  mermaid.initialize({    startOnLoad: true,    theme: "base",    themeVariables: {      primaryColor: "#d6ede2",      primaryBorderColor: "#2c724f",      primaryTextColor: "#1a3a2a",      lineColor: "#2c724f",      secondaryColor: "#e9f5ee",      tertiaryColor: "#f4faf7",      edgeLabelBackground: "#ffffff",      fontFamily: "Work Sans, Heebo, sans-serif",      fontSize: "14px"    }  });});</script>
+<!-- Mermaid.js flowchart renderer -->
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.3/dist/mermaid.min.js"></script>
+<script>document.addEventListener("DOMContentLoaded", function () {  mermaid.initialize({    startOnLoad: true,    theme: "base",    themeVariables: {      primaryColor: "#d6ede2",      primaryBorderColor: "#2c724f",      primaryTextColor: "#1a3a2a",      lineColor: "#2c724f",      secondaryColor: "#e9f5ee",      tertiaryColor: "#f4faf7",      edgeLabelBackground: "#ffffff",      fontFamily: "Work Sans, Heebo, sans-serif",      fontSize: "14px"    }  });});</script>
 </head>
 <div class="page-wrapper">
 <!-- Main Header-->
@@ -148,7 +148,10 @@
 <div class="container">
 <div class="row">
 <div class="col-lg-9">
-<div class="lesson-container">
+<div class="lesson-container"><div class="lesson-page-header">
+<span class="lesson-name">Practical Debt Management Case Studies</span>
+<span class="lesson-excerpt">This lesson equips instructors to teach how Zimbabwe Revenue Authority ( ZIMRA ) tax debts arise, escalate, and are practically enforced under Zimbabwe’s statutory framework and ZIMRA operational guidance, with emphasis …</span>
+</div>
 <section class="lesson-section" id="executive-summary">
 <h2>Executive summary</h2>
 <div class="section-content">
@@ -232,25 +235,25 @@
 <p><strong>Mermaid enforcement flow: practical escalation ladder</strong></p>
 <div class="mermaid">
 flowchart TD
-  A[Debt arises in TaRMS<br/>Return filed or assessment raised] --> B[Due date passes<br/>Interest/penalties start]
-  B --> C{Taxpayer engagement?}
-  C -->|Pays & files correctly| Z[Close case<br/>Monitor compliance]
-  C -->|Can’t pay| D[Payment plan request<br/>via TaRMS Debt Mgmt]
-  D -->|Approved| E[Monitor plan<br/>default triggers escalation]
-  E -->|Default| F[Administrative tools]
-  C -->|No response / evasion| F[Administrative tools]
-  F --> F1[Appointment of agent<br/>banks/payers/wages]
-  F --> F2[Tax clearance leverage<br/>deny/condition issuance]
-  F --> F3[Security for tax (VAT)]
-  F --> G{Still unpaid?}
-  G -->|Yes| H[Expedited recovery<br/>Revenue Authority Act s33A]
-  H --> I[Magistrates’ Court order<br/>payment + attachment]
-  I --> J[Execution & sale<br/>Messenger/Sheriff]
-  J --> Z
-  B --> K[Customs branch]
-  K --> K1[Embargo / seizure / forfeiture]
-  K --> K2[Customs lien detention<br/>on goods under control]
-  K2 --> Z
+  A[Debt arises in TaRMS<br/>Return filed or assessment raised] --&gt; B[Due date passes<br/>Interest/penalties start]
+  B --&gt; C{Taxpayer engagement?}
+  C --&gt;|Pays &amp; files correctly| Z[Close case<br/>Monitor compliance]
+  C --&gt;|Can’t pay| D[Payment plan request<br/>via TaRMS Debt Mgmt]
+  D --&gt;|Approved| E[Monitor plan<br/>default triggers escalation]
+  E --&gt;|Default| F[Administrative tools]
+  C --&gt;|No response / evasion| F[Administrative tools]
+  F --&gt; F1[Appointment of agent<br/>banks/payers/wages]
+  F --&gt; F2[Tax clearance leverage<br/>deny/condition issuance]
+  F --&gt; F3[Security for tax (VAT)]
+  F --&gt; G{Still unpaid?}
+  G --&gt;|Yes| H[Expedited recovery<br/>Revenue Authority Act s33A]
+  H --&gt; I[Magistrates’ Court order<br/>payment + attachment]
+  I --&gt; J[Execution &amp; sale<br/>Messenger/Sheriff]
+  J --&gt; Z
+  B --&gt; K[Customs branch]
+  K --&gt; K1[Embargo / seizure / forfeiture]
+  K --&gt; K2[Customs lien detention<br/>on goods under control]
+  K2 --&gt; Z
 </div>
 </div>
 </section>

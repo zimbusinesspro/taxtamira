@@ -10,15 +10,15 @@
 <link href="replace_with_your_PAGE_URL" rel="canonical"/>
 <!-- Stylesheets -->
 <link href="css/bootstrap.min.css" rel="stylesheet"/>
-<link href="css/main.css" rel="stylesheet">
-<link href="css/responsive.css" rel="stylesheet"/>
+<link href="css/main.css" rel="stylesheet"/>
+<link href="css/responsive.css" rel="stylesheet">
 <link href="css/lessons.css" rel="stylesheet"/>
 <link href="css/globe-hero.css" rel="stylesheet"/>
 <!-- OG tags -->
-<meta content="en_US" property="og:locale">
-<meta content="website" property="og:type"/>
-<meta content="TaxTami" property="og:title">
-<meta content="PAGE_URL" property="og:url"/>
+<meta content="en_US" property="og:locale"/>
+<meta content="website" property="og:type">
+<meta content="TaxTami" property="og:title"/>
+<meta content="PAGE_URL" property="og:url">
 <meta content="TaxTami" property="og:site_name"/>
 <meta content="#" property="og:image"/>
 <meta content="Zimbabwe-focused tax education, consulting and digital tools for taxpayers, SMEs and professionals." property="og:description"/>
@@ -34,7 +34,7 @@
 {"@context":"http://schema.org","@type":"WebSite","name":"TaxTami - Tax Training Zimbabwe","url":"www.taxtami.com"}
 	</script>
 </meta></meta></link>
-    <style class="mermaid-style">
+<style class="mermaid-style">
     .mermaid {
         background: #f4f8f6;
         border: 1px solid #c5ddd0;
@@ -46,9 +46,9 @@
     }
     .mermaid svg { max-width: 100%; height: auto; }
     </style>
-    <!-- Mermaid.js flowchart renderer -->
-    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.3/dist/mermaid.min.js"></script>
-    <script>document.addEventListener("DOMContentLoaded", function () {  mermaid.initialize({    startOnLoad: true,    theme: "base",    themeVariables: {      primaryColor: "#d6ede2",      primaryBorderColor: "#2c724f",      primaryTextColor: "#1a3a2a",      lineColor: "#2c724f",      secondaryColor: "#e9f5ee",      tertiaryColor: "#f4faf7",      edgeLabelBackground: "#ffffff",      fontFamily: "Work Sans, Heebo, sans-serif",      fontSize: "14px"    }  });});</script>
+<!-- Mermaid.js flowchart renderer -->
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.3/dist/mermaid.min.js"></script>
+<script>document.addEventListener("DOMContentLoaded", function () {  mermaid.initialize({    startOnLoad: true,    theme: "base",    themeVariables: {      primaryColor: "#d6ede2",      primaryBorderColor: "#2c724f",      primaryTextColor: "#1a3a2a",      lineColor: "#2c724f",      secondaryColor: "#e9f5ee",      tertiaryColor: "#f4faf7",      edgeLabelBackground: "#ffffff",      fontFamily: "Work Sans, Heebo, sans-serif",      fontSize: "14px"    }  });});</script>
 </head>
 <div class="page-wrapper">
 <!-- Main Header-->
@@ -150,12 +150,12 @@
 <div class="row">
 <!-- Lessons -->
 <div class="col-lg-9">
-<div class="lesson-container">
-<section class="lesson-section" id="lesson-nine-debt-collection-strategies-in-zimbabwe">
-<h2>Lesson Nine: Debt Collection Strategies in Zimbabwe</h2>
-<div class="section-content">
+<div class="lesson-container"><div class="lesson-page-header">
+<span class="lesson-number">Debt Lesson 9</span>
+<span class="lesson-name">Debt Collection Strategies in Zimbabwe</span>
+<span class="lesson-excerpt">Debt collection strategy is the disciplined choice of what action to take, when, and against whom —so that ZIMRA maximizes revenue recovery while staying lawful, proportionate, and operationally efficient.</span>
 </div>
-</section>
+
 <section class="lesson-section" id="executive-summary">
 <h2>Executive summary</h2>
 <div class="section-content">
@@ -299,30 +299,30 @@ Late payment can trigger <span class="key-term">penalty</span> equal to tax and 
 <div class="section-content">
 <div class="mermaid">
 flowchart TD
-  A[Debt detected in TaRMS\n(ledger arrears or estimate)] --> B[Validate integrity\nPosting check: return filed?\nPayment in Single Account posted?]
-  B -->|Posting error| C[Service resolution\nFile return / correct TIN / reconcile\nThen re-evaluate debt status]
-  B -->|True arrears| D[Segment debt\nValue, age, behavior, currency,\nrepeat default, flight risk]
+  A[Debt detected in TaRMS\n(ledger arrears or estimate)] --&gt; B[Validate integrity\nPosting check: return filed?\nPayment in Single Account posted?]
+  B --&gt;|Posting error| C[Service resolution\nFile return / correct TIN / reconcile\nThen re-evaluate debt status]
+  B --&gt;|True arrears| D[Segment debt\nValue, age, behavior, currency,\nrepeat default, flight risk]
 
-  D --> E{Low risk / cooperative?}
-  E -->|Yes| F[Soft collection\nAutomated reminders + call/email\nOffer payment plan]
-  E -->|No| G[Enhanced action\nDemand letter with deadline\nImmediate risk controls]
+  D --&gt; E{Low risk / cooperative?}
+  E --&gt;|Yes| F[Soft collection\nAutomated reminders + call/email\nOffer payment plan]
+  E --&gt;|No| G[Enhanced action\nDemand letter with deadline\nImmediate risk controls]
 
-  F --> H{Paid or plan accepted?}
-  H -->|Yes| I[Monitor\nPlan compliance + new liabilities\nClose when current]
-  H -->|No| J[Escalate\nFinal demand + enforcement readiness]
+  F --&gt; H{Paid or plan accepted?}
+  H --&gt;|Yes| I[Monitor\nPlan compliance + new liabilities\nClose when current]
+  H --&gt;|No| J[Escalate\nFinal demand + enforcement readiness]
 
-  G --> K{High-risk indicators?}
-  K -->|Yes| L[Rapid enforcement\nAgent/garnishee; consider s33A if eligible]
-  K -->|No| M[Standard escalation\nDemand -> plan -> enforcement]
+  G --&gt; K{High-risk indicators?}
+  K --&gt;|Yes| L[Rapid enforcement\nAgent/garnishee; consider s33A if eligible]
+  K --&gt;|No| M[Standard escalation\nDemand -&gt; plan -&gt; enforcement]
 
-  J --> N{Legal eligibility for s33A?}
-  N -->|Yes| O[Proceed under RAA s33A\n(expedited recovery)]
-  N -->|No| P[Use agent appointment\nor court recovery path]
+  J --&gt; N{Legal eligibility for s33A?}
+  N --&gt;|Yes| O[Proceed under RAA s33A\n(expedited recovery)]
+  N --&gt;|No| P[Use agent appointment\nor court recovery path]
 
-  L --> Q[Post enforcement proceeds\nApply statutory allocation order\nReconcile ledger and close/monitor]
-  O --> Q
-  P --> Q
-  I --> Q
+  L --&gt; Q[Post enforcement proceeds\nApply statutory allocation order\nReconcile ledger and close/monitor]
+  O --&gt; Q
+  P --&gt; Q
+  I --&gt; Q
 </div>
 </div>
 </section>

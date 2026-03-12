@@ -10,15 +10,15 @@
 <link href="replace_with_your_PAGE_URL" rel="canonical"/>
 <!-- Stylesheets -->
 <link href="css/bootstrap.min.css" rel="stylesheet"/>
-<link href="css/main.css" rel="stylesheet">
-<link href="css/responsive.css" rel="stylesheet"/>
+<link href="css/main.css" rel="stylesheet"/>
+<link href="css/responsive.css" rel="stylesheet">
 <link href="css/lessons.css" rel="stylesheet"/>
 <link href="css/globe-hero.css" rel="stylesheet"/>
 <!-- OG tags -->
-<meta content="en_US" property="og:locale">
-<meta content="website" property="og:type"/>
-<meta content="TaxTami" property="og:title">
-<meta content="PAGE_URL" property="og:url"/>
+<meta content="en_US" property="og:locale"/>
+<meta content="website" property="og:type">
+<meta content="TaxTami" property="og:title"/>
+<meta content="PAGE_URL" property="og:url">
 <meta content="TaxTami" property="og:site_name"/>
 <meta content="#" property="og:image"/>
 <meta content="Zimbabwe-focused tax education, consulting and digital tools for taxpayers, SMEs and professionals." property="og:description"/>
@@ -34,7 +34,7 @@
 {"@context":"http://schema.org","@type":"WebSite","name":"TaxTami - Tax Training Zimbabwe","url":"www.taxtami.com"}
 	</script>
 </meta></meta></link>
-    <style class="mermaid-style">
+<style class="mermaid-style">
     .mermaid {
         background: #f4f8f6;
         border: 1px solid #c5ddd0;
@@ -46,9 +46,9 @@
     }
     .mermaid svg { max-width: 100%; height: auto; }
     </style>
-    <!-- Mermaid.js flowchart renderer -->
-    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.3/dist/mermaid.min.js"></script>
-    <script>document.addEventListener("DOMContentLoaded", function () {  mermaid.initialize({    startOnLoad: true,    theme: "base",    themeVariables: {      primaryColor: "#d6ede2",      primaryBorderColor: "#2c724f",      primaryTextColor: "#1a3a2a",      lineColor: "#2c724f",      secondaryColor: "#e9f5ee",      tertiaryColor: "#f4faf7",      edgeLabelBackground: "#ffffff",      fontFamily: "Work Sans, Heebo, sans-serif",      fontSize: "14px"    }  });});</script>
+<!-- Mermaid.js flowchart renderer -->
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.3/dist/mermaid.min.js"></script>
+<script>document.addEventListener("DOMContentLoaded", function () {  mermaid.initialize({    startOnLoad: true,    theme: "base",    themeVariables: {      primaryColor: "#d6ede2",      primaryBorderColor: "#2c724f",      primaryTextColor: "#1a3a2a",      lineColor: "#2c724f",      secondaryColor: "#e9f5ee",      tertiaryColor: "#f4faf7",      edgeLabelBackground: "#ffffff",      fontFamily: "Work Sans, Heebo, sans-serif",      fontSize: "14px"    }  });});</script>
 </head>
 <div class="page-wrapper">
 <!-- Main Header-->
@@ -150,12 +150,12 @@
 <div class="row">
 <!-- Lessons -->
 <div class="col-lg-9">
-<div class="lesson-container">
-<section class="lesson-section" id="lesson-ten-payment-plans-and-instalment-arrangements-in-zimbabwe">
-<h2>Lesson Ten: Payment Plans and Instalment Arrangements in Zimbabwe</h2>
-<div class="section-content">
+<div class="lesson-container"><div class="lesson-page-header">
+<span class="lesson-number">Debt Lesson 10</span>
+<span class="lesson-name">Payment Plans and Instalment Arrangements in Zimbabwe</span>
+<span class="lesson-excerpt">Payment plans (instalment arrangements) are the most important “middle path” between voluntary immediate payment and coercive enforcement.</span>
 </div>
-</section>
+
 <section class="lesson-section" id="executive-summary">
 <h2>Executive summary</h2>
 <div class="section-content">
@@ -337,29 +337,29 @@ Granting plans to “connected” taxpayers without objective criteria undermine
 <div class="section-content">
 <div class="mermaid">
 flowchart TD
-  A[Debt identified in TaRMS\n(arrears or classified risk case)] --> B[Integrity checks\nReturn filed? Payment posted?\nCurrency ledger check]
-  B -->|Posting/return issue| C[Service resolution\nFile return / correct TIN / reconcile\nThen re-evaluate]
-  B -->|True arrears| D[Taxpayer requests plan\nor ZIMRA offers plan option]
+  A[Debt identified in TaRMS\n(arrears or classified risk case)] --&gt; B[Integrity checks\nReturn filed? Payment posted?\nCurrency ledger check]
+  B --&gt;|Posting/return issue| C[Service resolution\nFile return / correct TIN / reconcile\nThen re-evaluate]
+  B --&gt;|True arrears| D[Taxpayer requests plan\nor ZIMRA offers plan option]
 
-  D --> E[Application via TaRMS SSP\nDebt Management module]
-  E --> F[Assessment of eligibility\nability to pay + compliance history\nrisk scoring + debt characteristics]
-  F --> G{Approve?}
+  D --&gt; E[Application via TaRMS SSP\nDebt Management module]
+  E --&gt; F[Assessment of eligibility\nability to pay + compliance history\nrisk scoring + debt characteristics]
+  F --&gt; G{Approve?}
 
-  G -- No --> H[Refuse plan\nProceed with collection escalation\n(demand -> enforcement)]
-  G -- Yes --> I[Plan agreement created\nSchedule + deposit + conditions\n(current filing + no new arrears)]
-  I --> J[Payments made into Single Account\nand posted to obligations]
-  J --> K[Monitoring cycle\nledger posting + return compliance\nnew arrears detection]
+  G -- No --&gt; H[Refuse plan\nProceed with collection escalation\n(demand -&gt; enforcement)]
+  G -- Yes --&gt; I[Plan agreement created\nSchedule + deposit + conditions\n(current filing + no new arrears)]
+  I --&gt; J[Payments made into Single Account\nand posted to obligations]
+  J --&gt; K[Monitoring cycle\nledger posting + return compliance\nnew arrears detection]
 
-  K --> L{Compliant with plan?}
-  L -- Yes --> M[Continue monitoring until paid off]
-  M --> N[Debt cleared\nClose plan and update status]
+  K --&gt; L{Compliant with plan?}
+  L -- Yes --&gt; M[Continue monitoring until paid off]
+  M --&gt; N[Debt cleared\nClose plan and update status]
 
-  L -- No --> O{Material hardship change?}
-  O -- Yes --> P[Revision request\nnew evidence + revised terms]
-  P --> I
-  O -- No --> Q[Default declared\ncancel plan / accelerate debt]
-  Q --> R[Enforcement escalation\nagent/garnishee or s33A (if eligible)]
-  R --> S[Post enforcement proceeds\nreconcile ledger\nclose or continue recovery]
+  L -- No --&gt; O{Material hardship change?}
+  O -- Yes --&gt; P[Revision request\nnew evidence + revised terms]
+  P --&gt; I
+  O -- No --&gt; Q[Default declared\ncancel plan / accelerate debt]
+  Q --&gt; R[Enforcement escalation\nagent/garnishee or s33A (if eligible)]
+  R --&gt; S[Post enforcement proceeds\nreconcile ledger\nclose or continue recovery]
 </div>
 </div>
 </section>

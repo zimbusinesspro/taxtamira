@@ -10,15 +10,15 @@
 <link href="replace_with_your_PAGE_URL" rel="canonical"/>
 <!-- Stylesheets -->
 <link href="css/bootstrap.min.css" rel="stylesheet"/>
-<link href="css/main.css" rel="stylesheet">
-<link href="css/responsive.css" rel="stylesheet"/>
+<link href="css/main.css" rel="stylesheet"/>
+<link href="css/responsive.css" rel="stylesheet">
 <link href="css/lessons.css" rel="stylesheet"/>
 <link href="css/globe-hero.css" rel="stylesheet"/>
 <!-- OG tags -->
-<meta content="en_US" property="og:locale">
-<meta content="website" property="og:type"/>
-<meta content="TaxTami" property="og:title">
-<meta content="PAGE_URL" property="og:url"/>
+<meta content="en_US" property="og:locale"/>
+<meta content="website" property="og:type">
+<meta content="TaxTami" property="og:title"/>
+<meta content="PAGE_URL" property="og:url">
 <meta content="TaxTami" property="og:site_name"/>
 <meta content="#" property="og:image"/>
 <meta content="Zimbabwe-focused tax education, consulting and digital tools for taxpayers, SMEs and professionals." property="og:description"/>
@@ -34,7 +34,7 @@
 {"@context":"http://schema.org","@type":"WebSite","name":"TaxTami - Tax Training Zimbabwe","url":"www.taxtami.com"}
 	</script>
 </meta></meta></link>
-    <style class="mermaid-style">
+<style class="mermaid-style">
     .mermaid {
         background: #f4f8f6;
         border: 1px solid #c5ddd0;
@@ -46,9 +46,9 @@
     }
     .mermaid svg { max-width: 100%; height: auto; }
     </style>
-    <!-- Mermaid.js flowchart renderer -->
-    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.3/dist/mermaid.min.js"></script>
-    <script>document.addEventListener("DOMContentLoaded", function () {  mermaid.initialize({    startOnLoad: true,    theme: "base",    themeVariables: {      primaryColor: "#d6ede2",      primaryBorderColor: "#2c724f",      primaryTextColor: "#1a3a2a",      lineColor: "#2c724f",      secondaryColor: "#e9f5ee",      tertiaryColor: "#f4faf7",      edgeLabelBackground: "#ffffff",      fontFamily: "Work Sans, Heebo, sans-serif",      fontSize: "14px"    }  });});</script>
+<!-- Mermaid.js flowchart renderer -->
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.3/dist/mermaid.min.js"></script>
+<script>document.addEventListener("DOMContentLoaded", function () {  mermaid.initialize({    startOnLoad: true,    theme: "base",    themeVariables: {      primaryColor: "#d6ede2",      primaryBorderColor: "#2c724f",      primaryTextColor: "#1a3a2a",      lineColor: "#2c724f",      secondaryColor: "#e9f5ee",      tertiaryColor: "#f4faf7",      edgeLabelBackground: "#ffffff",      fontFamily: "Work Sans, Heebo, sans-serif",      fontSize: "14px"    }  });});</script>
 </head>
 <div class="page-wrapper">
 <!-- Main Header-->
@@ -150,12 +150,12 @@
 <div class="row">
 <!-- Lessons -->
 <div class="col-lg-9">
-<div class="lesson-container">
-<section class="lesson-section" id="lesson-four-tax-debt-identification-and-classification-in-zimbabwe">
-<h2>Lesson Four: Tax Debt Identification and Classification in Zimbabwe</h2>
-<div class="section-content">
+<div class="lesson-container"><div class="lesson-page-header">
+<span class="lesson-number">Debt Lesson 4</span>
+<span class="lesson-name">Tax Debt Identification and Classification in Zimbabwe</span>
+<span class="lesson-excerpt">Effective tax debt management starts with seeing the debt correctly .</span>
 </div>
-</section>
+
 <section class="lesson-section" id="executive-summary">
 <h2>Executive summary</h2>
 <div class="section-content">
@@ -340,30 +340,30 @@ This section focuses on errors that cause the greatest downstream damage in debt
 <div class="section-content">
 <div class="mermaid">
 flowchart TD
-  A[TaRMS ledger population event\nReturn submitted / assessment posted] --> B{Posting complete?}
-  B -- No --> B1[Investigate unposted funds\n(Single account payment requires return)\nCorrect TIN/return linkage]
-  B -- Yes --> C[Compute balance by tax head + currency\nDetermine due dates]
-  C --> D{Due date passed?}
-  D -- No --> E[Classify: Current\nPre-due engagement]
-  D -- Yes --> F[Classify: Overdue\nAge (days past due)]
-  F --> G{Dispute flag?}
-  G -- Yes --> H{Suspension granted?}
-  H -- Yes --> H1[Disputed - Suspended\nHold enforcement; monitor]
-  H -- No --> H2[Disputed - Collectible\nProceed with soft collection/plan]
-  G -- No --> I[Undisputed Overdue\nProceed with collection path]
-  I --> J{Limitation / time-bar screens?}
-  J -- Yes --> J1[Potential Uncollectable\n(legal limitation or route limitation)\nMove to write-off/dormant review]
-  J -- No --> K[Risk scoring / segmentation\n(Value, age, behavior, sector, recurrence)]
-  K --> L{Priority?}
-  L -- Yes --> M[Priority queue\nFast-track plan or enforcement readiness]
-  L -- No --> N[Standard queue]
-  M --> O{Voluntary resolution?}
-  N --> O
-  O -- Yes --> P[Payment / plan monitoring\nReclassify to compliant if maintained]
-  O -- No --> Q[Escalate enforcement tools\n(consistent with law and policy)]
-  Q --> R{Write-off candidate?}
-  R -- Yes --> S[Administrative write-off workflow\n(approval + audit trail)]
-  R -- No --> T[Continue enforcement / monitoring cycle]
+  A[TaRMS ledger population event\nReturn submitted / assessment posted] --&gt; B{Posting complete?}
+  B -- No --&gt; B1[Investigate unposted funds\n(Single account payment requires return)\nCorrect TIN/return linkage]
+  B -- Yes --&gt; C[Compute balance by tax head + currency\nDetermine due dates]
+  C --&gt; D{Due date passed?}
+  D -- No --&gt; E[Classify: Current\nPre-due engagement]
+  D -- Yes --&gt; F[Classify: Overdue\nAge (days past due)]
+  F --&gt; G{Dispute flag?}
+  G -- Yes --&gt; H{Suspension granted?}
+  H -- Yes --&gt; H1[Disputed - Suspended\nHold enforcement; monitor]
+  H -- No --&gt; H2[Disputed - Collectible\nProceed with soft collection/plan]
+  G -- No --&gt; I[Undisputed Overdue\nProceed with collection path]
+  I --&gt; J{Limitation / time-bar screens?}
+  J -- Yes --&gt; J1[Potential Uncollectable\n(legal limitation or route limitation)\nMove to write-off/dormant review]
+  J -- No --&gt; K[Risk scoring / segmentation\n(Value, age, behavior, sector, recurrence)]
+  K --&gt; L{Priority?}
+  L -- Yes --&gt; M[Priority queue\nFast-track plan or enforcement readiness]
+  L -- No --&gt; N[Standard queue]
+  M --&gt; O{Voluntary resolution?}
+  N --&gt; O
+  O -- Yes --&gt; P[Payment / plan monitoring\nReclassify to compliant if maintained]
+  O -- No --&gt; Q[Escalate enforcement tools\n(consistent with law and policy)]
+  Q --&gt; R{Write-off candidate?}
+  R -- Yes --&gt; S[Administrative write-off workflow\n(approval + audit trail)]
+  R -- No --&gt; T[Continue enforcement / monitoring cycle]
 </div>
 <div class="mermaid">
 Flowchart anchors: posting logic and single-account dependencies come from ZIMRA TaRMS notices; estimate timing, currency non-offset rules, and refund/clearance holds come from TaRMS FAQs; “disputed collectible unless suspended” is anchored in Income Tax Act s 69 and VAT Act s 36; limitation checks are anchored in Revenue Authority Act s 33A(8) and VAT Act s 41(d); and the “uncollectable/dormant/write-off” strategy is supported as international best practice by OECD guidance (recognizing debt not economical to recover; temporary halt without write-off; and write-off after limitation periods).

@@ -11,15 +11,15 @@
 <!-- Stylesheets -->
 <link href="css/bootstrap.min.css" rel="stylesheet"/>
 <link href="css/main.css" rel="stylesheet"/>
-<link href="css/responsive.css" rel="stylesheet">
-<link href="css/lessons.css" rel="stylesheet"/>
+<link href="css/responsive.css" rel="stylesheet"/>
+<link href="css/lessons.css" rel="stylesheet">
 <link href="css/globe-hero.css" rel="stylesheet"/>
 <!-- OG tags -->
 <meta content="en_US" property="og:locale"/>
-<meta content="website" property="og:type">
-<meta content="TaxTami" property="og:title"/>
-<meta content="PAGE_URL" property="og:url">
-<meta content="TaxTami" property="og:site_name"/>
+<meta content="website" property="og:type"/>
+<meta content="TaxTami" property="og:title">
+<meta content="PAGE_URL" property="og:url"/>
+<meta content="TaxTami" property="og:site_name">
 <meta content="#" property="og:image"/>
 <meta content="Zimbabwe-focused tax education, consulting and digital tools for taxpayers, SMEs and professionals." property="og:description"/>
 <!-- Fonts -->
@@ -34,7 +34,7 @@
 {"@context":"http://schema.org","@type":"WebSite","name":"TaxTami - Tax Training Zimbabwe","url":"www.taxtami.com"}
 	</script>
 </meta></meta></link>
-    <style class="mermaid-style">
+<style class="mermaid-style">
     .mermaid {
         background: #f4f8f6;
         border: 1px solid #c5ddd0;
@@ -46,9 +46,9 @@
     }
     .mermaid svg { max-width: 100%; height: auto; }
     </style>
-    <!-- Mermaid.js flowchart renderer -->
-    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.3/dist/mermaid.min.js"></script>
-    <script>document.addEventListener("DOMContentLoaded", function () {  mermaid.initialize({    startOnLoad: true,    theme: "base",    themeVariables: {      primaryColor: "#d6ede2",      primaryBorderColor: "#2c724f",      primaryTextColor: "#1a3a2a",      lineColor: "#2c724f",      secondaryColor: "#e9f5ee",      tertiaryColor: "#f4faf7",      edgeLabelBackground: "#ffffff",      fontFamily: "Work Sans, Heebo, sans-serif",      fontSize: "14px"    }  });});</script>
+<!-- Mermaid.js flowchart renderer -->
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.3/dist/mermaid.min.js"></script>
+<script>document.addEventListener("DOMContentLoaded", function () {  mermaid.initialize({    startOnLoad: true,    theme: "base",    themeVariables: {      primaryColor: "#d6ede2",      primaryBorderColor: "#2c724f",      primaryTextColor: "#1a3a2a",      lineColor: "#2c724f",      secondaryColor: "#e9f5ee",      tertiaryColor: "#f4faf7",      edgeLabelBackground: "#ffffff",      fontFamily: "Work Sans, Heebo, sans-serif",      fontSize: "14px"    }  });});</script>
 </head>
 <div class="page-wrapper">
 <!-- Main Header-->
@@ -150,12 +150,12 @@
 <div class="row">
 <!-- Lessons -->
 <div class="col-lg-9">
-<div class="lesson-container">
-<section class="lesson-section" id="lesson-five-tax-clearance-certificates-and-debt-status">
-<h2>Lesson Five: Tax Clearance Certificates and Debt Status</h2>
-<div class="section-content">
+<div class="lesson-container"><div class="lesson-page-header">
+<span class="lesson-number">Debt Lesson 5</span>
+<span class="lesson-name">Tax Clearance Certificates and Debt Status</span>
+<span class="lesson-excerpt">Tax Clearance Certificates (the ITF263 in common ZIMRA practice) are more than “compliance badges.” They function as a transactional gatekeeper in Zimbabwe’s tax administration: they condition access to tenders and licen…</span>
 </div>
-</section>
+
 <section class="lesson-section" id="executive-summary">
 <h2>Executive summary</h2>
 <div class="section-content">
@@ -244,37 +244,37 @@
 <p>This flowchart expresses the typical TaRMS-era lifecycle from application/request to issuance/refusal, including key enforcement consequences that link clearance to debt status. It is synthesized from RAA s34C, ITA s80/s80A, VAT s81A, and <span class="key-term">ZIMRA</span> public notices on TaRMS issuance, validation, and Single Account posting. </p>
 <div class="mermaid">
 flowchart TD
-  A[Taxpayer needs TCC/ITF263 for tender, licensing, onboarding] --> B{Access route}
-  B -->|TaRMS Self Service Portal| C[Request / retrieve ITF263 in TaRMS]
-  B -->|Third-party receives ITF263| V[Validate ITF263 via mytaxselfservice: QR or TIN + Auth Code]
+  A[Taxpayer needs TCC/ITF263 for tender, licensing, onboarding] --&gt; B{Access route}
+  B --&gt;|TaRMS Self Service Portal| C[Request / retrieve ITF263 in TaRMS]
+  B --&gt;|Third-party receives ITF263| V[Validate ITF263 via mytaxselfservice: QR or TIN + Auth Code]
 
-  C --> D{System compliance checks (TaRMS)}
-  D --> D1[Return filing up to date?]
-  D --> D2[Payments up to date across tax heads?]
-  D --> D3[Single Account deposits posted to ledger? (Return submitted for payment)]
-  D --> D4[VAT operator: FDMS/fiscalisation interfaced?]
+  C --&gt; D{System compliance checks (TaRMS)}
+  D --&gt; D1[Return filing up to date?]
+  D --&gt; D2[Payments up to date across tax heads?]
+  D --&gt; D3[Single Account deposits posted to ledger? (Return submitted for payment)]
+  D --&gt; D4[VAT operator: FDMS/fiscalisation interfaced?]
 
-  D1 -->|No| R1[Blocked: outstanding returns]
-  D2 -->|No| R2[Blocked: posted arrears / no approved arrangement]
-  D3 -->|No| R3[Blocked: cash in Single Account not posted (no matching return)]
-  D4 -->|No| R4[Blocked: fiscalisation non-compliance]
+  D1 --&gt;|No| R1[Blocked: outstanding returns]
+  D2 --&gt;|No| R2[Blocked: posted arrears / no approved arrangement]
+  D3 --&gt;|No| R3[Blocked: cash in Single Account not posted (no matching return)]
+  D4 --&gt;|No| R4[Blocked: fiscalisation non-compliance]
 
-  R1 --> EA[Risk: ZIMRA may raise estimated assessments]
-  EA --> R2
+  R1 --&gt; EA[Risk: ZIMRA may raise estimated assessments]
+  EA --&gt; R2
 
-  D -->|All Yes / arrangements satisfactory| E[ITF263 issued / accessible]
-  E --> V
-  V -->|Valid| F[Use in tender/licensing/vendor onboarding]
-  V -->|Invalid / not authentic| G[Rejected by counterparty]
+  D --&gt;|All Yes / arrangements satisfactory| E[ITF263 issued / accessible]
+  E --&gt; V
+  V --&gt;|Valid| F[Use in tender/licensing/vendor onboarding]
+  V --&gt;|Invalid / not authentic| G[Rejected by counterparty]
 
-  F --> H{Market consequences}
-  H -->|Income Tax Act s80 contract payments| WHT30[No 30% withholding if TCC furnished; else 30% withheld]
-  H -->|VAT Act s81A value-chain purchases| VATWHT[Eligibility to purchase + possible 5% withholding if non-compliant]
-  H -->|Income Tax Act s80A licensing| LIC[License/renewal permitted only with valid TCC]
+  F --&gt; H{Market consequences}
+  H --&gt;|Income Tax Act s80 contract payments| WHT30[No 30% withholding if TCC furnished; else 30% withheld]
+  H --&gt;|VAT Act s81A value-chain purchases| VATWHT[Eligibility to purchase + possible 5% withholding if non-compliant]
+  H --&gt;|Income Tax Act s80A licensing| LIC[License/renewal permitted only with valid TCC]
 
-  R2 --> H2[No/expired/blocked TCC -> may trigger withholding and licensing refusal]
-  R3 --> H2
-  R4 --> H2
+  R2 --&gt; H2[No/expired/blocked TCC -&gt; may trigger withholding and licensing refusal]
+  R3 --&gt; H2
+  R4 --&gt; H2
 </div>
 </div>
 </section>

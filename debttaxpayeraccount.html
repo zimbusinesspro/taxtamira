@@ -10,15 +10,15 @@
 <link href="replace_with_your_PAGE_URL" rel="canonical"/>
 <!-- Stylesheets -->
 <link href="css/bootstrap.min.css" rel="stylesheet"/>
-<link href="css/main.css" rel="stylesheet">
-<link href="css/responsive.css" rel="stylesheet"/>
+<link href="css/main.css" rel="stylesheet"/>
+<link href="css/responsive.css" rel="stylesheet">
 <link href="css/lessons.css" rel="stylesheet"/>
 <link href="css/globe-hero.css" rel="stylesheet"/>
 <!-- OG tags -->
-<meta content="en_US" property="og:locale">
-<meta content="website" property="og:type"/>
-<meta content="TaxTami" property="og:title">
-<meta content="PAGE_URL" property="og:url"/>
+<meta content="en_US" property="og:locale"/>
+<meta content="website" property="og:type">
+<meta content="TaxTami" property="og:title"/>
+<meta content="PAGE_URL" property="og:url">
 <meta content="TaxTami" property="og:site_name"/>
 <meta content="#" property="og:image"/>
 <meta content="Zimbabwe-focused tax education, consulting and digital tools for taxpayers, SMEs and professionals." property="og:description"/>
@@ -34,7 +34,7 @@
 {"@context":"http://schema.org","@type":"WebSite","name":"TaxTami - Tax Training Zimbabwe","url":"www.taxtami.com"}
 	</script>
 </meta></meta></link>
-    <style class="mermaid-style">
+<style class="mermaid-style">
     .mermaid {
         background: #f4f8f6;
         border: 1px solid #c5ddd0;
@@ -46,9 +46,9 @@
     }
     .mermaid svg { max-width: 100%; height: auto; }
     </style>
-    <!-- Mermaid.js flowchart renderer -->
-    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.3/dist/mermaid.min.js"></script>
-    <script>document.addEventListener("DOMContentLoaded", function () {  mermaid.initialize({    startOnLoad: true,    theme: "base",    themeVariables: {      primaryColor: "#d6ede2",      primaryBorderColor: "#2c724f",      primaryTextColor: "#1a3a2a",      lineColor: "#2c724f",      secondaryColor: "#e9f5ee",      tertiaryColor: "#f4faf7",      edgeLabelBackground: "#ffffff",      fontFamily: "Work Sans, Heebo, sans-serif",      fontSize: "14px"    }  });});</script>
+<!-- Mermaid.js flowchart renderer -->
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.3/dist/mermaid.min.js"></script>
+<script>document.addEventListener("DOMContentLoaded", function () {  mermaid.initialize({    startOnLoad: true,    theme: "base",    themeVariables: {      primaryColor: "#d6ede2",      primaryBorderColor: "#2c724f",      primaryTextColor: "#1a3a2a",      lineColor: "#2c724f",      secondaryColor: "#e9f5ee",      tertiaryColor: "#f4faf7",      edgeLabelBackground: "#ffffff",      fontFamily: "Work Sans, Heebo, sans-serif",      fontSize: "14px"    }  });});</script>
 </head>
 <div class="page-wrapper">
 <!-- Main Header-->
@@ -150,12 +150,12 @@
 <div class="row">
 <!-- Lessons -->
 <div class="col-lg-9">
-<div class="lesson-container">
-<section class="lesson-section" id="lesson-five-taxpayer-account-management">
-<h2>Lesson Five Taxpayer Account Management</h2>
-<div class="section-content">
+<div class="lesson-container"><div class="lesson-page-header">
+<span class="lesson-number">Debt Lesson 5</span>
+<span class="lesson-name">Taxpayer Account Management</span>
+<span class="lesson-excerpt">Taxpayer account management is the operational “engine room” of tax debt management: it is how liabilities, assessments, payments, credits, penalties, interest , refunds, and enforcement actions are converted into a sing…</span>
 </div>
-</section>
+
 <section class="lesson-section" id="executive-summary">
 <h2>Executive summary</h2>
 <div class="section-content">
@@ -315,33 +315,33 @@ The consolidated <span class="leg-ref"><strong>VAT Act</strong></span> text indi
 <p>The workflow below abstracts the taxpayer account lifecycle under TaRMS: payment receipt into the Single Account, obligation creation via returns/assessments, automated allocation, reconciliation, dispute correction, and escalation to debt management/enforcement. It is grounded in <span class="key-term">ZIMRA</span>’s published TaRMS single-account model and the existence of TaRMS modules (Payment, Taxpayer Accounting, Debt, Refunds), plus statutory allocation/set-off rules. </p>
 <div class="mermaid">
 flowchart TD
-    A[Taxpayer receives tax obligation\n(Return due / Assessment issued)] --> B[Payment made to ZIMRA Single Bank Account\n(TIN + name validated by bank)]
-    B --> C[TaRMS updates Taxpayer Single Account balance\n(ZWL and USD tracked separately)]
-    A --> D[Obligation posted to taxpayer ledger\n(by tax head + period + currency)]
-    C --> E{Is there a posted obligation\neligible to settle?}
-    D --> E
+    A[Taxpayer receives tax obligation\n(Return due / Assessment issued)] --&gt; B[Payment made to ZIMRA Single Bank Account\n(TIN + name validated by bank)]
+    B --&gt; C[TaRMS updates Taxpayer Single Account balance\n(ZWL and USD tracked separately)]
+    A --&gt; D[Obligation posted to taxpayer ledger\n(by tax head + period + currency)]
+    C --&gt; E{Is there a posted obligation\neligible to settle?}
+    D --&gt; E
 
-    E -- No --> F[Funds remain as unutilized single-account balance\nRisk: taxpayer thinks 'paid' but not settled]
-    F --> R[Reconciliation / correction\nCheck TIN, return filing, posting errors]
+    E -- No --&gt; F[Funds remain as unutilized single-account balance\nRisk: taxpayer thinks 'paid' but not settled]
+    F --&gt; R[Reconciliation / correction\nCheck TIN, return filing, posting errors]
 
-    E -- Yes --> G{Is single-account balance\n>= amount due?}
-    G -- Yes --> H[Automated allocation and settlement\nUpdate ledger: principal/penalty/interest]
-    G -- No --> I[Partial settlement\nOutstanding balance remains]
+    E -- Yes --&gt; G{Is single-account balance\n&gt;= amount due?}
+    G -- Yes --&gt; H[Automated allocation and settlement\nUpdate ledger: principal/penalty/interest]
+    G -- No --&gt; I[Partial settlement\nOutstanding balance remains]
 
-    I --> J[Apply statutory ordering where relevant:\nPrincipal first, then penalties/fines, then interest]
-    J --> K[Debt aging / arrears status updated]
-    H --> L{Overpayment / refundable credit?}
-    L -- No --> M[Account normalized\nEligible for tax clearance if compliant]
-    L -- Yes --> N{Any other arrears / defaults?}
-    N -- Yes --> O[Set-off credit/refund against other obligations\n(including cross-tax set-off where authorized)]
-    N -- No --> P[Refund processing / carry-forward\nsubject to return-filing and validation rules]
+    I --&gt; J[Apply statutory ordering where relevant:\nPrincipal first, then penalties/fines, then interest]
+    J --&gt; K[Debt aging / arrears status updated]
+    H --&gt; L{Overpayment / refundable credit?}
+    L -- No --&gt; M[Account normalized\nEligible for tax clearance if compliant]
+    L -- Yes --&gt; N{Any other arrears / defaults?}
+    N -- Yes --&gt; O[Set-off credit/refund against other obligations\n(including cross-tax set-off where authorized)]
+    N -- No --&gt; P[Refund processing / carry-forward\nsubject to return-filing and validation rules]
 
-    K --> Q[Debt Management module:\nreminders → payment plan → enforcement]
-    Q --> S[Enforcement collection (agent appointment / attachment)\nPost collections to taxpayer ledger]
-    S --> R
-    P --> R
-    O --> R
-    M --> R
+    K --&gt; Q[Debt Management module:\nreminders → payment plan → enforcement]
+    Q --&gt; S[Enforcement collection (agent appointment / attachment)\nPost collections to taxpayer ledger]
+    S --&gt; R
+    P --&gt; R
+    O --&gt; R
+    M --&gt; R
 </div>
 </div>
 </section>

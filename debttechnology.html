@@ -10,15 +10,15 @@
 <link href="replace_with_your_PAGE_URL" rel="canonical"/>
 <!-- Stylesheets -->
 <link href="css/bootstrap.min.css" rel="stylesheet"/>
-<link href="css/main.css" rel="stylesheet">
-<link href="css/responsive.css" rel="stylesheet"/>
+<link href="css/main.css" rel="stylesheet"/>
+<link href="css/responsive.css" rel="stylesheet">
 <link href="css/lessons.css" rel="stylesheet"/>
 <link href="css/globe-hero.css" rel="stylesheet"/>
 <!-- OG tags -->
-<meta content="en_US" property="og:locale">
-<meta content="website" property="og:type"/>
-<meta content="TaxTami" property="og:title">
-<meta content="PAGE_URL" property="og:url"/>
+<meta content="en_US" property="og:locale"/>
+<meta content="website" property="og:type">
+<meta content="TaxTami" property="og:title"/>
+<meta content="PAGE_URL" property="og:url">
 <meta content="TaxTami" property="og:site_name"/>
 <meta content="#" property="og:image"/>
 <meta content="Zimbabwe-focused tax education, consulting and digital tools for taxpayers, SMEs and professionals." property="og:description"/>
@@ -34,7 +34,7 @@
 {"@context":"http://schema.org","@type":"WebSite","name":"TaxTami - Tax Training Zimbabwe","url":"www.taxtami.com"}
 	</script>
 </meta></meta></link>
-    <style class="mermaid-style">
+<style class="mermaid-style">
     .mermaid {
         background: #f4f8f6;
         border: 1px solid #c5ddd0;
@@ -46,9 +46,9 @@
     }
     .mermaid svg { max-width: 100%; height: auto; }
     </style>
-    <!-- Mermaid.js flowchart renderer -->
-    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.3/dist/mermaid.min.js"></script>
-    <script>document.addEventListener("DOMContentLoaded", function () {  mermaid.initialize({    startOnLoad: true,    theme: "base",    themeVariables: {      primaryColor: "#d6ede2",      primaryBorderColor: "#2c724f",      primaryTextColor: "#1a3a2a",      lineColor: "#2c724f",      secondaryColor: "#e9f5ee",      tertiaryColor: "#f4faf7",      edgeLabelBackground: "#ffffff",      fontFamily: "Work Sans, Heebo, sans-serif",      fontSize: "14px"    }  });});</script>
+<!-- Mermaid.js flowchart renderer -->
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.3/dist/mermaid.min.js"></script>
+<script>document.addEventListener("DOMContentLoaded", function () {  mermaid.initialize({    startOnLoad: true,    theme: "base",    themeVariables: {      primaryColor: "#d6ede2",      primaryBorderColor: "#2c724f",      primaryTextColor: "#1a3a2a",      lineColor: "#2c724f",      secondaryColor: "#e9f5ee",      tertiaryColor: "#f4faf7",      edgeLabelBackground: "#ffffff",      fontFamily: "Work Sans, Heebo, sans-serif",      fontSize: "14px"    }  });});</script>
 </head>
 <div class="page-wrapper">
 <!-- Main Header-->
@@ -150,12 +150,12 @@
 <div class="row">
 <!-- Lessons -->
 <div class="col-lg-9">
-<div class="lesson-container">
-<section class="lesson-section" id="lesson-20-deep-research-technology-in-tax-debt-management">
-<h2>Lesson 20 Deep Research: Technology in Tax Debt Management</h2>
-<div class="section-content">
+<div class="lesson-container"><div class="lesson-page-header">
+<span class="lesson-number">Debt Lesson 20</span>
+<span class="lesson-name">Deep Research: Technology in Tax Debt Management</span>
+<span class="lesson-excerpt">Modern tax debt management is increasingly driven by core revenue management systems (CRMS) that unify the taxpayer register, filing, payments, taxpayer accounting (ledger), and debt management into a single platform, ty…</span>
 </div>
-</section>
+
 <section class="lesson-section" id="executive-summary">
 <h2>Executive summary</h2>
 <div class="section-content">
@@ -194,28 +194,28 @@
 <p><strong>Mermaid diagram: architecture and data flows for a TaRMS-like platform</strong></p>
 <div class="mermaid">
 flowchart LR
-  TP[Taxpayer] -->|Portal/App login + MFA| DTA[Digital Taxpayer Account]
-  AG[Tax Agent] --> DTA
+  TP[Taxpayer] --&gt;|Portal/App login + MFA| DTA[Digital Taxpayer Account]
+  AG[Tax Agent] --&gt; DTA
 
-  DTA -->|Returns, payment plan requests, messages| WF[Workflow & Rules Engine]
-  WF --> LED[Taxpayer Ledger / Revenue Accounting]
-  LED -->|Interest/penalty calc, aging| DEBT[Debt Management Module]
+  DTA --&gt;|Returns, payment plan requests, messages| WF[Workflow &amp; Rules Engine]
+  WF --&gt; LED[Taxpayer Ledger / Revenue Accounting]
+  LED --&gt;|Interest/penalty calc, aging| DEBT[Debt Management Module]
 
-  BANK[(Banking network)] -->|Payment validation + confirmations| INT[Integration Layer / API Gateway]
-  INT --> LED
+  BANK[(Banking network)] --&gt;|Payment validation + confirmations| INT[Integration Layer / API Gateway]
+  INT --&gt; LED
 
-  REG[(Company & Civil Registries)] -->|ID/CRN validation| INT
-  INT --> DTA
+  REG[(Company &amp; Civil Registries)] --&gt;|ID/CRN validation| INT
+  INT --&gt; DTA
 
-  DEBT --> COMM[Comms Engine: SMS/Email/Portal inbox/Letters]
-  COMM --> TP
+  DEBT --&gt; COMM[Comms Engine: SMS/Email/Portal inbox/Letters]
+  COMM --&gt; TP
 
-  LED --> DW[Data Warehouse/Lake]
-  DW --> RISK[Risk Scoring & Segmentation]
-  RISK --> WF
-  RISK --> CASE[Case Management: human review]
-  CASE --> ENF[Enforcement Actions]
-  ENF --> COMM
+  LED --&gt; DW[Data Warehouse/Lake]
+  DW --&gt; RISK[Risk Scoring &amp; Segmentation]
+  RISK --&gt; WF
+  RISK --&gt; CASE[Case Management: human review]
+  CASE --&gt; ENF[Enforcement Actions]
+  ENF --&gt; COMM
 
   SEC[Security, Audit Logs, Governance] --- DTA
   SEC --- INT
@@ -236,27 +236,27 @@ Accordingly, use the following as a <strong>configurable teaching template</stro
 <p><strong>Mermaid diagram: automated debt workflow (from liability to enforcement)</strong></p>
 <div class="mermaid">
 flowchart TD
-  A[Liability posted to taxpayer ledger] --> B{Paid by due date?}
-  B -- Yes --> C[Close: compliant]
-  B -- No --> D[Debt flag + aging bucket update]
-  D --> E[Auto-calculate interest & penalties]
-  E --> F[Select comms strategy (segmentation + rules)]
-  F --> G[Send reminders via portal/SMS/email/letter]
-  G --> H{Taxpayer responds?}
-  H -- Pays --> C
-  H -- Requests payment plan --> I[Auto eligibility checks + risk scan]
-  I --> J{Eligible under policy thresholds?}
-  J -- Yes --> K[Approve plan + schedule monitoring]
-  J -- No --> L[Human case review required]
-  L --> M{Officer decision}
-  M -- Approve exception --> K
-  M -- Deny --> N[Escalate to stronger collection steps]
-  K --> O{Plan default?}
-  O -- No --> P[Continue monitoring]
-  O -- Yes --> N
-  N --> Q[Enforcement workflow]
-  Q --> R[Human approval gate + legal checks]
-  R --> S[Enforcement action taken + logged]
+  A[Liability posted to taxpayer ledger] --&gt; B{Paid by due date?}
+  B -- Yes --&gt; C[Close: compliant]
+  B -- No --&gt; D[Debt flag + aging bucket update]
+  D --&gt; E[Auto-calculate interest &amp; penalties]
+  E --&gt; F[Select comms strategy (segmentation + rules)]
+  F --&gt; G[Send reminders via portal/SMS/email/letter]
+  G --&gt; H{Taxpayer responds?}
+  H -- Pays --&gt; C
+  H -- Requests payment plan --&gt; I[Auto eligibility checks + risk scan]
+  I --&gt; J{Eligible under policy thresholds?}
+  J -- Yes --&gt; K[Approve plan + schedule monitoring]
+  J -- No --&gt; L[Human case review required]
+  L --&gt; M{Officer decision}
+  M -- Approve exception --&gt; K
+  M -- Deny --&gt; N[Escalate to stronger collection steps]
+  K --&gt; O{Plan default?}
+  O -- No --&gt; P[Continue monitoring]
+  O -- Yes --&gt; N
+  N --&gt; Q[Enforcement workflow]
+  Q --&gt; R[Human approval gate + legal checks]
+  R --&gt; S[Enforcement action taken + logged]
 </div>
 </div>
 </section>
@@ -349,25 +349,25 @@ The Robodebt Royal Commission demonstrates catastrophic risk: the scheme was des
 <p><strong>Mermaid decision tree: risk score → action with legal safeguards</strong></p>
 <div class="mermaid">
 flowchart TD
-  A[Debt detected / overdue] --> B[Compute risk score S: 0-100]
-  B --> C{S <= 30?}
-  C -- Yes --> C1[Send low-friction reminders + portal link]
-  C -- No --> D{S <= 70?}
-  D -- Yes --> D1[Enhanced outreach: SMS/email + call queue + offer payment plan]
-  D -- No --> E[High risk / complex case]
+  A[Debt detected / overdue] --&gt; B[Compute risk score S: 0-100]
+  B --&gt; C{S &lt;= 30?}
+  C -- Yes --&gt; C1[Send low-friction reminders + portal link]
+  C -- No --&gt; D{S &lt;= 70?}
+  D -- Yes --&gt; D1[Enhanced outreach: SMS/email + call queue + offer payment plan]
+  D -- No --&gt; E[High risk / complex case]
 
-  D1 --> F{Payment plan requested?}
-  F -- Yes --> G[Auto pre-check eligibility]
-  G --> H{Passes policy thresholds?}
-  H -- Yes --> I[Auto approve + monitor]
-  H -- No --> J[Human review required + record reasons]
+  D1 --&gt; F{Payment plan requested?}
+  F -- Yes --&gt; G[Auto pre-check eligibility]
+  G --&gt; H{Passes policy thresholds?}
+  H -- Yes --&gt; I[Auto approve + monitor]
+  H -- No --&gt; J[Human review required + record reasons]
 
-  E --> K[Caseworker review gate]
-  K --> L{Enforcement proposed?}
-  L -- No --> M[Negotiate plan / hardship / verify data]
-  L -- Yes --> N[Legal + privacy checks]
-  N --> O[Human approval + audit logging]
-  O --> P[Enforcement action + notice + appeal info]
+  E --&gt; K[Caseworker review gate]
+  K --&gt; L{Enforcement proposed?}
+  L -- No --&gt; M[Negotiate plan / hardship / verify data]
+  L -- Yes --&gt; N[Legal + privacy checks]
+  N --&gt; O[Human approval + audit logging]
+  O --&gt; P[Enforcement action + notice + appeal info]
 </div>
 <p><strong>MCQ (5).</strong></p>
 <p>1) In OECD’s strategic principles for successful tax debt management, which is listed as Principle 1?

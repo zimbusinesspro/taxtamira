@@ -10,15 +10,15 @@
 <link href="replace_with_your_PAGE_URL" rel="canonical"/>
 <!-- Stylesheets -->
 <link href="css/bootstrap.min.css" rel="stylesheet"/>
-<link href="css/main.css" rel="stylesheet">
-<link href="css/responsive.css" rel="stylesheet"/>
+<link href="css/main.css" rel="stylesheet"/>
+<link href="css/responsive.css" rel="stylesheet">
 <link href="css/lessons.css" rel="stylesheet"/>
 <link href="css/globe-hero.css" rel="stylesheet"/>
 <!-- OG tags -->
-<meta content="en_US" property="og:locale">
-<meta content="website" property="og:type"/>
-<meta content="TaxTami" property="og:title">
-<meta content="PAGE_URL" property="og:url"/>
+<meta content="en_US" property="og:locale"/>
+<meta content="website" property="og:type">
+<meta content="TaxTami" property="og:title"/>
+<meta content="PAGE_URL" property="og:url">
 <meta content="TaxTami" property="og:site_name"/>
 <meta content="#" property="og:image"/>
 <meta content="Zimbabwe-focused tax education, consulting and digital tools for taxpayers, SMEs and professionals." property="og:description"/>
@@ -34,7 +34,7 @@
 {"@context":"http://schema.org","@type":"WebSite","name":"TaxTami - Tax Training Zimbabwe","url":"www.taxtami.com"}
 	</script>
 </meta></meta></link>
-    <style class="mermaid-style">
+<style class="mermaid-style">
     .mermaid {
         background: #f4f8f6;
         border: 1px solid #c5ddd0;
@@ -46,9 +46,9 @@
     }
     .mermaid svg { max-width: 100%; height: auto; }
     </style>
-    <!-- Mermaid.js flowchart renderer -->
-    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.3/dist/mermaid.min.js"></script>
-    <script>document.addEventListener("DOMContentLoaded", function () {  mermaid.initialize({    startOnLoad: true,    theme: "base",    themeVariables: {      primaryColor: "#d6ede2",      primaryBorderColor: "#2c724f",      primaryTextColor: "#1a3a2a",      lineColor: "#2c724f",      secondaryColor: "#e9f5ee",      tertiaryColor: "#f4faf7",      edgeLabelBackground: "#ffffff",      fontFamily: "Work Sans, Heebo, sans-serif",      fontSize: "14px"    }  });});</script>
+<!-- Mermaid.js flowchart renderer -->
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.3/dist/mermaid.min.js"></script>
+<script>document.addEventListener("DOMContentLoaded", function () {  mermaid.initialize({    startOnLoad: true,    theme: "base",    themeVariables: {      primaryColor: "#d6ede2",      primaryBorderColor: "#2c724f",      primaryTextColor: "#1a3a2a",      lineColor: "#2c724f",      secondaryColor: "#e9f5ee",      tertiaryColor: "#f4faf7",      edgeLabelBackground: "#ffffff",      fontFamily: "Work Sans, Heebo, sans-serif",      fontSize: "14px"    }  });});</script>
 </head>
 <div class="page-wrapper">
 <!-- Main Header-->
@@ -150,12 +150,12 @@
 <div class="row">
 <!-- Lessons -->
 <div class="col-lg-9">
-<div class="lesson-container">
-<section class="lesson-section" id="lesson-seven-payment-of-tax-liabilities-in-zimbabwe">
-<h2>Lesson Seven: Payment of Tax Liabilities in Zimbabwe</h2>
-<div class="section-content">
+<div class="lesson-container"><div class="lesson-page-header">
+<span class="lesson-number">Debt Lesson 7</span>
+<span class="lesson-name">Payment of Tax Liabilities in Zimbabwe</span>
+<span class="lesson-excerpt">Payment is the “hinge” between a legally enforceable tax liability and an enforceable tax debt.</span>
 </div>
-</section>
+
 <section class="lesson-section" id="executive-summary">
 <h2>Executive summary</h2>
 <div class="section-content">
@@ -358,41 +358,41 @@ Because the statute does not provide a single universal “allocation across tax
 <div class="section-content">
 <div class="mermaid">
 flowchart TD
-  A[Identify obligation\n(return/self-assessment/assessment)\nTax head + period + currency] --> B{Due date reached?}
-  B -- No --> C[Plan funding & compliance\n(e.g., provisional tax instalments)]
-  C --> B
+  A[Identify obligation\n(return/self-assessment/assessment)\nTax head + period + currency] --&gt; B{Due date reached?}
+  B -- No --&gt; C[Plan funding &amp; compliance\n(e.g., provisional tax instalments)]
+  C --&gt; B
 
-  B -- Yes --> D[Initiate payment\nvia TaRMS Single Account bank]
-  D --> E[Bank validates\nTIN + taxpayer name\nintegrated with TaRMS]
-  E --> F[Payment credited to\nZIMRA Single Account]
-  F --> G{Return/obligation posted?}
+  B -- Yes --&gt; D[Initiate payment\nvia TaRMS Single Account bank]
+  D --&gt; E[Bank validates\nTIN + taxpayer name\nintegrated with TaRMS]
+  E --&gt; F[Payment credited to\nZIMRA Single Account]
+  F --&gt; G{Return/obligation posted?}
 
-  G -- No --> H[Payment remains in Single Account\nRisk: ledger still shows arrears;\nsystem estimates/penalties may trigger]
-  H --> I[Operational fix:\nsubmit return; correct TIN;\nrequest posting/statement]
-  I --> G
+  G -- No --&gt; H[Payment remains in Single Account\nRisk: ledger still shows arrears;\nsystem estimates/penalties may trigger]
+  H --&gt; I[Operational fix:\nsubmit return; correct TIN;\nrequest posting/statement]
+  I --&gt; G
 
-  G -- Yes --> J[TaRMS posts obligation\nand allocates available funds]
-  J --> K{Full settlement?}
+  G -- Yes --&gt; J[TaRMS posts obligation\nand allocates available funds]
+  J --&gt; K{Full settlement?}
 
-  K -- No --> L[Partial payment:\nTaRMS applies available amount;\nbalance remains due]
-  L --> M[Interest/penalty exposure\nand aging continues\nunless payment plan/suspension exists]
-  M --> N{Payment plan applied/approved?}
-  N -- Yes --> O[Monitor compliance\nschedule payments; default rules]
-  N -- No --> P[Soft collection escalation\nnotices/demands]
+  K -- No --&gt; L[Partial payment:\nTaRMS applies available amount;\nbalance remains due]
+  L --&gt; M[Interest/penalty exposure\nand aging continues\nunless payment plan/suspension exists]
+  M --&gt; N{Payment plan applied/approved?}
+  N -- Yes --&gt; O[Monitor compliance\nschedule payments; default rules]
+  N -- No --&gt; P[Soft collection escalation\nnotices/demands]
 
-  K -- Yes --> Q[Ledger shows obligation cleared]
-  Q --> R{Refund/credit arises?}
-  R -- Yes --> S[Offset or refund processing\n(subject to rules; currency constraints)]
-  R -- No --> T[Continue compliance cycle]
+  K -- Yes --&gt; Q[Ledger shows obligation cleared]
+  Q --&gt; R{Refund/credit arises?}
+  R -- Yes --&gt; S[Offset or refund processing\n(subject to rules; currency constraints)]
+  R -- No --&gt; T[Continue compliance cycle]
 
-  P --> U{Dispute/objection lodged?}
-  U -- Yes --> V[Pay-now-argue-later applies\nunless Commissioner directs suspension]
-  V --> W[If non-payment persists:\nagent appointment/garnishee\nor expedited recovery route]
-  U -- No --> W
+  P --&gt; U{Dispute/objection lodged?}
+  U -- Yes --&gt; V[Pay-now-argue-later applies\nunless Commissioner directs suspension]
+  V --&gt; W[If non-payment persists:\nagent appointment/garnishee\nor expedited recovery route]
+  U -- No --&gt; W
 
-  W --> X[Post enforcement remittances\nReconcile and close case]
-  O --> X
-  S --> X
+  W --&gt; X[Post enforcement remittances\nReconcile and close case]
+  O --&gt; X
+  S --&gt; X
 </div>
 </div>
 </section>

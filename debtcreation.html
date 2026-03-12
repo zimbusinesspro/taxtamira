@@ -10,15 +10,15 @@
 <link href="replace_with_your_PAGE_URL" rel="canonical"/>
 <!-- Stylesheets -->
 <link href="css/bootstrap.min.css" rel="stylesheet"/>
-<link href="css/main.css" rel="stylesheet">
-<link href="css/responsive.css" rel="stylesheet"/>
+<link href="css/main.css" rel="stylesheet"/>
+<link href="css/responsive.css" rel="stylesheet">
 <link href="css/lessons.css" rel="stylesheet"/>
 <link href="css/globe-hero.css" rel="stylesheet"/>
 <!-- OG tags -->
-<meta content="en_US" property="og:locale">
-<meta content="website" property="og:type"/>
-<meta content="TaxTami" property="og:title">
-<meta content="PAGE_URL" property="og:url"/>
+<meta content="en_US" property="og:locale"/>
+<meta content="website" property="og:type">
+<meta content="TaxTami" property="og:title"/>
+<meta content="PAGE_URL" property="og:url">
 <meta content="TaxTami" property="og:site_name"/>
 <meta content="#" property="og:image"/>
 <meta content="Zimbabwe-focused tax education, consulting and digital tools for taxpayers, SMEs and professionals." property="og:description"/>
@@ -34,7 +34,7 @@
 {"@context":"http://schema.org","@type":"WebSite","name":"TaxTami - Tax Training Zimbabwe","url":"www.taxtami.com"}
 	</script>
 </meta></meta></link>
-    <style class="mermaid-style">
+<style class="mermaid-style">
     .mermaid {
         background: #f4f8f6;
         border: 1px solid #c5ddd0;
@@ -46,9 +46,9 @@
     }
     .mermaid svg { max-width: 100%; height: auto; }
     </style>
-    <!-- Mermaid.js flowchart renderer -->
-    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.3/dist/mermaid.min.js"></script>
-    <script>document.addEventListener("DOMContentLoaded", function () {  mermaid.initialize({    startOnLoad: true,    theme: "base",    themeVariables: {      primaryColor: "#d6ede2",      primaryBorderColor: "#2c724f",      primaryTextColor: "#1a3a2a",      lineColor: "#2c724f",      secondaryColor: "#e9f5ee",      tertiaryColor: "#f4faf7",      edgeLabelBackground: "#ffffff",      fontFamily: "Work Sans, Heebo, sans-serif",      fontSize: "14px"    }  });});</script>
+<!-- Mermaid.js flowchart renderer -->
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.3/dist/mermaid.min.js"></script>
+<script>document.addEventListener("DOMContentLoaded", function () {  mermaid.initialize({    startOnLoad: true,    theme: "base",    themeVariables: {      primaryColor: "#d6ede2",      primaryBorderColor: "#2c724f",      primaryTextColor: "#1a3a2a",      lineColor: "#2c724f",      secondaryColor: "#e9f5ee",      tertiaryColor: "#f4faf7",      edgeLabelBackground: "#ffffff",      fontFamily: "Work Sans, Heebo, sans-serif",      fontSize: "14px"    }  });});</script>
 </head>
 <div class="page-wrapper">
 <!-- Main Header-->
@@ -150,12 +150,12 @@
 <div class="row">
 <!-- Lessons -->
 <div class="col-lg-9">
-<div class="lesson-container">
-<section class="lesson-section" id="lesson-two-creation-of-tax-debt-in-zimbabwe">
-<h2>Lesson Two: Creation of Tax Debt in Zimbabwe</h2>
-<div class="section-content">
+<div class="lesson-container"><div class="lesson-page-header">
+<span class="lesson-number">Debt Lesson 2</span>
+<span class="lesson-name">Creation of Tax Debt in Zimbabwe</span>
+<span class="lesson-excerpt">This lesson explains how tax debt is created in Zimbabwe—from the moment a taxable event (or withholding obligation) occurs, through self-assessment and Commissioner assessments , to the point where an unpaid amount beco…</span>
 </div>
-</section>
+
 <section class="lesson-section" id="executive-summary">
 <h2>Executive summary</h2>
 <div class="section-content">
@@ -317,35 +317,35 @@ This section cites the most “load-bearing” provisions that transform a tax l
 <div class="section-content">
 <div class="mermaid">
 flowchart TD
-  A[Taxable event or withholding obligation arises] --> B{Registered / liable person?}
-  B -- No --> B1[Registration enforcement / deemed registration mechanisms]
-  B -- Yes --> C{Tax type}
-  C -->|Income Tax| D[Self-assessment return (s 37A) OR Commissioner assessment (s 51)]
-  D --> D1{Return filed and posted in TaRMS?}
-  D1 -- Yes --> E[Tax quantified (deemed assessment / assessment notice)]
-  D1 -- No --> D2[Risk of estimated assessment for non-filing (s 45) / TaRMS estimate after grace period]
-  D2 --> E
-  E --> F[Tax becomes due & payable (s 71) -> interest if late]
-  F --> G{Paid in full by due date?}
-  G -- Yes --> H[Account settled / compliant status]
-  G -- No --> I[Outstanding balance + statutory additions]
-  I --> I1[Additional tax for defaults/omissions (s 46)]
-  I --> J[Tax deemed debt due to the State (s 77)]
-  J --> K{Dispute lodged?}
-  K -- Yes --> L[Pay-now-argue-later applies unless suspension granted (s 69)]
-  K -- No --> M[Enforcement pathway opens]
-  L --> M
-  M --> N[Recovery tools: expedited recovery / agents / garnishee / court processes]
+  A[Taxable event or withholding obligation arises] --&gt; B{Registered / liable person?}
+  B -- No --&gt; B1[Registration enforcement / deemed registration mechanisms]
+  B -- Yes --&gt; C{Tax type}
+  C --&gt;|Income Tax| D[Self-assessment return (s 37A) OR Commissioner assessment (s 51)]
+  D --&gt; D1{Return filed and posted in TaRMS?}
+  D1 -- Yes --&gt; E[Tax quantified (deemed assessment / assessment notice)]
+  D1 -- No --&gt; D2[Risk of estimated assessment for non-filing (s 45) / TaRMS estimate after grace period]
+  D2 --&gt; E
+  E --&gt; F[Tax becomes due &amp; payable (s 71) -&gt; interest if late]
+  F --&gt; G{Paid in full by due date?}
+  G -- Yes --&gt; H[Account settled / compliant status]
+  G -- No --&gt; I[Outstanding balance + statutory additions]
+  I --&gt; I1[Additional tax for defaults/omissions (s 46)]
+  I --&gt; J[Tax deemed debt due to the State (s 77)]
+  J --&gt; K{Dispute lodged?}
+  K -- Yes --&gt; L[Pay-now-argue-later applies unless suspension granted (s 69)]
+  K -- No --&gt; M[Enforcement pathway opens]
+  L --&gt; M
+  M --&gt; N[Recovery tools: expedited recovery / agents / garnishee / court processes]
 
-  C -->|VAT| V1[Operator return + payment due (s 28)]
-  V1 --> V2{Return/payment made?}
-  V2 -- No --> V3[Commissioner assessment (s 31) with possible estimation (s 31(4))]
-  V2 -- Yes --> V4[VAT accounted and paid/refund claimed]
-  V3 --> V5[Due & payable; nonpayment triggers penalty & interest (s 39)]
-  V5 --> V6{Objection/appeal?}
-  V6 -- Yes --> V7[Payment not suspended unless Commissioner directs (s 36)]
-  V6 -- No --> V8[Recovery actions]
-  V7 --> V8
+  C --&gt;|VAT| V1[Operator return + payment due (s 28)]
+  V1 --&gt; V2{Return/payment made?}
+  V2 -- No --&gt; V3[Commissioner assessment (s 31) with possible estimation (s 31(4))]
+  V2 -- Yes --&gt; V4[VAT accounted and paid/refund claimed]
+  V3 --&gt; V5[Due &amp; payable; nonpayment triggers penalty &amp; interest (s 39)]
+  V5 --&gt; V6{Objection/appeal?}
+  V6 -- Yes --&gt; V7[Payment not suspended unless Commissioner directs (s 36)]
+  V6 -- No --&gt; V8[Recovery actions]
+  V7 --&gt; V8
 </div>
 </div>
 </section>

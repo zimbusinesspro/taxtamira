@@ -10,15 +10,15 @@
 <link href="replace_with_your_PAGE_URL" rel="canonical"/>
 <!-- Stylesheets -->
 <link href="css/bootstrap.min.css" rel="stylesheet"/>
-<link href="css/main.css" rel="stylesheet">
-<link href="css/responsive.css" rel="stylesheet"/>
+<link href="css/main.css" rel="stylesheet"/>
+<link href="css/responsive.css" rel="stylesheet">
 <link href="css/lessons.css" rel="stylesheet"/>
 <link href="css/globe-hero.css" rel="stylesheet"/>
 <!-- OG tags -->
-<meta content="en_US" property="og:locale">
-<meta content="website" property="og:type"/>
-<meta content="TaxTami" property="og:title">
-<meta content="PAGE_URL" property="og:url"/>
+<meta content="en_US" property="og:locale"/>
+<meta content="website" property="og:type">
+<meta content="TaxTami" property="og:title"/>
+<meta content="PAGE_URL" property="og:url">
 <meta content="TaxTami" property="og:site_name"/>
 <meta content="#" property="og:image"/>
 <meta content="Zimbabwe-focused tax education, consulting and digital tools for taxpayers, SMEs and professionals." property="og:description"/>
@@ -34,7 +34,7 @@
 {"@context":"http://schema.org","@type":"WebSite","name":"TaxTami - Tax Training Zimbabwe","url":"www.taxtami.com"}
 	</script>
 </meta></meta></link>
-    <style class="mermaid-style">
+<style class="mermaid-style">
     .mermaid {
         background: #f4f8f6;
         border: 1px solid #c5ddd0;
@@ -46,9 +46,9 @@
     }
     .mermaid svg { max-width: 100%; height: auto; }
     </style>
-    <!-- Mermaid.js flowchart renderer -->
-    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.3/dist/mermaid.min.js"></script>
-    <script>document.addEventListener("DOMContentLoaded", function () {  mermaid.initialize({    startOnLoad: true,    theme: "base",    themeVariables: {      primaryColor: "#d6ede2",      primaryBorderColor: "#2c724f",      primaryTextColor: "#1a3a2a",      lineColor: "#2c724f",      secondaryColor: "#e9f5ee",      tertiaryColor: "#f4faf7",      edgeLabelBackground: "#ffffff",      fontFamily: "Work Sans, Heebo, sans-serif",      fontSize: "14px"    }  });});</script>
+<!-- Mermaid.js flowchart renderer -->
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.3/dist/mermaid.min.js"></script>
+<script>document.addEventListener("DOMContentLoaded", function () {  mermaid.initialize({    startOnLoad: true,    theme: "base",    themeVariables: {      primaryColor: "#d6ede2",      primaryBorderColor: "#2c724f",      primaryTextColor: "#1a3a2a",      lineColor: "#2c724f",      secondaryColor: "#e9f5ee",      tertiaryColor: "#f4faf7",      edgeLabelBackground: "#ffffff",      fontFamily: "Work Sans, Heebo, sans-serif",      fontSize: "14px"    }  });});</script>
 </head>
 <div class="page-wrapper">
 <!-- Main Header-->
@@ -148,7 +148,10 @@
 <div class="container">
 <div class="row">
 <div class="col-lg-9">
-<div class="lesson-container">
+<div class="lesson-container"><div class="lesson-page-header">
+<span class="lesson-name">Ethics and Professional Conduct in Debt Management</span>
+<span class="lesson-excerpt">Debt management sits at the sharp edge of tax administration: it blends coercive state power (collection and enforcement) with high‑sensitivity data (financial identity, income, liabilities, enforcement status).</span>
+</div>
 <section class="lesson-section" id="executive-summary">
 <h2>Executive summary</h2>
 <div class="section-content">
@@ -255,23 +258,23 @@ Outcome and remediation: document findings, corrective actions (training, policy
 <p><strong>Mermaid flowchart from allegation to investigation to resolution and <span class="key-term">appeal</span></strong></p>
 <div class="mermaid">
 flowchart TD
-  A[Allegation or indicator<br/>privacy breach / abuse / COI / misconduct] --> B[Immediate containment<br/>restrict access, preserve logs]
-  B --> C[Triage classification<br/>Access? Disclosure? COI? Conduct? Bribery attempt?]
-  C --> D[Assign independent investigator<br/>check investigator COI]
-  D --> E[Evidence collection<br/>system logs, case file notes, comms, witness interviews]
-  E --> F{Notifiable breach / mandatory report?}
-  F -- Yes --> G[Notify regulator + affected persons as required<br/>document timing and content]
-  F -- No --> H[Continue internal investigation]
-  G --> H
-  H --> I[Findings report<br/>facts, rule breaches, risk rating, recommendations]
-  I --> J{Decision authority}
-  J --> K[Disciplinary action / referral<br/>HR, professional body, police (if required)]
-  J --> L[No breach substantiated<br/>close with documentation]
-  K --> M[Remediation plan<br/>training, control changes, monitoring]
-  L --> M
-  M --> N[Communication to complainant<br/>outcome + review/appeal route]
-  N --> O[Appeal / review / oversight route<br/>(jurisdiction-specific)]
-  O --> P[Close and retain records<br/>audit-ready]
+  A[Allegation or indicator<br/>privacy breach / abuse / COI / misconduct] --&gt; B[Immediate containment<br/>restrict access, preserve logs]
+  B --&gt; C[Triage classification<br/>Access? Disclosure? COI? Conduct? Bribery attempt?]
+  C --&gt; D[Assign independent investigator<br/>check investigator COI]
+  D --&gt; E[Evidence collection<br/>system logs, case file notes, comms, witness interviews]
+  E --&gt; F{Notifiable breach / mandatory report?}
+  F -- Yes --&gt; G[Notify regulator + affected persons as required<br/>document timing and content]
+  F -- No --&gt; H[Continue internal investigation]
+  G --&gt; H
+  H --&gt; I[Findings report<br/>facts, rule breaches, risk rating, recommendations]
+  I --&gt; J{Decision authority}
+  J --&gt; K[Disciplinary action / referral<br/>HR, professional body, police (if required)]
+  J --&gt; L[No breach substantiated<br/>close with documentation]
+  K --&gt; M[Remediation plan<br/>training, control changes, monitoring]
+  L --&gt; M
+  M --&gt; N[Communication to complainant<br/>outcome + review/appeal route]
+  N --&gt; O[Appeal / review / oversight route<br/>(jurisdiction-specific)]
+  O --&gt; P[Close and retain records<br/>audit-ready]
 </div>
 <p><strong>Anti-fraud and anti-corruption controls tailored to debt management</strong></p>
 <p>Debt management is unusually bribery‑susceptible because staff can influence outcomes (timing, enforcement intensity, write‑off recommendations). International integrity frameworks encourage risk‑based controls that reduce opportunities and strengthen accountability (OECD Public Integrity Recommendation and Handbook; UNCAC’s emphasis on public‑official codes and anti‑corruption measures). </p>

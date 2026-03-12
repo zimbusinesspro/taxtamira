@@ -10,15 +10,15 @@
 <link href="replace_with_your_PAGE_URL" rel="canonical"/>
 <!-- Stylesheets -->
 <link href="css/bootstrap.min.css" rel="stylesheet"/>
-<link href="css/main.css" rel="stylesheet">
-<link href="css/responsive.css" rel="stylesheet"/>
+<link href="css/main.css" rel="stylesheet"/>
+<link href="css/responsive.css" rel="stylesheet">
 <link href="css/lessons.css" rel="stylesheet"/>
 <link href="css/globe-hero.css" rel="stylesheet"/>
 <!-- OG tags -->
-<meta content="en_US" property="og:locale">
-<meta content="website" property="og:type"/>
-<meta content="TaxTami" property="og:title">
-<meta content="PAGE_URL" property="og:url"/>
+<meta content="en_US" property="og:locale"/>
+<meta content="website" property="og:type">
+<meta content="TaxTami" property="og:title"/>
+<meta content="PAGE_URL" property="og:url">
 <meta content="TaxTami" property="og:site_name"/>
 <meta content="#" property="og:image"/>
 <meta content="Zimbabwe-focused tax education, consulting and digital tools for taxpayers, SMEs and professionals." property="og:description"/>
@@ -34,7 +34,7 @@
 {"@context":"http://schema.org","@type":"WebSite","name":"TaxTami - Tax Training Zimbabwe","url":"www.taxtami.com"}
 	</script>
 </meta></meta></link>
-    <style class="mermaid-style">
+<style class="mermaid-style">
     .mermaid {
         background: #f4f8f6;
         border: 1px solid #c5ddd0;
@@ -46,9 +46,9 @@
     }
     .mermaid svg { max-width: 100%; height: auto; }
     </style>
-    <!-- Mermaid.js flowchart renderer -->
-    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.3/dist/mermaid.min.js"></script>
-    <script>document.addEventListener("DOMContentLoaded", function () {  mermaid.initialize({    startOnLoad: true,    theme: "base",    themeVariables: {      primaryColor: "#d6ede2",      primaryBorderColor: "#2c724f",      primaryTextColor: "#1a3a2a",      lineColor: "#2c724f",      secondaryColor: "#e9f5ee",      tertiaryColor: "#f4faf7",      edgeLabelBackground: "#ffffff",      fontFamily: "Work Sans, Heebo, sans-serif",      fontSize: "14px"    }  });});</script>
+<!-- Mermaid.js flowchart renderer -->
+<script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.3/dist/mermaid.min.js"></script>
+<script>document.addEventListener("DOMContentLoaded", function () {  mermaid.initialize({    startOnLoad: true,    theme: "base",    themeVariables: {      primaryColor: "#d6ede2",      primaryBorderColor: "#2c724f",      primaryTextColor: "#1a3a2a",      lineColor: "#2c724f",      secondaryColor: "#e9f5ee",      tertiaryColor: "#f4faf7",      edgeLabelBackground: "#ffffff",      fontFamily: "Work Sans, Heebo, sans-serif",      fontSize: "14px"    }  });});</script>
 </head>
 <div class="page-wrapper">
 <!-- Main Header-->
@@ -150,12 +150,11 @@
 <div class="row">
 <!-- Lessons -->
 <div class="col-lg-9">
-<div class="lesson-container">
-<section class="lesson-section" id="tax-debt-and-business-closure">
-<h2>Tax Debt and Business Closure</h2>
-<div class="section-content">
+<div class="lesson-container"><div class="lesson-page-header">
+<span class="lesson-name">Tax Debt and Business Closure</span>
+<span class="lesson-excerpt">This lesson equips learners to manage tax obligations and tax-debt risk when a business stops trading, with a special focus on the director and company‑closure interface: final returns, final assessments, debt recovery/e…</span>
 </div>
-</section>
+
 <section class="lesson-section" id="executive-summary">
 <h2>Executive summary</h2>
 <div class="section-content">
@@ -207,25 +206,25 @@
 <p><strong>Process overview flowchart</strong></p>
 <div class="mermaid">
 flowchart TD
-  A[Cessation decision taken] --> B[Confirm cessation date<br/>stop incurring new debts]
-  B --> C[Inventory tax accounts<br/>(income/corporate, VAT/GST, payroll/withholding, excise, local)]
-  C --> D[Close-out operations<br/>final invoices, collect receivables, settle employment]
-  D --> E[Prepare final accounts<br/>to cessation date]
-  E --> F[File final returns<br/>mark "final" where applicable]
-  F --> G{Tax debt outstanding?}
-  G -- No --> H[Deregister/cancel tax registrations<br/>VAT/GST, payroll schemes, IDs if required]
-  H --> I[Distribute assets per law<br/>keep records]
-  I --> J[Apply for dissolution/strike-off<br/>notify creditors/tax authority]
-  J --> K[Monitor objections/public notice period]
-  K --> L[Company dissolved / business closed]
+  A[Cessation decision taken] --&gt; B[Confirm cessation date<br/>stop incurring new debts]
+  B --&gt; C[Inventory tax accounts<br/>(income/corporate, VAT/GST, payroll/withholding, excise, local)]
+  C --&gt; D[Close-out operations<br/>final invoices, collect receivables, settle employment]
+  D --&gt; E[Prepare final accounts<br/>to cessation date]
+  E --&gt; F[File final returns<br/>mark "final" where applicable]
+  F --&gt; G{Tax debt outstanding?}
+  G -- No --&gt; H[Deregister/cancel tax registrations<br/>VAT/GST, payroll schemes, IDs if required]
+  H --&gt; I[Distribute assets per law<br/>keep records]
+  I --&gt; J[Apply for dissolution/strike-off<br/>notify creditors/tax authority]
+  J --&gt; K[Monitor objections/public notice period]
+  K --&gt; L[Company dissolved / business closed]
 
-  G -- Yes --> M[Engage tax authority early<br/>payment plan / settlement proposal]
-  M --> N{Solvent and can pay within plan?}
-  N -- Yes --> F
-  N -- No --> O[Consider formal insolvency<br/>liquidation/administration/bankruptcy]
-  O --> P[Director-risk controls<br/>avoid insolvent trading/wrongful trading]
-  P --> Q[Resolution via insolvency outcomes<br/>or creditor arrangements]
-  Q --> H
+  G -- Yes --&gt; M[Engage tax authority early<br/>payment plan / settlement proposal]
+  M --&gt; N{Solvent and can pay within plan?}
+  N -- Yes --&gt; F
+  N -- No --&gt; O[Consider formal insolvency<br/>liquidation/administration/bankruptcy]
+  O --&gt; P[Director-risk controls<br/>avoid insolvent trading/wrongful trading]
+  P --&gt; Q[Resolution via insolvency outcomes<br/>or creditor arrangements]
+  Q --&gt; H
 </div>
 <p>This flow matches how official checklists structure closure: final returns; <span class="key-term">employee</span>/payroll closeout; paying or arranging tax; deregistration; and (for companies) only then dissolution/strike‑off, with creditor <span class="key-term">objection</span>/restoration risk if debts remain. </p>
 <p><strong>Closure steps with checklists and a practical timeline</strong></p>
