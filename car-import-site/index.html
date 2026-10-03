@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Japanese Vehicle Imports</title>
+  <meta name="description" content="Search maximum vehicle prices from Japanese auctions and estimate the full landed cost to Zimbabwe by route.">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#top" data-brand></a>
+      <nav class="nav">
+        <a href="#prices">Prices</a>
+        <a href="#calculator">Cost calculator</a>
+        <a href="#process">How it works</a>
+        <a href="#enquire">Enquire</a>
+      </nav>
+      <a class="btn btn-wa" data-wa target="_blank" rel="noopener">WhatsApp us</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap">
+        <h1>Vehicle price and landed-cost calculator</h1>
+        <p class="lead" data-tagline></p>
+        <p class="note">Prices shown are the maximum indicative purchase amount (FOB Japan). If we win the vehicle at a lower auction bid, you pay less, subject to the agreed terms.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#prices">Search prices</a>
+          <a class="btn btn-ghost" href="#calculator">Estimate total cost</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="prices" class="wrap section">
+      <h2>1. Search approved maximum prices</h2>
+      <div class="filters">
+        <label>Make<select id="f-make"><option value="">All makes</option></select></label>
+        <label>Body<select id="f-body"><option value="">All bodies</option></select></label>
+        <label>Fuel<select id="f-fuel"><option value="">All fuels</option></select></label>
+        <label>Max budget (USD)<input id="f-budget" type="number" min="0" step="100" placeholder="e.g. 6000"></label>
+        <label class="grow">Search<input id="f-q" type="search" placeholder="Model, e.g. Aqua"></label>
+      </div>
+      <p class="muted" id="result-count"></p>
+      <div class="table-scroll">
+        <table class="price-table">
+          <thead>
+            <tr><th>Make</th><th>Model</th><th>Year</th><th>Engine</th><th>Body</th><th>Fuel</th><th class="num">Max price</th><th></th></tr>
+          </thead>
+          <tbody id="price-rows"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="calculator" class="wrap section">
+      <h2>2. Compare estimated route costs</h2>
+      <div class="calc">
+        <form id="calc-form" class="calc-inputs">
+          <label>Vehicle<select id="c-vehicle"></select></label>
+          <label>Purchase price, FOB (USD)<input id="c-fob" type="number" min="0" step="50"></label>
+          <label>Year of manufacture<input id="c-year" type="number" min="1990" max="2030"></label>
+          <label>Engine size (cc)<input id="c-cc" type="number" min="600" step="100"></label>
+          <label class="check"><input id="c-duty" type="checkbox" checked> Include Zimbabwe import duties and taxes</label>
+          <p class="muted small">Duty rates are illustrative and set in <code>assets/config.js</code>. Confirm current rates with ZIMRA or your clearing agent before you rely on a figure.</p>
+        </form>
+        <div class="calc-results">
+          <div id="route-cards" class="route-cards"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="process" class="wrap section">
+      <h2>How importing with us works</h2>
+      <ol class="steps">
+        <li><strong>Choose.</strong> Pick a vehicle and budget from the price list, or tell us what you need.</li>
+        <li><strong>Deposit.</strong> Pay the agreed deposit so we can bid on your behalf at Japanese auctions.</li>
+        <li><strong>Win and inspect.</strong> We send you the auction sheet, photos and the final purchase price.</li>
+        <li><strong>Ship.</strong> The vehicle is exported and shipped RoRo to your chosen port.</li>
+        <li><strong>Transit and clear.</strong> Road transit to the border, then customs clearance and duty payment.</li>
+        <li><strong>Register and collect.</strong> We help with registration and number plates, then hand over your keys.</li>
+      </ol>
+    </section>
+
+    <section id="enquire" class="wrap section">
+      <h2>Enquire about a vehicle</h2>
+      <form id="enquiry" class="enquiry">
+        <label>Full name<input name="name" required></label>
+        <label>Phone / WhatsApp<input name="phone" required></label>
+        <label>Vehicle wanted<input name="vehicle" id="e-vehicle" placeholder="e.g. 2017 Toyota Aqua"></label>
+        <label>Preferred route<select name="route" id="e-route"></select></label>
+        <label class="full">Message<textarea name="message" rows="4"></textarea></label>
+        <div class="full actions">
+          <button class="btn btn-wa" type="submit">Send via WhatsApp</button>
+          <a class="btn btn-ghost" id="external-form" target="_blank" rel="noopener" hidden>Open enquiry form</a>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p><span data-brand></span> · <span data-phone></span> · <a data-email></a></p>
+      <p class="muted small">All prices and costs are estimates. Final costs depend on the auction result, exchange rates, shipping schedules and the duty assessed at the border.</p>
+    </div>
+  </footer>
+
+  <a class="wa-float" data-wa target="_blank" rel="noopener" aria-label="Chat on WhatsApp">WhatsApp</a>
+
+  <script src="assets/config.js"></script>
+  <script src="data/vehicles.js"></script>
+  <script src="data/routes.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
