@@ -119,7 +119,10 @@
       f.get("route") && `Route: ${f.get("route")}`,
       f.get("message")
     ].filter(Boolean).join("\n");
-    window.open(waLink(text), "_blank", "noopener");
+    const a = $("#wa-send");
+    a.href = waLink(text);
+    a.hidden = false;
+    a.focus();
   });
 
   renderPrices();
